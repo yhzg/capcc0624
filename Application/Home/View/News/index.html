@@ -8,6 +8,7 @@
     <js href="__PUBLIC__/Home/Js/head_bottom.js" />
     <js href="__PUBLIC__/Home/Js/show_pictures_14.js" />
     <js href="__PUBLIC__/Home/Js/resize_picture.js" />
+    <load href="__PUBLIC__/Home/Js/marquee1.js" />
 </head>
 
 <center><body >
@@ -64,7 +65,14 @@
     <div id="home_page_roll" style="float:left; overflow:hidden; height:145px; width:560px; margin-top:10px; margin-left:130px;">
         <div id="home_page_roll_demo">
             <div id="home_page_roll_img_1">
-                <?php
+                <for start="1" end="18" name="list14" id="vo">
+                    <span id="small_img_$i">
+                        <a id="small_a_img_$i" href="news/active/?newsid=$vo.newsid">
+                            <img id="small_real_img_$i" href="__PUBLIC__$vo.picture" width="110px" height="145px" />
+                        </a>
+                    </span>
+                </for>
+           <!--     <?php
                 $con=new mysqli('localhost','sq_capcccomcn','capcccomcn','capcc');
                 $result=$con->query("SELECT * FROM news_active where Level = 4 ORDER BY NewsID DESC LIMIT 18");
 				$row=$result->fetch_array();
@@ -84,7 +92,7 @@
                 $n++;
                 $row=$result->fetch_array();
                 }
-                ?>
+                ?>-->
             </div>
             <div id="home_page_roll_img_2" style="visibility:hidden; width:1600px;">
             </div>
@@ -102,7 +110,7 @@
     <br />
     <br />
 </div>
-<script>
+<!--<script>
     var speed_1=50;
     var tab=document.getElementById("home_page_roll");
     var tab1=document.getElementById("home_page_roll_img_1");
@@ -121,7 +129,7 @@
     button2.onmouseout=function() {MyMar_1=setInterval(Marquee_1,speed_1);}
     button1.onmouseover=function() {clearInterval(MyMar_1);}
     button1.onmouseout=function() {MyMar_1=setInterval(Marquee_1,speed_1);}
-</script>
+</script>-->
 <div id="body_center_left" style="float: left; margin-top: 30px; margin-left: 70px; width: 700px; height: 1440px; position: relative;">
     <div class="body_center_left_up_divtwo" id="body_center_left_up1"></div>
     <div class="body_center_left_up_divthree" id="body_center_left_up2" style="float: left; width: 694px; margin-top: 33px; height: 48px; line-height: 31px; text-align: left;">&nbsp; 动态新闻<br />
