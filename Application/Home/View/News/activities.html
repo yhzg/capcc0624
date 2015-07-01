@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        <?php
+	include('../../php_mysql_connect.php');
+	$NewsID=$_GET['newsid']; //添加连接时使用的查询新闻ID
+//	$NewsID=1;
+	$result=mysql_query("SELECT * FROM news_active WHERE NewsID=$NewsID");
+	$row=mysql_fetch_array($result);
+	echo $row['Title'];
+?>
+    </title>
+    <style type="text/css">
+        h1,h2,h3,h4,h5,h6 {
+            font-family: "黑体";
+        }
+        body {
+            background-color: #e0e2e1;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        a:visited {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+        a:active {
+            text-decoration: none;
+        }
+    </style>
+    <link href="3.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        var a=1;
+        var b=2;
+    </script>
+    <script type="text/javascript" src="js/head_bottom.js"></script>
+    <script type="text/javascript" src="../../js/resize_picture.js"></script>
+</head>
+
+<center><body tracingsrc=".3.1text跟踪.jpg" tracingopacity="60">
+<div id="head" style="background-color: #FFF; clear: both;">
+    <?php
+	include('../../head.html');
+   ?>
+    <div id="head_center1">
+        <table width="86%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td><table width="100%" border="0" align="center"cellpadding="0" cellspacing="0">
+                    <tr valign="bottom">
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(1);"><a style="color:inherit;" href="../../index.php">主页</a></td>
+                        <td align="center">|</td>
+                        <td align="center" class="blue" onmouseover="showsub(2);"><a style="color:inherit;" href="../../news.php">新闻</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(3);"><a style="color:inherit;" href="../../city.php">城市</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(4);"><a style="color:inherit;" href="../../inscription.php">申遗</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(5);"><a style="color:inherit;" href="../../culture.php">文化</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(6);"><a style="color:inherit;" href="../../travel.php">旅游</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(7);"><a style="color:inherit;" href="../../brand.php">品牌</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(8);"><a style="color:inherit;" href="../../academic.php">学术</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(9);"><a style="color:inherit;" href="../../education.php">教育</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(10);"><a style="color:inherit;" href="../../classic.php">典藏</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(11);"><a style="color:inherit;" href="../../activity.php">活动</a></td>
+                        <td align="center">|</td>
+                        <td align="center" onmouseover="showsub(12);"><a style="color:inherit;" href="../../forum.php">论坛</a></td>
+                        <td align="center">|</td>
+                    </tr>
+                </table></td>
+            </tr>
+        </table>
+    </div>
+    <div id="head_center2">
+        <table width="86%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+                <td><table width="100%" border="0" align="center"cellpadding="0" cellspacing="0">
+                    <tr valign="bottom">
+                        <td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="1"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="2"><img src="images/bracket.jpg" width="30" height="27" /></td><td align="center"></td>
+                        <td width="8%" align="center" id="3"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="4"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="5"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="6"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="7"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="8"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="9"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="10"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="11"></td><td align="center">&nbsp;</td>
+                        <td width="8%" align="center" id="12"></td><td align="center">&nbsp;</td>
+                    </tr>
+                </table></td>
+            </tr>
+        </table>
+    </div>
+    <div id="head_bottom">
+        <table width="86%" border="0" cellspacing="0" cellpadding="0">
+            <tr valign="top">
+                <td width="8%" align="right"><a style="color:inherit;" href="../../news/picture.php">图说新闻</a></td>
+                <td width="9%" class="blue" align="center"><a style="color:inherit;" href="../../news/active.php">动态新闻</a></td>
+                <td width="8%" align="center"><a style="color:inherit;" href="../../news/angle.php">新闻视线</a></td>
+                <td width="8%" align="center"><a style="color:inherit;" href="../../news/investigation.php">深度调查</a></td>
+                <td width="67%"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div id="body_up_bg1"></div>
+<div id="body_up_bg2"><img src="images/body_up.png" width="1200" height="40" /></div>
+<div id="body">
+    <div id="body_up">
+        <?php
+	echo $row['Title'];
+  ?>
+    </div>
+    <div id="body_center_left" style="float: left; width: 690px; margin-left: 66px;">
+        <div class="updated_date" id="body_center_left_up" style="float: left; text-align: left; width: 100%; margin-top: 9px;">
+            <div id="text_updated">
+                <?php
+		echo date("Y-m-d H:i",strtotime($row['Time']));
+		echo "&nbsp;";
+		echo "查看：";
+		echo $row['BrowseNumber'];
+	  ?>
+            </div>
+            <div id="text">
+                <?php
+
+if($row['Picture']!=null){
+	 echo "<p class=\"p1\"><img name=\"\" src=\"";
+                                echo str_replace("C:/xampp/htdocs","../..",str_replace("\\","/",$row['Picture']));//图片路径，在建站时需呀修改
+                echo "\" width=\"380px\" height=\"285px\"  style='float:left' hspace=30 vspace=30 onload=\"AutoResizeImage(380,285,this)\"/></p>";
+                }
+
+                $trans=array(" "=>"\n");
+                $new_content=strtr($row['Content'],$trans);//空格换成回车
+                $paragraph=strtok($row['Content'],"\n");
+                while($paragraph!==false)
+                {
+                echo "<p class=\"p1\">";
+                echo $paragraph;
+                echo "</p>";
+                $paragraph=strtok("\n");
+                }
+                echo "<br/>";
+                if($row['O_Author'])
+                {
+                echo "作者：";
+                echo $row['O_Author'];
+                echo "<br/>";
+                }
+                if($row['Author'])
+                {
+                echo "作者：";
+                echo $row['Author'];
+                echo "<br/>";
+                }
+                if($row['Editor'])
+                {
+                echo "编辑：";
+                echo $row['Editor'];
+                echo "<br/>";
+                }
+                $New_BrowseNumber=$row['BrowseNumber']+1;
+                $query="UPDATE news_active SET BrowseNumber=$New_BrowseNumber WHERE NewsID=$NewsID";
+                mysql_query($query);
+                ?>
+            </div>
+        </div>
+        <div style="text-align: left; float: left; margin-top: 15px;  font-size: 18px;">
+            <?php
+		$result=mysql_query("SELECT * FROM news_active WHERE NewsID>$NewsID ORDER BY NewsID ASC LIMIT 1");
+            $row=mysql_fetch_array($result);
+            if($row)
+            {
+            echo "<span style=\"line-height:40px\">";
+			echo "上一篇：";
+			echo "<a href=\"index.php?newsid=".$row['NewsID']."\">";
+                echo $row['Title'];
+                echo "</a></span>";
+            echo "<br/>";
+
+            }
+
+            $result=mysql_query("SELECT * FROM news_active WHERE NewsID<$NewsID ORDER BY NewsID DESC LIMIT 1");
+            $row=mysql_fetch_array($result);
+            if($row)
+            {
+            echo "\t\t下一篇：";
+
+            echo "<a href=\"index.php?newsid=".$row['NewsID']."\">";
+            echo $row['Title'];
+            echo "</a>";
+            }
+            ?>
+        </div>
+    </div>
+    <div id="body_center_right" style="float: left; width: 338px; height: 516px; margin-left: 41px; margin-top: 58px; background-image: url(images/body_center_right.jpg);">
+        <div id="body_center_right_up" style="margin-top: 75px; text-align: left; margin-left: 27px; width: 305px; height: 170px;"><span class="title4">网络交易</span>
+            <hr noshade="noshade" color="#E74291" />
+            <table width="100%" height="108" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="49%"><img src="../../images/标识符号 (1).jpg" alt="" name="" width="140" height="100" style="background-color: #EFEEE7; margin-top: 4px;" /></td>
+                    <td width="51%" valign="top" class="content2"><span class="item1"><span class="item3">·创意市集<br />
+            ·会员消费<br />
+            ·城市俱乐部</span></span><br /></td>
+                </tr>
+            </table>
+        </div>
+        <div id=body_center_right_bottom style="margin-top: 62px; text-align: left; margin-left: 27px; width: 305px; font-family: '黑体';"><span class="title4">广告视窗</span>
+            <hr noshade="noshade" color="#E74291" />
+            <table width="100%" height="108" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="49%" valign="top"><img src="../../images/标识符号 (1).jpg" alt="" name="" width="140" height="100" style="background-color: #EFEEE7; margin-top: 4px;" /></td>
+                    <td width="51%" valign="top" class="content2"><span class="item3">·城市视窗<br />
+            ·企业视窗<br />
+            ·产品视窗<br />
+            ·体验视窗<br />
+              ·信息发布</span><br /></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div style="font: 0px/0px sans-serif;clear: both;display: block"> </div>
+</div>
+<?php
+	include('../../foot.html');
+?>
+</body></center>
+</html>

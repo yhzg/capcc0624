@@ -1,0 +1,48 @@
+[ 2015-06-26T08:57:56+08:00 ] ::1 /capcc0624/Public/Home/Css/images/nav.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000887s ]
+ERR: 无法加载模块:Public
+
+[ 2015-06-26T09:08:47+08:00 ] ::1 /capcc0624/images/bracket.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+ERR: 无法加载模块:Images
+
+[ 2015-06-26T09:09:16+08:00 ] ::1 /capcc0624/images/bracket.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000568s ]
+ERR: 无法加载模块:Images
+
+[ 2015-06-26T09:13:42+08:00 ] ::1 /capcc0624/images/bracket.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000498s ]
+ERR: 无法加载模块:Images
+
+[ 2015-06-26T09:13:43+08:00 ] ::1 /capcc0624/images/bracket.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000527s ]
+ERR: 无法加载模块:Images
+
+[ 2015-06-26T09:13:59+08:00 ] ::1 /capcc0624/images/bracket.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001102s ]
+ERR: 无法加载模块:Images
+
+[ 2015-06-26T13:42:02+08:00 ] ::1 /capcc0624/images/bracket.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006623s ]
+ERR: 无法加载模块:Images
+
+[ 2015-06-26T13:42:03+08:00 ] ::1 /capcc0624/images/bracket.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+ERR: 无法加载模块:Images
+

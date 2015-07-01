@@ -1,0 +1,20 @@
+[ 2015-06-26T08:57:54+08:00 ] ::1 /capcc0624/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.091871s ]
+
+[ 2015-06-26T09:09:15+08:00 ] ::1 /capcc0624/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-06-26T09:13:43+08:00 ] ::1 /capcc0624/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-06-26T16:05:47+08:00 ] ::1 /capcc0624/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001175s ]
+
