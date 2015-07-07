@@ -12,7 +12,7 @@ use Think\Controller;
 class NewsController extends Controller{
     public function index()
     {
-        $this->display('Index:head');
+        $this->display('Public:head');
 
         $res1= M('News_active');
         $data11=$res1->order('time')->limit('1')->select();
@@ -20,6 +20,7 @@ class NewsController extends Controller{
         $this->assign('list11',$data11);
 
         $data12=$res1->where('level=10')->select();
+
         $data12[0]['content']=R('SubString/substring',array($data12[0]['content'],0,120));
         $this->assign('list12',$data12);
         //dump($data12);
@@ -38,6 +39,10 @@ class NewsController extends Controller{
         }
 
         $this->assign('list13',$data13);
+
+        $data14=$res1->where("level = 4")->order('NewsId desc')->limit('18')->select();
+        $this->assign('list14',$data14);
+
 
         $res2=M('News_angle');
         $data21=$res2->order('time desc')->limit('1')->select();
@@ -61,5 +66,20 @@ class NewsController extends Controller{
         $this->display('Public:foot');
     }
 
+    public function activities()
+    {
+        $this->display('Public:head');
+
+        $newsid=I('newsid');
+        $res1=M('news_active');
+        $news['newid']=$newsid;
+        $data11=$res1->where($news)->select();
+        dump($data11);
+        $this->assign('list11',$data11);
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
 
 }

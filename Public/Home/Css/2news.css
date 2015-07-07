@@ -108,11 +108,11 @@ p {
 	font-size: 13px;
 }
 #head #head_center2 {
-	background-image: url(../images/nav.png);
+	background-image: url(../Images/nav.png);
 	height: 28px;
 }
 #body_up_bg1 {
-	background-image: url(../images/news_body_up_bg.png);
+	background-image: url(../Images/news_body_up_bg.png);
 	height: 82px;
 	width: 100%;
 }

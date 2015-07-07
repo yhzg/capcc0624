@@ -4,7 +4,7 @@ use Think\Controller;
 class IndexController extends Controller {
         public function index(){
             //直接调用页面  无需存在对应的方法
-         $this->display('Index:head');
+         $this->display('Public:head');
 
          $res1= M('News_active');
          $news11=$res1->where('level=10')->select();

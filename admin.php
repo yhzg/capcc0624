@@ -15,9 +15,6 @@ define('APP_DEBUG',True);
 
 //新建一个Admin模块
 define('BIND_MODULE','Admin');
-
-
-
 // 定义应用目录
 define('APP_PATH','./Application/');
 

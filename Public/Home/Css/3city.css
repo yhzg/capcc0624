@@ -126,11 +126,11 @@ p {
 	font-size: 13px;
 }
 #head #head_center2 {
-	background-image: url(images/nav.png);
+	background-image: url(../Images/nav.png);
 	height: 28px;
 }
 #body_up_bg1 {
-	background-image: url(../images/city_body_up_bg.png);
+	background-image: url(../Images/city_body_up_bg.png);
 	height: 82px;
 	width: 100%;
 }
@@ -206,7 +206,7 @@ p {
 	margin-top: 15px;
 }
 #body_center_right {
-	background-image: url(../images/city_body_center_right_bg.jpg);
+	background-image: url(../Images/city_body_center_right_bg.jpg);
 	float: left;
 	width: 338px;
 	margin-top: 38px;

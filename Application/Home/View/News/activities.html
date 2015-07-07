@@ -3,121 +3,22 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>
-        <?php
-	include('../../php_mysql_connect.php');
-	$NewsID=$_GET['newsid']; //添加连接时使用的查询新闻ID
-//	$NewsID=1;
-	$result=mysql_query("SELECT * FROM news_active WHERE NewsID=$NewsID");
-	$row=mysql_fetch_array($result);
-	echo $row['Title'];
-?>
+        <{$list11[0]['title']}>
     </title>
-    <style type="text/css">
-        h1,h2,h3,h4,h5,h6 {
-            font-family: "黑体";
-        }
-        body {
-            background-color: #e0e2e1;
-        }
-        a:link {
-            text-decoration: none;
-        }
-        a:visited {
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: none;
-        }
-        a:active {
-            text-decoration: none;
-        }
-    </style>
-    <link href="3.css" rel="stylesheet" type="text/css" />
+    <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
+    <load href="__PUBLIC__/Home/Css/2news_acvive.css" />
+    <js href="__PUBLIC__/Home/Js/head_bottom.js" />
+    <js href="__PUBLIC__/Home/Js/resize_picture.js" />
     <script type="text/javascript">
         var a=1;
         var b=2;
     </script>
-    <script type="text/javascript" src="js/head_bottom.js"></script>
-    <script type="text/javascript" src="../../js/resize_picture.js"></script>
 </head>
 
-<center><body tracingsrc=".3.1text跟踪.jpg" tracingopacity="60">
-<div id="head" style="background-color: #FFF; clear: both;">
-    <?php
-	include('../../head.html');
-   ?>
-    <div id="head_center1">
-        <table width="86%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-                <td><table width="100%" border="0" align="center"cellpadding="0" cellspacing="0">
-                    <tr valign="bottom">
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(1);"><a style="color:inherit;" href="../../index.php">主页</a></td>
-                        <td align="center">|</td>
-                        <td align="center" class="blue" onmouseover="showsub(2);"><a style="color:inherit;" href="../../news.php">新闻</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(3);"><a style="color:inherit;" href="../../city.php">城市</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(4);"><a style="color:inherit;" href="../../inscription.php">申遗</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(5);"><a style="color:inherit;" href="../../culture.php">文化</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(6);"><a style="color:inherit;" href="../../travel.php">旅游</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(7);"><a style="color:inherit;" href="../../brand.php">品牌</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(8);"><a style="color:inherit;" href="../../academic.php">学术</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(9);"><a style="color:inherit;" href="../../education.php">教育</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(10);"><a style="color:inherit;" href="../../classic.php">典藏</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(11);"><a style="color:inherit;" href="../../activity.php">活动</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(12);"><a style="color:inherit;" href="../../forum.php">论坛</a></td>
-                        <td align="center">|</td>
-                    </tr>
-                </table></td>
-            </tr>
-        </table>
-    </div>
-    <div id="head_center2">
-        <table width="86%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-                <td><table width="100%" border="0" align="center"cellpadding="0" cellspacing="0">
-                    <tr valign="bottom">
-                        <td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="1"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="2"><img src="images/bracket.jpg" width="30" height="27" /></td><td align="center"></td>
-                        <td width="8%" align="center" id="3"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="4"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="5"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="6"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="7"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="8"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="9"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="10"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="11"></td><td align="center">&nbsp;</td>
-                        <td width="8%" align="center" id="12"></td><td align="center">&nbsp;</td>
-                    </tr>
-                </table></td>
-            </tr>
-        </table>
-    </div>
-    <div id="head_bottom">
-        <table width="86%" border="0" cellspacing="0" cellpadding="0">
-            <tr valign="top">
-                <td width="8%" align="right"><a style="color:inherit;" href="../../news/picture.php">图说新闻</a></td>
-                <td width="9%" class="blue" align="center"><a style="color:inherit;" href="../../news/active.php">动态新闻</a></td>
-                <td width="8%" align="center"><a style="color:inherit;" href="../../news/angle.php">新闻视线</a></td>
-                <td width="8%" align="center"><a style="color:inherit;" href="../../news/investigation.php">深度调查</a></td>
-                <td width="67%"></td>
-            </tr>
-        </table>
-    </div>
-</div>
+<center><body >
+
 <div id="body_up_bg1"></div>
-<div id="body_up_bg2"><img src="images/body_up.png" width="1200" height="40" /></div>
+<div id="body_up_bg2"><img src="__PUBLIC__/Home/Images/body_up.png" width="1200" height="40" /></div>
 <div id="body">
     <div id="body_up">
         <?php

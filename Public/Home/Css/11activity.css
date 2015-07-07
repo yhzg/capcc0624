@@ -114,11 +114,11 @@ p {
 	font-size: 13px;
 }
 #head #head_center2 {
-	background-image: url(images/nav.png);
+	background-image: url(../Images/nav.png);
 	height: 28px;
 }
 #body_up_bg1 {
-	background-image: url(images/activity_body_up_bg.png);
+	background-image: url(../Images/activity_body_up_bg.png);
 	height: 82px;
 	width: 100%;
 }
@@ -192,7 +192,7 @@ p {
 	float: left;
 }
 #body_center_right {
-	background-image: url(images/body_center_right_bg.jpg);
+	background-image: url(../Images/body_center_right_bg.jpg);
 	float: left;
 	height: 497px;
 	width: 337px;
@@ -263,7 +263,7 @@ p {
 	width: 355px;
 	margin-top: 37px;
 	height: 160px;
-	background-image: url(images/body_up_left_bottom.png);
+	background-image: url(../Images/body_up_left_bottom.png);
 }
 .purple {
 	color: #9C53A2;

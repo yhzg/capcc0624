@@ -113,11 +113,11 @@ p {
 	font-size: 13px;
 }
 #head #head_center2 {
-	background-image: url(images/nav.png);
+	background-image: url(../Images/nav.png);
 	height: 28px;
 }
 #body_up_bg1 {
-	background-image: url(../images/inscription_body_up_bg.png);
+	background-image: url(../Images/inscription_body_up_bg.png);
 	height: 82px;
 	width: 100%;
 }
@@ -193,37 +193,44 @@ p {
 	margin-top: 15px;
 }
 #body_center_right {
-	background-image: url(../images/inscription_body_center_right_bg.jpg);
+	background-image: url(../Images/inscription_body_center_right_bg.jpg);
 	float: left;
 	height: 1080px;
 	width: 337px;
 	margin-top: 101px;
 	margin-left: 33px;
+
 }
 #body_center_right_up {
 	text-align: left;
+    height:200px;
 	width: 300px;
 	margin-top: 19px;
 	margin-left: 38px;
+
 }
 #body_center_rignt_center1 {
 	float: left;
+    height:200px;
 	width: 300px;
-	margin-top: 79px;
+	margin-top: 89px;
 	margin-left: 38px;
 	text-align: left;
+
 }
 #body_center_rignt_center2 {
 	float: left;
+    height:200px;
 	width: 300px;
-	margin-top: 60px;
+	margin-top: 69px;
 	margin-left: 38px;
 	text-align: left;
 }
 #body_center_rignt_bottom {
 	float: left;
+    height:200px;
 	width: 300px;
-	margin-top: 80px;
+	margin-top: 60px;
 	margin-left: 38px;
 	text-align: left;
 }
@@ -258,12 +265,13 @@ p {
 	width: 355px;
 	margin-top: 37px;
 	height: 160px;
-	background-image: url(../images/body_up_left_bottom.gif);
+	background-image: url(../Images/body_up_left_bottom.gif);
 }
 .purple {
 	color: #9C53A2;
 	font-size: 18px;
 	font-family: "黑体";
+
 }
 #body #body_bottom #one {
 	float: left;

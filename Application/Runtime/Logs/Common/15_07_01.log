@@ -1060,3 +1060,15 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000551s ]
 ERR: 无法加载模块:Public
 
+[ 2015-07-01T16:09:17+08:00 ] ::1 /capcc0624/Public/Home/Css/home_page.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000884s ]
+ERR: 无法加载模块:Public
+
+[ 2015-07-01T16:09:17+08:00 ] ::1 /capcc0624/Public/Home/Images/Home/images_show/1%20(2).jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000894s ]
+ERR: 无法加载模块:Public
+
