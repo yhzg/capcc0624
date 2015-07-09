@@ -1,0 +1,6 @@
+[ 2015-07-09T09:20:04+08:00 ] ::1 /capcc0624/Admin/login
+ERR: 无法加载控制器:Login
+
+[ 2015-07-09T09:20:14+08:00 ] ::1 /capcc0624/Admin/Index/Login
+ERR: 非法操作:Login
+
