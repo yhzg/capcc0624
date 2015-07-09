@@ -70,16 +70,44 @@ class NewsController extends Controller{
     {
         $this->display('Public:head');
 
+        $res1=M('News_active');
         $newsid=I('newsid');
-        $res1=M('news_active');
-        $news['newid']=$newsid;
-        $data11=$res1->where($news)->select();
-        dump($data11);
+        $where1['NewsID']=$newsid;
+        $data11=$res1->where($where1)->select();
+        //dump($data11);
         $this->assign('list11',$data11);
+
+        $data111['date']=date('Y-m-d H:i:s',strtotime($data11[0]['time']));
+        $this->assign('list111',$data111);
+
+        $data112=explode("\n",$data11[0]['content']);
+        $this->assign('list112',$data112);
+
+        //$new_browsenumber=$data11[0]['BrowseNumber']+1;\
+        //dump($data11);
+        $data['BrowseNumber']= $data11[0]['browsenumber'] +1;
+        //dump($data);
+        $res1->where($where1)->save($data);
+
+
+        $where2['NewsID']=array('gt',$newsid);
+        $data12=$res1->where($where2)->order('NewsID')->limit('1')->select();
+        //dump($data12);
+        $this->assign('list12',$data12);
+
+        $where3['NewsID']=array('lt',$newsid);
+        $data13=$res1->where($where3)->order('NewsID desc')->limit('1')->select();
+        $this->assign('list13',$data13);
+
 
         $this->display();
 
         $this->display('Public:foot');
+    }
+
+    public function investigation()
+    {
+
     }
 
 }

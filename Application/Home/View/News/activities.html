@@ -6,7 +6,7 @@
         <{$list11[0]['title']}>
     </title>
     <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
-    <load href="__PUBLIC__/Home/Css/2news_acvive.css" />
+    <load href="__PUBLIC__/Home/Css/2news_active.css" />
     <js href="__PUBLIC__/Home/Js/head_bottom.js" />
     <js href="__PUBLIC__/Home/Js/resize_picture.js" />
     <script type="text/javascript">
@@ -21,98 +21,63 @@
 <div id="body_up_bg2"><img src="__PUBLIC__/Home/Images/body_up.png" width="1200" height="40" /></div>
 <div id="body">
     <div id="body_up">
-        <?php
-	echo $row['Title'];
-  ?>
+        <{$list11[0]['title']}>
     </div>
     <div id="body_center_left" style="float: left; width: 690px; margin-left: 66px;">
         <div class="updated_date" id="body_center_left_up" style="float: left; text-align: left; width: 100%; margin-top: 9px;">
             <div id="text_updated">
-                <?php
-		echo date("Y-m-d H:i",strtotime($row['Time']));
-		echo "&nbsp;";
-		echo "查看：";
-		echo $row['BrowseNumber'];
-	  ?>
+         <{$list111.date}>&nbsp;查看：<{$list11[0].browsenumber}>
             </div>
             <div id="text">
-                <?php
+                <p class="p1">
+                    <img src="__PUBLIC__<{$list11[0]['picture']}>" width="380px" height="285px"  style='float:left' hspace=30 vspace=30 onload="AutoResizeImage(380,285,this);" />
+                </p>
+                <volist name="list112" id="vo">
+                    <p class="p1">
+                        <{$vo}>
+                    </p>
+                </volist>
+                <br />
+                    <notempty name="list11[0]['0_author']">
+                        作者：<{$list11[0]['0_author']}>
+                        <br>
+                    </notempty>
 
-if($row['Picture']!=null){
-	 echo "<p class=\"p1\"><img name=\"\" src=\"";
-                                echo str_replace("C:/xampp/htdocs","../..",str_replace("\\","/",$row['Picture']));//图片路径，在建站时需呀修改
-                echo "\" width=\"380px\" height=\"285px\"  style='float:left' hspace=30 vspace=30 onload=\"AutoResizeImage(380,285,this)\"/></p>";
-                }
-
-                $trans=array(" "=>"\n");
-                $new_content=strtr($row['Content'],$trans);//空格换成回车
-                $paragraph=strtok($row['Content'],"\n");
-                while($paragraph!==false)
-                {
-                echo "<p class=\"p1\">";
-                echo $paragraph;
-                echo "</p>";
-                $paragraph=strtok("\n");
-                }
-                echo "<br/>";
-                if($row['O_Author'])
-                {
-                echo "作者：";
-                echo $row['O_Author'];
-                echo "<br/>";
-                }
-                if($row['Author'])
-                {
-                echo "作者：";
-                echo $row['Author'];
-                echo "<br/>";
-                }
-                if($row['Editor'])
-                {
-                echo "编辑：";
-                echo $row['Editor'];
-                echo "<br/>";
-                }
-                $New_BrowseNumber=$row['BrowseNumber']+1;
-                $query="UPDATE news_active SET BrowseNumber=$New_BrowseNumber WHERE NewsID=$NewsID";
-                mysql_query($query);
-                ?>
+                    <notempty name="list11[0]['author']">
+                        作者：<{$list11[0]['author']}>
+                        <br>
+                    </notempty>
+                    <notempty name="list11[0]['editor']">
+                        编辑：<{$list11[0]['editor']}>
+                    </notempty>
             </div>
         </div>
         <div style="text-align: left; float: left; margin-top: 15px;  font-size: 18px;">
-            <?php
-		$result=mysql_query("SELECT * FROM news_active WHERE NewsID>$NewsID ORDER BY NewsID ASC LIMIT 1");
-            $row=mysql_fetch_array($result);
-            if($row)
-            {
-            echo "<span style=\"line-height:40px\">";
-			echo "上一篇：";
-			echo "<a href=\"index.php?newsid=".$row['NewsID']."\">";
-                echo $row['Title'];
-                echo "</a></span>";
-            echo "<br/>";
-
-            }
-
-            $result=mysql_query("SELECT * FROM news_active WHERE NewsID<$NewsID ORDER BY NewsID DESC LIMIT 1");
-            $row=mysql_fetch_array($result);
-            if($row)
-            {
-            echo "\t\t下一篇：";
-
-            echo "<a href=\"index.php?newsid=".$row['NewsID']."\">";
-            echo $row['Title'];
-            echo "</a>";
-            }
-            ?>
+            <notempty name="list12[0].newsid">
+            <span style="line-height:40px">
+                上一篇:
+                <a href="__APP__/Home/News/activities/newsid/<{$list12[0].newsid}>">
+                    <{$list12[0].title}>
+                   </a>
+            </span>
+            </notempty>
+            <br />
+            <notempty name="list13[0].newsid">
+            <span style="line-height:40px">
+                下一篇:
+                <a href="__APP__/Home/News/activities/newsid/<{$list13[0].newsid}>">
+                    <{$list13[0].title}>
+                   </a>
+            </span>
+            </notempty>
         </div>
     </div>
-    <div id="body_center_right" style="float: left; width: 338px; height: 516px; margin-left: 41px; margin-top: 58px; background-image: url(images/body_center_right.jpg);">
+    <div id="body_center_right" style="float: left; width: 338px; height: 516px; margin-left: 41px; margin-top: 100px; border:1px solid #000; background-image: url(__PUBLIC__/Home/Images/body_center_right.jpg);background-size:cover">
         <div id="body_center_right_up" style="margin-top: 75px; text-align: left; margin-left: 27px; width: 305px; height: 170px;"><span class="title4">网络交易</span>
             <hr noshade="noshade" color="#E74291" />
             <table width="100%" height="108" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td width="49%"><img src="../../images/标识符号 (1).jpg" alt="" name="" width="140" height="100" style="background-color: #EFEEE7; margin-top: 4px;" /></td>
+                    <td width="49%"><img src="__PUBLIC__/Home/Images/标识符号 (1).jpg" alt="" name="" width="140" height="100" style="background-color: #EFEEE7; margin-top: 4px;" /></td>
                     <td width="51%" valign="top" class="content2"><span class="item1"><span class="item3">·创意市集<br />
             ·会员消费<br />
             ·城市俱乐部</span></span><br /></td>
@@ -123,7 +88,7 @@ if($row['Picture']!=null){
             <hr noshade="noshade" color="#E74291" />
             <table width="100%" height="108" border="0" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td width="49%" valign="top"><img src="../../images/标识符号 (1).jpg" alt="" name="" width="140" height="100" style="background-color: #EFEEE7; margin-top: 4px;" /></td>
+                    <td width="49%" valign="top"><img src="__PUBLIC__/Home/Images/标识符号 (1).jpg" alt="" name="" width="140" height="100" style="background-color: #EFEEE7; margin-top: 4px;" /></td>
                     <td width="51%" valign="top" class="content2"><span class="item3">·城市视窗<br />
             ·企业视窗<br />
             ·产品视窗<br />
@@ -135,8 +100,6 @@ if($row['Picture']!=null){
     </div>
     <div style="font: 0px/0px sans-serif;clear: both;display: block"> </div>
 </div>
-<?php
-	include('../../foot.html');
-?>
+
 </body></center>
 </html>
