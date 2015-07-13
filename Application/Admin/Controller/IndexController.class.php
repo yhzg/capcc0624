@@ -27,7 +27,7 @@ class IndexController extends Controller {
         {
             if ($password_db == md5(I('post.password')))
             {
-                $this->success('登录成功', 'Index/index');
+                $this->success('登录成功', './index');
             }
 
         }else

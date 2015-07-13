@@ -37,9 +37,11 @@
                         <legend>添加首页新闻</legend>
                             Title(标题): <input type="text" name="title" /><br />
                             Content(内容）: <br /><textarea cols="50" rows="10" name="content" ></textarea><br />
+                        <h3>----以下四项可以为空，原作者和作者至少填写一项----</h3>
+                            O_Author(原作者): <input type="text" name="o_author" /><br />
                             Author(作者): <input type="text" name="author" /><br />
-                            Editor(编辑): <input type="text" name="editor" value="此处可以为空" onfocus="value =' '" /><br />
-                            Source(来源): <input type="text" name="source" value="此处可以为空" onfocus="value =' '" /><br />
+                            Editor(编辑): <input type="text" name="editor"  /><br />
+                            Source(来源): <input type="text" name="source"  /><br />
                             Picture(上传图片): <input type="file" name="Picture" /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />
                             <input type="submit" >
                     </fieldset>

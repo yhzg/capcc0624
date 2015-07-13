@@ -24,7 +24,7 @@
                 <div  width="1070" height="415"  style="background-color: #E4E4E4">
                     <!--首页新闻的图片-->
                     <?php if(is_array($list11)): $i = 0; $__LIST__ = $list11;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a id="big_img_a" href="/capcc0624/index.php/Home/News/activities/newsid/<?php echo ($vo["newsid"]); ?>">
-                        <img id="big_img" src="/capcc0624/Public/<?php echo ($vo["picture"]); ?>" width=800 height=415 style='background-color: #99FFFF' />
+                        <img id="big_img" src="/capcc0624/Public/Uploads/<?php echo ($vo["picture"]); ?>" width=800 height=415 style='background-color: #99FFFF' />
                     </a><?php endforeach; endif; else: echo "" ;endif; ?>
                 </div>
 
@@ -40,7 +40,7 @@
             <div id="home_page_roll_demo">
             <div id="home_page_roll_img_1">
                 <!--news_active表中level=4的共18行-->
-                 <?php $__FOR_START_29045__=1;$__FOR_END_29045__=18;for($i=$__FOR_START_29045__;$i < $__FOR_END_29045__;$i+=1){ if(is_array($list12)): $i = 0; $__LIST__ = $list12;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><span id="small_img_<?php echo ($i); ?>">
+                 <?php $__FOR_START_4051__=1;$__FOR_END_4051__=18;for($i=$__FOR_START_4051__;$i < $__FOR_END_4051__;$i+=1){ if(is_array($list12)): $i = 0; $__LIST__ = $list12;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><span id="small_img_<?php echo ($i); ?>">
                             <a id="small_a_img_<?php echo ($i); ?>"  href="/capcc0624/index.php/Home/News/activities?newsid=<?php echo ($vo["newsid"]); ?>">
                                 <img id="small_real_img_<?php echo ($i); ?>" src="/capcc0624/Public/<?php echo ($vo["picture"]); ?>" width="128" height="159" style="background-color: #99FFFF" />
                             </a>
@@ -109,7 +109,7 @@
                             <td id="gpic1">
                                 <table border="0" align="center" cellpadding="0" cellspacing="0" style="float: left; width: 300px;">
                                     <!--循环输出滚动的图片-->
-                                    <?php $__FOR_START_9482__=1;$__FOR_END_9482__=8;for($i=$__FOR_START_9482__;$i < $__FOR_END_9482__;$i+=1){ ?><tr>
+                                    <?php $__FOR_START_14096__=1;$__FOR_END_14096__=8;for($i=$__FOR_START_14096__;$i < $__FOR_END_14096__;$i+=1){ ?><tr>
                                             <td height="88" valign="bottom"><img id="activity_img_<?php echo ($i); ?>" src="/capcc0624/Public/Home/Images/images_show/1_<?php echo ($i); ?>.jpg" width="300" height="80" alt="" style="background-color: #EFEEE7" /></td>
                                         </tr><?php } ?>
                                 </table>

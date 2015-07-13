@@ -66,7 +66,7 @@
     <div id="home_page_roll" style="float:left; overflow:hidden; height:145px; width:560px; margin-top:10px; margin-left:130px;">
         <div id="home_page_roll_demo">
             <div id="home_page_roll_img_1">
-                    <?php $__FOR_START_19532__=1;$__FOR_END_19532__=18;for($i=$__FOR_START_19532__;$i < $__FOR_END_19532__;$i+=1){ if(is_array($list14)): $i = 0; $__LIST__ = $list14;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><span id="small_img_<?php echo ($i); ?>">
+                    <?php $__FOR_START_521__=1;$__FOR_END_521__=18;for($i=$__FOR_START_521__;$i < $__FOR_END_521__;$i+=1){ if(is_array($list14)): $i = 0; $__LIST__ = $list14;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><span id="small_img_<?php echo ($i); ?>">
                              <a id="small_a_img_<?php echo ($i); ?>" href="news/active/?newsid=$vo.newsid">
                                 <img id="small_real_img_<?php echo ($i); ?>" src="/capcc0624/Public<?php echo ($vo["picture"]); ?>" width="110px" height="145px" />
                             </a>

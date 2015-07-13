@@ -39,7 +39,7 @@
     <div id="home_page_roll" style="float:left; overflow:hidden; height:145px; width:560px; margin-top:10px; margin-left:130px;">
     <div id="home_page_roll_demo">
     <div id="home_page_roll_img_1">
-        <?php $__FOR_START_10599__=1;$__FOR_END_10599__=7;for($i=$__FOR_START_10599__;$i < $__FOR_END_10599__;$i+=1){ if(is_array($list22)): $i = 0; $__LIST__ = $list22;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><span id="small_img_<?php echo ($i); ?>">
+        <?php $__FOR_START_30523__=1;$__FOR_END_30523__=7;for($i=$__FOR_START_30523__;$i < $__FOR_END_30523__;$i+=1){ if(is_array($list22)): $i = 0; $__LIST__ = $list22;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><span id="small_img_<?php echo ($i); ?>">
                             <a id="small_a_img_<?php echo ($i); ?>"  href="/capcc0624/index.php/Home/News/activities?newsid=<?php echo ($vo["newsid"]); ?>">
                                 <img id="small_real_img_<?php echo ($i); ?>" src="/capcc0624/Public/<?php echo ($vo["picture"]); ?>" width="180" height="135" onmouseover="setimg($i);"/>
                             </a>
@@ -103,7 +103,7 @@ button1.onmouseout=function() {MyMar_1=setInterval(Marquee_1,speed_1);}
       <tr>
       <td id="gpic1">
       <table style="float: left; width: 270px;">
-          <?php $__FOR_START_13076__=1;$__FOR_END_13076__=8;for($i=$__FOR_START_13076__;$i < $__FOR_END_13076__;$i+=1){ ?><tr>
+          <?php $__FOR_START_28248__=1;$__FOR_END_28248__=8;for($i=$__FOR_START_28248__;$i < $__FOR_END_28248__;$i+=1){ ?><tr>
                   <td height="88" valign="bottom"><img id="activity_img_<?php echo ($i); ?>" src="/capcc0624/Public/Home/Images/images_show/1_<?php echo ($i); ?>.jpg" width="300" height="80" alt="" style="background-color: #EFEEE7" /></td>
               </tr><?php } ?>
       </table>
