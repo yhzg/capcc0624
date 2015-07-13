@@ -10,9 +10,11 @@
     <script language="JavaScript" >
         function del()
         {
+            var del_id=document.getElementById('newsid');
+            document.write(del_id.innerHTML);
             if (confirm('确认删除'))
             {
-                document.location.href='delete_main_news/newsid/<?php echo ($vo["newsid"]); ?>';
+                document.location.href='delete_main_news/newsid/'+del_id.innerHTML;
             }
         }
     </script>
@@ -56,7 +58,7 @@
                             <td width="10%" align="center">操作</td>
                         </tr>
                         <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                <td align="center"><?php echo ($vo["newsid"]); ?></td>
+                                <td align="center" id="newsid"><?php echo ($vo["newsid"]); ?></td>
                                 <td align="center"><?php echo ($vo["title"]); ?></td>
                                 <td ><span style="text-align: left"><?php echo ($vo["content"]); ?></span></td>
                                 <td align="center"><?php echo ($vo["o_author"]); ?></td>
@@ -68,7 +70,9 @@
                                 <td align="center"><span><input type="submit" value="删除" onclick="del()"></span>&nbsp;<a href="Manage/edit_main_news/newsid/<{{$vo.newsid}>">编辑</a></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </table>
-
+                <div style="font-size: 15px;margin-top: 20px">
+                    <?php echo ($page); ?>
+                </div>
             </div>
         </div>
     </div>

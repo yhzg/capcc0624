@@ -59,14 +59,19 @@ class ManageController extends Controller{
     public function show_news_main_list()
     {
         $m=M('News_main');
-        $news=$m->order('NewsID DESC')->select();
-       // dump($news);
+        $count= $m->count('newsid');
+        $page= new \Think\Page($count,10);
+        $page->setConfig('theme','<b>%HEADER%</b> 当前第%NOW_PAGE%页 共%TOTAL_PAGE%页   &nbsp; %FIRST%   %UP_PAGE%    %LINK_PAGE%     %DOWN_PAGE% &nbsp;     %END%');
+        $show= $page->show();
+        $news = $m->order('newsid desc')->limit($page->firstRow.','.$page->listRows)->select();
+        //dump($show);
        // exit;
         for($i=0;$i<count($news);$i++)
         {
             $news[$i]['content']=iconv_substr($news[$i]['content'],0,30,'utf-8');
         }
         $this->assign('list',$news);
+        $this->assign('page',$show);
 
         $this->display();
 

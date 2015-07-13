@@ -10,10 +10,11 @@
     <script language="JavaScript" >
         function del()
         {
-            var newsid=getElementById(id);
+            var del_id=document.getElementById('newsid');
+            document.write(del_id.innerHTML);
             if (confirm('确认删除'))
             {
-                document.location.href='delete_main_news/newsid/'+'newsid.value';
+                document.location.href='delete_main_news/newsid/'+del_id.innerHTML;
             }
         }
     </script>
@@ -71,7 +72,9 @@
                             </tr>
                         </volist>
                     </table>
-
+                <div style="font-size: 15px;margin-top: 20px">
+                    <{$page}>
+                </div>
             </div>
         </div>
     </div>
