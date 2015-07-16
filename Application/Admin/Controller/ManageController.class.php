@@ -99,6 +99,8 @@ class ManageController extends Controller{
         $m=M('News_main');
         $where['NewsID']=I('get.newsid');
         $news=$m->where($where)->find();
+        //dump($news);
+       // exit;
         $this->assign('news',$news);
         $this->display();
 

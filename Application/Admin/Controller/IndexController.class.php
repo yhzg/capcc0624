@@ -7,7 +7,7 @@ class IndexController extends Controller {
        $username=I('session.username');
         if(!isset($username) || $username=='')
         {
-            $this->redirect(U('Index/login'));
+            $this->redirect('Admin/Index/login');
         }
     }
     public function index(){

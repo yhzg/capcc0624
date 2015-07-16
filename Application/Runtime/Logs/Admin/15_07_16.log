@@ -31,3 +31,27 @@ ERR: 非法操作:show_news_main_list
 [ 2015-07-16T10:38:21+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/show_news_main_list
 ERR: 非法操作:show_news_main_list
 
+[ 2015-07-16T12:51:54+08:00 ] ::1 /capcc0624/admin.php/capcc0624/admin.php/Index/login.html.html
+ERR: 无法加载控制器:Capcc0624
+
+[ 2015-07-16T12:52:36+08:00 ] ::1 /capcc0624/admin.php/capcc0624/admin.php/Index/login.html.html
+ERR: 无法加载控制器:Capcc0624
+
+[ 2015-07-16T12:55:52+08:00 ] ::1 /capcc0624/admin.php/capcc0624/admin.php/Index/login.html.html
+ERR: 无法加载控制器:Capcc0624
+
+[ 2015-07-16T12:55:52+08:00 ] ::1 /capcc0624/admin.php/capcc0624/admin.php/Index/login.html.html
+ERR: 无法加载控制器:Capcc0624
+
+[ 2015-07-16T12:55:53+08:00 ] ::1 /capcc0624/admin.php/capcc0624/admin.php/Index/login.html.html
+ERR: 无法加载控制器:Capcc0624
+
+[ 2015-07-16T12:55:58+08:00 ] ::1 /capcc0624/admin.php/capcc0624/admin.php/Index/login.html.html
+ERR: 无法加载控制器:Capcc0624
+
+[ 2015-07-16T12:56:56+08:00 ] ::1 /capcc0624/index.php/Admin/Index/index.php
+ERR: 非法操作:index.php
+
+[ 2015-07-16T12:58:30+08:00 ] ::1 /capcc0624/index.php/Admin/Index/index.php
+ERR: 非法操作:index.php
+
