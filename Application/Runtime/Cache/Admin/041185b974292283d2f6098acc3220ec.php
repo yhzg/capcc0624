@@ -53,7 +53,7 @@
                             <tr>
                                 <td height=123>
                                     <table height=109 cellspacing=0 cellpadding=0 align=center border=0>
-                                    <form name=form2 action='/capcc0624/admin.php/Index/doLogin' method='post'>
+                                    <form name=form2 action='/capcc0624/index.php/Admin/Index/doLogin' method='post'>
                                         <tr>
                                             <td valign=bottom align=left width=44 height=28>
                                                 <div align=right><img height=14 src="/capcc0624/Public/Admin/images/id.gif" width=43>

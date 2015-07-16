@@ -11,10 +11,20 @@
         function del(id)
         {
             var del_id=id;
-            document.write(del_id);
-            if (confirm('确认删除'))
+            //document.write(del_id);
+            if (confirm('确认删除?'))
             {
                 document.location.href='delete_main_news/newsid/'+del_id;
+            }
+        }
+
+        function edit(id)
+        {
+            var del_id=id;
+            //document.write(del_id);
+            if (confirm('确认修改?'))
+            {
+                document.location.href='edit_main_news/newsid/'+del_id;
             }
         }
     </script>
@@ -67,7 +77,7 @@
                                 <td align="center"><?php echo ($vo["time"]); ?></td>
                                 <td align="center"><?php echo ($vo["browsenumber"]); ?></td>
                                 <td align="center"><?php echo ($vo["source"]); ?></td>
-                                <td align="center"><span><input type="submit" value="删除" onclick="del(<?php echo ($vo["newsid"]); ?>)"></span>&nbsp;<a href="Manage/edit_main_news/newsid/<{{$vo.newsid}>">编辑</a></td>
+                                <td align="center"><span><input type="submit" value="删除" onclick="del(<?php echo ($vo["newsid"]); ?>)"></span>&nbsp;<span><input type="submit" value="编辑" onclick="edit(<?php echo ($vo["newsid"]); ?>)"></span></td>
                             </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                     </table>
                 <div style="font-size: 15px;margin-top: 20px">

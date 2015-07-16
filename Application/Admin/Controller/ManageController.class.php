@@ -49,15 +49,16 @@ class ManageController extends Controller{
                 $this->error('添加失败！');
             }else
             {
-                $this->success('添加成功！','show_news_main_list');
+                $this->success('添加成功！','show_main_news_list');
             }
         }
 
 
     }
 
-    public function show_news_main_list()
+    public function show_main_news_list()
     {
+        //分页显示，每页10条
         $m=M('News_main');
         $count= $m->count('newsid');
         $page= new \Think\Page($count,10);
@@ -80,18 +81,26 @@ class ManageController extends Controller{
     public function delete_main_news()
     {
         $m=M('News_main');
-        $whewe['newsid']=I('newsid');
-        echo I('newsid');
-        exit;
-        $m->where('$where')->delete();
+        $where['NewsID']=I('get.newsid');
+        $res=$m->where($where)->delete();
 
-        if($m>0)
+        if($res>0)
         {
-            $this->success('删除成功!','show_news_main_list');
+            $this->success('删除成功!',U('Manage/show_main_news_list'));
         }else
         {
             $this->error('删除失败！');
         }
+
+    }
+    public function edit_main_news()
+    {
+
+        $m=M('News_main');
+        $where['NewsID']=I('get.newsid');
+        $news=$m->where($where)->find();
+        $this->assign('news',$news);
+        $this->display();
 
     }
 }

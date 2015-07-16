@@ -1,0 +1,33 @@
+[ 2015-07-16T09:12:50+08:00 ] ::1 /capcc0624/index.php/Admin/Index/U(index)
+ERR: 非法操作:U(index)
+
+[ 2015-07-16T09:16:24+08:00 ] ::1 /capcc0624/index.php/Admin/Index/U(index)
+ERR: 非法操作:U(index)
+
+[ 2015-07-16T09:20:44+08:00 ] ::1 /capcc0624/index.php/Admin/Index/U('Manage/show_news_main_list')
+ERR: 非法操作:U('Manage
+
+[ 2015-07-16T09:21:02+08:00 ] ::1 /capcc0624/index.php/Admin/Index/U('Manage/show_news_main_list')
+ERR: 非法操作:U('Manage
+
+[ 2015-07-16T09:23:14+08:00 ] ::1 /capcc0624/index.php/Admin/Index/%7B:U('Manage/show_news_main_list')%7D
+ERR: 非法操作:{:U('Manage
+
+[ 2015-07-16T09:24:05+08:00 ] ::1 /capcc0624/index.php/Admin/Index/%7B:U('Manage/show_news_main_list')%7D
+ERR: 非法操作:{:U('Manage
+
+[ 2015-07-16T09:30:21+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/news_main_list.html%E9%A6%96%E9%A1%B5%E6%96%B0%E9%97%BB%E5%88%97%E8%A1%A8%3C/a
+ERR: 非法操作:news_main_list.html首页新闻列表
+
+[ 2015-07-16T09:30:34+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/news_main_list.html
+ERR: 非法操作:news_main_list
+
+[ 2015-07-16T10:29:43+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/delete_main_news/newsid/4
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '$where' inconnu dans where clause
+
+[ 2015-07-16T10:37:02+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/show_news_main_list
+ERR: 非法操作:show_news_main_list
+
+[ 2015-07-16T10:38:21+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/show_news_main_list
+ERR: 非法操作:show_news_main_list
+
