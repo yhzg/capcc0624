@@ -1,0 +1,12 @@
+[ 2015-07-09T09:20:04+08:00 ] ::1 /capcc0624/Admin/login
+ERR: 无法加载控制器:Login
+
+[ 2015-07-09T09:20:14+08:00 ] ::1 /capcc0624/Admin/Index/Login
+ERR: 非法操作:Login
+
+[ 2015-07-09T15:10:36+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/index_news
+ERR: SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'Time' at row 1
+
+[ 2015-07-09T15:11:37+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/index_news
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'Picture' cannot be null
+

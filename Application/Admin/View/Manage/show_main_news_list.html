@@ -1,0 +1,97 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>运河网后台管理系统 </title>
+    <js href="__PUBLIC__/Admin/jquery.js" />
+    <load href="__PUBLIC__/Admin/index.css" />
+    <load href="__PUBLIC__/Admin/manage.css" />
+    <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
+    <script language="JavaScript" >
+        function del(id)
+        {
+            var del_id=id;
+            //document.write(del_id);
+            if (confirm('确认删除?'))
+            {
+                document.location.href='delete_main_news/newsid/'+del_id;
+            }
+        }
+
+        function edit(id)
+        {
+            var del_id=id;
+            //document.write(del_id);
+            if (confirm('跳转至编辑窗口？'))
+            {
+                document.location.href='edit_main_news/newsid/'+del_id;
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="mainDiv">
+    <div id="topDiv">
+        <div id="tmenu"><ul>
+            <li ><a href="">首页图片</a></li>
+            <li ><a href="#">新闻处理</a></li>
+            <li ><a href="#">菜单</a></li>
+            <li ><a href="#">菜单</a></li>
+            <li ><a href="#">菜单</a></li>
+        </ul></div></div>
+    <div id="centerDiv">
+        <div id="left">
+            <div id="lhead">管理菜单</div>
+            <ul>
+                <li ><a href=<{:U('Index/index')}>>添加首页新闻</a></li>
+                <li ><a href=<{:U('Manage/show_news_main_list')}>>首页新闻列表</a></li>
+                <li ><a href="#">菜单  3</a></li>
+                <li ><a href="#">菜单  4</a></li>
+                <li ><a href="#">菜单  5</a></li>
+                <li ><a href="#">菜单  6</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:首页新闻列表</div>
+            <div id="form">
+                    <table width="100%" style="text-align: center" >
+                        <tr id="tr1" >
+                            <td width="5%" align="center">编号</td>
+                            <td width="15%" align="center">标题</td>
+                            <td width="31%" align="center">内容</td>
+                            <td width="5%" align="center">原作者</td>
+                            <td width="5%" align="center">作者</td>
+                            <td width="5%" align="center">编辑</td>
+                            <td width="8%" align="center">上传时间</td>
+                            <td width="8%" align="center">点击量</td>
+                            <td width="8%" align="center">来源</td>
+                            <td width="10%" align="center">操作</td>
+                        </tr>
+                        <volist name="list" id="vo">
+                            <tr>
+                                <td align="center" id="newsid"><{$vo.newsid}></td>
+                                <td align="center"><{$vo.title}></td>
+                                <td ><span style="text-align: left"><{$vo.content}></span></td>
+                                <td align="center"><{$vo.o_author}></td>
+                                <td align="center"><{$vo.author}></td>
+                                <td align="center"><{$vo.editor}></td>
+                                <td align="center"><{$vo.time}></td>
+                                <td align="center"><{$vo.browsenumber}></td>
+                                <td align="center"><{$vo.source}></td>
+                                <td align="center"><span><input type="submit" value="删除" onclick="del(<{$vo.newsid}>)"></span>&nbsp;<span><input type="submit" value="编辑" onclick="edit(<{$vo.newsid}>)"></span></td>
+                            </tr>
+                        </volist>
+                    </table>
+                <div style="font-size: 15px;margin-top: 20px">
+                    <{$page}>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottomDiv"></div>
+</div>
+<script language="javascript">
+    $("#test1").toggle(function(){$("#test").slideDown()},function(){$("#test").slideUp()})
+</script>
+</body>
+</html>

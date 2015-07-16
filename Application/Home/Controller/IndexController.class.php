@@ -6,10 +6,15 @@ class IndexController extends Controller {
             //直接调用页面  无需存在对应的方法
          $this->display('Public:head');
 
+         $m=M('News_main');
+         $news=$m->order('NewsID DESC')->limit('1')->select();
+         $this->assign('list11',$news);
+
+
          $res1= M('News_active');
-         $news11=$res1->where('level=10')->select();
-         $news12=$res1->where('level=4')->order('NewsID DESC')->limit('18')->select();
-         $this->assign('list11',$news11);
+        // $news11=$res1->order('NewsID desc')->select();
+         $news12=$res1->order('NewsID DESC')->limit('18')->select();
+
          $this->assign('list12',$news12);
 
          $res2=M('main_page');

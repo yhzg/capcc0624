@@ -7,7 +7,7 @@ class IndexController extends Controller {
        $username=I('session.username');
         if(!isset($username) || $username=='')
         {
-            $this->redirect('Index/login');
+            $this->redirect('Admin/Index/login');
         }
     }
     public function index(){
@@ -27,7 +27,7 @@ class IndexController extends Controller {
         {
             if ($password_db == md5(I('post.password')))
             {
-                $this->success('登录成功', 'Index/index');
+                $this->success('登录成功', U('index'));
             }
 
         }else
