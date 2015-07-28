@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Home/Css/1home_page.css" />
     <script type="text/javascript" src="/capcc0624/Public/Home/Js/head_bottom.js"></script>
     <script type="text/javascript" src="/capcc0624/Public/Home/Js/resize_picture.js"></script>
+    <script type="text/javascript" src="/capcc0624/Public/jq/jquery-1.10.2.min.js"></script>
    </head>
 <center><body>
 
@@ -19,6 +20,8 @@
                 <td width="30%"  valign="center" style="padding-top:25px;"><img src="/capcc0624/Public/Home/Images/合力共建.jpg" alt="" width="400" height="200" onload="AutoResizeImage(400,200,this)" /></td>
                 <td width="14%" align="right" class="helpcenter">帮助中心</td>
                 <td width="9%" align="center" class="helpcenter">联系客服</td>
+                <?php
+ $username=$_SESSION['username']; if(!empty($username)) { echo '<td width="9%" align="center" class="helpcenter">欢迎您'.$username.'</td>'; echo '<td width="9%" align="center" class="helpcenter"><a href="/capcc0624/index.php/Home/Login/logout">注销</a></td>'; }else { echo '<td width="9%" align="center" class="helpcenter"><a href="/capcc0624/index.php/Home/Login/register">注册</a></td>'; echo'<td width="9%" align="center" class="helpcenter"><a href="/capcc0624/index.php/Home/Login/login">登录</a></td>'; } ?>
                 <!-- <td width="6%" align="right"><form id="form1" name="form1" method="post" action="">
                   <input type="image" name="imageField" id="imageField" src="images/logining-button.png" />
                 </form></td>
@@ -50,7 +53,7 @@
                         <td align="center">|</td>
                         <td align="center" onmouseover="showsub(8);"> <a style="color:inherit;" href="/capcc0624/index.php/Home/Activity">活动</a></td>
                         <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(9);"><a style="color:inherit;" href="/capcc0624/index.php/Home/Forum"">论坛</a></td>
+                        <td align="center" onmouseover="showsub(9);"><a style="color:inherit;" href="http://localhost/discuz" target="_blank">论坛</a></td>
                         <td align="center">|</td>
                     </tr>
                 </table></td>
@@ -81,4 +84,6 @@
     </div>
 </div>
 </body></center>
+
+
 </html>

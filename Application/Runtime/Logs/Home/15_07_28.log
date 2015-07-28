@@ -1,0 +1,1575 @@
+[ 2015-07-28T09:11:08+08:00 ] ::1 /capcc0723/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2015-07-28T09:11:11+08:00 ] ::1 /capcc0723/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000640s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000728s ]
+
+[ 2015-07-28T09:11:15+08:00 ] ::1 /capcc0723/index.php/Home/Login/check_reg_name?name=3333
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `user` WHERE ( username=3333 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000734s ]
+
+[ 2015-07-28T09:11:31+08:00 ] ::1 /capcc0723/index.php/Home/Login/check_vcode?vcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000963s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001109s ]
+
+[ 2015-07-28T09:11:51+08:00 ] ::1 /capcc0723/index.php/Home/Login/check_vcode?vcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001326s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000798s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000911s ]
+
+[ 2015-07-28T09:12:36+08:00 ] ::1 /capcc0723/index.php/Home/Login/check_vcode?vcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003024s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003250s ]
+
+[ 2015-07-28T09:17:13+08:00 ] ::1 /capcc0723/index.php/Home/Login/check_vcode?vcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2015-07-28T09:17:15+08:00 ] ::1 /capcc0723/index.php/Home/Login/check_vcode?vcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000690s ]
+
+[ 2015-07-28T09:53:49+08:00 ] ::1 /capcc0624/index.php/Home/bootstrap/css/bootstrap.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2015-07-28T09:53:49+08:00 ] ::1 /capcc0624/index.php/Home/Login/register.css
+ERR: 非法操作:register.css
+
+[ 2015-07-28T10:03:25+08:00 ] ::1 /capcc0624/index.php/Home/bootstrap/css/bootstrap.css
+ERR: 无法加载控制器:Bootstrap
+
+[ 2015-07-28T10:03:25+08:00 ] ::1 /capcc0624/index.php/Home/bootstrap/js/jquery-1.11.3.min.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2015-07-28T10:03:25+08:00 ] ::1 /capcc0624/index.php/Home/Login/login.css
+ERR: 非法操作:login.css
+
+[ 2015-07-28T10:03:25+08:00 ] ::1 /capcc0624/index.php/Home/bootstrap/js/bootstrap.js
+ERR: 无法加载控制器:Bootstrap
+
+[ 2015-07-28T10:16:06+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2015-07-28T10:16:15+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T10:16:30+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000935s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001656s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T10:17:45+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000733s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000822s ]
+
+[ 2015-07-28T10:17:49+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=4444
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000775s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001200s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=4444 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000636s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000722s ]
+
+[ 2015-07-28T10:24:32+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000696s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000792s ]
+
+[ 2015-07-28T10:24:43+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2015-07-28T10:26:17+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000663s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000750s ]
+
+[ 2015-07-28T10:27:09+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000664s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2015-07-28T10:27:41+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000611s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000962s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000662s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2015-07-28T10:30:30+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2015-07-28T10:30:58+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000687s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-07-28T10:31:33+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000682s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2015-07-28T10:32:52+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000658s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2015-07-28T10:33:23+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000731s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2015-07-28T10:43:36+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001047s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2015-07-28T10:43:46+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001024s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000778s ]
+
+[ 2015-07-28T10:44:04+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1234
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `user` WHERE ( username=1234 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000698s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000785s ]
+
+[ 2015-07-28T10:55:21+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2015-07-28T10:58:29+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000728s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2015-07-28T10:58:29+08:00 ] ::1 /capcc0624/index.php/Home/Login/PUBLIC+'/Home/Images/login/check_ok.ico'/
+ERR: 非法操作:PUBLIC+'
+
+[ 2015-07-28T11:04:48+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000667s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2015-07-28T11:05:07+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=1123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000676s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-07-28T11:05:08+08:00 ] ::1 /capcc0624/index.php/Home/Login/PUBLIC+'/Home/Images/login/check_ok.ico'/
+ERR: 非法操作:PUBLIC+'
+
+[ 2015-07-28T11:10:01+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000690s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-07-28T11:10:01+08:00 ] ::1 /capcc0624/index.php/Home/Login/PUBLIC+%22/Home/Images/login/check_ok.ico%22
+ERR: 非法操作:PUBLIC+"
+
+[ 2015-07-28T11:14:46+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001205s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2015-07-28T11:14:46+08:00 ] ::1 /capcc0624/index.php/Home/Login/url+'/Home/Images/login/check_ok.ico'/
+ERR: 非法操作:url+'
+
+[ 2015-07-28T11:15:21+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001427s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000644s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000731s ]
+
+[ 2015-07-28T11:16:39+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000675s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000765s ]
+
+[ 2015-07-28T11:20:14+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123%C2%B7
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '123·' inconnu dans where clause
+
+[ 2015-07-28T11:20:18+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000660s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2015-07-28T11:20:23+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123%E3%80%82
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '123。' inconnu dans where clause
+
+[ 2015-07-28T11:20:31+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123%E3%80%82
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '123。' inconnu dans where clause
+
+[ 2015-07-28T11:21:15+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000725s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2015-07-28T11:21:21+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000706s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001179s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0118s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001258s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001372s ]
+
+[ 2015-07-28T11:21:26+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=123. ) LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2015-07-28T11:21:29+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123%E3%80%82
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001247s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '123。' inconnu dans where clause
+
+[ 2015-07-28T11:21:35+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123. ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000709s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000797s ]
+
+[ 2015-07-28T11:21:39+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123%E3%80%81
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000677s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '123、' inconnu dans where clause
+
+[ 2015-07-28T11:23:03+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123%E3%80%81
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '123、' inconnu dans where clause
+
+[ 2015-07-28T11:23:07+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123%E3%80%81%EF%BC%8C%EF%BC%8C
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '123、，，' inconnu dans where clause
+
+[ 2015-07-28T11:23:12+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123%E3%80%81%EF%BC%8C%EF%BC%8C
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002702s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0067s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '123、，，' inconnu dans where clause
+
+[ 2015-07-28T11:24:24+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123%E3%80%81%EF%BC%8C%EF%BC%8C
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000958s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '123、，，' inconnu dans where clause
+
+[ 2015-07-28T11:25:26+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=suyu
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'suyu' inconnu dans where clause
+
+[ 2015-07-28T11:25:31+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=suyu
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'suyu' inconnu dans where clause
+
+[ 2015-07-28T11:25:35+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001266s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2015-07-28T12:26:03+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000642s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2015-07-28T12:26:08+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=4455SS
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '4455SS' inconnu dans where clause
+
+[ 2015-07-28T12:26:10+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=4455SS
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0041s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '4455SS' inconnu dans where clause
+
+[ 2015-07-28T12:26:14+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=4455
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001072s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=4455 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000697s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000784s ]
+
+[ 2015-07-28T12:26:16+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=4455222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `user` WHERE ( username=4455222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000763s ]
+
+[ 2015-07-28T12:26:20+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=SFD
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001176s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'SFD' inconnu dans where clause
+
+[ 2015-07-28T12:26:46+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=SFD
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'SFD' inconnu dans where clause
+
+[ 2015-07-28T12:40:12+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T12:42:41+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001423s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000661s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000749s ]
+
+[ 2015-07-28T12:42:46+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=dtfly
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001092s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'dtfly' inconnu dans where clause
+
+[ 2015-07-28T12:42:53+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000671s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-07-28T12:43:19+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000670s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000747s ]
+
+[ 2015-07-28T12:43:43+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=admin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'admin' inconnu dans where clause
+
+[ 2015-07-28T12:43:56+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=aaaa
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'aaaa' inconnu dans where clause
+
+[ 2015-07-28T12:43:58+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=aaaa
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'aaaa' inconnu dans where clause
+
+[ 2015-07-28T12:44:01+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000653s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000741s ]
+
+[ 2015-07-28T12:44:09+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000634s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000723s ]
+
+[ 2015-07-28T12:45:20+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002391s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000656s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000745s ]
+
+[ 2015-07-28T12:46:32+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2015-07-28T12:47:27+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001056s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001931s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000755s ]
+
+[ 2015-07-28T12:49:15+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003182s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001316s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2015-07-28T12:53:12+08:00 ] ::1 /capcc0624/index.php/Home/Login/Common/code
+ERR: 非法操作:Common
+
+[ 2015-07-28T13:15:57+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0035s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T13:43:11+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000566s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000655s ]
+
+[ 2015-07-28T13:43:18+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=8888
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=8888 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2015-07-28T13:43:22+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssyys
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssyys' inconnu dans where clause
+
+[ 2015-07-28T13:58:20+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000671s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000674s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-07-28T13:58:28+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0006s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000935s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2015-07-28T13:58:33+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2015-07-28T13:58:51+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000919s ]
+
+[ 2015-07-28T13:58:55+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T13:58:58+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001491s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002356s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T13:59:01+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000972s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000739s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000825s ]
+
+[ 2015-07-28T13:59:03+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001110s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002025s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001320s ]
+
+[ 2015-07-28T13:59:17+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000775s ]
+
+[ 2015-07-28T13:59:20+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000650s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000771s ]
+
+[ 2015-07-28T13:59:23+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=sss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000641s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'sss' inconnu dans where clause
+
+[ 2015-07-28T14:00:11+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=sss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'sss' inconnu dans where clause
+
+[ 2015-07-28T14:00:28+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=SSS
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'SSS' inconnu dans where clause
+
+[ 2015-07-28T14:00:34+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=%E7%9A%84%E6%B2%99%E5%8F%91%E4%B8%8A
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '的沙发上' inconnu dans where clause
+
+[ 2015-07-28T14:00:36+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=%E7%9A%84%E6%B2%99%E5%8F%91%E4%B8%8A11
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000664s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001060s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '的沙发上11' inconnu dans where clause
+
+[ 2015-07-28T14:00:39+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000680s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000769s ]
+
+[ 2015-07-28T14:00:42+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001583s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002510s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:03:50+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002247s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:04:34+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001387s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:04:36+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000665s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000753s ]
+
+[ 2015-07-28T14:04:39+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001118s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000639s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000727s ]
+
+[ 2015-07-28T14:04:47+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=%E5%95%8A%E5%95%8A%E5%95%8A%E5%95%8A
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '啊啊啊啊' inconnu dans where clause
+
+[ 2015-07-28T14:06:28+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000657s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000670s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-07-28T14:06:33+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:06:36+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:06:42+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=sdtsiud
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'sdtsiud' inconnu dans where clause
+
+[ 2015-07-28T14:07:10+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:07:12+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:07:15+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000631s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000721s ]
+
+[ 2015-07-28T14:07:19+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000621s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2015-07-28T14:07:22+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=5555
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000653s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `user` WHERE ( username=5555 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2015-07-28T14:07:27+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001045s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:07:30+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001632s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000627s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2015-07-28T14:07:33+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:07:37+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=sdtsiud
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'sdtsiud' inconnu dans where clause
+
+[ 2015-07-28T14:07:39+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=sdtsiud
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'sdtsiud' inconnu dans where clause
+
+[ 2015-07-28T14:09:55+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ddd
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000690s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001120s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0035s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ddd' inconnu dans where clause
+
+[ 2015-07-28T14:10:23+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001300s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:10:24+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000718s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001113s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:10:32+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000703s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:10:34+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:12:37+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001077s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:12:50+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000937s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000630s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000720s ]
+
+[ 2015-07-28T14:12:57+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:22:59+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001287s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:23:00+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001125s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:23:01+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000604s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0030s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:23:02+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000753s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001851s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0032s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T14:32:19+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2015-07-28T14:32:23+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001542s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0058s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:33:26+08:00 ] ::1 /capcc0624/index.php/Home/Common/code
+ERR: 非法操作:code
+
+[ 2015-07-28T14:33:28+08:00 ] ::1 /capcc0624/index.php/Home/Common/code/0.6763261170126498
+ERR: 非法操作:code
+
+[ 2015-07-28T14:33:29+08:00 ] ::1 /capcc0624/index.php/Home/Common/code/0.6763261170126498/0.059059347258880734
+ERR: 非法操作:code
+
+[ 2015-07-28T14:35:23+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=1111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000867s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001308s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001641s ]
+
+[ 2015-07-28T14:35:26+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=sss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000872s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0036s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'sss' inconnu dans where clause
+
+[ 2015-07-28T14:35:42+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=2222
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `user` WHERE ( username=2222 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000678s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000783s ]
+
+[ 2015-07-28T14:35:52+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003192s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `user` WHERE ( username=123 ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001745s ]
+
+[ 2015-07-28T14:35:56+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=ssss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002310s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0073s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:36:40+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=sss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001104s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0075s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'sss' inconnu dans where clause
+
+[ 2015-07-28T14:36:42+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name?name=sss
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003653s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0097s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'sss' inconnu dans where clause
+
+[ 2015-07-28T14:47:54+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0053s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000939s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001040s ]
+
+[ 2015-07-28T14:47:56+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `user` WHERE ( username=11111 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000809s ]
+
+[ 2015-07-28T14:47:59+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001854s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0048s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'sss' inconnu dans where clause
+
+[ 2015-07-28T14:48:12+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE ( username=232 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000695s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-07-28T14:49:34+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=djtq
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001722s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001845s ]
+
+[ 2015-07-28T14:49:39+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001215s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0037s ]
+SQL: SELECT * FROM `user` WHERE ( username=232 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000813s ]
+
+[ 2015-07-28T14:49:43+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002073s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '232ssss' inconnu dans where clause
+
+[ 2015-07-28T14:49:46+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001084s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0052s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T14:50:21+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=djtq
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000631s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000761s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000880s ]
+
+[ 2015-07-28T14:50:29+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=4rwt
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000673s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000598s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2015-07-28T15:02:37+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002346s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0078s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T15:03:13+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000719s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000815s ]
+
+[ 2015-07-28T15:03:16+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001526s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0034s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T15:03:50+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'admin' inconnu dans where clause
+
+[ 2015-07-28T15:04:11+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0033s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'AAAA' inconnu dans where clause
+
+[ 2015-07-28T15:04:55+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002245s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `user` WHERE ( username=3333 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000756s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2015-07-28T15:09:53+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'cccc' inconnu dans where clause
+
+[ 2015-07-28T15:10:26+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001557s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002592s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0042s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'dddd' inconnu dans where clause
+
+[ 2015-07-28T15:10:38+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0037s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'dddd' inconnu dans where clause
+
+[ 2015-07-28T15:10:58+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001997s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003188s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0044s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'DDDD' inconnu dans where clause
+
+[ 2015-07-28T15:11:31+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'DDDD' inconnu dans where clause
+
+[ 2015-07-28T15:14:22+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0104s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'DDDD' inconnu dans where clause
+
+[ 2015-07-28T15:18:36+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003686s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0071s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'dddd' inconnu dans where clause
+
+[ 2015-07-28T15:25:41+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000662s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001085s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0051s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ddd' inconnu dans where clause
+
+[ 2015-07-28T15:33:43+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001051s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `user` WHERE ( username=1234 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000702s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000793s ]
+
+[ 2015-07-28T15:33:49+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2015-07-28T15:33:54+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0048s ]
+SQL: SELECT * FROM `user` WHERE ( username=8888 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001200s ]
+
+[ 2015-07-28T15:34:55+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002989s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `user` WHERE ( username=1234 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000755s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000853s ]
+
+[ 2015-07-28T15:37:02+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `user` WHERE ( username=1234 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000765s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000859s ]
+
+[ 2015-07-28T15:47:37+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0054s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0005s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000732s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000829s ]
+
+[ 2015-07-28T15:47:42+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0086s ]
+SQL: SELECT * FROM `user` WHERE ( username=1112 ) LIMIT 1   [ RunTime:0.0004s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000751s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000847s ]
+
+[ 2015-07-28T15:47:46+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000825s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0038s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T15:47:49+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002043s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T15:47:51+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004949s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0087s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T15:49:00+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000685s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0047s ]
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ 'ssss' inconnu dans where clause
+
+[ 2015-07-28T15:49:03+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `user` WHERE ( username=1111 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000759s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000855s ]
+
+[ 2015-07-28T15:49:06+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002391s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `user` WHERE ( username=5555 ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000773s ]
+
+[ 2015-07-28T15:50:58+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001643s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `user` WHERE ( username=5555 ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001192s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001329s ]
+
+[ 2015-07-28T15:51:21+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001156s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001381s ]
+
+[ 2015-07-28T15:53:01+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001054s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `user` WHERE ( username=5555 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002681s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003112s ]
+
+[ 2015-07-28T15:53:25+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=vxuw
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001359s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001191s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2015-07-28T15:53:40+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=vxuw
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000936s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001306s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001456s ]
+
+[ 2015-07-28T15:53:46+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=arib
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000580s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000680s ]
+
+[ 2015-07-28T15:53:59+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=arib
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001666s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002959s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006523s ]
+
+[ 2015-07-28T15:54:24+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=arib
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015553s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001518s ]
+
+[ 2015-07-28T15:54:30+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_vcode?vcode=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003515s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000686s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000860s ]
+
+[ 2015-07-28T15:54:50+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001704s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0043s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+
+[ 2015-07-28T15:54:52+08:00 ] ::1 /capcc0624/index.php/Home/Login/check_reg_name
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001374s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0068s ]
+ERR: SQLSTATE[42000]: Syntax error or access violation: 1064 Erreur de syntaxe près de ') LIMIT 1' à la ligne 1
+

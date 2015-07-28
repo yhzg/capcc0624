@@ -13,4 +13,5 @@ return array(
     'SHOW_PAGE_TRACE'=>TRUE,
     //'LAYOUT_ON'=>true,
     'TAGLIB_PRE_LOAD'    =>    'html',
+
 );

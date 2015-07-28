@@ -29,6 +29,10 @@ class ManageController extends Controller{
         {// 上传成功
             //$this->success('上传成功！');
             $m=M('News_main');
+            //接收隐藏域传递的值
+            //如果存在，说明是编辑页面过来的
+            // 如果不存在，说明是添加页面过来的
+            $newsid=I('nid');
 
             $data=array(
                 'Title'=>I('title'),
@@ -40,11 +44,15 @@ class ManageController extends Controller{
                 'Source'=>I('source'),
                 'Picture'=>str_replace('./','',$info['Picture']['savepath']).$info['Picture']['savename']
             );
+            if($newsid)
+            {
+                $where['NewsID']=$newsid;
+                $res=$m->where($where)->save($data);
+            }else{
+                $res=$m->add($data);
+            }
 
-
-
-            $m->add($data);
-            if(!isset($m))
+            if($res == false)
             {
                 $this->error('添加失败！');
             }else

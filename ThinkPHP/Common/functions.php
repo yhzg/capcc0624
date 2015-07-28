@@ -1548,3 +1548,9 @@ function think_filter(&$value){
 function in_array_case($value,$array){
     return in_array(strtolower($value),array_map('strtolower',$array));
 }
+//验证码检测
+function check_verify($code, $id = "")
+{
+    $verify = new \Think\Verify();
+    return $verify->check($code, $id);
+}

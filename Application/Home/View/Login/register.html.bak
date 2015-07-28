@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <js href="__PUBLIC__/jq/jquery-1.10.2.min.js" />
+    <js href="__PUBLIC__/Home/Js/reg.js" />
+</head>
+<body>
+<form action="check_register" method="post">
+    <!--ajax判断用户名是否已注册，两次密码是否一致  ajax.js在Js文件夹下-->
+    <div>
+        注册<br />
+        用户名:<input type="text" name="username"id="focusedInput" /><span id="checkname"></span><br />
+        密　码:<input type="password" name="password" id="pw1"/><br />
+        确认密码:<input type="password" name="repassword" id="pw2" /><span id="checkpw"></span><br />
+        邮箱:<input type="text" name="email" id="email" /><span id="checkemail"></span><br />
+        验证码：<input type='text' name="vcode" id="vcode" /><span id="checkvcode"></span><br />
+        <img src="../Common/verify_code" onclick='this.src=this.src+"/"+Math.random()' alt='验证码' title='点击刷新'><br />
+        <input type="submit" value="注册" id="submit"><br />
+        <a href="login">立即登陆</a>
+    </div>
+</form>
+</body>
+</html>

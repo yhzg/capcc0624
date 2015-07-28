@@ -1,0 +1,73 @@
+@charset "utf-8";
+.up_left {
+	font-family: "黑体";
+	font-size: 25px;
+	color: #FFF;
+
+}
+.up_right {
+	font-family: "宋体";
+	font-size: 16px;
+	color: #FFF;
+
+}
+
+.title1 {
+	font-family: "黑体";
+	font-size: 22px;
+	line-height: 27px;
+}
+
+.body_left{
+	margin-left: 8%; 
+	margin-top: 11%; 
+}
+
+.body_right{
+	
+	margin-left: 35%; 
+	margin-top: 7.7%; 
+	width: 444px; 
+	background-image: url(../bootstrap/image/login_bg.png); 
+	height: 450px;	
+}
+
+.remember_code{
+	font-family: '宋体'; font-size: 16px; line-height: 30px;
+}
+
+#body_right_center{
+  float: left;
+	margin-top: 10%; 
+	margin-left: 15%;
+}
+
+#username{
+	width: 310px;
+	height: 33px; 
+	font-family: '宋体'; 
+	font-size: 18px; 
+	color: #999;	
+}
+
+#code{
+	width: 310px;
+	height: 33px; 
+	font-family: '宋体'; 
+	font-size: 18px; 
+	color: #999;	
+}
+
+
+.submit{
+	width: 310px; 
+	height: 40px; 
+	background-color: #E74291; 
+	font-size: 23px; 
+	font-family: '黑体'; 
+	color: #FFF; 
+	border: 0;
+}
+
+
+
