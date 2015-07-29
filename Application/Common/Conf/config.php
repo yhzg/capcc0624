@@ -12,6 +12,6 @@ return array(
     'DB_PREFIX'=>'',
     'SHOW_PAGE_TRACE'=>TRUE,
     //'LAYOUT_ON'=>true,
-    'TAGLIB_PRE_LOAD'    =>    'html',
-
+    'MODULE_ALLOW_LIST'    =>    array('Home','Admin'),
+    'DEFAULT_MODULE'       =>    'Home',  // 默认模块
 );

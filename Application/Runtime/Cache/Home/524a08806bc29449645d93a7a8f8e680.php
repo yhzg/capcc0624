@@ -42,12 +42,12 @@ body {
 	  		</div>
 	  		
 	  		<div class="col-md-5 body_right">				
-	  					<!--table width="390" border="0" align="right" cellpadding="0" cellspacing="0" style="margin-top: 4%;">
+	  			<!--		<table width="390" border="0" align="right" cellpadding="0" cellspacing="0" style="margin-top: 4%;">
 	            	<tr>
 	     						<td align="left" class="up_left">注册</td>
 	     						<td width="51%" align="left" valign="bottom" class="up_right">已有中国运河网账号 登陆</td>
 	   						</tr>
-	 						</table-->
+	 						</table>-->
 	 				
 	 					<div class="col-md-7 ">
 	   					<h2 class="up_left" >用户注册</h2>
@@ -70,6 +70,9 @@ body {
 	          						    <label class="control-label" for="code"><h3><strong>密码:</strong></h3></label><br />
 				    						<input class="input-lg " id="pw1" name='password'type="password" placeholder=''>
                                     </div>
+                                    <div>
+                                        <span id="checkpwd1"></span>
+                                    </div>
 
 	    							<div class="control-group" >
 	         							 <!-- 确认密码 -->
@@ -78,7 +81,7 @@ body {
 				    						    <input class="input-lg" id="pw2" name='repassword' type="password" placeholder=''>
 	          					         </div>
                                             <div>
-                                                <span id="checkpwd"></span>
+                                                <span id="checkpwd2"></span>
                                             </div>
 	        						</div>
 
@@ -118,12 +121,13 @@ body {
 	            					
 	        						    <div id="agreement">《中国运河网用户协议》</div>
 											</div>
+                                    <div style="background:yellow">已经有运河网账号？<a href="login">直接登录</a></div>
 	              </fieldset>
 	            </form>
 	        <!--/div-->
 	          </div>  		 
 	  		 </div>
-	  			  	
+
 	  		</div>
 	  	</div>
 	 	</div>

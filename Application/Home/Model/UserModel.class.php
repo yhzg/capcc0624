@@ -17,20 +17,16 @@ class UserModel extends Model {
         array('password','6,20','密码格式不正确',1,'length'), // 密码长度为6~20位
         array('repassword','password','确认密码不正确',0,'confirm'), // 验证确认密码是否和密码一致
         array('email','email','邮箱格式不正确'), // 内置正则验证邮箱
+        array('email','','此邮箱已被注册！',0,'unique',1), // 在新增的时候验证emial字段是否唯一
         array('vcode','require','验证码必须！'), //验证码是否为空
         //array('vcode','check_vcode','验证码错误！',0,'callback'), //使用check_verify方法进行验证
         );
 
-/*    public function check_vcode($vcode)
-    {
+    protected $_auto = array (
 
-        if(check_verify($vcode))
-        {
-            return true;
-        }else
-        {
-            return false;
-        }
-    }*/
+        array('password','md5',3,'function') , // 对password字段在新增和编辑的时候使md5函数处理
+        //array('name','getName',3,'callback'), // 对name字段在新增和编辑的时候回调getName方法
+        //array('update_time','time',2,'function'), // 对update_time字段在更新的时候写入当前时间戳
+        );
 
     }

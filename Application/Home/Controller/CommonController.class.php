@@ -8,7 +8,6 @@
 
 namespace Home\Controller;
 
-
 use Think\Controller;
 use Think\Model;
 use Think\Verify;
@@ -21,7 +20,7 @@ class CommonController extends Controller {
             'length'	=> 4,
            // 'fontSize' =>50,
             'useNoise' => false
-    );
+        );
         $Verify = new \Think\Verify($config);
         $Verify->entry();
     }
