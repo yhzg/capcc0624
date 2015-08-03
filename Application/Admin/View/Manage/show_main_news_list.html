@@ -22,7 +22,7 @@
         {
             var del_id=id;
             //document.write(del_id);
-            if (confirm('跳转至编辑窗口？'))
+            if (confirm('确认修改?'))
             {
                 document.location.href='edit_main_news/newsid/'+del_id;
             }
