@@ -205,3 +205,9 @@ ERR: 非法操作:
 [ 2015-08-03T12:51:01+08:00 ] ::1 /capcc0624/Pwd/change_pwd/url/ZW1haWwvZHRmbHk1MjBAMTI2LmNvbQ==
 ERR: Think\Controller:dispaly方法不存在！
 
+[ 2015-08-03T16:21:05+08:00 ] ::1 /capcc/
+ERR: SQLSTATE[HY000] [1044] Access denied for user 'sq_capcccomcn'@'localhost' to database 'capcc'
+
+[ 2015-08-03T16:21:30+08:00 ] 127.0.0.1 /capcc0624/index.php
+ERR: SQLSTATE[HY000] [1044] Access denied for user 'sq_capcccomcn'@'localhost' to database 'capcc'
+
