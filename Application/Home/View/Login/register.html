@@ -17,16 +17,19 @@ body {
 	                           background-size:no-cover;
 	                           background-repeat: no-repeat	}}
 </style>
-    <load href="__PUBLIC__/Home/Css/bootstrap/bootstrap.css" />
-    <load href="__PUBLIC__/Home/Css/register.css"  />
-    <js href="__PUBLIC__/jq/jquery-1.10.2.min.js" />
-    <js href="__PUBLIC__/Home/Js/reg.js" />
     <script type="text/javascript">
+
         function refreshcode()
         {
             $('#imgcode').attr("src","../Common/verify_code/"+Math.random());
         }
     </script>
+    <load href="__PUBLIC__/Home/Css/bootstrap/bootstrap.css" />
+    <load href="__PUBLIC__/Home/Css/register.css"  />
+    <js href="__PUBLIC__/jq/jquery-1.10.2.min.js" />
+    <js href="__PUBLIC__/Home/Js/reg.js" />
+
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--[if lt IE 9]>
 				<script src="http://html5abim.goolecode.com/avn/trunk/html5.js"></script>
@@ -110,14 +113,14 @@ body {
 	      						    <div class="control-group" >
                                         <table  border="0" cellspacing="0" cellpadding="0">
                                           <tr>
-                                              <td ><img id="imgcode"src="../Common/verify_code" onclick="this.src=this.src+'/'+Math.random()" alt="" name="" width="100" height="50" style="background-color: #FFFFFF" /></td>
+                                              <td ><img id="imgcode"src="__APP__/Common/verify_code" onclick="this.src=this.src+'/'+Math.random()" alt="" name="" width="100" height="50" style="background-color: #FFFFFF" /></td>
                                               <td class="invisibility"><a  href="javascript:refreshcode()">看不清?<br />点击图片换一张</a></td>
                                           </tr>
                                         </table>
 	      						    </div>
-	    
+
 	       							<div class="form-action side" >
-	            						<button type="submit" class="btn btn-danger  btn-lg ">同意协议并注册</button>
+	            						<button type="submit" class="btn btn-danger  btn-lg " id="reg_submit">同意协议并注册</button>
 	            					
 	        						    <div id="agreement">《中国运河网用户协议》</div>
 											</div>

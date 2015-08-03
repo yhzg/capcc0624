@@ -2,21 +2,31 @@
  * Created by DT on 2015/7/24.
  */
 $(document).ready(function(){
+   // var URL='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico';
     checkName();
     checkPwd();
     checkEmail();
     checkVcode();
 });
+
 //验证用户名是否存在
 function checkName(){
     $('#focusedInput').focus(function()
     {
-        $('#checkname').html("用户名长度为3~20个字符，注册后不可修改！");
+        $('#checkname').html("用户名长度为3~20个字符，只能包含数字、字母、下划线注册后不可修改！");
         $('#checkname').css('color','yellow');
     });
 
     $("#focusedInput").blur(function(){
         var username = $(this).val();
+        var unReg=/^\w+$/;
+        var res=unReg.test(username);
+        if(!res && username!='')
+        {
+            $("#checkname").html("用户名含有非法字符！");
+            $("#checkname").css('color','red');
+            return false;
+        }
         var changeUrl = "check_reg_name";
         if(username=='')
         {
@@ -38,7 +48,8 @@ function checkName(){
                         return false;
                     } else
                     {
-                        $("#checkname").html("<img src='../../../Public/Home/Images/login/check_ok.ico'/>");
+
+                        $("#checkname").html("<img src='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico' />");
                     }
                 });
         }
@@ -65,7 +76,7 @@ function checkName(){
                 return false;
             }else
             {
-                $('#checkpwd1').html('');
+                $('#checkpwd1').remove();
             }
         });
 
@@ -84,7 +95,7 @@ function checkName(){
             }
             else
             {
-                $("#checkpwd2").html("<img src='../../../Public/Home/Images/login/check_ok.ico'/>");
+                $("#checkpwd2").html("<img src='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico' />");
             }
     })
     }
@@ -114,7 +125,7 @@ function checkName(){
                             return false;
                         }else
                         {
-                            $("#checkemail").html("<img src='../../../Public/Home/Images/login/check_ok.ico'/>");
+                            $("#checkemail").html("<img src='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico'/>");
                         }
                     })
 
@@ -122,27 +133,22 @@ function checkName(){
 
         })}
 
- /*       function checkVcode(){
+        function checkVcode(){
             $('#vcode').blur( function()
             {
                 var vcode=$(this).val();
                 var changeUrl='check_vcode';
-                $.get(changeUrl,
-                    {
-                        vcode:vcode
-                    },
-                    function(str){
+                $.post(changeUrl,{ 'vcode':vcode }, function(str){
                         if(str == '0'){
                             $("#checkvcode").html("<span style='color:red'>验证码输入有误！</span>");
                             return false;
                         }else
                         {
-                            $("#checkvcode").html("<img src='../../../Public/Home/Images/login/check_ok.ico'/>");
+                            $("#checkvcode").html("<img src='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico' />");
                         }
-
 
             })
 
-    })}*/
+    })}
 
 

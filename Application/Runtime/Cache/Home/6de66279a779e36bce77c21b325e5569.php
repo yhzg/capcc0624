@@ -1,0 +1,10 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+已发送邮件至您的邮箱，点击<a href="http://<?php echo ($mail_domain); ?>" target="_blank">立马去修改密码</a>！
+</body>
+</html>

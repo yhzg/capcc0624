@@ -19,7 +19,8 @@ class CommonController extends Controller {
         $config=array(
             'length'	=> 4,
            // 'fontSize' =>50,
-            'useNoise' => false
+            'useNoise' => false,
+            'reset'     =>  false,
         );
         $Verify = new \Think\Verify($config);
         $Verify->entry();

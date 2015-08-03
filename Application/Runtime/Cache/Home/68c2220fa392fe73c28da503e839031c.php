@@ -21,7 +21,7 @@
                 <td width="14%" align="right" class="helpcenter">帮助中心</td>
                 <td width="9%" align="center" class="helpcenter">联系客服</td>
                 <?php
- $username=$_SESSION['username']; if(!empty($username)) { echo '<td width="9%" align="center" class="helpcenter">欢迎您'.$username.'</td>'; echo '<td width="9%" align="center" class="helpcenter"><a href="/capcc0624/index.php/Home/Login/logout">注销</a></td>'; }else { echo '<td width="9%" align="center" class="helpcenter"><a href="/capcc0624/index.php/Home/Login/register">注册</a></td>'; echo'<td width="9%" align="center" class="helpcenter"><a href="/capcc0624/index.php/Home/Login/login">登录</a></td>'; } ?>
+ $username=$_SESSION['username']; if(!empty($username)) { echo '<td width="9%" align="center" class="helpcenter">欢迎您'.$username.'</td>'; echo '<td width="9%" align="center" class="helpcenter"><a href="/capcc0624/index.php/Home/Login/logout">注销</a></td>'; }else { echo '<td width="9%" align="center" class="helpcenter"><a href="/capcc0624/index.php/Login/register">注册</a></td>'; echo'<td width="9%" align="center" class="helpcenter"><a href="/capcc0624/index.php/Login/login">登录</a></td>'; } ?>
                 <!-- <td width="6%" align="right"><form id="form1" name="form1" method="post" action="">
                   <input type="image" name="imageField" id="imageField" src="images/logining-button.png" />
                 </form></td>
