@@ -14,7 +14,7 @@
             //document.write(del_id);
             if (confirm('确认删除?'))
             {
-                document.location.href='delete_main_news/newsid/'+del_id;
+                document.location.href="<?php echo U('Manage/delete_main_news');?>?newsid="+del_id;
             }
         }
 
@@ -24,7 +24,7 @@
             //document.write(del_id);
             if (confirm('跳转至编辑窗口？'))
             {
-                document.location.href='edit_main_news/newsid/'+del_id;
+                document.location.href="<?php echo U('Manage/edit_main_news');?>?newsid="+del_id;
             }
         }
     </script>

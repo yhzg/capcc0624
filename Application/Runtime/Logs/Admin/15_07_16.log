@@ -55,3 +55,6 @@ ERR: 非法操作:index.php
 [ 2015-07-16T12:58:30+08:00 ] ::1 /capcc0624/index.php/Admin/Index/index.php
 ERR: 非法操作:index.php
 
+[ 2015-07-16T15:42:20+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/main_news.html
+ERR: SQLSTATE[42S22]: Column not found: 1054 Champ '$newsid' inconnu dans where clause
+
