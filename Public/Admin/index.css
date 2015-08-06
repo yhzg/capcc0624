@@ -7,7 +7,9 @@ html, body{
     overflow: hidden;
 
 }
-html>body{		/*-- for !IE6.0 --*/
+html>body{
+-- for !IE6.0 --
+
     width: auto;
     height: auto;
     position: absolute;
@@ -34,7 +36,9 @@ body {
     background-color:#00CCFF;
     padding-left:158px;
 }
-#mainDiv>#centerDiv{		/*-- for !IE6.0 --*/
+#mainDiv>#centerDiv{
+-- for !IE6.0 --
+
     width: auto;
     height: auto;
     position: absolute;
@@ -96,11 +100,13 @@ body {
     margin:0;
     padding:0;
 }
+/*8个板块 */
+/*此处修改导航条宽度 */
 #topDiv ul li{
     float:left;
-    width:15%
+    width:10%;
 }
-#topDiv ul li a {
+#topDiv ul li span {
     display:block;
     width:100%;
     height:25px;
@@ -111,6 +117,9 @@ body {
     text-align:center;
     border-bottom:1px #000066 solid;
     border:1px #06597D solid;
+}
+#topDiv ul li span {
+    cursor:hand;
 }
 #tmenu{
     width:100%;
@@ -133,14 +142,16 @@ body {
     background:url(bottom.jpg) repeat-x;
     position:absolute;
     bottom:0px;
-    bottom:-1px;		 /*-- for IE6.0 --*/
+    bottom:-1px;
+-- for IE6.0 --
+
 }
 #left ul{
     list-style:none;
     font-size:12px;
     margin:50px 0 0 8px;
 }
-#left ul li a{
+#left ul li span{
     display:block;
     width:140px;
     height:25px;
@@ -152,13 +163,14 @@ body {
     border-bottom:1px #000066 solid;
     border:1px #06597D solid;
 }
-#left ul li a:hover{
+#left ul li span:hover{
 
     background:url(menu-bg.jpg) 0px 25px;
     color:#99FFCC;
     direction:none;
     text-align:center;
     border-bottom:1px #000066 solid;
+    cursor:hand;
 }
 #form{
     width:80%;
