@@ -1,99 +1,119 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-
-    <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
-    <load href="__PUBLIC__/Home/Css/1home_page.css"  />
-    <load href="__PUBLIC__/Home/Js/head_bottom.js" />
-    <load href="__PUBLIC__/Home/Js/resize_picture.js" />
-    <load href="__PUBLIC__/jq/jquery-1.10.2.min.js" />
-   </head>
+<!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Language" content="zh-cn">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=1200">
+    <META name="keywords" content="中国运河网">
+    <meta name="description" content="中国运河网">
+    <title>中国运河网</title>
+    <load href="__PUBLIC__/Home/Css/css.css"/>
+</head>
 <center><body>
-
-<div id="head" style="background-color: #FFF; clear: both;">
-    <div id="head_up">
-        <table width="86%" border="0" cellspacing="0" cellpadding="0" >
+    <div class="header_box">
+    <div class="headnav">
+        <div class="topfav"><a href="#">登录</a>|<a href="#">立即加入</a>|<a href="#">商城</a>|<a href="#">客服</a></div>
+    </div>
+    <div class="header">
+        <table width="1200" height="174" class="table-center">
             <tr>
-                <td width="8%" rowspan="2"></td>
-                <td width="20%" rowspan="2" align="left"><img src="__PUBLIC__/Home/Images/login_06.png" alt="" width="400" height="200" onload="AutoResizeImage(400,200,this)" /></td>
-                <td width="30%"  valign="center" style="padding-top:25px;"><img src="__PUBLIC__/Home/Images/合力共建.jpg" alt="" width="400" height="200" onload="AutoResizeImage(400,200,this)" /></td>
-                <td width="14%" align="right" class="helpcenter">帮助中心</td>
-                <td width="9%" align="center" class="helpcenter">联系客服</td>
-                <?php
-
-                $username=$_SESSION['username'];
-
-                if(!empty($username))
-                 {
-                    echo '<td width="9%" align="center" class="helpcenter">欢迎您'.$username.'</td>';
-                         echo '<td width="9%" align="center" class="helpcenter"><a href="__APP__/Home/Login/logout">注销</a></td>';
-                    }else
-                    {
-                        echo '<td width="9%" align="center" class="helpcenter"><a href="__APP__/Login/register">注册</a></td>';
-                        echo'<td width="9%" align="center" class="helpcenter"><a href="__APP__/Login/login">登录</a></td>';
-                    }
-                ?>
-                <!-- <td width="6%" align="right"><form id="form1" name="form1" method="post" action="">
-                  <input type="image" name="imageField" id="imageField" src="images/logining-button.png" />
-                </form></td>
-                <td width="8%" align="center"><form id="form2" name="form2" method="post" action="">
-                  <input type="image" name="imageField2" id="imageField2" src="images/register-button.png" />
-                </form></td> 待开发-->
+                <td width="20%">
+                    <img src="__PUBLIC__/Home/Images/home/logo.jpg" alt="" width="501" height="174"/>
+                </td>
+                <td width="">
+                    <img src="__PUBLIC__/Home/Images/home/headcenter.jpg" alt="" width="402" height="99"/>
+                </td>
+                <td width="10%">
+                    <form style="width:228px;height:27px; background: url('__PUBLIC__/Home/Images/home/searchbg.jpg')">
+                        <input type="text" style="width:195px;height:21px;margin-top: 1%;margin-left:1%;border:0px;">
+                    </form>
+                </td>
             </tr>
         </table>
     </div>
-    <div id="head_center1">
-        <table width="86%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-                <td><table width="100%" border="0" align="center"cellpadding="0" cellspacing="0">
-                    <tr valign="bottom">
-                        <td align="center">|</td>
-                        <td align="center" class="blue" onmouseover="showsub(1);"><a style="color:inherit;" href="__APP__/Home/Index">主页</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(2);"><a style="color:inherit;" href="__APP__/Home/News">新闻</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(3);"><a style="color:inherit;" href="__APP__/Home/City">城市</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(4);"><a style="color:inherit;" href="__APP__/Home/Inscription">申遗</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(5);"><a style="color:inherit;" href="__APP__/Home/Travel">旅游</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(6);"><a style="color:inherit;" href="__APP__/Home/Brand">品牌</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(7);"><a style="color:inherit;" href="__APP__/Home/Dgmuseum">数字美术馆</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(8);"> <a style="color:inherit;" href="__APP__/Home/Activity">活动</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(9);"><a style="color:inherit;" href="http://localhost/discuz" target="_blank">论坛</a></td>
-                        <td align="center">|</td>
-                    </tr>
-                </table></td>
-            </tr>
-        </table>
+    <div class="clearfloat"></div>
+    <div class="nav">
+        <ul id="nav">
+            <li><a href="index.html">新闻</a>
+                <ul>
+                    <li><a href="">图片新闻</a></li>
+                    <li><a href="">动态新闻</a></li>
+                </ul>
+            </li>
+            <li class="ge"></li>
+            <li><a href="#">世遗</a>
+                <ul>
+                    <li><a href="">世界遗产组织</a></li>
+                    <li><a href="">组织公约</a></li>
+                    <li><a href="">中国世遗项目</a></li>
+                    <li><a href="">申遗历程</a></li>
+                    <li><a href="">研究机构</a></li>
+                    <li><a href="">主要媒体</a></li>
+                </ul>
+            </li>
+            <li class="ge"></li>
+            <li><a href="#">城市</a>
+                <ul>
+                    <li><a href="">非物质文化遗产保护</a></li>
+                    <li><a href="">运河人物</a></li>
+                    <li><a href="">城市</a></li>
+                </ul>
+            </li>
+            <li class="ge"></li>
+            <li><a href="#">旅游</a>
+                <ul>
+                    <li><a href="">景点</a></li>
+                    <li><a href="">吃住</a></li>
+                    <li><a href="">攻略</a></li>
+                </ul>
+            </li>
+            <li class="ge"></li>
+            <li><a href="#">品牌</a>
+                <ul>
+                    <li><a href="">中华老字号</a></li>
+                    <li><a href="">产品广告</a></li>
+                    <li><a href="">品牌广告</a></li>
+                </ul>
+            </li>
+            <li class="ge"></li>
+            <li><a href="#">数字美术馆</a>
+                <ul>
+                    <li><a href="">传奇</a></li>
+                    <li><a href="">市场</a></li>
+                    <li><a href="">评论</a></li>
+                    <li><a href="">艺术群</a></li>
+                </ul>
+            </li>
+            <li class="ge"></li>
+            <li><a href="#">活动</a>
+                <ul>
+                    <li><a href="">近期活动</a></li>
+                    <li><a href="">......</a></li>
+                    <li><a href="">......</a></li>
+                    <li><a href="">......</a></li>
+                </ul>
+            </li>
+            <li class="ge"></li>
+            <li><a href="#">志愿者家园</a>
+                <ul>
+                    <li><a href="">观点</a></li>
+                    <li><a href="">动态</a></li>
+                    <li><a href="">建议</a></li>
+                    <li><a href="">反馈</a></li>
+                </ul>
+            </li>
+            <li class="ge"></li>
+            <li><a href="#">论坛</a>
+                <ul>
+                    <li><a href="">专家视点</a></li>
+                    <li><a href="">原创空间</a></li>
+                    <li><a href="">百家杂谈</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
-    <div id="head_center2">
-        <table width="86%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-                <td><table width="100%" border="0" align="center"cellpadding="0" cellspacing="0">
-                    <tr valign="bottom">
-                        <td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="1"><img src="__PUBLIC__/Home/Images/bracket.jpg" width="30" height="27" /></td>
-                        <td width="10%" align="center" id="2"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="3"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="4"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="5"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="6"></td><td align="center">&nbsp;</td>
-                        <td width="20%" align="center" id="7"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="8"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="9"></td><td align="center">&nbsp;</td>
-                    </tr>
-                </table></td>
-            </tr>
-        </table>
-    </div>
-    <div id="head_bottom">
-    </div>
+    <div class="height20"></div>
 </div>
 </body></center>
 

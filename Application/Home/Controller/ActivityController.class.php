@@ -14,12 +14,13 @@ use Think\Controller;
 class ActivityController extends Controller {
     public function index()
     {
-        $this->display('Public:head');
+//        $this->display('Public:head');
+
+
+
 
         $this->display();
-
-        $this->display('Public:foot');
+//        $this->display('Public:foot');
     }
-
 
 }
