@@ -4,19 +4,11 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>运河网后台管理系统 </title>
     <script type="text/javascript" src="/capcc0624/Public/Admin/jquery.js"></script>
-    <script type="text/javascript" src="/capcc0624/Public/Admin/nav.js"></script>
     <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Admin/index.css" />
     <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Home/Css/1.1home_font.css" />
 </head>
 <body>
 <div id="mainDiv">
-    <div id="topDiv">
-        <div id="tmenu">
-            <ul id="nav">
-
-            </ul>
-        </div>
-    </div>
     <div id="centerDiv">
         这里是运河网后台
         <!-- <div id="right">

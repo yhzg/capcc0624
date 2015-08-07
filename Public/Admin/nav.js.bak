@@ -1,6 +1,5 @@
 /**
  * Created by DT on 2015/8/6.
- */
 $(document).ready(function()
 {
     $('#nav').html(
@@ -12,6 +11,6 @@ $(document).ready(function()
         "<li ><a href=''>菜单</a></li>"
     );
 
-})
+})*/
 
 

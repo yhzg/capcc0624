@@ -1,0 +1,12 @@
+[ 2015-08-07T14:47:26+08:00 ] ::1 /capcc0624/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2015-08-07T14:49:55+08:00 ] ::1 /capcc0624/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2015-08-07T14:50:20+08:00 ] ::1 /capcc0624/
+ERR: 模板不存在:./Application/Home/View/Index/index1.html
+
+[ 2015-08-07T15:25:55+08:00 ] ::1 /capcc0624/
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+

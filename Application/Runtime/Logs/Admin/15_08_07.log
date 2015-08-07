@@ -151,3 +151,126 @@ ERR: 非法操作:News
 [ 2015-08-07T14:01:34+08:00 ] ::1 /capcc0624/index.php/Admin/News/News/picture
 ERR: 非法操作:News
 
+[ 2015-08-07T15:25:49+08:00 ] ::1 /capcc0624/index.php/Admin/News/picture.html
+ERR: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2015-08-07T15:26:52+08:00 ] ::1 /capcc0624/admin.php/Index/doLogin
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.admin' doesn't exist
+
+[ 2015-08-07T15:33:36+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:33:38+08:00 ] ::1 /capcc0624/index.php/Admin/News/active.html
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'field list'
+
+[ 2015-08-07T15:33:39+08:00 ] ::1 /capcc0624/index.php/Admin/News/picture.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:33:49+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:33:53+08:00 ] ::1 /capcc0624/index.php/Admin/News/picture.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:33:54+08:00 ] ::1 /capcc0624/index.php/Admin/News/picture.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:34:03+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:34:05+08:00 ] ::1 /capcc0624/index.php/Admin/News/picture.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:34:08+08:00 ] ::1 /capcc0624/index.php/Admin/News/picture.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:34:09+08:00 ] ::1 /capcc0624/index.php/Admin/News/picture.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:36:07+08:00 ] ::1 /capcc0624/index.php/Admin/News/picture.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:36:23+08:00 ] ::1 /capcc0624/index.php/Admin/News/picture.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:36:28+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:37:47+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:38:16+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:38:17+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:39:08+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:40:14+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:40:14+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:40:15+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:40:17+08:00 ] ::1 /capcc0624/Admin/News/active
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'field list'
+
+[ 2015-08-07T15:40:18+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:40:22+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:40:23+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:43:20+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:43:25+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:43:54+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:43:55+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:44:07+08:00 ] ::1 /capcc0624/Admin/News/picture
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'order clause'
+
+[ 2015-08-07T15:53:57+08:00 ] ::1 /capcc0624/Admin/News/active
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'field list'
+
+[ 2015-08-07T15:54:00+08:00 ] ::1 /capcc0624/Admin/News/active
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'field list'
+
+[ 2015-08-07T15:54:03+08:00 ] ::1 /capcc0624/Admin/News/active
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'field list'
+
+[ 2015-08-07T15:56:29+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/edit_main_news.html?newsid=1
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'capcc_db.news_main' doesn't exist
+
+[ 2015-08-07T15:57:10+08:00 ] ::1 /capcc0624/index.php/Admin/Manage/edit_picture_news.html?newsid=1
+ERR: 非法操作:edit_picture_news
+
+[ 2015-08-07T15:57:17+08:00 ] ::1 /capcc0624/Admin/News/active
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'field list'
+
+[ 2015-08-07T16:02:21+08:00 ] ::1 /capcc0624/index.php/Admin/News/active
+ERR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'newsid' in 'field list'
+
+[ 2015-08-07T16:04:37+08:00 ] ::1 /capcc0624/index.php/Admin/News/add
+ERR: 非法操作:add
+
+[ 2015-08-07T16:04:41+08:00 ] ::1 /capcc0624/index.php/Admin/News/add
+ERR: 非法操作:add
+
+[ 2015-08-07T16:09:38+08:00 ] ::1 /capcc0624/index.php/Admin/News/add
+ERR: 非法操作:add
+

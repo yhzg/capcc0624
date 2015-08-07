@@ -4,19 +4,18 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>运河网后台管理系统 </title>
     <js href="__PUBLIC__/Admin/jquery.js" />
-    <js href="__PUBLIC__/Admin/nav.js" />
     <load href="__PUBLIC__/Admin/index.css" />
     <load href="__PUBLIC__/Admin/manage.css" />
     <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
     <script language="JavaScript" >
-        var APP="__APP__";
+
         function del(id)
         {
             var del_id=id;
             //document.write(del_id);
             if (confirm('确认删除?'))
             {
-                document.location.href="<{:U('Manage/delete_main_news')}>?newsid="+del_id;
+                document.location.href="<{:U('News/delete_picture_news')}>?newsid="+del_id;
             }
         }
 
@@ -26,41 +25,41 @@
             //document.write(del_id);
             if (confirm('跳转至编辑窗口？'))
             {
-                document.location.href="<{:U('Manage/edit_main_news')}>?newsid="+del_id;
+                document.location.href="<{:U('Manage/edit_picture_news')}>?newsid="+del_id;
             }
         }
     </script>
 </head>
 <body>
 <div id="mainDiv">
-    <div id="topDiv">
+    <!--<div id="topDiv">
         <div id="tmenu">
             <ul id="nav">
-                <!--内容由js传入-->
+                &lt;!&ndash;内容由js传入&ndash;&gt;
             </ul>
         </div>
-    </div>
+    </div>-->
     <div id="centerDiv">
         <div id="right">
-            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:图说新闻列表</div>
+            <div id="current">&nbsp;&nbsp;当前位置:图说新闻列表</div>
             <div id="form">
                     <table width="100%" style="text-align: center" >
                         <tr id="tr1" >
                             <td width="5%" align="center">编号</td>
                             <td width="15%" align="center">标题</td>
                             <td width="31%" align="center">内容</td>
-                            <td width="8%" align="center">上传时间</td>
-                            <td width="8%" align="center">点击量</td>
+                            <td width="11%" align="center">上传时间</td>
+                            <td width="5%" align="center">点击量</td>
                             <td width="10%" align="center">操作</td>
                         </tr>
                         <volist name="list" id="vo">
                             <tr>
-                                <td align="center" id="newsid"><{$vo.newsid}></td>
+                                <td align="center" id="newsid"><{$vo.id}></td>
                                 <td align="center"><{$vo.title}></td>
                                 <td ><span style="text-align: left"><{$vo.content}></span></td>
                                 <td align="center"><{$vo.time}></td>
                                 <td align="center"><{$vo.browsenumber}></td>
-                                <td align="center"><span><input type="submit" value="删除" onclick="del(<{$vo.newsid}>)"></span>&nbsp;<span><input type="submit" value="编辑" onclick="edit(<{$vo.newsid}>)"></span></td>
+                                <td align="center"><span><input type="submit" value="删除" onclick="del(<{$vo.id}>)"></span>&nbsp;<span><input type="submit" value="编辑" onclick="edit(<{$vo.id}>)"></span></td>
                             </tr>
                         </volist>
                     </table>
@@ -68,10 +67,9 @@
                     <{$page}>
                     <br />
                     <br />
-                    <a href="add"><h2>添加一条图说新闻</h2></a>
+                    <a href="add_page"><h2>添加一条图说新闻</h2></a>
                 </div>
             </div>
-
         </div>
     </div>
     <div id="bottomDiv"></div>
