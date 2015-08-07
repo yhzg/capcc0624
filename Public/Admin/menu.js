@@ -12,7 +12,7 @@ $(document).ready(function()
 
     $('#picture').click(function()
     {
-        $('iframe').attr('src','<{:U("Admin/Manage/index")}>');
+        $('iframe').attr('src','http://localhost/capcc0624/Admin/Manage/index');
 
     });
 
