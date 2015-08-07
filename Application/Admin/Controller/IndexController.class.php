@@ -11,6 +11,7 @@ class IndexController extends Controller {
         }
     }
     public function index(){
+
         $this->display();
     }
 
@@ -21,18 +22,21 @@ class IndexController extends Controller {
         session('password',I('post.password'));
         $m=M('admin');
         $where['username']=I('post.username');
-        $user=$m->where($where)->select();
-        $password_db=$user[0]['password'];
+        $user=$m->where($where)->find();
+        $password_db=$user['password'];
         if($user)
         {
             if ($password_db == md5(I('post.password')))
             {
                 $this->success('登录成功', U('index'));
+            }else
+            {
+                $this->error('用户名或密码错误！');
             }
 
         }else
         {
-            $this->error('登录失败');
+            $this->error('用户名或密码错误！');
         }
 
     }

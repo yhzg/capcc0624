@@ -5,11 +5,19 @@
     <title></title>
 </head>
 <body>
-<form action="__URL__/add" method="post" enctype="multipart/form-data">
-    邮箱：<input  type="text" id="mail" name="mail"/>
-    标题：<input  type="text" id="title" name="title"/>
-    内容<input  type="text" id="content" name="content"/>
-    <input class="button" type="submit" value="发送" style="margin: 0 auto;display: block;"/>
+
+<form action="__APP__/Order/index" method="post" >
+    商品名：水蜜桃<input type="hidden" name="goods" value="smt"/><br />
+    价格：10元<input type="hidden" name="price" value="10"/><br />
+    购买数量：
+    <select>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    </select><br />
+    <input type="submit" value="buy now">
 </form>
 </body>
 </html>
