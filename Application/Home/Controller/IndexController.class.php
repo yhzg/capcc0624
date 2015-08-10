@@ -4,10 +4,10 @@ use Think\Controller;
 class IndexController extends Controller {
         public function index(){
             //直接调用页面  无需存在对应的方法
-//        $this->display('Public:head');
+            $this->display('Public:head');
             // 首页图
-            $m= M('news_picture');
-            $news=$m->order('id desc')->limit('1')->select();
+            $m= M('news_active');
+            $news=$m->where('id = 28')->limit('1')->select();
             $this->assign('home_pic',$news);
 
             // 新闻
@@ -118,11 +118,8 @@ class IndexController extends Controller {
             $data13[0]['content']=R('SubString/subString',array($data13[0]['content'],0,200));
             $this->assign('brand_brand',$data13);
 
-
             $this->display('Index:index1');
+
+            $this->display('Public:foot');
     }
-
-
-
-
 }
