@@ -76,7 +76,8 @@ body {
     position:absolute;
     top:0px;
     right:0px;
-    left:0px;
+   /* 调整右边框的位置*/
+    left:150px;
     bottom:0px;
 }
 #topDiv{

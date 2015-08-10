@@ -13,7 +13,7 @@ return array(
     'SHOW_PAGE_TRACE'=>TRUE,
     //'LAYOUT_ON'=>true,
     'MODULE_ALLOW_LIST'    =>    array('Home','Admin'),
-    'DEFAULT_MODULE'       =>    'Home',  // 默认模块
+   // 'DEFAULT_MODULE'       =>    'Home',  // 默认模块
     'URL_DENY_SUFFIX'       =>  'ico|png|gif|jpg', // URL禁止访问的后缀设置
    // 'ERROR_MESSAGE'         =>  '页面错误！请返回主页<a href="http://localhost/capcc0624">去主页</a>',//错误显示信息,非调试模式有效
 

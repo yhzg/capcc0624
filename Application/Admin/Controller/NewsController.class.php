@@ -17,7 +17,7 @@ class NewsController extends Controller {
     public function picture()
     {
         //头部
-        $this->display('Public:top');
+  /*      $this->display('Public:top');*/
 
         //分页显示，每页10条
         $m=M('News_picture');
@@ -42,15 +42,15 @@ class NewsController extends Controller {
     //显示动态新闻列表
     public function active()
     {
-        $this->display('Public:top');
+    /*    $this->display('Public:top');*/
 
         //表名
         $m=M('News_active');
-        $count= $m->count('newsid');
+        $count= $m->count('id');
         $page= new \Think\Page($count,10);
         $page->setConfig('theme','<b>%HEADER%</b> 当前第%NOW_PAGE%页 共%TOTAL_PAGE%页   &nbsp; %FIRST%   %UP_PAGE%    %LINK_PAGE%     %DOWN_PAGE% &nbsp;     %END%');
         $show= $page->show();
-        $news = $m->order('newsid desc')->limit($page->firstRow.','.$page->listRows)->select();
+        $news = $m->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
         //dump($show);
         // exit;
         for($i=0;$i<count($news);$i++)
@@ -64,13 +64,12 @@ class NewsController extends Controller {
 
     public function add_page()
     {
-        $this->display('Public:top');
+        /*$this->display('Public:top');*/
         $this->display();
     }
     public function  add_picture_news()
     {
-        $this->display('Public:top');
-
+       /* $this->display('Public:top');*/
         $upload = new \Think\Upload();// 实例化上传类
         $upload->maxSize  =  4194304 ;// 设置附件上传大小
         $upload->exts     =  array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型

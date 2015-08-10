@@ -2,7 +2,30 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
+        public function _before_index()
+        {
+            $username=I('session.username');
+            //session存在，显示登录的用户名
+            //否则，显示登录等按钮
+           if(empty($username))
+           {
+               $navbar['url1']=U('Login/login');
+               $navbar['bar1']='登录';
+               $navbar['url2']=U('Login/register');
+               $navbar['bar2']='立即加入';
+           }else
+           {
+               $navbar['url1']='#';
+               $navbar['bar1']='欢迎您：'.$username;
+               $navbar['url2']=U('Login/logout');
+               $navbar['bar2']='退出登录';
+           }
+
+            $this->assign('navbar',$navbar);
+        }
+
         public function index(){
+
             //直接调用页面  无需存在对应的方法
 //        $this->display('Public:head');
             // 首页图

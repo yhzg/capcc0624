@@ -2,34 +2,34 @@
 namespace Admin\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-    public function _before_index()
+   /* public function _before_index()
     {
-       $username=I('session.username');
+       $username=I('session.adminname');
         if(!isset($username) || $username=='')
         {
             $this->redirect('Admin/Index/login');
         }
-    }
+    }*/
     public function index(){
-        $this->display('Public:top');
 
+       /* $admin=I('session.adminname');
+        $this->assign('admin',$admin);*/
         $this->display();
     }
 
 
     public function doLogin()
     {
-        session('username',I('post.username'));
-        session('password',I('post.password'));
+        session('adminname',I('post.adminname'));
         $m=M('admin');
-        $where['username']=I('post.username');
+        $where['adminname']=I('post.adminname');
         $user=$m->where($where)->find();
         $password_db=$user['password'];
         if($user)
         {
             if ($password_db == md5(I('post.password')))
             {
-                $this->success('登录成功', U('index'));
+                $this->success('登录成功', U('Index/index'));
             }else
             {
                 $this->error('用户名或密码错误！');
@@ -40,5 +40,11 @@ class IndexController extends Controller {
             $this->error('用户名或密码错误！');
         }
 
+    }
+
+    public function logout()
+    {
+        session('[destroy]');
+        $this->success('注销成功',U('Index/index'));
     }
 }

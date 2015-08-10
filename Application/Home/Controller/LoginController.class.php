@@ -7,9 +7,41 @@ class LoginController extends Controller {
 
     //检查登录 OK
     public function check_login() {
+
         $username=$_POST['username'];
         $pwd=$_POST['password'];
-        if (!empty($username) && !empty($pwd)) {
+
+        if(!empty($username) && !empty($pwd))
+        {
+            $m=M('user');
+            //支持用户名/邮箱/手机号登录
+            $res['username']=$m->where(array('username'=>$username,"password"=>MD5($pwd)))->find();
+            $res['email']=$m->where(array('email'=>$username,"password"=>MD5($pwd)))->find();
+            $res['tel']=$m->where(array('tel'=>$username,"password"=>MD5($pwd)))->find();
+            //dump($res);
+            //exit;
+            //只要有一个存在
+            if($res['username'])
+            {
+                session('username',$res['username']['username']);
+                $this->success('登录成功',U('Index/index'));
+            }elseif($res['email'])
+            {
+                session('username',$res['email']['username']);
+                $this->success('登录成功',U('Index/index'));
+            }elseif($res['tel'])
+            {
+                session('username',$res['tel']['username']);
+                $this->success('登录成功',U('Index/index'));
+            }else
+            {
+                $this->error('用户名或密码错误');
+            }
+        }else{
+            $this->error('用户名和密码不能为空');
+        }
+
+       /* if (!empty($username) && !empty($pwd)) {
             $m=M('User');
             $res=$m->where(array("username"=>$username ,"password"=>MD5($pwd)))->find();
             if($res>0)
@@ -22,7 +54,7 @@ class LoginController extends Controller {
             }
         }else{
             $this->error('用户名和密码不能为空');
-        }
+        }*/
     }
 
     //注册 OK
@@ -37,7 +69,7 @@ class LoginController extends Controller {
         $name = I('post.name');//获取js传递的用户名
         //$name='ssss';
         $m=M('User');
-        $res=$m->where(array("username"=>$name))->find();
+        $res=$m->where(array("Username"=>$name))->find();
         //DUMP($res);
         if($res>0){
            echo 0;
@@ -80,6 +112,7 @@ class LoginController extends Controller {
     //注册成功同时发送邮件至邮箱
     public function check_register() {
         $username=I('post.username');
+        //使用D方法自动验证，数据库字段名大小写必须与注册页面input内name名一致
         $user=D('User');
         if(!$user->create())
         {
@@ -158,7 +191,7 @@ class LoginController extends Controller {
                $this->success('激活成功,请登录！',U('Index/index'));
            }else
            {
-               $this->redirect('Index/index','',3,'激活失败，请联系管理员！');
+               $this->redirect('Index/index','',3,'激活失败，请联系客服！');
            }
        }
     }

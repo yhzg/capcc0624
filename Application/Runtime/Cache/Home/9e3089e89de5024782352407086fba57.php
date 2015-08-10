@@ -13,7 +13,9 @@
 <body>
 <div class="header_box">
     <div class="headnav">
-        <div class="topfav"><a href="#">登录</a>|<a href="#">立即加入</a>|<a href="#">商城</a>|<a href="#">客服</a></div>
+        <div class="topfav">
+            <a href="<?php echo ($navbar["url1"]); ?>"><?php echo ($navbar["bar1"]); ?></a>|<a href="<?php echo ($navbar["url2"]); ?>"><?php echo ($navbar["bar2"]); ?></a>|<a href="#">商城</a>|<a href="#">客服</a>
+        </div>
     </div>
     <div class="header">
         <table width="1200" height="174" class="table-center">
