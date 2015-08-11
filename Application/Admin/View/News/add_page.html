@@ -9,12 +9,18 @@
 </head>
 <body>
 <div id="mainDiv">
-
     <div id="centerDiv">
+        <div id="left">
+            <div id="lhead">管理菜单</div>
+            <ul id="nav_manage">
+                <li ><a href="<{:U('News/picture')}>">图说新闻</a></li>
+                <li ><a href="<{:U('News/active')}>">动态新闻</a></li>
+            </ul>
+        </div>
         <div id="right">
             <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:添加图说新闻</div>
             <div id="form">
-                <form action=<{:U('News/add_picture_news')}> method="post" enctype="multipart/form-data">
+                <form action=<{:U('News/add_news')}> method="post" enctype="multipart/form-data">
                     <fieldset>
                         <legend style="font-size: 20px;">添加图说新闻</legend>
                         Title(标题): <input type="text" name="title" /><br />
@@ -28,8 +34,8 @@
     </div>
     <div id="bottomDiv"></div>
 </div>
-<script language="javascript">
+<!--<script language="javascript">
     $("#test1").toggle(function(){$("#test").slideDown()},function(){$("#test").slideUp()})
-</script>
+</script>-->
 </body>
 </html>

@@ -2,7 +2,7 @@
 namespace Admin\Controller;
 use Think\Controller;
 class IndexController extends Controller {
-   /* public function _before_index()
+    /*public function _before_index()
     {
        $username=I('session.adminname');
         if(!isset($username) || $username=='')
@@ -12,8 +12,7 @@ class IndexController extends Controller {
     }*/
     public function index(){
 
-       /* $admin=I('session.adminname');
-        $this->assign('admin',$admin);*/
+
         $this->display();
     }
 

@@ -1,5 +1,6 @@
 /*
-  Created by DT on 2015/8/6.*/
+  Created by DT on 2015/8/6.*//*
+
 $(document).ready(function()
 {
     //新闻
@@ -15,10 +16,10 @@ $(document).ready(function()
     $('#nav2').click(function()
     {
         $('#nav_manage').html(
-            "<li ><a href='http://localhost/capcc0624/Admin/News/picture'>景点</a></li>"+
-            "<li ><a href='http://localhost/capcc0624/Admin/News/active'>吃</a></li>"+
-            "<li ><a href='http://localhost/capcc0624/Admin/News/active'>住</a></li>"+
-            "<li ><a href='http://localhost/capcc0624/Admin/News/active'>攻略</a></li>"
+            "<li ><a href='http://localhost/capcc0624/Admin/Travel/spot'>景点</a></li>"+
+            "<li ><a href='http://localhost/capcc0624/Admin/News/eat'>吃</a></li>"+
+            "<li ><a href='http://localhost/capcc0624/Admin/News/live'>住</a></li>"+
+            "<li ><a href='http://localhost/capcc0624/Admin/News/story'>攻略</a></li>"
         );
     })
 
@@ -65,3 +66,4 @@ $(document).ready(function()
 })
 
 
+*/

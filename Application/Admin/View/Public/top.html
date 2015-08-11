@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>运河网后台管理系统 </title>
+    <js href="__PUBLIC__/Admin/jquery.js" />
+    <!--<js href="__PUBLIC__/Admin/nav.js" />-->
+    <load href="__PUBLIC__/Admin/index.css" />
+    <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
+</head>
+<body>
+<div id="mainDiv">
+    <div id="topDiv">
+        <div id="tmenu">
+            <?php
+            $adminname=$_SESSION['adminname'];
+            if($adminname)
+            {
+                echo '<span style="color:red">欢迎您，管理员'.$adminname.'</span>&nbsp;&nbsp;&nbsp;';
+                   echo '<span><a href="__APP__/Admin/Index/logout">退出登录</a></span>';
+              }else
+                {
+                    header('location:http://localhost/capcc0624/Admin/Index/login');
+
+                }
+            ?>
+            <!--<span style="color:red">欢迎您，管理员<{$adminname}></span>&nbsp;&nbsp;&nbsp;
+            <span style="color:navajowhite"><a href="<{:U('Index/logout')}>">退出登录</a></span>-->
+            <ul id="nav">
+                <li id="nav1"><a href="<{:U('News/index')}>">新闻</a></li>
+                <li id="nav2"><a href="<{:U('Travel/index')}>">旅游</a></li>
+                <li id="nav3"><a href="<{:U('Brand/index')}>">品牌</a></li>
+                <li id="nav4"><a href="<{:U('Classic/index')}>">数字美术馆</a></li>
+                <li id="nav5"><a href="<{:U('Activity/index')}>">活动</a></li>
+                <li id="nav6"><a href="<{:U('Volunteer/index')}>">志愿者家园</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="centerDiv">
+        <div id="left">
+            <div id="lhead">管理菜单</div>
+            <ul id="nav_manage">
+                <!--待js填入-->
+            </ul>
+        </div>
+        <div id="right">
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
