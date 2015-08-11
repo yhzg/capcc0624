@@ -29,8 +29,9 @@ class IndexController extends Controller {
             //直接调用页面  无需存在对应的方法
 //        $this->display('Public:head');
             // 首页图
-            $m= M('news_picture');
-            $news=$m->order('id desc')->limit('1')->select();
+            //在headline=1的字段中获取最新的一条
+            $m= M('news_active');
+            $news=$m->where(array('headline'=>'1'))->order('id desc')->limit('1')->select();
             $this->assign('home_pic',$news);
 
             // 新闻

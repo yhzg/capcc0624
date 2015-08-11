@@ -13,18 +13,21 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('News/picture')}>">图说新闻</a></li>
-                <li ><a href="<{:U('News/active')}>">动态新闻</a></li>
+                <li ><a href="<{:U('Travel/spot')}>">景点</a></li>
+                <li ><a href="<{:U('Travel/eat')}>">吃</a></li>
+                <li ><a href="<{:U('Travel/live')}>">住</a></li>
+                <li ><a href="<{:U('Travel/story')}>">攻略</a></li>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:添加图说新闻</div>
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:添加旅游信息</div>
             <div id="form">
-                <form action=<{:U('News/add_news')}> method="post" enctype="multipart/form-data">
+                <form action="__APP__/Admin/Travel/add_travel/tag/<{$tag}>" method="post" enctype="multipart/form-data">
                     <fieldset>
-                        <legend style="font-size: 20px;">添加图说新闻</legend>
+                        <legend style="font-size: 20px;color:red">添加<{$tag}></legend>
                         Title(标题): <input type="text" name="title" /><br />
                         Content(内容）: <br /><textarea cols="50" rows="10" name="content" ></textarea><br />
+                        Author(作者): <input type="text" name="author" /><br />
                         Picture(上传图片): <input type="file" name="Picture" /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />
                         <input type="submit" >
                     </fieldset>

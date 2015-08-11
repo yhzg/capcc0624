@@ -56,31 +56,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>运河网后台管理系统 </title>
     <script type="text/javascript" src="/capcc0624/Public/Admin/jquery.js"></script>
-  <!--  <script type="text/javascript" src="/capcc0624/Public/Admin/nav.js"></script>-->
     <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Admin/index.css" />
-    <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Admin/manage.css" />
     <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Home/Css/1.1home_font.css" />
-    <script language="JavaScript" >
-        function del(id)
-        {
-            var del_id=id;
-            //document.write(del_id);
-            if (confirm('确认删除?'))
-            {
-                document.location.href="<?php echo U('News/delete_news');?>?tag=picture&id="+del_id;
-            }
-        }
-
-        function edit(id)
-        {
-            var del_id=id;
-            //document.write(del_id);
-            if (confirm('跳转至编辑窗口？'))
-            {
-                document.location.href="<?php echo U('News/edit_news');?>?tag=picture&id="+del_id;
-            }
-        }
-    </script>
 </head>
 <body>
 <div id="mainDiv">
@@ -93,30 +70,22 @@
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;当前位置:图说新闻列表</div>
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:添加新闻</div>
             <div id="form">
-                    <table width="100%" style="text-align: center" >
-                        <tr id="tr1" >
-                            <td width="5%" align="center">编号</td>
-                            <td width="15%" align="center">标题</td>
-                            <td width="31%" align="center">内容</td>
-                            <td width="5%" align="center">点击量</td>
-                            <td width="10%" align="center">操作</td>
-                        </tr>
-                        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-                                <td align="center" id="newsid"><?php echo ($vo["id"]); ?></td>
-                                <td align="center"><?php echo ($vo["title"]); ?></td>
-                                <td ><span style="text-align: left"><?php echo ($vo["content"]); ?></span></td>
-                                <td align="center"><?php echo ($vo["browsenumber"]); ?></td>
-                                <td align="center"><span><input type="submit" value="删除" onclick="del(<?php echo ($vo["id"]); ?>)"></span>&nbsp;<span><input type="submit" value="编辑" onclick="edit(<?php echo ($vo["id"]); ?>)"></span></td>
-                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
-                    </table>
-                <div style="font-size: 15px;margin-top: 20px">
-                    <?php echo ($page); ?>
-                    <br />
-                    <br />
-                    <a href="<?php echo U('News/add','tag=picture');?>"><h2>添加一条图说新闻</h2></a>
-                </div>
+                <form action="/capcc0624/index.php/Admin/News/add_news/tag/<?php echo ($tag); ?>" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend style="font-size: 20px;color:red">添加<?php echo ($tag); ?></legend>
+                        Title(标题): <input type="text" name="title" />&nbsp;标记为头条新闻<input type="checkbox" name="headline" /><br />
+                        Content(内容）: <br /><textarea cols="50" rows="10" name="content" ></textarea><br />
+                        OriAuthor(原作者): <input type="text" name="oriAuthor" /><br />
+                        Author(作者): <input type="text" name="author" /><br />
+                        Editor(编辑): <input type="text" name="editor"  /><br />
+                        Source(来源): <input type="text" name="source"  /><br />
+                        PubTime(发布时间): <input type="text" name="pubTime"  /><br />
+                        Picture(上传图片): <input type="file" name="Picture" /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />
+                        <input type="submit" >
+                    </fieldset>
+                </form>
             </div>
         </div>
     </div>

@@ -16,7 +16,7 @@
             //document.write(del_id);
             if (confirm('确认删除?'))
             {
-                document.location.href="<{:U('News/delete_news')}>?tag=active&id="+del_id;
+                document.location.href="<{:U('Brand/delete_brand')}>?tag=product&id="+del_id;
             }
         }
 
@@ -26,7 +26,7 @@
             //document.write(del_id);
             if (confirm('跳转至编辑窗口？'))
             {
-                document.location.href="<{:U('News/edit_news')}>?tag=active&id="+del_id;
+                document.location.href="<{:U('Brand/edit_brand')}>?tag=product&id="+del_id;
             }
         }
     </script>
@@ -37,24 +37,21 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('News/picture')}>">图说新闻</a></li>
-                <li ><a href="<{:U('News/active')}>">动态新闻</a></li>
+                <li ><a href="<{:U('Brand/tradition')}>">中华老字号</a></li>
+                <li ><a href="<{:U('Brand/product')}>">产品广告</a></li>
+                <li ><a href="<{:U('Brand/brand')}>">品牌广告</a></li>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:动态新闻列表</div>
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:品牌 产品 列表</div>
             <div id="form">
                 <table width="100%" style="text-align: center" >
                     <tr id="tr1" >
                         <td width="5%" align="center">编号</td>
                         <td width="15%" align="center">标题</td>
                         <td width="31%" align="center">内容</td>
-                        <td width="5%" align="center">原作者</td>
                         <td width="5%" align="center">作者</td>
-                        <td width="5%" align="center">编辑</td>
-                        <td width="8%" align="center">发布时间</td>
                         <td width="8%" align="center">点击量</td>
-                        <td width="8%" align="center">来源</td>
                         <td width="10%" align="center">操作</td>
                     </tr>
                     <volist name="list" id="vo">
@@ -62,12 +59,9 @@
                             <td align="center" id="id"><{$vo.id}></td>
                             <td align="center"><{$vo.title}></td>
                             <td ><span style="text-align: left"><{$vo.content}></span></td>
-                            <td align="center"><{$vo.oriauthor}></td>
                             <td align="center"><{$vo.author}></td>
-                            <td align="center"><{$vo.editor}></td>
-                            <td align="center"><{$vo.pubtime}></td>
                             <td align="center"><{$vo.browsenumber}></td>
-                            <td align="center"><{$vo.source}></td>
+
                             <td align="center"><span><input type="submit" value="删除" onclick="del(<{$vo.id}>)"></span>&nbsp;<span><input type="submit" value="编辑" onclick="edit(<{$vo.id}>)"></span></td>
                         </tr>
                     </volist>
@@ -76,16 +70,14 @@
                     <{$page}>
                     <br />
                     <br />
-                    <a href="<{:U('News/add','tag=active')}>"><h2>添加一条动态新闻</h2></a>
+                    <a href="<{:U('Brand/add','tag=product')}>"><h2>添加一条 产品</h2></a>
                 </div>
             </div>
 
         </div>
     </div>
     <div id="bottomDiv"></div>
-    <!--</div>-->
-    <script language="javascript">
-        $("#test1").toggle(function(){$("#test").slideDown()},function(){$("#test").slideUp()})
-    </script>
+    </div>
+
 </body>
 </html>
