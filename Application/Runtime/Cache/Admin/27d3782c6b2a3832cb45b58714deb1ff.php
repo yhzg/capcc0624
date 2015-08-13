@@ -69,6 +69,7 @@
             </ul>
         </div>
         <div id="right">
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:旅游编辑首页 &nbsp;&nbsp; <sapn style="color:red">点击<-左侧按钮开始操作！</sapn> </div>
         </div>
     </div>
 </div>

@@ -44,20 +44,19 @@
                     <fieldset>
                         <!--相关信息传递过来给各个输入框，点击后内容不消失，需自行修改-->
                         <legend style="font-size: 20px;">编辑新闻</legend>
-                        Title(标题): <input type="text" name="title" value='<{$news.title}>'  /><br />
-                        Content(内容）: <br /><textarea cols="50" rows="10" name="content" ><{$news.content}></textarea><br />
+                        Title(标题): <input type="text" name="title" value='<{$list.title}>'  /><br />
+                        Content(内容）: <br /><textarea cols="50" rows="10" name="content" ><{$list.content}></textarea><br />
                         <h3>----以下四项可以为空，但原作者和作者至少填写一项----</h3>
-                        oriAuthor(原作者): <input type="text" name="oriAuthor" value='<{$news.oriauthor}>'  /><br />
-                        Author(作者): <input type="text" name="author" value='<{$news.author}>'  /><br />
-                        Editor(编辑): <input type="text" name="editor"  value='<{$news.editor}>'  /><br />
-                        Source(来源): <input type="text" name="source" value='<{$news.source}>'  /><br />
+                        oriAuthor(原作者): <input type="text" name="oriAuthor" value='<{$list.oriauthor}>'  /><br />
+                        Author(作者): <input type="text" name="author" value='<{$list.author}>'  /><br />
+                        Editor(编辑): <input type="text" name="editor"  value='<{$list.editor}>'  /><br />
+                        Source(来源): <input type="text" name="source" value='<{$list.source}>'  /><br />
                         <h3 style="color:red">----图片必须重新上传----</h3>
                         Picture(上传图片): <input type="file" name="Picture"  /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />
                         <!--隐藏域 用于传递newsid-->
-                        <input type="hidden" name="nid" value='<{$news.id}>' />
+                        <input type="hidden" name="nid" value='<{$list.id}>' />
                         <input type="submit" value="保存修改" onClick="ChangeState();" />
                     </fieldset>
-
                 </form>
             </div>
         </div>

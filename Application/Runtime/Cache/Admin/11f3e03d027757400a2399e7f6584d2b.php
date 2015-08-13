@@ -50,11 +50,14 @@
 </div>
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>运河网后台管理系统 </title>
+    <script type="text/javascript" src="/capcc0624/Public/Admin/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Admin/index.css" />
+    <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Home/Css/1.1home_font.css" />
 </head>
 <body>
 <div id="mainDiv">
@@ -62,16 +65,33 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<?php echo U('Brand/tradition');?>">中华老字号</a></li>
-                <li ><a href="<?php echo U('Brand/product');?>">产品广告</a></li>
-                <li ><a href="<?php echo U('Brand/brand');?>">品牌广告</a></li>
+                <li ><a href="<?php echo U('Volunteer/grace');?>">风采</a></li>
+                <li ><a href="<?php echo U('Volunteer/act');?>">活动</a></li>
+                <li ><a href="<?php echo U('Volunteer/advice');?>">良策</a></li>
+                <li ><a href="<?php echo U('Volunteer/mon');?>">监测</a></li>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:品牌编辑首页 &nbsp;&nbsp; <sapn style="color:red">点击<-左侧按钮开始操作！</sapn> </div>
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:添加志愿者信息</div>
+            <div id="form">
+                <form action="/capcc0624/index.php/Admin/Volunteer/add_volunteer/tag/<?php echo ($tag); ?>" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend style="font-size: 20px;color:red">添加<?php echo ($tag); ?></legend>
+                        Title(标题): <input type="text" name="title" /><br />
+                        Content(内容）: <br /><textarea cols="50" rows="10" name="content" ></textarea><br />
+                        Author(作者): <input type="text" name="author" /><br />
+                        Picture(上传图片): <input type="file" name="Picture" /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />
+                        <input type="submit" >
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
+    <div id="bottomDiv"></div>
 </div>
+<!--<script language="javascript">
+    $("#test1").toggle(function(){$("#test").slideDown()},function(){$("#test").slideUp()})
+</script>-->
 </body>
 </html>
 </body>

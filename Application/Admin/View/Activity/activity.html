@@ -15,7 +15,7 @@
             //document.write(del_id);
             if (confirm('确认删除?'))
             {
-                document.location.href="<{:U('News/delete_news')}>?tag=picture&id="+del_id;
+                document.location.href="<{:U('Activity/delete_activity')}>?tag=activity&id="+del_id;
             }
         }
 
@@ -25,7 +25,7 @@
             //document.write(del_id);
             if (confirm('跳转至编辑窗口？'))
             {
-                document.location.href="<{:U('News/edit_news')}>?tag=picture&id="+del_id;
+                document.location.href="<{:U('Activity/edit_activity')}>?tag=activity&id="+del_id;
             }
         }
     </script>
@@ -36,12 +36,11 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('News/picture')}>">图说新闻</a></li>
-                <li ><a href="<{:U('News/active')}>">动态新闻</a></li>
+                <li ><a href="<{:U('Activity/activity')}>">活动</a></li>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;当前位置:新闻 图说 列表</div>
+            <div id="current">&nbsp;&nbsp;当前位置:活动 活动 列表</div>
             <div id="form">
                     <table width="100%" style="text-align: center" >
                         <tr id="tr1" >
@@ -65,7 +64,7 @@
                     <{$page}>
                     <br />
                     <br />
-                    <a href="<{:U('News/add','tag=picture')}>"><h2>添加一条图说新闻</h2></a>
+                    <a href="<{:U('Activity/add','tag=activity')}>"><h2>添加一条活动</h2></a>
                 </div>
             </div>
         </div>

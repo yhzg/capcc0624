@@ -11,43 +11,51 @@ namespace Admin\Controller;
 
 use Think\Controller;
 
-class BrandController extends Controller {
+class VolunteerController extends Controller {
 
-    //显示老字号列表
-    public function tradition()
+//风采
+    public function grace()
     {
         R('Common/show_list',array(ACTION_NAME));
     }
 
-    //显示动态新闻列表
-    public function product()
-    {
-        R('Common/show_list',array(ACTION_NAME));
-    }
-    public function brand()
+//活动
+    public function act()
     {
         R('Common/show_list',array(ACTION_NAME));
     }
 
-    //添加新闻的页面
+//良策
+    public function advice()
+    {
+        R('Common/show_list',array(ACTION_NAME));
+    }
+
+//监测
+    public function mon()
+    {
+        R('Common/show_list',array(ACTION_NAME));
+    }
+
+
     public function add()
     {
         R('Common/add');
     }
 
-    public function  add_brand()
+
+    public function  add_volunteer()
     {
         R('Common/add_info');
     }
 
 
-    public function delete_brand()
+    public function delete_volunteer()
     {
         R('Common/delete_info');
     }
-    public function edit_brand()
+    public function edit_volunteer()
     {
         R('Common/edit_info');
-
     }
 }

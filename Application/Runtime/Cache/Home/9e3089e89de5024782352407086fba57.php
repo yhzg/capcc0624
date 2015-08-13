@@ -8,7 +8,7 @@
     <META name="keywords" content="中国运河网">
     <meta name="description" content="中国运河网">
     <title>中国运河网</title>
-    <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Home/Css/css.css" />
+    <link rel="stylesheet" type="text/css" href="/CAPCC0624/Public/Home/Css/css.css" />
 </head>
 <body>
 <div class="header_box">
@@ -21,13 +21,13 @@
         <table width="1200" height="174" class="table-center">
             <tr>
                 <td width="20%">
-                    <img src="/capcc0624/Public/Home/Images/home/logo.jpg" alt="" width="501" height="174"/>
+                    <img src="/CAPCC0624/Public/Home/Images/home/logo.jpg" alt="" width="501" height="174"/>
                 </td>
                 <td width="">
-                    <img src="/capcc0624/Public/Home/Images/home/headcenter.jpg" alt="" width="402" height="99"/>
+                    <img src="/CAPCC0624/Public/Home/Images/home/headcenter.jpg" alt="" width="402" height="99"/>
                 </td>
                 <td width="10%">
-                    <form style="width:228px;height:27px; background: url('/capcc0624/Public/Home/Images/home/searchbg.jpg')">
+                    <form style="width:228px;height:27px; background: url('/CAPCC0624/Public/Home/Images/home/searchbg.jpg')">
                         <input type="text" style="width:195px;height:21px;margin-top: 1%;margin-left:1%;border:0px;">
                     </form>
                 </td>
@@ -63,7 +63,7 @@
                 </ul>
             </li>
             <li class="ge"></li>
-            <li><a href="/capcc0624/index.php/Home/Travel">旅游</a>
+            <li><a href="/CAPCC0624/index.php/Home/Travel">旅游</a>
                 <ul>
                     <li><a href="">景点</a></li>
                     <li><a href="">吃住</a></li>
@@ -122,13 +122,13 @@
         <div class="left_box">
             <!--首页新闻图片-->
             <?php if(is_array($home_pic)): $i = 0; $__LIST__ = $home_pic;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="">
-                    <img src="/capcc0624/Public/<?php echo ($vo["imgpath"]); ?>" width="802" height="451"/>
+                    <img src="/CAPCC0624/Public/<?php echo ($vo["imgpath"]); ?>" width="802" height="451"/>
                 </a><?php endforeach; endif; else: echo "" ;endif; ?>
         </div>
         <div class="right_box">
             <div class="right_con" style="height:450px;">
                 <h2 class="pubtit top_border_ff9900"><a href="#" class="more"
-                                                        style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
+                                                        style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
                         class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
                 <dl class="r_news_dl1">
                     <dt>
@@ -166,11 +166,11 @@
                 <div class="height10"></div>
                 <div class="r_news_dl3_box fl">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>中国世遗项目</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>中国世遗项目</span>
                     </h4>
                     <dl class="r_news_dl3">
                         <dt><a href="#">
-                            <img src="/capcc0624/Public/<?php echo ($list3[0]["imgpath"]); ?>"/>
+                            <img src="/CAPCC0624/Public/<?php echo ($list3[0]["imgpath"]); ?>"/>
                         </a>
                         </dt>
                         <dd>
@@ -185,10 +185,10 @@
                 </div>
                 <div class="r_news_dl3_box fr">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>申遗历程</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>申遗历程</span>
                     </h4>
                     <dl class="r_news_dl3">
-                        <dt><a href="#"><img src="/capcc0624/Public/Home/Images/home/p1.jpg"></a></dt>
+                        <dt><a href="#"><img src="/CAPCC0624/Public/Home/Images/home/p1.jpg"></a></dt>
                         <dd>
                             <!--申遗历程-->
                             <h3><a href="#"><?php echo ($list4[0]['title']); ?></a></h3>
@@ -203,9 +203,9 @@
             <div class="right_con" style="height:390px;">
                 <h2 class="pubtit top_border_bba422"><strong class="f1485a3">活&nbsp;&nbsp;动</strong></h2>
                 <ul class="pic_news_ul1">
-                    <li><a href="#"><img src="/capcc0624/Public/Home/Images/home/act_pic1.jpg"></a></li>
-                    <li><a href="#"><img src="/capcc0624/Public/Home/Images/home/act_pic2.jpg"></a></li>
-                    <li><a href="#"><img src="/capcc0624/Public/Home/Images/home/act_pic3.jpg"></a></li>
+                    <li><a href="#"><img src="/CAPCC0624/Public/Home/Images/home/act_pic1.jpg"></a></li>
+                    <li><a href="#"><img src="/CAPCC0624/Public/Home/Images/home/act_pic2.jpg"></a></li>
+                    <li><a href="#"><img src="/CAPCC0624/Public/Home/Images/home/act_pic3.jpg"></a></li>
                 </ul>
                 <div class="height10"></div>
                 <ul class="news_ul1">
@@ -221,7 +221,7 @@
             </div>
         </div>
     </div>
-    <div class="ad_box1"><img border="0" src="/capcc0624/Public/Home/Images/home/ad1.jpg" width="1200" height="100"></div>
+    <div class="ad_box1"><img border="0" src="/CAPCC0624/Public/Home/Images/home/ad1.jpg" width="1200" height="100"></div>
     <div class="wrap">
         <div class="left_box">
             <div class="left_con" style="height:250px;">
@@ -229,7 +229,7 @@
                         href="#">运河人物</a><a>|</a><a href="#">运河地图</a></h2>
                 <h4 class="pubtit1"><a href="#" class="more"></a><span>运河地图</span></h4>
                 <dl class="about_dl">
-                    <dt><a href="#"><img src="/capcc0624/Public/<?php echo ($city[0]['imgpath']); ?>"></a></dt>
+                    <dt><a href="#"><img src="/CAPCC0624/Public/<?php echo ($city[0]['imgpath']); ?>"></a></dt>
                     <dd>
                         <h3><a href="#"> <?php echo ($city[0]['title']); ?></a></h3>
 
@@ -244,30 +244,30 @@
 
                 <div class="lv_pic_box fl">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>景点</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>景点</span>
                     </h4>
                     <ul class="lv_pic_con1">
-                        <li><a href=""><img src="/capcc0624/Public/<?php echo ($travel_spot[0]['imgpath']); ?>"></a>
+                        <li><a href=""><img src="/CAPCC0624/Public/<?php echo ($travel_spot[0]['imgpath']); ?>"></a>
 
                             <p><?php echo ($travel_spot[0]['title']); ?></p></li>
-                        <li><a href=""><img src="/capcc0624/Public/<?php echo ($travel_spot[1]['imgpath']); ?>"></a>
+                        <li><a href=""><img src="/CAPCC0624/Public/<?php echo ($travel_spot[1]['imgpath']); ?>"></a>
 
                             <p><?php echo ($travel_spot[1]['title']); ?></p></li>
-                        <li><a href=""><img src="/capcc0624/Public/<?php echo ($travel_spot[2]['imgpath']); ?>"></a>
+                        <li><a href=""><img src="/CAPCC0624/Public/<?php echo ($travel_spot[2]['imgpath']); ?>"></a>
 
                             <p><?php echo ($travel_spot[2]['title']); ?></p></li>
                     </ul>
                 </div>
                 <div class="lv_pic_box fr">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>吃住</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>吃住</span>
                     </h4>
                     <!--吃住-->
                     <ul class="lv_pic_con2">
-                        <li><a href=""><img src="/capcc0624/Public/<?php echo ($travel_eat[0]['imgpath']); ?>"></a>
+                        <li><a href=""><img src="/CAPCC0624/Public/<?php echo ($travel_eat[0]['imgpath']); ?>"></a>
 
                             <p><?php echo ($travel_eat[0]['title']); ?></p></li>
-                        <li><a href=""><img src="/capcc0624/Public/Home/Images/home/lv5.jpg"></a>
+                        <li><a href=""><img src="/CAPCC0624/Public/Home/Images/home/lv5.jpg"></a>
 
                             <p>榴莲酥</p></li>
                     </ul>
@@ -275,12 +275,12 @@
                 <hr>
                 <div class="gl_box">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>攻略</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>攻略</span>
                     </h4>
 
-                    <div class="gl_map"><img src="/capcc0624/Public/<?php echo ($travel_story[0]['imgpath']); ?>"></div>
+                    <div class="gl_map"><img src="/CAPCC0624/Public/<?php echo ($travel_story[0]['imgpath']); ?>"></div>
                     <dl class="gl_dl">
-                        <dt><a href="#"><img src="/capcc0624/Public/<?php echo ($travel_story[0]['imgpath']); ?>"></a></dt>
+                        <dt><a href="#"><img src="/CAPCC0624/Public/<?php echo ($travel_story[0]['imgpath']); ?>"></a></dt>
                         <dd><p><?php echo ($travel_story[0]['title']); ?><br>
                             <?php echo ($travel_story[0]['content']); ?></p></dd>
                     </dl>
@@ -295,12 +295,12 @@
                 <h4 class="pubtit2"><span>风采</span></h4>
 
                 <div class="zyz_pic_box1">
-                    <a href="#"><img src="/capcc0624/Public/Home/Images/home/zyz_pic1.jpg"></a>
+                    <a href="#"><img src="/CAPCC0624/Public/Home/Images/home/zyz_pic1.jpg"></a>
                 </div>
                 <h4 class="pubtit2"><span>活动</span></h4>
                 <ul class="zyz_pic_box2">
-                    <li><a href=""><img src="/capcc0624/Public/Home/Images/home/zyz_pic2.jpg"></a></li>
-                    <li><a href=""><img src="/capcc0624/Public/Home/Images/home/zyz_pic3.jpg"></a></li>
+                    <li><a href=""><img src="/CAPCC0624/Public/Home/Images/home/zyz_pic2.jpg"></a></li>
+                    <li><a href=""><img src="/CAPCC0624/Public/Home/Images/home/zyz_pic3.jpg"></a></li>
                 </ul>
                 <div class="zyz_txt fl">
                     <h4 class="pubtit2"><span>良策</span></h4>
@@ -324,10 +324,10 @@
 
                 <div class="art_box fl">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>传奇</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>传奇</span>
                     </h4>
                     <dl>
-                        <dt><a href="#"><img src="/capcc0624/Public/<?php echo ($classic_legend[0]['imgpath']); ?>"></a></dt>
+                        <dt><a href="#"><img src="/CAPCC0624/Public/<?php echo ($classic_legend[0]['imgpath']); ?>"></a></dt>
                         <dd>
                             <h3><a href="#"><?php echo ($classic_legend[0]['title']); ?></a></h3>
 
@@ -338,10 +338,10 @@
                 </div>
                 <div class="art_box fr">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>艺术群</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>艺术群</span>
                     </h4>
                     <dl>
-                        <dt><a href="#"><img src="/capcc0624/Public/<?php echo ($classic_group[0]['imgpath']); ?>"></a></dt>
+                        <dt><a href="#"><img src="/CAPCC0624/Public/<?php echo ($classic_group[0]['imgpath']); ?>"></a></dt>
                         <dd>
                             <h3><a href="#"><?php echo ($classic_group[0]['name']); ?></a></h3>
 
@@ -353,10 +353,10 @@
                 <hr>
                 <div class="art_box fl">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>市场</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>市场</span>
                     </h4>
                     <dl>
-                        <dt><a href="#"><img src="/capcc0624/Public/<?php echo ($classic_market[0]['imgpath']); ?>"></a></dt>
+                        <dt><a href="#"><img src="/CAPCC0624/Public/<?php echo ($classic_market[0]['imgpath']); ?>"></a></dt>
                         <dd>
                             <h3><a href="#"><?php echo ($classic_market[0]['title']); ?></a></h3>
 
@@ -366,10 +366,10 @@
                 </div>
                 <div class="art_box fr">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>评论</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>评论</span>
                     </h4>
                     <dl>
-                        <dt><a href="#"><img src="/capcc0624/Public/<?php echo ($classic_comment[0]['imgpath']); ?>"></a></dt>
+                        <dt><a href="#"><img src="/CAPCC0624/Public/<?php echo ($classic_comment[0]['imgpath']); ?>"></a></dt>
                         <dd>
                             <h3><a href="#"><?php echo ($classic_comment[0]['title']); ?></a></h3>
 
@@ -386,7 +386,7 @@
 
                 <div class="pro_box1">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>中华老字号</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>中华老字号</span>
                     </h4>
                     <ul class="news_ul2">
                         <li><a href="#"><?php echo ($brand_tradition[0]['title']); ?></a></li>
@@ -400,20 +400,20 @@
 
                 <div class="pro_box3">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>品牌广告</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>品牌广告</span>
                     </h4>
                     <dl>
-                        <dt><a href="#"><img src="/capcc0624/Public/<?php echo ($brand_brand[0]['imgpath']); ?>"></a></dt>
+                        <dt><a href="#"><img src="/CAPCC0624/Public/<?php echo ($brand_brand[0]['imgpath']); ?>"></a></dt>
                         <dd><p><?php echo ($brand_brand[0]['title']); ?></p></dd>
                     </dl>
                     <dl>
-                        <dt><a href="#"><img src="/capcc0624/Public/<?php echo ($brand_brand[1]['imgpath']); ?>"></a></dt>
+                        <dt><a href="#"><img src="/CAPCC0624/Public/<?php echo ($brand_brand[1]['imgpath']); ?>"></a></dt>
                         <dd><p><?php echo ($brand_brand[1]['title']); ?></p></dd>
                     </dl>
                 </div>
                 <div class="pro_box2">
                     <h4 class="pubtit1"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>产品广告</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>产品广告</span>
                     </h4>
 
                     <p><?php echo ($brand_product[0]['content']); ?>······</p>
@@ -428,19 +428,19 @@
 
                 <div class="bbs_box1">
                     <h4 class="pubtit2"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>专家视点</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>专家视点</span>
                     </h4>
-                    <a href="#"><img src="/capcc0624/Public/Home/Images/home/bbs_pic1.jpg"></a>
+                    <a href="#"><img src="/CAPCC0624/Public/Home/Images/home/bbs_pic1.jpg"></a>
                 </div>
                 <div class="bbs_box1">
                     <h4 class="pubtit2"><a href="#" class="more"></a><span>原创空间</span></h4>
-                    <a href="#"><img src="/capcc0624/Public/Home/Images/home/bbs_pic2.jpg"></a>
+                    <a href="#"><img src="/CAPCC0624/Public/Home/Images/home/bbs_pic2.jpg"></a>
                 </div>
                 <div class="bbs_box1">
                     <h4 class="pubtit2"><a href="#" class="more"
-                                           style="background: url('/capcc0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>百家杂谈</span>
+                                           style="background: url('/CAPCC0624/Public/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>百家杂谈</span>
                     </h4>
-                    <a href="#"><img src="/capcc0624/Public/Home/Images/home/bbs_pic3.jpg"></a>
+                    <a href="#"><img src="/CAPCC0624/Public/Home/Images/home/bbs_pic3.jpg"></a>
                 </div>
 
             </div>
@@ -488,7 +488,7 @@
     <p><a href="?">网站介绍</a>/<a href="?">组织机构</a>/<a href="?">联系方式</a>/<a href="?">商务合作</a>/<a href="?">人才招聘</a>/<a
             href="?">合作伙伴</a>/<a href="?">广告服务</a>/<a href="?">友情链接</a>/<a href="?">法律声明</a></p>
 
-    <p><img border="0" src="/capcc0624/Public/Home/Images/home/flink.jpg" width="602" height="58"></p>
+    <p><img border="0" src="/CAPCC0624/Public/Home/Images/home/flink.jpg" width="602" height="58"></p>
 </div>
 <div class="copyright">
     <p>中国运河广告招商部联系电话：0510-851388322 18610600393 18618130703<br>

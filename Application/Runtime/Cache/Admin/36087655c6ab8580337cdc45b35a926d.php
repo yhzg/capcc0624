@@ -62,13 +62,12 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<?php echo U('Brand/tradition');?>">中华老字号</a></li>
-                <li ><a href="<?php echo U('Brand/product');?>">产品广告</a></li>
-                <li ><a href="<?php echo U('Brand/brand');?>">品牌广告</a></li>
+                <li ><a href="<?php echo U('News/picture');?>">图说新闻</a></li>
+                <li ><a href="<?php echo U('News/active');?>">动态新闻</a></li>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:品牌编辑首页 &nbsp;&nbsp; <sapn style="color:red">点击<-左侧按钮开始操作！</sapn> </div>
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:新闻编辑首页 &nbsp;&nbsp; <sapn style="color:red">点击<-左侧按钮开始操作！</sapn> </div>
         </div>
     </div>
 </div>

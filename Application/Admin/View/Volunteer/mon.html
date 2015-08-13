@@ -15,7 +15,7 @@
             //document.write(del_id);
             if (confirm('确认删除?'))
             {
-                document.location.href="<{:U('News/delete_news')}>?tag=picture&id="+del_id;
+                document.location.href="<{:U('Volunteer/delete_volunteer')}>?tag=mon&id="+del_id;
             }
         }
 
@@ -25,7 +25,7 @@
             //document.write(del_id);
             if (confirm('跳转至编辑窗口？'))
             {
-                document.location.href="<{:U('News/edit_news')}>?tag=picture&id="+del_id;
+                document.location.href="<{:U('Volunteer/edit_volunteer')}>?tag=mon&id="+del_id;
             }
         }
     </script>
@@ -36,25 +36,29 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('News/picture')}>">图说新闻</a></li>
-                <li ><a href="<{:U('News/active')}>">动态新闻</a></li>
+                <li ><a href="<{:U('Volunteer/grace')}>">风采</a></li>
+                <li ><a href="<{:U('Volunteer/act')}>">活动</a></li>
+                <li ><a href="<{:U('Volunteer/advice')}>">良策</a></li>
+                <li ><a href="<{:U('Volunteer/mon')}>">监测</a></li>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;当前位置:新闻 图说 列表</div>
+            <div id="current">&nbsp;&nbsp;当前位置:志愿者 监测 列表</div>
             <div id="form">
                     <table width="100%" style="text-align: center" >
                         <tr id="tr1" >
                             <td width="5%" align="center">编号</td>
                             <td width="15%" align="center">标题</td>
+                            <td width="15%" align="center">作者</td>
                             <td width="31%" align="center">内容</td>
                             <td width="5%" align="center">点击量</td>
                             <td width="10%" align="center">操作</td>
                         </tr>
                         <volist name="list" id="vo">
                             <tr>
-                                <td align="center" id="newsid"><{$vo.id}></td>
+                                <td align="center" id="id"><{$vo.id}></td>
                                 <td align="center"><{$vo.title}></td>
+                                <td align="center"><{$vo.author}></td>
                                 <td ><span style="text-align: left"><{$vo.content}></span></td>
                                 <td align="center"><{$vo.browsenumber}></td>
                                 <td align="center"><span><input type="submit" value="删除" onclick="del(<{$vo.id}>)"></span>&nbsp;<span><input type="submit" value="编辑" onclick="edit(<{$vo.id}>)"></span></td>
@@ -65,7 +69,7 @@
                     <{$page}>
                     <br />
                     <br />
-                    <a href="<{:U('News/add','tag=picture')}>"><h2>添加一条图说新闻</h2></a>
+                    <a href="<{:U('Volunteer/add','tag=mon')}>"><h2>添加一条 监测 记录</h2></a>
                 </div>
             </div>
         </div>

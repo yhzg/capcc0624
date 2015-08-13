@@ -50,28 +50,71 @@
 </div>
 </body>
 </html>
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>运河网后台管理系统 </title>
+    <script type="text/javascript" src="/capcc0624/Public/Admin/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Admin/index.css" />
+    <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Home/Css/1.1home_font.css" />
+    <script language="JavaScript">
+        //在离开页面时判断是否有未保存的输入值
+        var hasSaved = false;//是否有输入的内容未保存标志，初始值为false
+
+        function CheckUnsave(){
+            if(hasSaved==false)
+            {
+                alert("内容尚未保存，确定离开？")
+                return false;
+
+            }
+            //return true; //不能加这个语句
+        }
+
+        //保存了则改变状态
+        function ChangeState()
+        {
+            hasSaved = true;
+        }
+    </script>
 </head>
-<body>
+<body onbeforeunload="return CheckUnsave();">
 <div id="mainDiv">
     <div id="centerDiv">
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<?php echo U('Brand/tradition');?>">中华老字号</a></li>
-                <li ><a href="<?php echo U('Brand/product');?>">产品广告</a></li>
-                <li ><a href="<?php echo U('Brand/brand');?>">品牌广告</a></li>
+                <li ><a href="<?php echo U('Travel/spot');?>">景点</a></li>
+                <li ><a href="<?php echo U('Travel/eat');?>">吃</a></li>
+                <li ><a href="<?php echo U('Travel/live');?>">住</a></li>
+                <li ><a href="<?php echo U('Travel/story');?>">攻略</a></li>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:品牌编辑首页 &nbsp;&nbsp; <sapn style="color:red">点击<-左侧按钮开始操作！</sapn> </div>
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:旅游编辑</div>
+            <div id="form">
+                <form action="/capcc0624/index.php/Admin/Travel/add_travel/tag/<?php echo ($tag); ?>" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <!--相关信息传递过来给各个输入框，点击后内容不消失，需自行修改-->
+                        <legend style="font-size: 20px;color:red">编辑<?php echo ($tag); ?></legend>
+                        Title(标题): <input type="text" name="title" value='<?php echo ($list["title"]); ?>'  /><br />
+                        Content(内容）: <br /><textarea cols="50" rows="10" name="content" ><?php echo ($list["content"]); ?></textarea><br />
+                        Author(作者): <input type="text" name="author" value='<?php echo ($list["author"]); ?>'  /><br />
+                        <h3 style="color:red">----图片必须重新上传----</h3>
+                        Picture(上传图片): <input type="file" name="Picture"  /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />
+                        <!--隐藏域 用于传递travelid-->
+                        <input type="hidden" name="nid" value='<?php echo ($list["id"]); ?>' />
+                        <input type="submit" value="保存修改" onClick="ChangeState();" />
+                    </fieldset>
+
+                </form>
+            </div>
         </div>
     </div>
+    <div id="bottomDiv"></div>
 </div>
+
 </body>
 </html>
 </body>

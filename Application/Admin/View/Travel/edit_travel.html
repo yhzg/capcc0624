@@ -46,13 +46,13 @@
                     <fieldset>
                         <!--相关信息传递过来给各个输入框，点击后内容不消失，需自行修改-->
                         <legend style="font-size: 20px;color:red">编辑<{$tag}></legend>
-                        Title(标题): <input type="text" name="title" value='<{$travel.title}>'  /><br />
-                        Content(内容）: <br /><textarea cols="50" rows="10" name="content" ><{$travel.content}></textarea><br />
-                        Author(作者): <input type="text" name="author" value='<{$travel.author}>'  /><br />
+                        Title(标题): <input type="text" name="title" value='<{$list.title}>'  /><br />
+                        Content(内容）: <br /><textarea cols="50" rows="10" name="content" ><{$list.content}></textarea><br />
+                        Author(作者): <input type="text" name="author" value='<{$list.author}>'  /><br />
                         <h3 style="color:red">----图片必须重新上传----</h3>
                         Picture(上传图片): <input type="file" name="Picture"  /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />
                         <!--隐藏域 用于传递travelid-->
-                        <input type="hidden" name="nid" value='<{$travel.id}>' />
+                        <input type="hidden" name="nid" value='<{$list.id}>' />
                         <input type="submit" value="保存修改" onClick="ChangeState();" />
                     </fieldset>
 
