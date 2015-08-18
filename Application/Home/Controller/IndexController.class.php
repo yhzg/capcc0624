@@ -42,6 +42,11 @@ class IndexController extends Controller {
             $this->assign('list5',$data3);
 
             // 活动
+            $res66= M('activity');
+            $data['id']=array('ELT',1);
+            $data55=$res66->where($data)->select();
+            $data55[0]['content']=R('SubString/subString',array($data55[0]['content'],0,90));
+            $this->assign('activity',$data55);
 
             // 城市
             $res6= M('city_canal');
