@@ -11,112 +11,7 @@
     <load href="__PUBLIC__/Home/Css/css.css"/>
 </head>
 <body>
-<div class="header_box">
-    <div class="headnav">
-        <div class="topfav">
-            <a href="<{$navbar.url1}>"><{$navbar.bar1}></a>|<a href="<{$navbar.url2}>"><{$navbar.bar2}></a>|<a href="#">商城</a>|<a href="#">客服</a>
-        </div>
-    </div>
-    <div class="header">
-        <table width="1200" height="174" class="table-center">
-            <tr>
-                <td width="20%">
-                    <img src="__PUBLIC__/Home/Images/home/logo.jpg" alt="" width="501" height="174"/>
-                </td>
-                <td width="">
-                    <img src="__PUBLIC__/Home/Images/home/headcenter.jpg" alt="" width="402" height="99"/>
-                </td>
-                <td width="10%">
-                    <form style="width:228px;height:27px; background: url('__PUBLIC__/Home/Images/home/searchbg.jpg')">
-                        <input type="text" style="width:195px;height:21px;margin-top: 1%;margin-left:1%;border:0px;">
-                    </form>
-                </td>
-            </tr>
-        </table>
-    </div>
-    <div class="clearfloat"></div>
-    <div class="nav">
-        <ul id="nav">
-            <li><a href="index.html">新闻</a>
-                <ul>
-                    <li><a href="">图片新闻</a></li>
-                    <li><a href="">动态新闻</a></li>
-                </ul>
-            </li>
-            <li class="ge"></li>
-            <li><a href="#">世遗</a>
-                <ul>
-                    <li><a href="">世界遗产组织</a></li>
-                    <li><a href="">组织公约</a></li>
-                    <li><a href="">中国世遗项目</a></li>
-                    <li><a href="">申遗历程</a></li>
-                    <li><a href="">研究机构</a></li>
-                    <li><a href="">主要媒体</a></li>
-                </ul>
-            </li>
-            <li class="ge"></li>
-            <li><a href="#">城市</a>
-                <ul>
-                    <li><a href="">非物质文化遗产保护</a></li>
-                    <li><a href="">运河人物</a></li>
-                    <li><a href="">城市</a></li>
-                </ul>
-            </li>
-            <li class="ge"></li>
-            <li><a href="__APP__/Home/Travel">旅游</a>
-                <ul>
-                    <li><a href="">景点</a></li>
-                    <li><a href="">吃住</a></li>
-                    <li><a href="">攻略</a></li>
-                </ul>
-            </li>
-            <li class="ge"></li>
-            <li><a href="#">品牌</a>
-                <ul>
-                    <li><a href="">中华老字号</a></li>
-                    <li><a href="">产品广告</a></li>
-                    <li><a href="">品牌广告</a></li>
-                </ul>
-            </li>
-            <li class="ge"></li>
-            <li><a href="#">数字美术馆</a>
-                <ul>
-                    <li><a href="">传奇</a></li>
-                    <li><a href="">市场</a></li>
-                    <li><a href="">评论</a></li>
-                    <li><a href="">艺术群</a></li>
-                </ul>
-            </li>
-            <li class="ge"></li>
-            <li><a href="#">活动</a>
-                <ul>
-                    <li><a href="">近期活动</a></li>
-                    <li><a href="">......</a></li>
-                    <li><a href="">......</a></li>
-                    <li><a href="">......</a></li>
-                </ul>
-            </li>
-            <li class="ge"></li>
-            <li><a href="#">志愿者家园</a>
-                <ul>
-                    <li><a href="">观点</a></li>
-                    <li><a href="">动态</a></li>
-                    <li><a href="">建议</a></li>
-                    <li><a href="">反馈</a></li>
-                </ul>
-            </li>
-            <li class="ge"></li>
-            <li><a href="#">论坛</a>
-                <ul>
-                    <li><a href="">专家视点</a></li>
-                    <li><a href="">原创空间</a></li>
-                    <li><a href="">百家杂谈</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div class="height20"></div>
-</div>
+
 <div class="wrap_box">
     <div class="wrap">
         <div class="left_box">
@@ -205,20 +100,20 @@
             <div class="right_con" style="height:390px;">
                 <h2 class="pubtit top_border_bba422"><strong class="f1485a3">活&nbsp;&nbsp;动</strong></h2>
                 <ul class="pic_news_ul1">
-                    <li><a href="#"><img src="__PUBLIC__/Home/Images/home/act_pic1.jpg"></a></li>
-                    <li><a href="#"><img src="__PUBLIC__/Home/Images/home/act_pic2.jpg"></a></li>
-                    <li><a href="#"><img src="__PUBLIC__/Home/Images/home/act_pic3.jpg"></a></li>
+                    <li><a href="#"><img src="__PUBLIC__/<{$activity[0]['imgpath']}>"></a></li>
+                    <li><a href="#"><img src="__PUBLIC__/<{$activity[1]['imgpath']}>"></a></li>
+                    <li><a href="#"><img src="__PUBLIC__/<{$activity[2]['imgpath']}>"></a></li>
                 </ul>
                 <div class="height10"></div>
                 <ul class="news_ul1">
-                    <li><a href="#">· 日前国家文物局正式公布山东省曲阜鲁国故城、大运河</a></li>
-                    <li><a href="#">· 南旺枢纽为第二批国家考古遗址公园；临淄齐国故城</a></li>
-                    <li><a href="#">· 南旺枢纽为第二批国家考古遗址公园；临淄齐国故城、</a></li>
-                    <li><a href="#">· 城子崖为第二批国家考古遗址公园立项名单</a></li>
-                    <li><a href="#">· 日前国家文物局正式公布山东省曲阜鲁国故城、大运河</a></li>
-                    <li><a href="#">· 南旺枢纽为第二批国家考古遗址公园；临淄齐国故城</a></li>
-                    <li><a href="#">· 城子崖为第二批国家考古遗址公园立项名单</a></li>
-                    <li><a href="#">· 日前国家文物局正式公布山东省曲阜鲁国故城、大运河</a></li>
+                    <li><a href="#">· <{$activity[0]['title']}></a></li>
+                    <li><a href="#">· <{$activity[1]['']}></a></li>
+                    <li><a href="#">· <{$activity[2]['']}></a></li>
+                    <li><a href="#">· <{$activity[3]['']}></a></li>
+                    <li><a href="#">· <{$activity[4]['']}></a></li>
+                    <li><a href="#">· <{$activity[5]['']}></a></li>
+                    <li><a href="#">· <{$activity[6]['']}></a></li>
+                    <li><a href="#">· <{$activity[7]['']}></a></li>
                 </ul>
             </div>
         </div>
@@ -461,12 +356,14 @@
     </dl>
     <dl>
         <dt>[地方媒体]</dt>
-        <dd><a href="?">中国城市新闻网</a>/<a href="?">齐鲁晚报</a>/<a href="?">北京晨报</a>/<a href="?">江南晚报</a>/<a href="?">扬州日报</a>/<a
+        <dd><a href="?">中国城市新闻网</a>/<a href="?">齐鲁晚报</a>/<a href="?">北京晨报</a>/<a href="?">江南晚报</a>/<a
+                href="?">扬州日报</a>/<a
                 href="?">钱江晚报</a></dd>
     </dl>
     <dl>
         <dt>[运河企业品牌网]</dt>
-        <dd><a href="?">红豆居家</a>/<a href="?">奥克斯</a>/<a href="?">松鹤楼</a>/<a href="?">海澜之家</a>/<a href="?">钱江晚报</a>/<a
+        <dd><a href="?">红豆居家</a>/<a href="?">奥克斯</a>/<a href="?">松鹤楼</a>/<a href="?">海澜之家</a>/<a
+                href="?">钱江晚报</a>/<a
                 href="?">淘宝网</a></dd>
     </dl>
     <dl>
@@ -484,21 +381,5 @@
 
 
 </div>
-
-<div class="height10" style="background:#f7f7f7;"></div>
-<div class="footer">
-    <p><a href="?">网站介绍</a>/<a href="?">组织机构</a>/<a href="?">联系方式</a>/<a href="?">商务合作</a>/<a href="?">人才招聘</a>/<a
-            href="?">合作伙伴</a>/<a href="?">广告服务</a>/<a href="?">友情链接</a>/<a href="?">法律声明</a></p>
-
-    <p><img border="0" src="__PUBLIC__/Home/Images/home/flink.jpg" width="602" height="58"></p>
-</div>
-<div class="copyright">
-    <p>中国运河广告招商部联系电话：0510-851388322 18610600393 18618130703<br>
-        版权所有 无锡运河之光文化艺术交流有限公司<br>
-        苏ICP备15032950<br></p>
-    </p>
-</div>
-
-
 </body>
 </html>

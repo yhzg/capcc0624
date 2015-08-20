@@ -16,20 +16,18 @@ img {border:none;}
 .fl {float:left;}
 .fr {float:right;}
 
+.search {width:228px;height:27px;background:url(../images/searchbg.jpg) 0 63px no-repeat;padding:63px 0 0 0;}
+.search dl {margin:0;padding:0}
+.search dl dt {float:left;width:200px;height:27px;}
+.search dl dt input {width:200px;height:27px;line-height:27px;border:none;background:none;}
+.search dl dd {float:right;width:28px;height:27px;}
+.search dl dd input {width:28px;height:27px;border:none;text-indent:-999em;background:none;}
+
 .headnav {width:100%;height:28px;background:#b30d19;}
 .header {width:1200px;padding:0;margin:0 auto;}
 .topfav {width:1200px;height:28px;line-height:28px;text-align:right;color:#fff;margin:0 auto;}
 .topfav a {color:#fff;padding:0 10px;}
-/*.logo {width:501px;height:174px;background:url(../images/logo.jpg) 0 50% no-repeat; float: left;}
-.logo a {display:block;width:500px;height:174px; float: left;}
-.search {width:228px;height:27px;background:url(../images/searchbg.jpg) 0 63px no-repeat;padding:63px 0 0 0;}
-.search dl {margin:0;padding:0}
-.search dl dt {float:left;width:200px;height:27px;}
-.search dl dt input {width:200px;height:27px;line-height:27px;border:none;background:none;} 
-.search dl dd {float:right;width:28px;height:27px;}
-.search dl dd input {width:28px;height:27px;border:none;text-indent:-999em;background:none;}
-.headcenter {width:402px;height:99px;background:url(../images/headcenter.jpg) 0 36px no-repeat;margin:0 0 0 516px;padding:36px 0 0 0;}
-*/
+
 .nav {width:1200px;height:44px;margin:0 auto;padding:0;background:#e4e4e4;border:1px solid #bebebe;}
 .nav ul {margin:0;padding:0;}
 .nav ul li {float:left;height:44px;margin:0;font-size:16px;font-weight:bold;}
@@ -44,7 +42,7 @@ img {border:none;}
     box-shadow:0 2px 2px rgba(0,0,0, .7); /*some css3*/
     -moz-box-shadow:0 2px 2px rgba(0,0,0, .7);
     -webkit-box-shadow:0 2px 2px rgba(0,0,0, .7);
-    text-shadow:0 2px 2px rgba(255,255,255, 0.7);
+    text-shadow:0 2px 2px rgba(200,200,200, 0.7);
 }
 
 /* sublevels */
@@ -85,7 +83,7 @@ img {border:none;}
     opacity:0;
     visibility:hidden;
     padding:0;
-    width:175px;
+    width:160px;
     position:absolute;
     background:#f8f8f8 url(../images/bg.png) repeat-x 0 0;
     border:1px solid #bebebe;
@@ -102,11 +100,12 @@ img {border:none;}
     -o-transition:opacity .25s linear, visibility .1s linear .1s;
     transition:opacity .25s linear, visibility .1s linear .1s;
 }
+/*修改下拉菜单字体*/
 #nav ul li {
-    float:left;height:44px;margin:0;font-size:16px;font-weight:bold;
+    float:left;height:36px;margin:0;font-size:15px;font-weight:bold;
 }
 #nav ul a {
-    display:block;width:150px;height:44px;line-height:44px;text-align:center;color:#333;
+    display:block;width:160px;height:35px;line-height:44px;text-align:center;color:#e2e2e2;
 }
 #nav ul ul {
     left:160px;
@@ -240,7 +239,7 @@ img {border:none;}
 .flink_box dl dd a {color:#555;padding:0 5px;}
 
 
-.footer {width:1200px;height:118px;margin:0 auto;padding:10px 0 0 0;text-align:center;line-height:2;color:#555;background:#f7f7f7;}
+.footer {width:1900px;height:40px;margin:0 auto;padding:10px 0 0 0;text-align:center;line-height:2;color:#555;background:#f7f7f7;}
 .footer p a {color:#555;padding:0 5px;}
 .copyright {width:100%;height:95px;background:#b30d19;}
 .copyright p {padding:3px 0 0 0;text-align:center;color:#fff;font-size:14px;line-height:2;}
