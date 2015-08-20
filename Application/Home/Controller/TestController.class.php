@@ -28,4 +28,22 @@ class TestController extends Controller {
         }
 
     }
+
+    public function db()
+    {
+        $res=$this->user->where('userID= 4')->select();
+        dump($res);
+    }
+
+    public function test()
+    {
+        $data="";
+        $datas= array(12345);
+        for($i=0;$i<count($datas);$i++){
+            $data = $data. "<data>".$datas[$i]."</data>";
+        }
+        echo count($datas);
+        echo '<br>';
+        echo $datas[0];
+    }
 }

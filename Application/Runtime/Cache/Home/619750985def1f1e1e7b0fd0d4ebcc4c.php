@@ -1,24 +1,24 @@
-﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>修改密码-中国运河网</title>
 	<meta http-equiv="content-Type" content="text/html" charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/Css/pwd.css">
-    <script type="text/javascript" src="__PUBLIC__/Home/Js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/Home/Js/pwd.js"></script>
+    <link rel="stylesheet" type="text/css" href="/capcc0624/Public/Home/Css/pwd.css">
+    <script type="text/javascript" src="/capcc0624/Public/Home/Js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="/capcc0624/Public/Home/Js/pwd.js"></script>
 </head>
 <body>
 	<div class="head_body">
 	<div class="head">
     	<div class="head_top">
-        	<div class="logo"><img src="__PUBLIC__/Home/Images/login/ologo.png" /></div>
+        	<div class="logo"><img src="/capcc0624/Public/Home/Images/login/ologo.png" /></div>
             <span class="ts">修改密码</span>
         </div>
         <p>欢迎重新回到中国运河网！享受中国运河网产品服务！</p>
     </div>
     </div>
 	<div class="content">
-		<form id="#mainForm1" class="mainForm mainForm1" action="__APP__/Pwd/do_change_pwd" method="post">
+		<form id="#mainForm1" class="mainForm mainForm1" action="/capcc0624/index.php/Pwd/do_change_pwd" method="post">
 		
 			<div class="normalInput">
 				<!--<input type="text" class="phone" maxlength="11" placeholder="请输入您的新密码">	-->
@@ -29,7 +29,7 @@
 				<!--<input type="text" class="kapkey" maxlength="6" placeholder="请再次输入您的新密码">-->
 				<input type="password"  placeholder="请再次输入您的新密码" name="repassword">
 			</div>
-            <input type="hidden" value="<{$email}>" name="email"/>
+            <input type="hidden" value="<?php echo ($email); ?>" name="email"/>
 			<span class="error error2"></span>
 			<span class="error error3"></span>
 			

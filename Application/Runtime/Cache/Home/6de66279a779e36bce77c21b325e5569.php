@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>找回密码邮件已发送-中国运河网</title>
 	<meta http-equiv="content-Type" content="text/html" charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/Css/mail_login.css">
+	<link rel="stylesheet" type="text/css" href="/capcc0624/Public/Home/Css/mail_login.css">
    <script type="text/javascript"> 
 var countdown=60; 
 function settime(val) { 
@@ -26,7 +26,7 @@ settime(val)
 	<div class="head_body">
 	<div class="head">
     	<div class="head_top">
-        	<div class="logo"><img src="__PUBLIC__/Home/Images/login/ologo.png" /></div>
+        	<div class="logo"><img src="/capcc0624/Public/Home/Images/login/ologo.png" /></div>
         </div>
         <p>欢迎来到中国运河网！享受中国运河网产品服务！</p>
     </div>
@@ -34,7 +34,7 @@ settime(val)
 	<div class="content">
     	<div class="content_body">
     		<p class="duihao">亲爱的中国运河网会员，找回密码邮件已发送!</p>
-            <p class="wanc"><a href="Http://<{$mail_domain}>" target="_blank">【进入邮箱】</a>收取邮件，点击验证链接完成注册</p>
+            <p class="wanc"><a href="Http://<?php echo ($mail_domain); ?>" target="_blank">【进入邮箱】</a>收取邮件，点击验证链接完成注册</p>
            <!-- <p class="wanc">如果您的邮箱没有收到邮件，<input type="button" id="btn" value="请点击重新发送邮件" onclick="settime(this)" /></p>-->
             <p class="tishi">温馨提示：有极少的邮箱会将激活邮件移至“垃圾邮件箱”中，请您仔细查询。</p>
         </div>

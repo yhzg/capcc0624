@@ -1,18 +1,18 @@
-﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
 <html>
 <head>
 	<title>找回密码-中国运河网</title>
 	<meta http-equiv="content-Type" content="text/html" charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/Css/pwd.css">
-	<script type="text/javascript" src="__PUBLIC__/Home/Js/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="__PUBLIC__/Home/Js/pwd.js"></script>
+	<link rel="stylesheet" type="text/css" href="/capcc0624/Public/Home/Css/pwd.css">
+	<script type="text/javascript" src="/capcc0624/Public/Home/Js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/capcc0624/Public/Home/Js/pwd.js"></script>
 
 </head>
 <body>
 	<div class="head_body">
 	<div class="head">
     	<div class="head_top">
-        	<div class="logo"><img src="__PUBLIC__/Home/Images/login/ologo.png" /></div>
+        	<div class="logo"><img src="/capcc0624/Public/Home/Images/login/ologo.png" /></div>
             <span class="ts">找回密码</span>
         </div>
         <p>欢迎重新回到中国运河网！享受中国运河网产品服务！</p>
