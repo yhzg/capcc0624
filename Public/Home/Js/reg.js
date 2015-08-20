@@ -27,7 +27,7 @@ function checkName(){
             $("#checkname").css('color','red');
             return false;
         }
-        var changeUrl = "check_reg_name";
+
         if(username=='')
         {
             $("#checkname").html("用户名不能为空！");
@@ -40,9 +40,10 @@ function checkName(){
             return false;
         }else
         {
+            var changeUrl = "check_reg_name";
             $.post(changeUrl,{ name:username },function(str)
                 {
-                    if (str == 0)
+                  if (str == 0)
                     {
                         $("#checkname").html("<span style='color:red'>抱歉，您输入的用户名已被注册！</span>");
                         return false;

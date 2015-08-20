@@ -14,6 +14,7 @@
     <meta content="mshtml 6.00.6000.16705" name=generator>
 </head>
 <body>
+
 <table cellspacing=0 cellpadding=0 width=651 align=center border=0>
     <tbody>
     <tr>
@@ -60,7 +61,7 @@
                                                 </div>
                                             </td>
                                             <td valign=bottom align=left width=114 height=28>
-                                                <input class=input_1 id=username size=15 name='username' type="text">
+                                                <input class=input_1 id=username size=15 name='adminname' type="text">
                                             </td>
                                         </tr>
                                         <tr>

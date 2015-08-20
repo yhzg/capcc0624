@@ -2,12 +2,40 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
+        public function _before_index()
+        {
+            $username=I('session.username');
+            //session存在，显示登录的用户名
+            //否则，显示登录等按钮
+           if(empty($username))
+           {
+               $navbar['url1']=U('Login/login');
+               $navbar['bar1']='登录';
+               $navbar['url2']=U('Login/register');
+               $navbar['bar2']='立即加入';
+           }else
+           {
+               $navbar['url1']='#';
+               $navbar['bar1']='欢迎您：'.$username;
+               $navbar['url2']=U('Login/logout');
+               $navbar['bar2']='退出登录';
+           }
+
+            $this->assign('navbar',$navbar);
+        }
+
         public function index(){
+
             //直接调用页面  无需存在对应的方法
-//        $this->display('Public:head');
+            $this->display('Public:head');
             // 首页图
-            $m= M('news_picture');
-            $news=$m->order('id desc')->limit('1')->select();
+
+            //在headline=1的字段中获取最新的一条
+            $m= M('news_active');
+            $news=$m->where(array('headline'=>'1'))->order('id desc')->limit('1')->select();
+            $m= M('news_active');
+            $news=$m->where('id = 28')->limit('1')->select();
+
             $this->assign('home_pic',$news);
 
             // 新闻
@@ -42,6 +70,11 @@ class IndexController extends Controller {
             $this->assign('list5',$data3);
 
             // 活动
+            $res66= M('activity');
+            $data['id']=array('ELT',1);
+            $data55=$res66->where($data)->select();
+            $data55[0]['content']=R('SubString/subString',array($data55[0]['content'],0,90));
+            $this->assign('activity',$data55);
 
             // 城市
             $res6= M('city_canal');
@@ -118,11 +151,8 @@ class IndexController extends Controller {
             $data13[0]['content']=R('SubString/subString',array($data13[0]['content'],0,200));
             $this->assign('brand_brand',$data13);
 
-
             $this->display('Index:index1');
+
+            $this->display('Public:foot');
     }
-
-
-
-
 }
