@@ -173,7 +173,7 @@ img {border:none;}
 .fczs_box ul li {float:left;}
 .fczs_box ul li a {display:block;width:246px;height:250px;margin:10px 9px;}
 .fczs_box ul li a img {width:244px;height:183px;border:1px solid #b3b3b3;}
-.fczs_box ul li a p {width:244p;height:48px;line-height:48px;border:1px solid #ddd;text-align:center;color:#666;margin:7px 0;}
+.fczs_box ul li a p {width:244px;height:48px;line-height:48px;border:1px solid #ddd;text-align:center;color:#666;margin:7px 0;}
 
 .zyzjy_right_box {float:right;width:385px;}
 .zyzjy_right_box_con {width:383px;border:1px solid #b3b3b3;overflow:hidden;}
@@ -220,7 +220,7 @@ img {border:none;}
 .pp_leftmain_box {float:left;width:805px;}
 .pp_ad {float:left;width:300px;}
 .pp_ad p {padding:5px 0;}
-.pp_right_txt {float:right;width:388px;padding:5 10px;}
+.pp_right_txt {float:right;width:388px;padding:5px 10px;}
 .pp_right_txt p {line-height:2;}
 
 .pp_rightside {float:right;width:380px;}
