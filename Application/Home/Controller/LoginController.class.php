@@ -331,7 +331,7 @@ class LoginController extends Controller {
         }else
         {
             //返回1或0
-            $res=R('Common/sendTemplateSMS',array($to,$datas,$tempId));
+            $res=R('Sms/sendTemplateSMS',array($to,$datas,$tempId));
         }
         //dump($res);
         //exit;
