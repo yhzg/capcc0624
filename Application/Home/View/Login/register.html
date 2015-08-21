@@ -62,54 +62,54 @@ body {
                                     <div class="control-group">
 	          						 <!-- 账号-->
 	         							 <label class="control-label" for="username" ><h3><strong>账号:</strong></h3></label><br />
-					 							 <input class="input-lg" id="focusedInput" name='username' type="text" placeholder=''>
+					 							 <input class="input-lg" id="focusedInput" name='username' type="text" placeholder='3~20个字母/数字'/><span id="checkname"></span>
 	     							</div>
                                     <!--ajax提示-->
-                                    <div>
-                                        <span id="checkname"></span>
-                                    </div>
+                                  <!--  <div>
+
+                                    </div>-->
                                     <div class="control-group">
 	          						<!-- 密码 -->
 	          						    <label class="control-label" for="code"><h3><strong>密码:</strong></h3></label><br />
-				    						<input class="input-lg " id="pw1" name='password'type="password" placeholder=''>
+				    						<input class="input-lg " id="pw1" name='password'type="password" placeholder='长度为6个字符以上'><span id="checkpwd1"></span>
                                     </div>
-                                    <div>
-                                        <span id="checkpwd1"></span>
-                                    </div>
+                                   <!-- <div>
+
+                                    </div>-->
 
 	    							<div class="control-group" >
 	         							 <!-- 确认密码 -->
 	          					        <div class="controls">
 	          						        <label class="control-label" for="confirm password"><h3><strong>确认密码:</strong></h3></label><br />
-				    						    <input class="input-lg" id="pw2" name='repassword' type="password" placeholder=''>
+				    						    <input class="input-lg" id="pw2" name='repassword' type="password" placeholder='再输一次密码'><span id="checkpwd2"></span>
 	          					         </div>
-                                            <div>
-                                                <span id="checkpwd2"></span>
-                                            </div>
+                                        <!--    <div>
+
+                                            </div>-->
 	        						</div>
 
                                     <div class="controls-group">
                                         <label class="control-label" for="email"><h3><strong>邮箱:</strong></h3></label><br />
-                                        <input class="input-lg" id="email" name='email' type="text" placeholder=''>
+                                        <input class="input-lg" id="email" name='email' type="text" placeholder='somebody@some.com'> <span id="checkemail"></span>
                                     </div>
-                                    <div>
-                                        <span id="checkemail"></span>
-                                    </div>
+                               <!--     <div>
+
+                                    </div>-->
 	        						
 	        						<div class="control-group" >	
 		        						 <!--div class="col-md-12"-->
                                         <table  border="0" cellspacing="0" cellpadding="0">
                                             <tr>
                                                 <td ><label><h3><strong>验证码</strong></h3></label><br />
-                                                    <input class="input-sm" type="text" name="vcode" id="vcode">
+                                                    <input class="input-sm" type="text" name="vcode" id="vcode"> <span id="checkvcode"></span>
                                                 </td>
                                             </tr>
 		      							</table>
 		      							 <!--/div-->
 	      						    </div>
-                                    <div>
-                                        <span id="checkvcode"></span>
-                                    </div><br />
+                                  <!--  <div>
+
+                                    </div>--><br />
 	      						    <div class="control-group" >
                                         <table  border="0" cellspacing="0" cellpadding="0">
                                           <tr>
