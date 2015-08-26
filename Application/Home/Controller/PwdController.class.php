@@ -86,7 +86,8 @@ class PwdController extends Controller {
             $m=M('User');
             $data['password']=md5($new_pwd1);
             $res=$m->where(array('email'=>$email))->save($data);
-            if($res)
+            //$res返回的是影响的行数   更新失败返回false
+            if($res!== false)
             {
                 $this->success('密码修改成功，请登录！',U('Index/index'));
             }else

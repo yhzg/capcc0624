@@ -12,6 +12,7 @@ use Think\Controller;
 use Think\Model;
 use Think\Verify;
 
+
 class CommonController extends Controller {
     //生成验证码
     function verify_code()
@@ -25,5 +26,7 @@ class CommonController extends Controller {
         $Verify = new \Think\Verify($config);
         $Verify->entry();
     }
+
+
 
 }

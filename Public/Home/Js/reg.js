@@ -13,7 +13,7 @@ $(document).ready(function(){
 function checkName(){
     $('#focusedInput').focus(function()
     {
-        $('#checkname').html("用户名长度为3~20个字符，只能包含数字、字母、下划线注册后不可修改！");
+        $('#checkname').html("");
         $('#checkname').css('color','yellow');
     });
 
@@ -63,7 +63,8 @@ function checkName(){
 
         $('#pw1').focus(function()
         {
-            $('#checkpwd1').html("密码长度为6个字符以上！");
+           // $('#checkpwd1').html("密码长度为6个字符以上！");
+            $('#checkpwd1').html("");
             $('#checkpwd1').css('color','yellow');
         });
 
