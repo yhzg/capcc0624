@@ -62,4 +62,38 @@ class CityController extends Controller{
 
     }
 
+    public function city_protect()
+    {
+        $this->display('Public:head');
+
+        //非遗保护
+        $res2= M('city_protect');
+        $data['id']=array('ELT',1);
+        $data2=$res2->where($data)->select();
+        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,200));
+        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,200));
+        $this->assign('city_protect',$data2);
+
+        $this->display();
+
+        $this->display('Public:foot');
+
+    }
+
+    public function city_canal()
+    {
+        $this->display('Public:head');
+
+        //运河地图
+        $res3= M('city_canal');
+        $data['id']=array('ELT',1);
+        $data3=$res3->where($data)->select();
+        $this->assign('city_canal',$data3);
+
+        $this->display();
+
+        $this->display('Public:foot');
+
+    }
+
 }

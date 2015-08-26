@@ -17,4 +17,29 @@ class VolunteerController extends Controller{
 
         $this->display('Public:foot');
     }
+
+    public function volunteer_advice(){
+        $this->display('Public:head');
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function volunteer_grace(){
+        $this->display('Public:head');
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function volunteer_mon(){
+        $this->display('Public:head');
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
 }
