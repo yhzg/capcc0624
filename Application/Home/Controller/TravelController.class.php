@@ -33,6 +33,11 @@ class TravelController extends Controller{
         $this->assign('travel_eat',$data2);
 
         // ×¡
+        $res4= M('travel_live');
+        $data['id']=array('ELT',1);
+        $data4=$res4->where($data)->select();
+        $this->assign('travel_live',$data4);
+
 
         // ¹¥ÂÔ
         $res3= M('travel_story');
