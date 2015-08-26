@@ -39,4 +39,5 @@ class ActivityController extends Controller {
         R('Common/edit_info');
 
     }
+    
 }

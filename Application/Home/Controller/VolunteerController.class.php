@@ -13,10 +13,8 @@ class VolunteerController extends Controller{
     public function index(){
         $this->display('Public:head');
 
-
-
-
         $this->display();
+
         $this->display('Public:foot');
     }
 }
