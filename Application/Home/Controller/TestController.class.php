@@ -46,4 +46,6 @@ class TestController extends Controller {
         echo '<br>';
         echo $datas[0];
     }
+
+
 }

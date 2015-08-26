@@ -92,7 +92,7 @@ class LoginController extends Controller {
                      $title="中国运河网注册激活邮件";
                      $username=$res['username'];
                      $url=base64_encode("username/$username");
-                     $content="欢迎注册中国运河网，点击以下链接进行激活会员！<br /><a href='http://localhost/capcc0624/Login/activate/url/{$url}'> http://localhost/capcc0624/Login/activate/url/{$url} </a>";
+                     $content="欢迎注册中国运河网，点击以下链接进行激活会员！<br /><a href='".CAPCC_DOMAIN.__ROOT__."/Login/activate/url/{$url}'>".CAPCC_DOMAIN.__ROOT__."/Login/activate/url/{$url} </a>";
                      $mail_status=send_mail($res['email'],$title,$content);
                      if($mail_status)
                      {
@@ -228,7 +228,7 @@ class LoginController extends Controller {
             $title="中国运河网注册激活邮件";
             $url=base64_encode("username/$username");
 
-            $content="欢迎注册中国运河网，点击以下链接进行激活会员！<br /><a href='http://localhost/capcc0624/Login/activate/url/{$url}'> http://localhost/capcc0624/Login/activate/url/{$url} </a>";
+            $content="欢迎注册中国运河网，点击以下链接进行激活会员！<br /><a href='".CAPCC_DOMAIN.__ROOT__."/Login/activate/url/{$url}'>".CAPCC_DOMAIN.__ROOT__."/Login/activate/url/{$url} </a>";
 
             $mail_status=send_mail($_POST['email'],$title,$content);
             if($mail_status)
@@ -286,16 +286,32 @@ class LoginController extends Controller {
            $this->redirect('Index/index','',3,'您的账号已激活过，请直接登录！');
        }else
        {
-           $data['activated']=1;
-           $res_chg_activate=$m->where(array('username'=>$username))->save($data);
-
-           if($res_chg_activate)
+           //超过24小时未激活就删除注册信息
+           $time_diff=time()-$res_activate['a_time'];
+           if($time_diff >=3600*24)
            {
-               $this->success('恭喜激活成功,请登录！',U('Index/index'));
+               $del_info= $m->where(array('username'=>$username))->delete();
+               if($del_info==1) {
+                   //删除成功
+                   $this->redirect('Pwd/del_unactivated', '', 3, '页面跳转中...');
+               }else
+               {
+                   $this->redirect('Index/index','',3,'激活失败，请联系客服！');
+               }
            }else
            {
-               $this->redirect('Index/index','',3,'激活失败，请联系客服！');
+               $data['activated']=1;
+               $res_chg_activate=$m->where(array('username'=>$username))->save($data);
+
+               if($res_chg_activate)
+               {
+                   $this->success('恭喜激活成功,请登录！',U('Index/index'));
+               }else
+               {
+                   $this->redirect('Index/index','',3,'激活失败，请联系客服！');
+               }
            }
+
        }
     }
 

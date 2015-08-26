@@ -5,6 +5,7 @@ class IndexController extends Controller {
         public function _before_index()
         {
             $username=I('session.username');
+
             //session存在，显示登录的用户名
             //否则，显示登录等按钮
            if(empty($username))

@@ -28,7 +28,7 @@ class UserModel extends Model {
         array('password','md5',3,'function') , // 对password字段在新增和编辑的时候使md5函数处理
         array('reg_date','get_time',1,'callback'),//注册时间
         //array('name','getName',3,'callback'), // 对name字段在新增和编辑的时候回调getName方法
-        //array('update_time','time',2,'function'), // 对update_time字段在更新的时候写入当前时间戳
+        array('a_time','time',3,'function'), // 对a_time字段在更新的时候写入当前时间戳
         );
 
     //获取注册时间

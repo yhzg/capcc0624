@@ -14,7 +14,7 @@
     <body>
     <div class="header_box">
         <div class="headnav">
-            <div class="topfav"><a href="<{:U('Login/login')}>">登录</a>|<a href="<{:U('Login/register')}>">立即加入</a>|<a href="#">商城</a>|<a href="#">客服</a></div>
+            <div class="topfav"><a href="<{$navbar['url1']}>"><{$navbar['bar1']}></a>|<a href="<{$navbar['url2']}>"><{$navbar['bar2']}></a>|<a href="#">商城</a>|<a href="#">客服</a></div>
         </div>
         <div class="header">
             <table width="1200" height="174" class="table-center">
@@ -28,9 +28,10 @@
                     <td width="10%">
                         <!--search-->
                         <div style="width:228px;height:27px; background: url('__PUBLIC__/Home/Images/home/searchbg.jpg')">
+                            <form action="__APP__/Search/index" method="post">
                             <table>
                                 <tr>
-                                    <td><input type="text"
+                                    <td><input type="text" name="keyword"
                                                style="width:193px;height:25px;border:none;background:none;outline-color: #e4e4e4;">
                                     </td>
                                     <td><input type="submit" value=""
@@ -38,6 +39,7 @@
                                     </td>
                                 </tr>
                             </table>
+                            </form>
                         </div>
                     </td>
                 </tr>
