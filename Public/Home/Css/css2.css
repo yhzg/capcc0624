@@ -18,13 +18,13 @@
 .lv_pic_con2 li p {line-height:30px;}
 
 
-.chengshi_left_box {float:left;}
+.chengshi_left_box {float:left;width:784px}
 .chengshi_left_box_con {width:784px;overflow:hidden;padding:5px;}
 .chengshi_left_box_con1 {width:784px;overflow:hidden;padding:5px;}
 .chengshi_left_box_con2 {width:784px;overflow:hidden;padding:5px;border-top:2px solid #C5161D  ;}
 .chengshi_left_box_con1 p {color:#555;line-height:2;font-size:14px;}
 
-.chengshi_dl {width:474px;height:183px;padding:0px 100px;margin:0px 200px;overflow:right;}
+.chengshi_dl {width:474px;height:183px;padding:0px 100px;margin:0px 200px;}
 .chengshi_dl dt {
 	height: 25px;
 	line-height: 25px;
@@ -68,12 +68,7 @@
 .lvyou_luxian_p span {color:#555;}
 .lvyou_luxian_p strong {font-size:18px;color:#333;font-weight:normal;}
 
-.lvyou_right_box {
-	float: right;
-	width: 330px;
-	position: absolute;
-	margin-left:870px;
-}
+.lvyou_right_box {float: right;width: 330px;  }
 .box {float:left;}
 .lvyou_right_box_con {width:329px;border:1px ;}
 
