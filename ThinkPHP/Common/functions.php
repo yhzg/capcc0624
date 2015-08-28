@@ -1600,7 +1600,7 @@ function getpage(&$m,$where,$pagesize){
     $p->setConfig('first','首页');
     $p->setConfig('theme','<b>%FIRST%</b><b>%UP_PAGE%</b><b>%LINK_PAGE%</b><b>%DOWN_PAGE%</b><b>%END% %HEADER%</b>');
 
-    $p->parameter=I('get.');
+    $p->parameter=I('get.title');
 
     $m->limit($p->firstRow,$p->listRows);
 
