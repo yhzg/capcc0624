@@ -10,26 +10,26 @@ namespace Home\Controller;
 use Think\Controller;
 
 
-class HeritageController extends Controller{
+class HeritageController extends CommonController{
     public function index()
     {
         $this->display('Public:head');
 
-        // ÊÀ½çÒÅ²ú×éÖ¯
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Å²ï¿½ï¿½ï¿½Ö¯
         $res1= M('heritage_organization');
         $data['id']=array('ELT',1);
         $data1=$res1->where($data)->select();
         $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,170));
         $this->assign('heritage_organization',$data1);
 
-        // ×éÖ¯¹«Ô¼
+        // ï¿½ï¿½Ö¯ï¿½ï¿½Ô¼
         $res1= M('heritage_treaty');
         $data['id']=array('ELT',1);
         $data2=$res1->where($data)->select();
         $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,170));
         $this->assign('heritage_treaty',$data2);
 
-        // ÖÐ¹úÊÀÒÅÏîÄ¿
+        // ï¿½Ð¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
         $res2= M('heritage_project');
         $data['id']=array('ELT',1);
         $data3=$res2->where($data)->select();
@@ -38,14 +38,14 @@ class HeritageController extends Controller{
         $data3[2]['content']=R('SubString/subString',array($data3[2]['content'],0,150));
         $this->assign('heritage_project',$data3);
 
-        // ÉêÒÅÀú³Ì
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         $res4= M('heritage_apply');
         $data['id']=array('ELT',1);
         $data4=$res4->where($data)->select();
         $data4[0]['content']=R('SubString/subString',array($data4[0]['content'],0,350));
         $this->assign('heritage_apply',$data4);
 
-        // ÑÐ¾¿»ú¹¹
+        // ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½ï¿½
         $res2= M('heritage_institution');
         $data['id']=array('ELT',1);
         $data5=$res2->where($data)->select();

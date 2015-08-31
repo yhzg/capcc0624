@@ -3,7 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 
 
-class LoginController extends Controller {
+class LoginController extends CommonController {
 
     //检查登录 OK
     //@breif $uid_array 获取登陆者的所有信息

@@ -9,7 +9,7 @@
 namespace Home\Controller;
 use Think\Controller;
 
-class CityController extends Controller{
+class CityController extends CommonController{
     public function index()
     {
         $this->display('Public:head');

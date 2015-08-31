@@ -11,7 +11,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 
-class TestController extends Controller {
+class TestController extends CommonController {
 
     public function add(){
         $res=send_mail($_POST['mail'],$_POST['title'],$_POST['content']);
@@ -47,5 +47,11 @@ class TestController extends Controller {
         echo $datas[0];
     }
 
+    function index()
+    {
+        $arr=array(1,2,3,4,5);
+        $new_arr=array_chunk($arr,2);
+        dump($new_arr);
 
+    }
 }

@@ -11,7 +11,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 
-class DgmuseumController extends Controller {
+class DgmuseumController extends CommonController {
     public function index()
     {
         $this->display('Public:head');

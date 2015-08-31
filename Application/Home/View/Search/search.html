@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<META name="keywords" content="中国运河网">
+<meta name="description" content="中国运河网">
+<title>中国运河网</title>
+<load href="__PUBLIC__/Home/Css/css.css"/>
+<load href="__PUBLIC__/Home/Css/pager.css"/>
+</head>
+<body>
+	<div class="wrap_box">
+	  <div class="wrap">
+		  <div class="chengshi_left_box">
+		    <div class="chengshi_left_box_con2">
+			  <h2 class="pubtit" style="margin:8px 0;"><strong class="f1485a3"><{$res_title}></strong></h2>
+				<volist name="content" id="vo">
+ 						<ul class="cs_pic_con1">
+ 							<li style="font-size: x-large;margin-top: 40px"><a href=""><{$vo.title}></a></li>
+ 						</ul>
+					    <dl class="chengshi_dl" style="margin-top: 20px">
+							<dd>······<{$vo.content}>······</dd>
+							<hr>
+						</dl>
+				</volist>
+			</div>
+
+		  <div  style="margin-top: 50px; ">
+			  <table >
+				  <tr >
+					  <volist name="num_arr" id="page_num">
+						  <td style="font-size: large;"><a href="<{:U('Search/search')}>?p=<{$page_num}>"><{$page_num+1}>&nbsp;&nbsp;&nbsp;</a></td>
+					  </volist>
+				  </tr>
+			  </table>
+		  </div>
+		  </div>
+		  <div class="height20"></div>
+	  </div>
+	</div>
+</body>
+</html>
