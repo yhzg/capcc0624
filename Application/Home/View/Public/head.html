@@ -29,15 +29,41 @@
     <div class="header_box">
         <div class="headnav">
             <div class="topfav"><a href="<{$navbar['url1']}>"><{$navbar['bar1']}></a>|<a href="<{$navbar['url2']}>"><{$navbar['bar2']}></a>|<a href="#">商城</a>|<a href="#">客服</a></div>
+            <div class="topfav"><a href="<{:U('Login/login')}>">登录</a>|<a href="<{:U('Login/register')}>">立即加入</a>|<a
+                    href="#">商城</a>|<a href="#">客服</a></div>
         </div>
         <div class="header">
             <table width="1200" height="174" class="table-center">
                 <tr>
                     <td width="20%">
+
                         <a href="__APP__/Home/Index/index"><img src="__PUBLIC__/Home/Images/home/logo.jpg" alt="" width="501" height="174"/>
                     </a></td>
+                        <a href="__APP__/Home/Index"><img src="__PUBLIC__/Home/Images/home/logo.jpg" alt="" width="501"
+                                                  height="174"/>
+                        </a>
                     <td width="">
-                        <img src="__PUBLIC__/Home/Images/home/headcenter.jpg" alt="" width="402" height="99"/>
+                        <div style="width:402px;height:99px; background: url('__PUBLIC__/Home/Images/home/headcenter.jpg')">
+                            <table>
+                                <td>
+                                    <tr>
+                                        <a href="http://www.zgwwxh.com/" target="_blank">
+                                            <button type="button" style="width:370px;height:30px;border:none;background:none;outline-color: #e4e4e4;"></button>
+                                        </a>
+                                    </tr>
+                                    <tr>
+                                        <a href="http://news.idoican.com.cn/zgwenhuab/html/2014-12/18/content_5317696.htm?div=-1" target="_blank">
+                                            <button type="button" style="width:370px;height:30px;border:none;background:none;outline-color: #e4e4e4;"></button>
+                                        </a>
+                                    </tr>
+                                    <tr>
+                                        <a href="http://www.ccmg.cn/" target="_blank">
+                                            <button type="button" style="width:370px;height:30px;border:none;background:none;outline-color: #e4e4e4;"></button>
+                                        </a>
+                                    </tr>
+                                </td>
+                            </table>
+                        </div>
                     </td>
                     <td width="10%">
                         <!--search-->
@@ -64,70 +90,67 @@
             <ul id="nav">
                 <li><a href="__APP__/Home/News">新闻</a>
                     <ul>
-                        <li><a href="">图片新闻</a></li>
-                        <li><a href="">动态新闻</a></li>
+                        <li><a href="__APP__/Home/News/news_picture.html">图说新闻</a></li>
+                        <li><a href="__APP__/Home/News/news_active.html">动态新闻</a></li>
                     </ul>
                 </li>
                 <li class="ge"></li>
                 <li><a href="__APP__/Home/Heritage">世遗</a>
                     <ul>
-                        <li><a href="">世界遗产组织</a></li>
-                        <li><a href="">组织公约</a></li>
-                        <li><a href="">中国世遗项目</a></li>
-                        <li><a href="">申遗历程</a></li>
-                        <li><a href="">研究机构</a></li>
-                        <li><a href="">主要媒体</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_organization.html">世界遗产组织</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_treaty.html">组织公约</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_project.html">中国世遗项目</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_apply.html">申遗历程</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_institution.html">研究机构</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_media.html">主要媒体</a></li>
                     </ul>
                 </li>
                 <li class="ge"></li>
                 <li><a href="__APP__/Home/City">城市</a>
                     <ul>
-                        <li><a href="">非物质文化遗产保护</a></li>
-                        <li><a href="">运河人物</a></li>
-                        <li><a href="">城市</a></li>
+                        <li><a href="__APP__/Home/City/city_protect.html">非物质文化遗产保护</a></li>
+                        <li><a href="__APP__/Home/City/city_figure.html">运河人物</a></li>
+                        <li><a href="__APP__/Home/City/city_canal.html">城市</a></li>
                     </ul>
                 </li>
                 <li class="ge"></li>
                 <li><a href="__APP__/Home/Travel">旅游</a>
                     <ul>
-                        <li><a href="">景点</a></li>
-                        <li><a href="">吃住</a></li>
-                        <li><a href="">攻略</a></li>
+                        <li><a href="__APP__/Home/Travel/travel_spot.html">景点</a></li>
+                        <li><a href="__APP__/Home/Travel/eat_live.html">吃住</a></li>
+                        <li><a href="__APP__/Home/Travel/travel_story.html">攻略</a></li>
                     </ul>
                 </li>
                 <li class="ge"></li>
                 <li><a href="__APP__/Home/Brand">品牌</a>
                     <ul>
-                        <li><a href="">中华老字号</a></li>
-                        <li><a href="">产品广告</a></li>
-                        <li><a href="">品牌广告</a></li>
+                        <li><a href="__APP__/Home/Brand/brand_tradition.html">中华老字号</a></li>
+                        <li><a href="__APP__/Home/Brand/brand_product.html">产品广告</a></li>
+                        <li><a href="__APP__/Home/Brand/brand_brand.html">品牌广告</a></li>
                     </ul>
                 </li>
                 <li class="ge"></li>
                 <li><a href="__APP__/Home/Dgmuseum">数字美术馆</a>
                     <ul>
-                        <li><a href="">传奇</a></li>
-                        <li><a href="">市场</a></li>
-                        <li><a href="">评论</a></li>
-                        <li><a href="">艺术群</a></li>
+                        <li><a href="__APP__/Home/Dgmuseum/classic_legend.html">传奇</a></li>
+                        <li><a href="__APP__/Home/Dgmuseum/classic_market.html">市场</a></li>
+                        <li><a href="__APP__/Home/Dgmuseum/classic_comment.html">评论</a></li>
+                        <li><a href="__APP__/Home/Dgmuseum/classic_group.html">艺术群</a></li>
                     </ul>
                 </li>
                 <li class="ge"></li>
                 <li><a href="__APP__/Home/Activity">活动</a>
                     <ul>
-                        <li><a href="">近期活动</a></li>
-                        <li><a href="">......</a></li>
-                        <li><a href="">......</a></li>
-                        <li><a href="">......</a></li>
+                        <li><a href="__APP__/Home/Activity/activity_activity.html">近期活动</a></li>
                     </ul>
                 </li>
                 <li class="ge"></li>
                 <li><a href="__APP__/Home/Volunteer">志愿者家园</a>
                     <ul>
-                        <li><a href="">风采展示</a></li>
-                        <li><a href="">活动</a></li>
-                        <li><a href="">良策</a></li>
-                        <li><a href="">监测</a></li>
+                        <li><a href="__APP__/Home/Volunteer/volunteer_grace.html">风采展示</a></li>
+                        <li><a href="__APP__/Home/Volunteer/volunteer_act.html">活动</a></li>
+                        <li><a href="__APP__/Home/Volunteer/volunteer_advice.html">良策</a></li>
+                        <li><a href="__APP__/Home/Volunteer/volunteer_mon.html">监测</a></li>
                     </ul>
                 </li>
                 <li class="ge"></li>
