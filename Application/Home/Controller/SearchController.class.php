@@ -27,6 +27,8 @@ class SearchController extends CommonController
         //exit;
         //$keywords  分割关键字并去除空关键字
         $keywords=array_filter(explode(' ',$keyword));
+        //dump($keywords);
+        //exit;
         foreach($keywords as $k)
         {
             $key_arr[]="%$k%";
@@ -49,12 +51,15 @@ class SearchController extends CommonController
             $res[$i] = $m->where($data)->Field('Title , Content')->select();
 
         }
-
+        //dump($res);
+        //exit;
         //处理结果集
         //①删除空结果
         //②转换为二维数组，每个子数组都是title、content的格式
         //③获取关键字出现的内容段（前后200字节）
         $res=array_filter($res);
+        //dump($res);
+        //exit;
         foreach($res as $kk)
         {
             foreach($kk as $kkk)
@@ -76,7 +81,7 @@ class SearchController extends CommonController
         $res_title=empty($res_arr2)?"抱歉，未找到<strong style='color:red'> $keyword</strong> 相关的内容":"我们为您找到以下 <strong style='color:red'> $keyword</strong> 相关的内容";
         $this->assign('res_title',"$res_title");
 
-        $page_now=(I('get.p'))?I('get.p'):1;
+        $page_now=(I('get.p'))?I('get.p'):0;
 
         $new_res_arr=array_chunk($res_arr2,5);
         $page=array_keys($new_res_arr);
