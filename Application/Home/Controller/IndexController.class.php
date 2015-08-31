@@ -37,7 +37,7 @@ class IndexController extends CommonController {
             $news3=$res3->order('id desc')->limit('1')->select();
             $this->assign('list4',$news3);
 
-            $res4= M('heritage_special');
+            $res4= M('heritage_apply');
             $data2=$res4->order('id desc')->limit('1')->select();
             $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,150));
             $this->assign('list4',$data2);
