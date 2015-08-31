@@ -11,7 +11,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 
-class ActivityController extends Controller {
+class ActivityController extends CommonController {
     public function index()
     {
         $this->display('Public:head');

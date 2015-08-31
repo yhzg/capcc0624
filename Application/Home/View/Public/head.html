@@ -9,11 +9,26 @@
     <meta name="description" content="中国运河网">
     <title>中国运河网</title>
     <load href="__PUBLIC__/Home/Css/css.css"/>
+    <js href="__PUBLIC__/Home/Js/jquery-1.11.3.min.js" />
+    <script>
+        $(function()
+        {
+            $('input[type=submit]').click(function()
+            {
+                if($.trim($('input[name=keyword]').val())=='')
+                {
+                    alert('输入为空！');
+                    return false;
+                }
+            })
+        })
+    </script>
 </head>
 <center>
     <body>
     <div class="header_box">
         <div class="headnav">
+            <div class="topfav"><a href="<{$navbar['url1']}>"><{$navbar['bar1']}></a>|<a href="<{$navbar['url2']}>"><{$navbar['bar2']}></a>|<a href="#">商城</a>|<a href="#">客服</a></div>
             <div class="topfav"><a href="<{:U('Login/login')}>">登录</a>|<a href="<{:U('Login/register')}>">立即加入</a>|<a
                     href="#">商城</a>|<a href="#">客服</a></div>
         </div>
@@ -21,9 +36,12 @@
             <table width="1200" height="174" class="table-center">
                 <tr>
                     <td width="20%">
+
+                        <a href="__APP__/Home/Index/index"><img src="__PUBLIC__/Home/Images/home/logo.jpg" alt="" width="501" height="174"/>
+                    </a></td>
                         <a href="__APP__/Home/Index"><img src="__PUBLIC__/Home/Images/home/logo.jpg" alt="" width="501"
                                                   height="174"/>
-                        </a></td>
+                        </a>
                     <td width="">
                         <div style="width:402px;height:99px; background: url('__PUBLIC__/Home/Images/home/headcenter.jpg')">
                             <table>
@@ -50,9 +68,10 @@
                     <td width="10%">
                         <!--search-->
                         <div style="width:228px;height:27px; background: url('__PUBLIC__/Home/Images/home/searchbg.jpg')">
+                            <form action="__APP__/Search/search" method="post">
                             <table>
                                 <tr>
-                                    <td><input type="text"
+                                    <td><input type="text" name="keyword" placeholder='多个关键字请以空格分开'
                                                style="width:193px;height:25px;border:none;background:none;outline-color: #e4e4e4;">
                                     </td>
                                     <td><input type="submit" value=""
@@ -60,6 +79,7 @@
                                     </td>
                                 </tr>
                             </table>
+                            </form>
                         </div>
                     </td>
                 </tr>

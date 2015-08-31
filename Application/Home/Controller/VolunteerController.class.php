@@ -9,7 +9,7 @@
 namespace Home\Controller;
 use Think\Controller;
 
-class VolunteerController extends Controller{
+class VolunteerController extends CommonController{
     public function index(){
         $this->display('Public:head');
 

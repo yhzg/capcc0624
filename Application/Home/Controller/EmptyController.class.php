@@ -11,7 +11,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 
-class EmptyController extends Controller {
+class EmptyController extends CommonController {
 
     //所请求的模块不存在时，默认执行的模块
     public function index(){

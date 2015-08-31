@@ -10,12 +10,12 @@ namespace Home\Controller;
 use Think\Controller;
 
 
-class TravelController extends Controller{
+class TravelController extends CommonController{
     public function index()
     {
         $this->display('Public:head');
 
-        // ¾°µã
+        // ï¿½ï¿½ï¿½ï¿½
         $res1= M('travel_spot');
         $data['id']=array('ELT',3);
         $data1=$res1->where($data)->select();
@@ -24,7 +24,7 @@ class TravelController extends Controller{
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,150));
         $this->assign('travel_spot',$data1);
 
-        // ³Ô
+        // ï¿½ï¿½
         $res2= M('travel_eat');
         $data['id']=array('ELT',1);
         $data2=$res2->where($data)->select();
@@ -39,7 +39,7 @@ class TravelController extends Controller{
         $this->assign('travel_live',$data4);
 
 
-        // ¹¥ÂÔ
+        // ï¿½ï¿½ï¿½ï¿½
         $res3= M('travel_story');
         $data['id']=array('ELT',1);
         $data3=$res3->where($data)->select();

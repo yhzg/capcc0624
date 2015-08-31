@@ -2,7 +2,9 @@
  * Created by DT on 2015/7/24.
  */
 $(document).ready(function(){
-   // var URL='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico';
+    //public_url 在引入的页面定义
+    check_ok_url=public_url+'/Home/Images/login/check_ok.ico';
+    //check_ok_url=CAPCC_DOMAIN+__ROOT__+'/Public/Home/Images/login/check_ok.ico';
     checkName();
     checkPwd();
     checkEmail();
@@ -50,7 +52,11 @@ function checkName(){
                     } else
                     {
 
-                        $("#checkname").html("<img src='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico' />");
+                       // $("#checkname").html("<img src=IMG_URL />");
+                        $("#checkname").html("<img src='"+check_ok_url+"' />");
+                        //$("#checkname").html("<img src='HTTP://localhost/capcc0624/Public/Home/Images/login/check_ok.ico' />");
+                       // alert(check_ok_url);
+
                     }
                 });
         }
@@ -97,7 +103,7 @@ function checkName(){
             }
             else
             {
-                $("#checkpwd2").html("<img src='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico' />");
+                $("#checkpwd2").html("<img src='"+check_ok_url+"' />");
             }
     })
     }
@@ -127,7 +133,7 @@ function checkName(){
                             return false;
                         }else
                         {
-                            $("#checkemail").html("<img src='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico'/>");
+                            $("#checkemail").html("<img src='"+check_ok_url+"'/>");
                         }
                     })
 
@@ -146,7 +152,7 @@ function checkName(){
                             return false;
                         }else
                         {
-                            $("#checkvcode").html("<img src='http://localhost/capcc0624/Public/Home/Images/login/check_ok.ico' />");
+                            $("#checkvcode").html("<img src='"+check_ok_url+"' />");
                         }
 
             })

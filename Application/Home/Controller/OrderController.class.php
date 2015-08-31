@@ -11,7 +11,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 
-class OrderController extends Controller {
+class OrderController extends CommonController {
     public function index()
     {
         $orderinfo=array(

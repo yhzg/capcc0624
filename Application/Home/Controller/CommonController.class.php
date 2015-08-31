@@ -27,6 +27,28 @@ class CommonController extends Controller {
         $Verify->entry();
     }
 
+    protected function _initialize()
+    {
+        $username=I('session.username');
 
+        //session存在，显示登录的用户名
+        //否则，显示登录等按钮
+        if(empty($username))
+        {
+            $navbar['url1']=U('Login/login');
+            $navbar['bar1']='登录';
+            $navbar['url2']=U('Login/register');
+            $navbar['bar2']='立即加入';
+        }else
+        {
+            $navbar['url1']='#';
+            $navbar['bar1']='欢迎您：'.$username;
+            $navbar['url2']=U('Login/logout');
+            $navbar['bar2']='退出登录';
+        }
+
+        $this->assign('navbar',$navbar);
+
+    }
 
 }
