@@ -9,7 +9,7 @@
 namespace Home\Controller;
 use Think\Controller;
 
-class NewsController extends Controller{
+class NewsController extends CommonController{
     public function index()
     {
         $this->display('Public:head');
@@ -26,6 +26,47 @@ class NewsController extends Controller{
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,205));
         $this->assign('list1',$data1);
 
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function news_active()
+    {
+        $this->display('Public:head');
+
+        $Data = M('news_active');
+        $count = $Data->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $Data->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function news_picture()
+    {
+        $this->display('Public:head');
+
+        $m= M('news_picture');
+        $count = $m->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list1 = $m->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list1 as $k=>$v)
+        {
+            $list1[$k]['content']=R('SubString/subString',array($list1[$k]['content'],0,570));
+        }
+        $this->assign('list1',$list1);
+        $this->assign('page',$show);
         $this->display();
 
         $this->display('Public:foot');

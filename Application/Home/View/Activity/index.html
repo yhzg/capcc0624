@@ -1,70 +1,65 @@
 <!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
-	<meta http-equiv="Content-Language" content="zh-cn">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=1200">
-	<META name="keywords" content="中国运河网">
-	<meta name="description" content="中国运河网">
-	<title>活动</title>
 	<load href="__PUBLIC__/Home/Css/activity.css"/>
 	<load href="__PUBLIC__/Home/Css/css.css"/>
-
 </head>
 <body>
 
-	<div class="wrap_box">
-	  <div class="wrap">
- 			<div class="chengshi_left_box">
-			  <div class="chengshi_left_box_con">
-          
-				<div class="chengshi_left_box_con1 fl">
-				  <ul class="cs_pic_con1">
-				    <li><a href=""><img src="__PUBLIC__/Home/Images/activity/hd.jpg" ></a></li>
- 						</ul>
-				  <div class="clearfloat"></div>
-				</div>
-			  </div>
-              
- 				<div class="height20"></div>
-			  <div class="fczs_box">
- 					<h2 class="pubtit"><a href="#" class="more"></a><strong class="f1485a3">近期活动</strong></h2>
- 					<ul>
- 						<li><a href="#"><img src="__PUBLIC__/Home/Images/activity/zs_01.jpg"><p>标题</p></a></li>
- 						<li><a href="#"><img src="__PUBLIC__/Home/Images/activity/zs_01.jpg"><p>标题</p></a></li>
- 						<li><a href="#"><img src="__PUBLIC__/Home/Images/activity/zs_01.jpg"><p>标题</p></a></li>
- 						
- 					</ul>
- 				</div>
-                
- 			</div>
+<div class="wrap_box">
+	<div class="wrap">
+		<div class="chengshi_left_box">
+			<div class="chengshi_left_box_con">
 
-		  <div class="chengshi_right_box">
- 				<div class="chengshi_right_box_con"><a href="#"><img border="0" src="__PUBLIC__/Home/Images/activity/ad_1.png"></a></div>
- 				<div class="height10"></div>
- 				<div class="chengshi_right_box_con"><a href="#"><img border="0" src="__PUBLIC__/Home/Images/activity/ad_02.png"></a></div>
- 			</div>
- 			<div class="height20"></div>
- 			
-          <div class="zyzjy_box">
- 				<div class="zyzjy_box_con fl">
- 					<h2 class="pubtit"><a href="#" class="more"></a><strong class="f1485a3">以往活动</strong></h2>
- 					<div class="zyzjy_box_con_con">
- 						<p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
-                        <p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
-                        <p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
-                        <p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
-                        <p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
-                        <p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
- 					</div>
- 				</div>
-            </div>
- 			
- 			
- 			
+				<div class="chengshi_left_box_con1 fl">
+					<ul class="cs_pic_con1">
+						<li><a href="__APP__/Home/Activity/third/id/<{$activity_activity[3].id}>"><img src="__PUBLIC__/<{$activity_activity[3]['imgpath']}>" ></a></li>
+					</ul>
+					<div class="clearfloat"></div>
+				</div>
+			</div>
+
+			<div class="height20"></div>
+			<div class="fczs_box">
+				<h2 class="pubtit"><a href="__APP__/Home/Activity/third/aid/<{$activity_activity.aid}>" class="more"
+									  style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">近期活动</strong></h2>
+				<ul>
+					<!--<volist name="activity_activity" id="vo"  offset="0" length="3">-->
+					<!--<li><a href="__APP__/Home/Activity/third/aid/<{$vo.aid}>"><img src="__PUBLIC__/<{$vo.imgpath}>"><p><{$vo.title}></p></a></li>-->
+					<!--</volist>-->
+					<li><a href="__APP__/Home/Activity/third/id/<{$activity_activity[0].id}>"><img src="__PUBLIC__/<{$activity_activity[0].imgpath}>"><p><{$activity_activity[0].title}></p></a></li>
+					<li><a href="__APP__/Home/Activity/third/id/<{$activity_activity[1].id}>"><img src="__PUBLIC__/<{$activity_activity[1].imgpath}>"><p><{$activity_activity[1].title}></p></a></li>
+					<li><a href="__APP__/Home/Activity/third/id/<{$activity_activity[2].id}>"><img src="__PUBLIC__/<{$activity_activity[2].imgpath}>"><p><{$activity_activity[2].title}></p></a></li>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="chengshi_right_box">
+			<div class="chengshi_right_box_con"><a href="#"><img border="0" src="__PUBLIC__/Home/Images/activity/ad_1.png"></a></div>
+			<div class="height10"></div>
+			<div class="chengshi_right_box_con"><a href="#"><img border="0" src="__PUBLIC__/Home/Images/activity/ad_02.png"></a></div>
 		</div>
 		<div class="height20"></div>
+
+		<div class="zyzjy_box">
+			<div class="zyzjy_box_con fl">
+				<h2 class="pubtit"><a href="__APP__/Home/Activity/activity_activity.html" class="more"
+									  style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">以往活动</strong></h2>
+				<div class="zyzjy_box_con_con">
+					<p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
+					<p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
+					<p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
+					<p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
+					<p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
+					<p>&nbsp;&nbsp; 1、活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活动文字活</p>
+				</div>
+			</div>
+		</div>
+
 	</div>
+	<div class="height20"></div>
+</div>
 
 </body>
 </html>

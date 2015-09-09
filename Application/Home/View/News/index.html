@@ -2,15 +2,8 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
-    <meta http-equiv="Content-Language" content="zh-cn">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=1200">
-    <META name="keywords" content="中国运河网">
-    <meta name="description" content="中国运河网">
-    <title>新闻</title>
     <load href="__PUBLIC__/Home/Css/news.css"/>
     <load href="__PUBLIC__/Home/Css/css.css"/>
-
 </head>
 <body>
 <div class="wrap_box">
@@ -20,24 +13,24 @@
     </div>
     <div class="right_box">
         <div class="right_con" style="height:450px;">
-            <h2 class="pubtit "><a href="#" class="more"></a><strong class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
+            <h2 class="pubtit "><a href="__APP__/Home/News/news_picture.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
             <dl class="r_news_dl1">
                 <dt>
                 <h3><a href="#"><{$list1[0]['title']}></a></h3></dt>
                 <dd><p>
-                    <{$list1[0]['content']}>......</p></dd>
+                    <{$list1[0]['abstract']}></p></dd>
             </dl>
             <dl class="r_news_dl1">
                 <dt>
                 <h3><a href="#"><{$list1[1]['title']}></a></h3></dt>
                 <dd><p>
-                    <{$list1[1]['content']}>.....</p></dd>
+                    <{$list1[1]['abstract']}></p></dd>
             </dl>
             <dl class="r_news_dl1">
                 <dt>
                 <h3><a href="#"><{$list1[2]['title']}></a></h3></dt>
                 <dd><p>
-                    <{$list1[2]['content']}>......</p></dd>
+                    <{$list1[2]['abstract']}></p></dd>
             </dl>
         </div>
     </div>
@@ -45,25 +38,25 @@
     <div class="height20"></div>
 
     <div class="chengshi_left_box_con">
-        <div class="chengshi_left_box_con1 fl">
-            <h2 class="pubtit" style="margin:8px 0;"><a href="#" class="more"></a><strong class="f1485a3">动态新闻</strong>
+        <div class="chengshi_left_box_con1 fl" >
+            <h2 class="pubtit" style="margin:8px 0;"><a href="__APP__/Home/News/news_active.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">动态新闻</strong>
             </h2>
 
             <div class="clearfloat"></div>
             <dl class="chengshi_dl">
                 <dt>
                 <h3><a href="#"><{$list1[0]['title']}></a></h3> </dt>
-                <dd><{$list1[0]['content']}>……</dd>
+                <dd><{$list1[0]['abstract']}></dd>
             </dl>
             <dl class="chengshi_dl">
                 <dt>
                 <h3><a href="#"><{$list1[1]['title']}></a></h3> </dt>
-                <dd><{$list1[1]['content']}>……</dd>
+                <dd><{$list1[1]['abstract']}></dd>
             </dl>
             <dl class="chengshi_dl">
                 <dt>
                 <h3><a href="#"><{$list1[2]['title']}></a></h3> </dt>
-                <dd><{$list1[2]['content']}>……</dd>
+                <dd><{$list1[2]['abstract']}></dd>
             </dl>
         </div>
         <div class="pp_rightsidecon pp_border">

@@ -1,86 +1,82 @@
 <!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
-	<meta http-equiv="Content-Language" content="zh-cn">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=1200">
-	<META name="keywords" content="中国运河网">
-	<meta name="description" content="中国运河网">
-	<title>城市</title>
+
 	<load href="__PUBLIC__/Home/Css/city.css"/>
 	<load href="__PUBLIC__/Home/Css/css.css"/>
 
 </head>
 <body>
-	<div class="wrap_box">
- 		<div class="wrap">
- 			<div class="chengshi_left_box">
- 				<div class="chengshi_left_box_con">
- 					<div class="chengshi_left_box_con1 fl">
- 						<h2 class="pubtit" style="margin:8px 0;"><a href="#" class="more"></a><strong class="f1485a3">运河人物</strong></h2>
- 						<ul class="cs_pic_con1">
- 							<li><a href=""><img src="__PUBLIC__/Home/Images/city/rw_01.png" ></a><p>人物</p></li>
- 							<li><a href=""><img src="__PUBLIC__/Home/Images/city/rw_02.png" ></a><p>人物</p></li>
- 							<li><a href=""><img src="__PUBLIC__/Home/Images/city/rw_03.png" ></a><p>人物</p></li>
- 						</ul>
- 						<div class="clearfloat"></div>
- 						<dl class="chengshi_dl">
- 							<dt>人物名</dt>
- 							<dd>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简……</dd>
- 						</dl>
- 						<dl class="chengshi_dl">
- 							<dt>人物名</dt>
- 							<dd>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简……</dd>
- 						</dl>
- 						<dl class="chengshi_dl">
- 							<dt>人物名</dt>
- 							<dd>简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简介简……</dd>
- 						</dl>
- 						
- 					</div>
- 					<div class="chengshi_left_box_con1 fr">
- 						<h2 class="pubtit" style="margin:8px 0;"><a href="#" class="more"></a><strong class="f1485a3">非遗保护</strong></h2>
- 						<div class="chengshi_3p_box">
- 							<ul>
- 								<li><a href="#"><img src="__PUBLIC__/Home/Images/city/sy_01.jpg"></a></li>
- 								<li><a href="#"><img src="__PUBLIC__/Home/Images/city/sy_02.png"></a></li>
- 							</ul>
- 							<div class="chengshi_3p_box_r"><a href="#"><img src="__PUBLIC__/Home/Images/city/sy_03.png"></a></div>
- 						</div>
- 						<div class="clearfloat"></div>
- 						<p>非遗项目名、非遗项目名、非遗项目名、非遗项目名、非遗项目名、非遗项目名</p>
-						<p>非遗项目名、非遗项目名、非遗项目名、非遗项目名、非遗项目名、非遗项目名	</p>
- 					</div>
- 				</div>
- 				<div class="height20"></div>
- 				<div class="chengshi_left_box_con">
- 					<h2 class="pubtit" style="margin:5px 0;"><a href="#" class="more"></a><strong class="f1485a3">运河地图</strong></h2>
- 					<ul class="chengshi_gonglv_ul">
- 						<li><a href="#"><img src="__PUBLIC__/Home/Images/city/cs_01.png"></a></li>
- 						<li><a href="#"><img src="__PUBLIC__/Home/Images/city/cs_02.png"></a></li>
- 						<li><a href="#"><img src="__PUBLIC__/Home/Images/city/cs_03.png"></a></li>
- 						<li><a href="#"><img src="__PUBLIC__/Home/Images/city/cs_04.png"></a></li>
-                        <li><a href="#"><img src="__PUBLIC__/Home/Images/city/cs_05.png"></a></li>
- 						<li><a href="#"><img src="__PUBLIC__/Home/Images/city/cs_06.jpg"></a></li>
- 					</ul>
- 					<p class="chengshi_luxian_p"><br>
-&nbsp;</p>
- 				</div>
- 			</div>
- 			
- 			
- 			<div class="chengshi_right_box">
- 				<div class="chengshi_right_box_con"><a href="#"><img border="0" src="__PUBLIC__/Home/Images/city/ad_1.png"></a></div>
- 				<div class="height10"></div>
- 				<div class="chengshi_right_box_con"><a href="#"><img border="0" src="__PUBLIC__/Home/Images/city/ad_02.png"></a></div>
- 			</div>
- 			<div class="height20"></div>
- 			
- 			
- 			
- 			
+<div class="wrap_box">
+	<div class="wrap">
+		<div class="chengshi_left_box">
+			<div class="chengshi_left_box_con">
+				<div class="chengshi_left_box_con1 fl">
+					<h2 class="pubtit" style="margin:8px 0;"><a href="__APP__/Home/City/city_figure.html" class="more"
+																style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">运河人物</strong></h2>
+					<ul class="cs_pic_con1">
+						<li><a href=""><img src="__PUBLIC__/<{$city_figure[0].imgpath}>" ></a><p><{$city_figure[0].name}></p></li>
+						<li><a href=""><img src="__PUBLIC__/<{$city_figure[1].imgpath}>" ></a><p><{$city_figure[0].name}></p></li>
+						<li><a href=""><img src="__PUBLIC__/<{$city_figure[2].imgpath}>" ></a><p><{$city_figure[0].name}></p></li>
+					</ul>
+					<div class="clearfloat"></div>
+					<dl class="chengshi_dl">
+						<dt><{$city_figure[0].name}></dt>
+						<dd><{$city_figure[0].content}>……</dd>
+					</dl>
+					<dl class="chengshi_dl">
+						<dt><{$city_figure[1].name}></dt>
+						<dd><{$city_figure[1].content}>……</dd>
+					</dl>
+					<dl class="chengshi_dl">
+						<dt><{$city_figure[2].name}></dt>
+						<dd><{$city_figure[2].content}>……</dd>
+					</dl>
+
+				</div>
+				<div class="chengshi_left_box_con1 fr">
+					<h2 class="pubtit" style="margin:8px 0;"><a href="__APP__/Home/City/city_protect.html" class="more"
+																style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">非遗保护</strong></h2>
+					<div class="chengshi_3p_box">
+						<ul>
+							<li><a href="#"><img src="__PUBLIC__/<{$city_protect[0].imgpath}>"></a></li>
+							<li><a href="#"><img src="__PUBLIC__/<{$city_protect[1].imgpath}>"></a></li>
+						</ul>
+						<div class="chengshi_3p_box_r"><a href="#"><img src="__PUBLIC__/<{$city_protect[3].imgpath}>"></a></div>
+					</div>
+					<div class="clearfloat"></div>
+					<p><{$city_protect[0].content}>……</p>
+					<p><{$city_protect[1].content}>……</p>
+				</div>
+			</div>
+			<div class="height20"></div>
+			<div class="chengshi_left_box_con">
+				<h2 class="pubtit" style="margin:5px 0;"><a href="__APP__/Home/City/city_canal.html" class="more"
+															style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">运河地图</strong></h2>
+				<ul class="chengshi_gonglv_ul">
+					<li><a href="#"><img src="__PUBLIC__/<{$city_canal[0].imgpath}>"></a></li>
+					<li><a href="#"><img src="__PUBLIC__/<{$city_canal[1].imgpath}>"></a></li>
+					<li><a href="#"><img src="__PUBLIC__/<{$city_canal[2].imgpath}>"></a></li>
+					<li><a href="#"><img src="__PUBLIC__/<{$city_canal[3].imgpath}>"></a></li>
+					<li><a href="#"><img src="__PUBLIC__/<{$city_canal[4].imgpath}>"></a></li>
+					<li><a href="#"><img src="__PUBLIC__/<{$city_canal[5].imgpath}>"></a></li>
+				</ul>
+				<p class="chengshi_luxian_p"><br>
+					&nbsp;</p>
+			</div>
+		</div>
+
+
+		<div class="chengshi_right_box">
+			<div class="chengshi_right_box_con"><a href="#"><img border="0" src="__PUBLIC__/Home/Images/city/ad_1.png"></a></div>
+			<div class="height10"></div>
+			<div class="chengshi_right_box_con"><a href="#"><img border="0" src="__PUBLIC__/Home/Images/city/ad_02.png"></a></div>
 		</div>
 		<div class="height20"></div>
+
+
 	</div>
+	<div class="height20"></div>
+</div>
 </body>
 </html>

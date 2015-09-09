@@ -1,28 +1,7 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
-        public function _before_index()
-        {
-            $username=I('session.username');
-            //session存在，显示登录的用户名
-            //否则，显示登录等按钮
-           if(empty($username))
-           {
-               $navbar['url1']=U('Login/login');
-               $navbar['bar1']='登录';
-               $navbar['url2']=U('Login/register');
-               $navbar['bar2']='立即加入';
-           }else
-           {
-               $navbar['url1']='#';
-               $navbar['bar1']='欢迎您：'.$username;
-               $navbar['url2']=U('Login/logout');
-               $navbar['bar2']='退出登录';
-           }
-
-            $this->assign('navbar',$navbar);
-        }
+class IndexController extends CommonController {
 
         public function index(){
 
@@ -42,15 +21,11 @@ class IndexController extends Controller {
             $res1= M('news_active');
             $data['id']=array('ELT',3);
             $data1=$res1->where($data)->select();
-            $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,205));
-            $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,205));
-            $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,205));
             $this->assign('list2',$data1);
 
             // 中国世界遗项目
             $res2= M('heritage_project');
             $data2=$res2->where('id = 16')->limit('1')->select();
-            $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,150));
             $this->assign('list3',$data2);
 
             // 申遗历程
@@ -58,22 +33,20 @@ class IndexController extends Controller {
             $news3=$res3->order('id desc')->limit('1')->select();
             $this->assign('list4',$news3);
 
-            $res4= M('heritage_special');
+            $res4= M('heritage_apply');
             $data2=$res4->order('id desc')->limit('1')->select();
-            $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,150));
             $this->assign('list4',$data2);
 
             // 世界遗产组织
             $res5= M('heritage_organization');
             $data3=$res5->order('id desc')->limit('1')->select();
-            $data3[0]['content']=R('SubString/subString',array($data3[0]['content'],0,400));
             $this->assign('list5',$data3);
 
             // 活动
             $res66= M('activity_activity');
             $data['id']=array('ELT',1);
             $data55=$res66->where($data)->select();
-            $data55[0]['content']=R('SubString/subString',array($data55[0]['content'],0,90));
+            $data55[0]['content']=R('SubString/subString',array($data55[0]['content'],0,570));
             $this->assign('activity',$data55);
 
             // 城市
@@ -141,7 +114,7 @@ class IndexController extends Controller {
             $res15= M('brand_product');
             $data['id']=array('ELT',7);
             $data12=$res15->where($data)->limit('1')->select();
-            $data12[0]['content']=R('SubString/subString',array($data12[0]['content'],0,200));
+            $data12[0]['content']=R('SubString/subString',array($data12[0]['content'],0,224));
             $this->assign('brand_product',$data12);
 
             // 品牌广告

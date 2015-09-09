@@ -1,49 +1,3 @@
-* {margin:0; padding:0;}
-body { background:url(../images/bg.jpg) 0 0 repeat-x #F7F7F7;margin:0px;font-family:"Microsoft Yahei","Î¢ÈíÑÅºÚ",Verdana;font-size:13px;color:#333; }
-ul {list-style:none;}
-TD { COLOR: #404040; font-family:Verdana; FONT-SIZE: 12px;}
-hr {border-bottom:1px dotted #a6a5a5;background:none;border-top:none;border-left:none;border-right:none;clear:both;padding:5px 0;margin:0 auto;width:99%;}
-A:link {color: #333;text-decoration: none;}
-A:visited {color: #333;text-decoration: none;}
-A:hover {color: #c60000;text-decoration: none;}
-img {border:none;}
-.clearfloat {clear:both;height:0px;font-size:1px;line-height:0px;}
-.height20 {clear:both;height:20px;}
-.height10 {clear:both;height:10px;}
-.header_box {width:100%;overflow:hidden;background:#f7f7f7;}
-.wrap_box {width:100%;overflow:hidden;background:#fff;}
-.wrap {width:1200px;margin:0 auto;}
-.fl {float:left;}
-.fr {float:right;}
-
-.headnav {width:100%;height:28px;background:#b30d19;}
-.header {width:1200px;padding:0;margin:0 auto;}
-.topfav {width:1200px;height:28px;line-height:28px;text-align:right;color:#fff;margin:0 auto;}
-.topfav a {color:#fff;padding:0 10px;}
-.logo {width:501px;height:174px;background:url(../images/logo.jpg) 0 50% no-repeat;}
-.logo a {display:block;width:500px;height:174px;}
-.search {width:228px;height:27px;background:url(../images/searchbg.jpg) 0 63px no-repeat;padding:63px 0 0 0;}
-.search dl {margin:0;padding:0}
-.search dl dt {float:left;width:200px;height:27px;}
-.search dl dt input {width:200px;height:27px;line-height:27px;border:none;background:none;}
-.search dl dd {float:right;width:28px;height:27px;}
-.search dl dd input {width:28px;height:27px;border:none;text-indent:-999em;background:none;}
-.headcenter {width:402px;height:99px;background:url(../images/headcenter.jpg) 0 36px no-repeat;margin:0 0 0 516px;padding:36px 0 0 0;}
-
-.nav {width:1200px;height:44px;margin:0 auto;padding:0;background:#e4e4e4;border:1px solid #bebebe;}
-.nav ul {margin:0;padding:0;}
-.nav ul li {float:left;height:44px;margin:0;font-size:16px;font-weight:bold;}
-.nav ul li a {display:block;width:130px;height:44px;line-height:44px;text-align:center;color:#333;}
-.nav ul .ge {width:1px;height:44px;background:#bebebe;}
-.nav ul li a:hover,.nav ul li .navcur {background:#f7f7f7;}
-
-.pubtit {width:100%;height:40px;line-height:40px;font-weight:normal;}
-.pubtit strong {padding:0 30px 0 10px;font-size:25px;font-weight:normal;}
-.more {display:block;float:right;width:92px;height:15px;background:url(../images/more.jpg) 0 50% no-repeat;margin:10px 0 0 0;padding:0;}
-.pubtit a {color:#469bb7;font-size:14px;padding:0 5px;font-weight:normal;}
-.f1485a3 {color:#1485a3;}
-
-
 .cs_pic_box {width:385px;padding:0 5px;}
 .cs_pic_con1 {margin:0;padding:5px 0 0 0;}
 .cs_pic_con1 li {float:left;width:122px;height:146px;text-align:center;margin:0 2px;}
@@ -57,7 +11,7 @@ img {border:none;}
 
 /*³ÇÊÐ*/
 
-.chengshi_left_box {float:left;796px;}
+.chengshi_left_box {float:left;}
 .chengshi_left_box_con {width:784px;border:1px solid #b3b3b3;overflow:hidden;padding:5px;}
 .chengshi_left_box_con1 {width:380px;padding:0 5px;}
 .chengshi_left_box_con1 p {color:#555;line-height:2;font-size:14px;}

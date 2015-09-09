@@ -11,7 +11,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 
-class PayController extends Controller{
+class PayController extends CommonController{
 
     //在类初始化方法中，引入相关类库
     public function _initialize() {

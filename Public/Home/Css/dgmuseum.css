@@ -1,42 +1,3 @@
-* {margin:0; padding:0;} 
-body { background:url(../images/bg.jpg) 0 0 repeat-x #F7F7F7;margin:0px;font-family:"Microsoft Yahei","微软雅黑",Verdana;font-size:13px;color:#333; }
-ul {list-style:none;}
-TD { COLOR: #404040; font-family:Verdana; FONT-SIZE: 12px;}
-hr {border-bottom:1px dotted #a6a5a5;background:none;border-top:none;border-left:none;border-right:none;clear:both;padding:5px 0;margin:0 auto;width:99%;}
-A:link {color: #333;text-decoration: none;}
-A:visited {color: #333;text-decoration: none;}
-A:hover {color: #c60000;text-decoration: none;}
-img {border:none;}
-.clearfloat {clear:both;height:0px;font-size:1px;line-height:0px;}
-.height20 {clear:both;height:20px;}
-.height10 {clear:both;height:10px;}
-.header_box {width:100%;overflow:hidden;background:#f7f7f7;}
-.wrap_box {width:100%;overflow:hidden;background:#fff;}
-.wrap {width:1200px;margin:0 auto;}
-.fl {float:left;}
-.fr {float:right;}
-
-.headnav {width:100%;height:28px;background:#b30d19;}
-.header {width:1200px;padding:0;margin:0 auto;}
-.topfav {width:1200px;height:28px;line-height:28px;text-align:right;color:#fff;margin:0 auto;}
-.topfav a {color:#fff;padding:0 10px;}
-.logo {width:501px;height:174px;background:url(../images/logo.jpg) 0 50% no-repeat;}
-.logo a {display:block;width:500px;height:174px;}
-.search {width:228px;height:27px;background:url(../images/searchbg.jpg) 0 63px no-repeat;padding:63px 0 0 0;}
-.search dl {margin:0;padding:0}
-.search dl dt {float:left;width:200px;height:27px;}
-.search dl dt input {width:200px;height:27px;line-height:27px;border:none;background:none;} 
-.search dl dd {float:right;width:28px;height:27px;}
-.search dl dd input {width:28px;height:27px;border:none;text-indent:-999em;background:none;}
-.headcenter {width:402px;height:99px;background:url(../images/headcenter.jpg) 0 36px no-repeat;margin:0 0 0 516px;padding:36px 0 0 0;}
-
-.nav {width:1200px;height:44px;margin:0 auto;padding:0;background:#e4e4e4;border:1px solid #bebebe;}
-.nav ul {margin:0;padding:0;}
-.nav ul li {float:left;height:44px;margin:0;font-size:16px;font-weight:bold;}
-.nav ul li a {display:block;width:130px;height:44px;line-height:44px;text-align:center;color:#333;}
-.nav ul .ge {width:1px;height:44px;background:#bebebe;}
-.nav ul li a:hover,.nav ul li .navcur {background:#f7f7f7;}
-
 .left_box {width:802px;float:left;}
 .right_box {width:378px;float:right;}
 .banner {width:802px;height:451px;margin:0;}
@@ -173,7 +134,7 @@ img {border:none;}
 .fczs_box ul li {float:left;}
 .fczs_box ul li a {display:block;width:246px;height:250px;margin:10px 9px;}
 .fczs_box ul li a img {width:244px;height:183px;border:1px solid #b3b3b3;}
-.fczs_box ul li a p {width:244p;height:48px;line-height:48px;border:1px solid #ddd;text-align:center;color:#666;margin:7px 0;}
+.fczs_box ul li a p {width:244px;height:48px;line-height:48px;border:1px solid #ddd;text-align:center;color:#666;margin:7px 0;}
 
 .zyzjy_right_box {float:right;width:385px;}
 .zyzjy_right_box_con {width:383px;border:1px solid #b3b3b3;overflow:hidden;}
@@ -186,7 +147,7 @@ img {border:none;}
 
 /*旅游*/
 
-.lvyou_left_box {float:left;796px;}
+.lvyou_left_box {float:left;}
 .lvyou_left_box_con {width:784px;border:1px solid #b3b3b3;overflow:hidden;padding:5px;}
 .lvyou_left_box_con1 {width:380px;padding:0 5px;}
 .lvyou_left_box_con1 p {color:#555;line-height:2;font-size:14px;}
@@ -220,7 +181,7 @@ img {border:none;}
 .pp_leftmain_box {float:left;width:805px;}
 .pp_ad {float:left;width:300px;}
 .pp_ad p {padding:5px 0;}
-.pp_right_txt {float:right;width:388px;padding:5 10px;}
+.pp_right_txt {float:right;width:388px;}
 .pp_right_txt p {line-height:2;}
 
 .pp_rightside {float:right;width:380px;}
@@ -233,7 +194,7 @@ img {border:none;}
 /*品牌*/
 
 /*世遗*/
-.siyi_left_box {float:left;796px;}
+.siyi_left_box {float:left;}
 .siyi_left_box_con {width:784px;border:1px solid #b3b3b3;overflow:hidden;padding:5px;}
 .siyi_left_box_con1 {width:380px;padding:0 5px;}
 .siyi_left_box_con1 p {color:#555;line-height:2;font-size:14px;}
@@ -252,7 +213,7 @@ img {border:none;}
 
 /*世遗*/
 /*数字美术馆*/
-.szmsg_left_box {float:left;796px;}
+.szmsg_left_box {float:left;}
 .szmsg_left_box_con {width:784px;border:1px solid #b3b3b3;overflow:hidden;padding:5px;}
 .szmsg_pic1 {float:left;width:380px;height:483px;margin:0 8px 5px 5px;}
 
