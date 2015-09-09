@@ -34,7 +34,7 @@ body {
 	   			  </div>
 	   		  
 	   		  	<div class="col-md-12">
-	   			  	<form  class="form-horizontal" action="check_login" method="post" >
+	   			  	<form  class="form-horizontal" action="<{:U('Login/check_login')}>" method="post" >
 	 				 			<fieldset>
 
 	   								  <div class="control-group side">
@@ -57,7 +57,7 @@ body {
 
 	        	        		<!--/div-->
 	        	        		<!--div class="col-md-5 col-md-offset-1"-->
-                                      <a href="register"><button type="button" class="btn btn-success btn-lg side">注册</button></a>
+                                      <a href="<{:U('Login/register')}>"><button type="button" class="btn btn-success btn-lg side">注册</button></a>
                                       <a href="<{:U('Pwd/forget_pwd')}>"><button type="button" class="btn btn-success btn-lg side" style="color:white;background-color:red;border-color:red">找回密码</button></a>
                                       <!--</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color:red" href="<{:U('Pwd/forget_pwd')}>">找回密码</a>-->
 	        	        		<!--/div--> 

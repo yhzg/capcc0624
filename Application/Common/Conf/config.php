@@ -1,13 +1,14 @@
 <?php
 return array(
 	 //'配置项'=>'配置值'
+    'URL_MODEL' => 3,
     'TMPL_L_DELIM'=>'<{',
     'TMPL_R_DELIM'=>'}>',
     'DB_TYPE'=>'mysql',
     'DB_HOST'=>'localhost',
     'DB_NAME'=>'capcc_db',
     'DB_USER'=>'root',
-    'DB_PWD'=>'',
+    'DB_PWD'=>'root',
     'DB_PORT'=>'',
     'DB_PREFIX'=>'',
     'SHOW_PAGE_TRACE'=>TRUE,

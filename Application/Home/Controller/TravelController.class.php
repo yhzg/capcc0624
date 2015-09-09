@@ -15,7 +15,6 @@ class TravelController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ï¿½ï¿½ï¿½ï¿½
         $res1= M('travel_spot');
         $data['id']=array('ELT',3);
         $data1=$res1->where($data)->select();
@@ -24,7 +23,6 @@ class TravelController extends CommonController{
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,150));
         $this->assign('travel_spot',$data1);
 
-        // ï¿½ï¿½
         $res2= M('travel_eat');
         $data['id']=array('ELT',1);
         $data2=$res2->where($data)->select();
@@ -32,14 +30,13 @@ class TravelController extends CommonController{
         $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,150));
         $this->assign('travel_eat',$data2);
 
-        // ×¡
+
         $res4= M('travel_live');
         $data['id']=array('ELT',1);
         $data4=$res4->where($data)->select();
         $this->assign('travel_live',$data4);
 
 
-        // ï¿½ï¿½ï¿½ï¿½
         $res3= M('travel_story');
         $data['id']=array('ELT',1);
         $data3=$res3->where($data)->select();
@@ -55,15 +52,18 @@ class TravelController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ¾°µã
         $res1= M('travel_spot');
-        $data['id']=array('ELT',3);
-        $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,570));
-        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,570));
-        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,570));
-        $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],0,570));
-        $this->assign('travel_spot',$data1);
+        $count = $res1->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res1->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
         $this->display();
 
@@ -75,21 +75,32 @@ class TravelController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ³Ô
         $res2= M('travel_eat');
-        $data['id']=array('ELT',1);
-        $data2=$res2->where($data)->select();
-        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,570));
-        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,570));
-        $this->assign('travel_eat',$data2);
+        $count = $res2->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list =$res2->where()->order()->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
-        // ×¡
-        $res4= M('travel_live');
-        $data['id']=array('ELT',1);
-        $data4=$res4->where($data)->select();
-        $data4[0]['content']=R('SubString/subString',array($data4[0]['content'],0,570));
-        $data4[1]['content']=R('SubString/subString',array($data4[1]['content'],0,570));
-        $this->assign('travel_live',$data4);
+
+//        $res4= M('travel_live');
+//        $count =$res4->where()->count();
+//        $Page  = new \Think\Page($count,4);
+//        $show  = $Page->show();
+//        $list1 = $res4->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+//        $list1[0]['content']=R('SubString/subString',array($list1[0]['content'],0,570));
+//        $list1[1]['content']=R('SubString/subString',array($list1[1]['content'],0,570));
+//        $list1[2]['content']=R('SubString/subString',array($list1[2]['content'],0,570));
+//        $list1[3]['content']=R('SubString/subString',array($list1[3]['content'],0,570));
+//        $this->assign('list1',$list1);
+//        $this->assign('page',$show);
+
 
         $this->display();
 
@@ -101,15 +112,18 @@ class TravelController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ¹¥ÂÔ
         $res3= M('travel_story');
-        $data['id']=array('ELT',1);
-        $data3=$res3->where($data)->select();
-        $data3[0]['content']=R('SubString/subString',array($data3[0]['content'],0,570));
-        $data3[1]['content']=R('SubString/subString',array($data3[1]['content'],0,570));
-        $data3[2]['content']=R('SubString/subString',array($data3[2]['content'],0,570));
-        $data3[3]['content']=R('SubString/subString',array($data3[3]['content'],0,570));
-        $this->assign('travel_story',$data3);
+        $count =$res3->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res3->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
         $this->display();
 
