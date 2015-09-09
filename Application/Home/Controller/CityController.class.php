@@ -14,7 +14,7 @@ class CityController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ÔËºÓÈËÎï
+        // ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½
         $res1= M('city_figure');
         $data['id']=array('ELT',1);
         $data1=$res1->where($data)->select();
@@ -23,7 +23,7 @@ class CityController extends CommonController{
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,150));
         $this->assign('city_figure',$data1);
 
-        //·ÇÒÅ±£»¤
+        //ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½
         $res2= M('city_protect');
         $data['id']=array('ELT',1);
         $data2=$res2->where($data)->select();
@@ -31,7 +31,7 @@ class CityController extends CommonController{
         $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,200));
         $this->assign('city_protect',$data2);
 
-        //ÔËºÓµØÍ¼
+        //ï¿½ËºÓµï¿½Í¼
         $res3= M('city_canal');
         $data['id']=array('ELT',1);
         $data3=$res3->where($data)->select();
@@ -47,14 +47,14 @@ class CityController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ÔËºÓÈËÎï
+        // ï¿½Ëºï¿½ï¿½ï¿½ï¿½ï¿½
         $res1= M('city_figure');
-        $data['id']=array('ELT',1);
-        $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,150));
-        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,150));
-        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,150));
-        $this->assign('city_figure',$data1);
+        $count = $res1->where()->count();
+        $Page  = new \Think\Page($count,16);
+        $show  = $Page->show();
+        $list = $res1->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
         $this->display();
 
@@ -66,13 +66,14 @@ class CityController extends CommonController{
     {
         $this->display('Public:head');
 
-        //·ÇÒÅ±£»¤
+        //ï¿½ï¿½ï¿½Å±ï¿½ï¿½ï¿½
         $res2= M('city_protect');
-        $data['id']=array('ELT',1);
-        $data2=$res2->where($data)->select();
-        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,200));
-        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,200));
-        $this->assign('city_protect',$data2);
+        $count = $res2->where()->count();
+        $Page  = new \Think\Page($count,16);
+        $show  = $Page->show();
+        $list = $res2->where()->order('')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
         $this->display();
 
@@ -84,11 +85,14 @@ class CityController extends CommonController{
     {
         $this->display('Public:head');
 
-        //ÔËºÓµØÍ¼
+        //ï¿½ËºÓµï¿½Í¼
         $res3= M('city_canal');
-        $data['id']=array('ELT',1);
-        $data3=$res3->where($data)->select();
-        $this->assign('city_canal',$data3);
+        $count = $res3->where()->count();
+        $Page  = new \Think\Page($count,16);
+        $show  = $Page->show();
+        $list = $res3->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
         $this->display();
 

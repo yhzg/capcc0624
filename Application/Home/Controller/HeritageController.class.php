@@ -15,37 +15,37 @@ class HeritageController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ï¿½ï¿½ï¿½ï¿½ï¿½Å²ï¿½ï¿½ï¿½Ö¯
+        // ä¸–ç•Œé—äº§ç»„ç»‡
         $res1= M('heritage_organization');
         $data['id']=array('ELT',1);
         $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,170));
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,186));
         $this->assign('heritage_organization',$data1);
 
-        // ï¿½ï¿½Ö¯ï¿½ï¿½Ô¼
+        // ç»„ç»‡å…¬çº¦
         $res1= M('heritage_treaty');
         $data['id']=array('ELT',1);
         $data2=$res1->where($data)->select();
         $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,170));
         $this->assign('heritage_treaty',$data2);
 
-        // ï¿½Ğ¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿
+        // ä¸­å›½ä¸–é—é¡¹ç›®
         $res2= M('heritage_project');
         $data['id']=array('ELT',1);
         $data3=$res2->where($data)->select();
-        $data3[0]['content']=R('SubString/subString',array($data3[0]['content'],0,150));
-        $data3[1]['content']=R('SubString/subString',array($data3[1]['content'],0,150));
+        $data3[0]['content']=R('SubString/subString',array($data3[0]['content'],0,158));
+        $data3[1]['content']=R('SubString/subString',array($data3[1]['content'],0,160));
         $data3[2]['content']=R('SubString/subString',array($data3[2]['content'],0,150));
         $this->assign('heritage_project',$data3);
 
-        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // ç”³é—å†ç¨‹
         $res4= M('heritage_apply');
         $data['id']=array('ELT',1);
         $data4=$res4->where($data)->select();
-        $data4[0]['content']=R('SubString/subString',array($data4[0]['content'],0,350));
+        $data4[0]['content']=R('SubString/subString',array($data4[0]['content'],0,398));
         $this->assign('heritage_apply',$data4);
 
-        // ï¿½Ğ¾ï¿½ï¿½ï¿½ï¿½ï¿½
+        // ç ”ç©¶æœºæ„
         $res2= M('heritage_institution');
         $data['id']=array('ELT',1);
         $data5=$res2->where($data)->select();
@@ -64,15 +64,20 @@ class HeritageController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ÊÀ½çÒÅ²ú×éÖ¯
+        // ä¸–ç•Œé—äº§ç»„ç»‡
         $res1= M('heritage_organization');
-        $data['id']=array('ELT',1);
-        $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,570));
-        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,570));
-        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,570));
-        $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],0,570));
-        $this->assign('heritage_organization',$data1);
+        $count = $res1->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res1->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+
 
 
         $this->display();
@@ -84,12 +89,19 @@ class HeritageController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ×éÖ¯¹«Ô¼
+        // ç»„ç»‡å…¬çº¦
         $res1= M('heritage_treaty');
-        $data['id']=array('ELT',1);
-        $data2=$res1->where($data)->select();
-        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,570));
-        $this->assign('heritage_treaty',$data2);
+        $count = $res1->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res1->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
 
         $this->display();
@@ -101,15 +113,19 @@ class HeritageController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ÖĞ¹úÊÀÒÅÏîÄ¿
+        // ä¸­å›½ä¸–é—é¡¹ç›®
         $res2= M('heritage_project');
-        $data['id']=array('ELT',1);
-        $data3=$res2->where($data)->select();
-        $data3[0]['content']=R('SubString/subString',array($data3[0]['content'],0,570));
-        $data3[1]['content']=R('SubString/subString',array($data3[1]['content'],0,570));
-        $data3[2]['content']=R('SubString/subString',array($data3[2]['content'],0,570));
-        $data3[3]['content']=R('SubString/subString',array($data3[3]['content'],0,570));
-        $this->assign('heritage_project',$data3);
+        $count = $res2->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res2->where()->order('')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
 
         $this->display();
@@ -121,16 +137,19 @@ class HeritageController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ÉêÒÅÀú³Ì
+        // ç”³é—å†ç¨‹-è¿æ²³ç”³é—
         $res4= M('heritage_apply');
-        $data['id']=array('ELT',1);
-        $data4=$res4->where($data)->select();
-        $data4[0]['content']=R('SubString/subString',array($data4[0]['content'],0,500));
-        $data4[1]['title']=R('SubString/subString',array($data4[1]['title'],0,70));
-        $data4[1]['content']=R('SubString/subString',array($data4[1]['content'],0,500));
-        $data4[2]['content']=R('SubString/subString',array($data4[2]['content'],0,500));
-        $data4[3]['content']=R('SubString/subString',array($data4[3]['content'],0,500));
-        $this->assign('heritage_apply',$data4);
+        $count = $res4->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res4->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
 
         $this->display();
@@ -142,15 +161,19 @@ class HeritageController extends CommonController{
     {
         $this->display('Public:head');
 
-        // ÑĞ¾¿»ú¹¹
+        // ç ”ç©¶æœºæ„
         $res2= M('heritage_institution');
-        $data['id']=array('ELT',1);
-        $data5=$res2->where($data)->select();
-        $data5[0]['content']=R('SubString/subString',array($data5[0]['content'],0,570));
-        $data5[1]['content']=R('SubString/subString',array($data5[1]['content'],0,570));
-        $data5[2]['content']=R('SubString/subString',array($data5[2]['content'],0,570));
-        $data5[3]['content']=R('SubString/subString',array($data5[3]['content'],0,570));
-        $this->assign('heritage_institution',$data5);
+        $count = $res2->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res2->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
 
         $this->display();
@@ -162,7 +185,19 @@ class HeritageController extends CommonController{
     {
         $this->display('Public:head');
 
-        //Ö÷ÒªÃ½Ìå
+        // ä¸»è¦åª’ä½“
+        $res2= M('heritage_media');
+        $count = $res2->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res2->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
         $this->display();
 

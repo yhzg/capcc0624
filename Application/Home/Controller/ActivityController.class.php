@@ -18,8 +18,13 @@ class ActivityController extends CommonController {
 
         $res1= M('activity_activity');
         $data['id']=array('ELT',1);
-        $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,190));
+        $data1 = $res1->where($data)->select();
+        foreach ($data1 as $k=>$v)
+        {
+            $data1[$k]['title']=R('SubString/subString',array($data1[$k]['title'],0,44));
+            $data1[$k]['content']=R('SubString/subString',array($data1[$k]['content'],0,570));
+        }
+//        dump($data1);
         $this->assign('activity_activity',$data1);
 
         $this->display();
@@ -32,14 +37,37 @@ class ActivityController extends CommonController {
         $this->display('Public:head');
 
         $res1= M('activity_activity');
-        $data['id']=array('ELT',1);
-        $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,570));
-        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,570));
-        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,570));
-        $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],0,570));
-        $data1[4]['content']=R('SubString/subString',array($data1[4]['content'],0,570));
-        $this->assign('activity_activity',$data1);
+        $count = $res1->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res1->where()->order()->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third()
+    {
+        $this->display('Public:head');
+        $res1= M('activity_activity');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('activity_activity',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
 
         $this->display();
 
