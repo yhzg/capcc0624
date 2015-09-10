@@ -30,12 +30,11 @@ class CommonController extends Controller {
     protected function _initialize()
     {
         $username=I('session.username');
-
         //session存在，显示登录的用户名
         //否则，显示登录等按钮
         if(empty($username))
         {
-            $navbar['url1']=U('Login/login');
+            $navbar['url1']=U("Login/login");
             $navbar['bar1']='登录';
             $navbar['url2']=U('Login/register');
             $navbar['bar2']='立即加入';

@@ -47,28 +47,44 @@
 	//手机号栏失去焦点
 	$(".phone").blur(function(){
 		reg=/^1[3|4|5|7|8][0-9]\d{4,8}$/i;//验证手机正则(输入前7位至11位)
+        var tel=$(this).val();
 
-		if( $(".phone").val()=="")
+
+		if( tel=="")
 		{ 
 			$(".phone").parent().addClass("errorC");
 			$(".error1").html("请输入手机号");
 			$(".error1").css("display","block");
+			return false;
 		}
-		else if($(".phone").val().length<11)
+		else if(tel.length<11)
         {   
         	$(".phone").parent().addClass("errorC");
             $(".error1").html("手机号长度有误！");
             $(".error1").css("display","block");
+			return false;
         }
-        else if(!reg.test($(".phone").val()))
+        else if(!reg.test(tel))
         {   
         	$(".phone").parent().addClass("errorC");
             $(".error1").html("手机号输入有误");
             $(".error1").css("display","block");
+			return false;
         }
         else
         {
-        	$(".phone").parent().addClass("checkedN");
+            $.post('check_tel',{tel:tel},function(tel)
+            {
+                if(tel==0)
+                {
+                    $(".phone").parent().addClass("errorC");
+                    $(".error1").html("抱歉，您输入的手机号已注册过运河网志愿者！");
+                    $(".error1").css("display","block");
+                }else{
+                    $(".phone").parent().addClass("checkedN");
+                }
+            })
+
         }
 	});
 

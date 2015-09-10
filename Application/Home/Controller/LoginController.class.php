@@ -3,7 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 
 
-class LoginController extends CommonController {
+class LoginController extends Controller {
 
     //检查登录 OK
     //@breif $uid_array 获取登陆者的所有信息
@@ -63,6 +63,14 @@ class LoginController extends CommonController {
         }
     }*/
 
+    public function login()
+    {
+        //获取前一个页面的URL
+        $get_url=$_SERVER['HTTP_REFERER'];
+        cookie('refer',$get_url);
+        $this->display();
+    }
+
     public function check_login()
      {
 
@@ -86,7 +94,13 @@ class LoginController extends CommonController {
                  if($res['activated']==1)
                  {
                      session('username', $res['username']);
-                     $this->success('登录成功', U('Index/index'));
+                     $url=cookie('refer');
+                     //登录后跳转至登录前的页面
+                     $jump_url=(isset($url))?$url:U('Index/index');
+                     $this->success('登录成功', $jump_url);
+
+
+
                  }else//邮箱未激活，再发一次邮件
                  {
                      $title="中国运河网注册激活邮件";
@@ -327,6 +341,14 @@ class LoginController extends CommonController {
         $this->display();
     }
 
+    public function check_tel()
+    {
+        $tel=I('post.tel');
+        $res=M('User')->where(array('tel'=>$tel))->find();
+        //真，已注册，返回0；假，未注册，返回1；
+        echo ($res)?0:1;
+    }
+
     //手机验证
     public function send_sms()
     {
@@ -335,7 +357,7 @@ class LoginController extends CommonController {
         session('sms_code',$sms_code);
         //验证码，5分钟有效
         $datas=array($sms_code,'5');
-        // $to='18921278156';
+         //$to='18921278156';
         //$datas=array(123456);
         $tempId='1';
         //echo strlen($sms_code);
@@ -344,43 +366,43 @@ class LoginController extends CommonController {
         {
             //手机号位数不对
             $res= -1;
+
         }else
         {
             //返回1或0
             $res=R('Sms/sendTemplateSMS',array($to,$datas,$tempId));
         }
+
         //dump($res);
-        //exit;
 
         echo $res;
-     /*  if($res==1)
-        {
-            echo 1;
-        }else
-       {
-            echo 0;
-        }*/
-        //$this->display();
+
+
+
     }
 
     public function sms_check()
     {
         $smsCode=I('post.smsCode');
-       // $tel=I('post.tel');
+        $username=I('session.username');
+        $tel=I('post.tel');
         if($smsCode==session('sms_code'))
         {
             //把手机号存入数据库
-            $this->success('验证成功！', U('Index/index'));
-            /*   $m=M('User');
+              $m=M('User');
                $res= $m->where(array('username'=>$username))->save(array('tel'=>$tel));
                if($res)
                {
-                   $this->success('验证成功！',U('Index/index'));
+                   $url=cookie('refer');
+                   //登录后跳转至登录前的页面
+                   $jump_url=(isset($url))?$url:U('Index/index');
+                   $this->success('验证成功', $jump_url);
+
                }else
                {
                    //存入数据库出错
                    $this->error('系统出错！请联系管理员！');
-               }*/
+               }
         }else
         {
             $this->error('验证码错误！');
