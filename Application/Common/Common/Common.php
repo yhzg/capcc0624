@@ -26,4 +26,6 @@ function checkorderstatus($ordid){
     }else{
         return false;
     }
+
 }
+

@@ -14,13 +14,9 @@
 
 <div class="wrap_box">
     <div class="wrap">
-        <div class="left_box">
+        <div class="left_box ">
             <!--首页新闻图片-->
-            <volist name="home_pic" id="vo">
-                <a href="">
-                    <img src="__PUBLIC__/<{$vo.imgpath}>" width="802" height="451"/>
-                </a>
-            </volist>
+            <a href=""><img src="__PUBLIC__/<{$home_pic[0].imgpath}>" width="802" height="451"/></a>
         </div>
         <div class="right_box">
             <div class="right_con" style="height:450px;">
@@ -29,13 +25,13 @@
                         class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
                 <dl class="r_news_dl1">
                     <dt>
-                        <h3><a href="#"><{$list2[0]['title']}></a></h3></dt>
+                    <h3><a href="#"><{$list2[0]['title']}></a></h3></dt>
                     <dd><p>
                         <{$list2[0]['content']}>......</p></dd>
                 </dl>
                 <dl class="r_news_dl1">
                     <dt>
-                        <h3><a href="#"><{$list2[1]['title']}></a></h3></dt>
+                    <h3><a href="#"><{$list2[1]['title']}></a></h3></dt>
                     <dd><p>
                         <{$list2[1]['content']}>.....</p></dd>
                 </dl>
@@ -85,7 +81,7 @@
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>申遗历程</span>
                     </h4>
                     <dl class="r_news_dl3">
-                        <dt><a href="#"><img src="__PUBLIC__/Home/Images/home/p1.jpg"></a></dt>
+                        <dt><a href="#"><img src="__PUBLIC__/<{$list4[0]['imgpath']}>"></a></dt>
                         <dd>
                             <!--申遗历程-->
                             <h3><a href="#"><{$list4[0]['title']}></a></h3>
@@ -351,32 +347,33 @@
     <h1 class="pa">网络连接</h1>
     <dl>
         <dt>[政 府 网]</dt>
-        <dd><a href="?">通州市人民政府网</a>/<a href="?">武清市人民政府网</a>/<a href="?">廊坊市人民政府网</a>/<a href="?">沧州市人民政府网</a>/<a
-                href="?">衡水市人民政府网</a>/<a href="?">邢台市人民政府网</a></dd>
+        <dd><a href="http://www.bjtzh.gov.cn/" target="_blank">通州市人民政府网</a>/<a href="http://www.tjwq.gov.cn/" target="_blank">武清市人民政府网</a>/<a
+                href="http://www.lf.cn/" target="_blank">廊坊市人民政府网</a>/<a href="http://www.cangzhou.gov.cn/" target="_blank">沧州市人民政府网</a>/<a
+                href="http://www.hengshui.gov.cn/" target="_blank">衡水市人民政府网</a>/<a href="http://www.xingtai.gov.cn/zwgk/" target="_blank">邢台市人民政府网</a></dd>
     </dl>
     <dl>
         <dt>[地方媒体]</dt>
-        <dd><a href="?">中国城市新闻网</a>/<a href="?">齐鲁晚报</a>/<a href="?">北京晨报</a>/<a href="?">江南晚报</a>/<a
-                href="?">扬州日报</a>/<a
-                href="?">钱江晚报</a></dd>
+        <dd><a href="http://www.chinacitynews.com.cn/" target="_blank">中国城市新闻网</a>/<a href="http://www.qlwb.com.cn/" target="_blank">齐鲁晚报</a>/<a href="http://bjwb22.wanye.cc/" target="_blank">北京晨报</a>/<a href="http://www.jnwb.net/" target="_blank">江南晚报</a>/<a
+                href="http://www.yznews.com.cn/yzrb/html/2015-08/24/node_2.htm" target="_blank">扬州日报</a>/<a
+                href="http://www.qjwb.com.cn/" target="_blank">钱江晚报</a></dd>
     </dl>
     <dl>
         <dt>[运河企业品牌网]</dt>
-        <dd><a href="?">红豆居家</a>/<a href="?">奥克斯</a>/<a href="?">松鹤楼</a>/<a href="?">海澜之家</a>/<a
-                href="?">钱江晚报</a>/<a
-                href="?">淘宝网</a></dd>
+        <dd><a href="http://beta.hodo.cn/index.htm" target="_blank">红豆居家</a>/<a href="http://www.auxgroup.com/" target="_blank">奥克斯</a>/<a href="http://www.songhelou.net/" target="_blank">松鹤楼</a>/<a href="http://www.heilanhome.com/" target="_blank">海澜之家</a>/<a
+                href="http://www.youku.com/" target="_blank">优酷</a>/<a
+                href="http://www.taobao.com/" target="_blank">淘宝网</a></dd>
     </dl>
     <dl>
         <dt>[运河旅游景区网]</dt>
-        <dd><a href="?">灵山大佛</a>/<a href="?">故宫博物院</a>/<a href="?">拙政园</a>/<a href="?">泰山</a>/<a href="?">普陀山</a>/<a
-                href="?">中国京杭大运河博物馆</a></dd>
+        <dd><a href="http://www.chinalingshan.com/index.aspx" target="_blank">灵山大佛</a>/<a href="http://www.dpm.org.cn/index1024768.html" target="_blank">故宫博物院</a>/<a href="http://www.szzzy.cn/" target="_blank">拙政园</a>/<a href="http://www.mount-tai.com.cn/" target="_blank">泰山</a>/<a href="http://www.putuoshan.gov.cn/" target="_blank">普陀山</a>/<a
+                href="http://www.canal-museum.cn/" target="_blank">中国京杭大运河博物馆</a></dd>
     </dl>
     <dl>
         <dt>[文化产业园区网]</dt>
-        <dd><a href="?">杭州运河国家广告产业园</a>/<a href="?">宿州马鞍山现代产业园区</a>/<a href="?">无锡文化创业产业园</a>/<a
-                href="?">北京懋隆文化产业创意园</a>/<a href="?/">中国文化创意产业网</a>/<a href="?">深圳文化创意园</a>/<a href="?">无锡招标网</a>/<a
-                href="?">宁波招标网</a>/<a href="?">济南招标网</a>/<a href="?">天津招标投标网</a>/<a href="?">北京市工程建设交易信息网</a>/<a
-                href="?">扬州工程建设信息网</a></dd>
+        <dd><a href="http://www.hzyhad.com/" target="_blank">杭州运河国家广告产业园</a>/<a href="http://www.suma.gov.cn/" target="_blank">宿州马鞍山现代产业园区</a>/<a href="http://html.thmz.com/col82/2008/xinqu/ipark/show_1.html" target="_blank">无锡文化创业产业园</a>/<a
+                href="http://www.xzlou.com/overall/index.html" target="_blank">北京懋隆文化产业创意园</a>/<a href="http://www.ccitimes.com/" target="_blank">中国文化创意产业网</a>/<a href="http://www.szccip.com/" target="_blank">深圳文化创意园</a>/<a href="http://js.bidcenter.com.cn/1205/" target="_blank">无锡招标网</a>/<a
+                href="http://old.bidding.gov.cn/" target="_blank">宁波招标网</a>/<a href="http://sd.bidcenter.com.cn/1802/" target="_blank">济南招标网</a>/<a href="http://tj.bidcenter.com.cn/" target="_blank">天津招标投标网</a>/<a href="http://www.bcactc.com/" target="_blank">北京市工程建设交易信息网</a>/<a
+                href="http://www.yzcetc.com/" target="_blank">扬州工程建设信息网</a></dd>
     </dl>
 
 
