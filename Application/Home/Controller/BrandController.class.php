@@ -16,19 +16,18 @@ class BrandController extends CommonController {
     {
         $this->display('Public:head');
 
-        // 产品广告
         $res1= M('brand_product');
         $data['id']=array('ELT',1);
         $data1=$res1->where($data)->select();
         $this->assign('brand_product',$data1);
 
-        // 中华老字号
+
         $res2= M('brand_tradition');
         $data['id']=array('ELT',1);
         $data2=$res2->where($data)->select();
         $this->assign('brand_tradition',$data2);
 
-        // 品牌
+
         $res3= M('brand_brand');
         $data['id']=array('ELT',1);
         $data3=$res3->where($data)->select();
@@ -43,15 +42,19 @@ class BrandController extends CommonController {
     {
         $this->display('Public:head');
 
-        // 产品广告
+
         $res1= M('brand_product');
-        $data['id']=array('ELT',1);
-        $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,570));
-        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,570));
-        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,570));
-        $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],0,570));
-        $this->assign('brand_product',$data1);
+        $count =$res1->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res1->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
 
         $this->display();
@@ -63,16 +66,19 @@ class BrandController extends CommonController {
     {
         $this->display('Public:head');
 
-        // 中华老字号
+
         $res2= M('brand_tradition');
-        $data['id']=array('ELT',1);
-        $data2=$res2->where($data)->select();
-        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,570));
-        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,570));
-        $data2[2]['content']=R('SubString/subString',array($data2[2]['content'],0,570));
-        $data2[3]['title']=R('SubString/subString',array($data2[3]['title'],0,56));
-        $data2[3]['content']=R('SubString/subString',array($data2[3]['content'],0,570));
-        $this->assign('brand_tradition',$data2);
+        $count =$res2->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res2->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
         $this->display();
 
@@ -83,15 +89,78 @@ class BrandController extends CommonController {
     {
         $this->display('Public:head');
 
-        // 品牌
         $res3= M('brand_brand');
-        $data['id']=array('ELT',1);
-        $data3=$res3->where($data)->select();
-        $data3[0]['content']=R('SubString/subString',array($data3[0]['content'],0,570));
-        $data3[1]['content']=R('SubString/subString',array($data3[1]['content'],0,570));
-        $data3[2]['content']=R('SubString/subString',array($data3[2]['content'],0,570));
-        $data3[3]['content']=R('SubString/subString',array($data3[3]['content'],0,570));
-        $this->assign('brand_brand',$data3);
+        $count =$res3->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res3->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_product()
+    {
+        $this->display('Public:head');
+        $res1= M('brand_product');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('鏁版嵁閿欒');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_tradition()
+    {
+        $this->display('Public:head');
+        $res1= M('brand_tradition');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('鏁版嵁閿欒');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_brand()
+    {
+        $this->display('Public:head');
+        $res1= M('brand_brand');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('鏁版嵁閿欒');
+        }
+        $res1->getLastSql();
 
         $this->display();
 

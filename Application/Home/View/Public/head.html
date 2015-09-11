@@ -2,11 +2,11 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
-    <meta http-equiv="Content-Language" content="zh-cn">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=1200">
-    <META name="keywords" content="中国运河网">
-    <meta name="description" content="中国运河网">
+    <meta http-equiv="Content-Language" content="zh-cn"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=1200"/>
+    <meta name="keywords" content="中国运河网,运河,京杭大运河,大运河,运河之光,运河网,"/>
+    <meta name="description" content="中国运河网致力于中国大运河世界遗产保护、大运河城市文化传播；集聚社会正能量，倡导和推进运河城市区域经济一体化，实现地缘优势互补、谋求城市之间协同发展、客观评价运河城市经济与文化成就；融汇国内外运河文化与产业经济研究资源，开展运河城市规划、文化旅游、创意产业项目服务，全程代理企业品牌精准营销！"/>
     <title>中国运河网</title>
     <load href="__PUBLIC__/Home/Css/css.css"/>
     <js href="__PUBLIC__/Home/Js/jquery-1.11.3.min.js" />
@@ -28,20 +28,16 @@
     <body>
     <div class="header_box">
         <div class="headnav">
-            <div class="topfav"><a href="<{$navbar['url1']}>"><{$navbar['bar1']}></a>|<a href="<{$navbar['url2']}>"><{$navbar['bar2']}></a>|<a href="#">商城</a>|<a href="#">客服</a></div>
-            <div class="topfav"><a href="<{:U('Login/login')}>">登录</a>|<a href="<{:U('Login/register')}>">立即加入</a>|<a
-                    href="#">商城</a>|<a href="#">客服</a></div>
+            <div class="topfav">
+                <div style="float:left"><a href="__APP__/Home/Index/index">返回首页</a></div>
+                <a href="<{$navbar['url1']}>"><{$navbar['bar1']}></a>|<a href="<{$navbar['url2']}>"><{$navbar['bar2']}></a>|<a href="__ROOT__/iwebshop">商城</a>|<a href="#">客服</a></div>
         </div>
         <div class="header">
             <table width="1200" height="174" class="table-center">
                 <tr>
                     <td width="20%">
-
                         <a href="__APP__/Home/Index/index"><img src="__PUBLIC__/Home/Images/home/logo.jpg" alt="" width="501" height="174"/>
                     </a></td>
-                        <a href="__APP__/Home/Index"><img src="__PUBLIC__/Home/Images/home/logo.jpg" alt="" width="501"
-                                                  height="174"/>
-                        </a>
                     <td width="">
                         <div style="width:402px;height:99px; background: url('__PUBLIC__/Home/Images/home/headcenter.jpg')">
                             <table>
@@ -154,7 +150,7 @@
                     </ul>
                 </li>
                 <li class="ge"></li>
-                <li><a href="#">论坛</a>
+                <li><a href="__ROOT__/upload">论坛</a>
                     <ul>
                         <li><a href="">专家视点</a></li>
                         <li><a href="">原创空间</a></li>

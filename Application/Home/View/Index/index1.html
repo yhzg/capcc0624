@@ -2,13 +2,11 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
-    <meta http-equiv="Content-Language" content="zh-cn">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=1200">
-    <META name="keywords" content="中国运河网">
-    <meta name="description" content="中国运河网">
-    <title>中国运河网</title>
     <load href="__PUBLIC__/Home/Css/css.css"/>
+    <!--图片滚动   -->
+    <js href="__PUBLIC__/Home/Js/jquery-1.8.3.min.js" />
+    <js href="__PUBLIC__/Home/Js/jquery.luara.0.0.1.min.js"/>
+    <load href="__PUBLIC__/Home/Css/luara.css"/>
 </head>
 <body>
 
@@ -16,49 +14,49 @@
     <div class="wrap">
         <div class="left_box ">
             <!--首页新闻图片-->
-            <a href=""><img src="__PUBLIC__/<{$home_pic[0].imgpath}>" width="802" height="451"/></a>
+            <a href=""><img src="__PUBLIC__/Home/Images/news/picture/北京座谈会.jpg" width="802" height="451"/></a>
         </div>
         <div class="right_box">
             <div class="right_con" style="height:450px;">
-                <h2 class="pubtit top_border_ff9900"><a href="#" class="more"
+                <h2 class="pubtit top_border_ff9900"><a href="__APP__/Home/News/news_active.html" class="more"
                                                         style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
                         class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
                 <dl class="r_news_dl1">
                     <dt>
                     <h3><a href="#"><{$list2[0]['title']}></a></h3></dt>
                     <dd><p>
-                        <{$list2[0]['content']}>......</p></dd>
+                        <{$list2[0]['abstract']}></p></dd>
                 </dl>
                 <dl class="r_news_dl1">
                     <dt>
                     <h3><a href="#"><{$list2[1]['title']}></a></h3></dt>
                     <dd><p>
-                        <{$list2[1]['content']}>.....</p></dd>
+                        <{$list2[1]['abstract']}></p></dd>
                 </dl>
                 <dl class="r_news_dl1">
                     <dt>
-                    <h3><a href="#"><{$list2[2]['title']}>......</a></h3></dt>
+                    <h3><a href="#"><{$list2[2]['title']}></a></h3></dt>
                     <dd><p>
-                        <{$list2[2]['content']}>......</p></dd>
+                        <{$list2[2]['abstract']}></p></dd>
                 </dl>
             </div>
         </div>
         <div class="height20"></div>
         <div class="left_box">
             <div class="left_con" style="height:390px;">
-                <h2 class="pubtit top_border_1485a3"><strong class="f1485a3">世&nbsp;&nbsp;遗</strong><a href="#">世遗组织</a><a>|</a><a
-                        href="#">组织公约</a><a>|</a><a href="#">中国世遗项目</a><a>|</a><a href="#">申遗历程</a><a>|</a><a href="#">研究机构</a><a>|</a><a
-                        href="#">主要媒体</a></h2>
+                <h2 class="pubtit top_border_1485a3"><strong class="f1485a3">世&nbsp;&nbsp;遗</strong><a href="__APP__/Home/Heritage/heritage_organization.html">世遗组织</a><a>|</a><a
+                        href="__APP__/Home/Heritage/heritage_treaty.html">组织公约</a><a>|</a><a href="__APP__/Home/Heritage/heritage_project.html">中国世遗项目</a><a>|</a><a href="__APP__/Home/Heritage/heritage_apply.html">申遗历程</a><a>|</a><a href="__APP__/Home/Heritage/heritage_institution.html">研究机构</a><a>|</a><a
+                        href="__APP__/Home/Heritage/heritage_media.html">主要媒体</a></h2>
                 <dl class="r_news_dl2">
                     <dt>
                     <h3><a href="#"><{$list5[0]['title']}></a></h3></dt>
                     <dd><p>
-                        <{$list5[0]['content']}>.....<a
+                        <{$list5[0]['abstract']}><a
                             href="#" class="more"></a></p></dd>
                 </dl>
                 <div class="height10"></div>
                 <div class="r_news_dl3_box fl">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Heritage/heritage_project.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>中国世遗项目</span>
                     </h4>
                     <dl class="r_news_dl3">
@@ -71,13 +69,13 @@
                             <h3><a href="#"><{$list3[0]['address']}></a></h3>
 
                             <p>
-                                <{$list3[0]['content']}>......
+                                <{$list3[0]['abstract']}>
                             </p>
                         </dd>
                     </dl>
                 </div>
                 <div class="r_news_dl3_box fr">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Heritage/heritage_apply.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>申遗历程</span>
                     </h4>
                     <dl class="r_news_dl3">
@@ -86,7 +84,7 @@
                             <!--申遗历程-->
                             <h3><a href="#"><{$list4[0]['title']}></a></h3>
 
-                            <p><{$list4[0]['content']}>......</p></dd>
+                            <p ><{$list4[0]['abstract']}></p></dd>
                     </dl>
                 </div>
 
@@ -102,41 +100,63 @@
                 </ul>
                 <div class="height10"></div>
                 <ul class="news_ul1">
-                    <li><a href="#">· <{$activity[0]['title']}></a></li>
-                    <li><a href="#">· <{$activity[1]['']}></a></li>
-                    <li><a href="#">· <{$activity[2]['']}></a></li>
-                    <li><a href="#">· <{$activity[3]['']}></a></li>
-                    <li><a href="#">· <{$activity[4]['']}></a></li>
-                    <li><a href="#">· <{$activity[5]['']}></a></li>
-                    <li><a href="#">· <{$activity[6]['']}></a></li>
-                    <li><a href="#">· <{$activity[7]['']}></a></li>
+                    <li><h4><a href="#"><{$activity[0]['title']}></a></h4></li>
+                    <!--<li><a href="#">· <{$activity[1]['']}></a></li>-->
+                    <!--<li><a href="#">· <{$activity[2]['']}></a></li>-->
+                    <!--<li><a href="#">· <{$activity[3]['']}></a></li>-->
+                    <!--<li><a href="#">· <{$activity[4]['']}></a></li>-->
+                    <!--<li><a href="#">· <{$activity[5]['']}></a></li>-->
+                    <!--<li><a href="#">· <{$activity[6]['']}></a></li>-->
+                    <!--<li><a href="#">· <{$activity[7]['']}></a></li>-->
+                    <p style="line-height: 2"><{$activity[0]['content']}></p>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="ad_box1"><img border="0" src="__PUBLIC__/Home/Images/home/ad1.jpg" width="1200" height="100"></div>
+    <!--广告位-->
+    <div class="ad_box1" >
+        <ul>
+            <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/ad2.jpg" alt="1"/></a></li>
+            <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/抗战.jpg" alt="2"/></a></li>
+            <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/ad3.jpg" alt="3"/></a></li>
+            <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/抗战2.jpg" alt="4"/></a></li>
+        </ul>
+        <ol style="margin-left: 1040px;margin-top: 10px;">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ol>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            <!--调用Luara示例-->
+            $(".ad_box1").luara({width:"1200",height:"100",interval:4000,selected:"seleted"});
+        });
+    </script>
+
     <div class="wrap">
         <div class="left_box">
             <div class="left_con" style="height:250px;">
-                <h2 class="pubtit top_border_7a9000"><strong class="f1485a3">城&nbsp;&nbsp;市</strong><a href="#">非遗保护</a><a>|</a><a
-                        href="#">运河人物</a><a>|</a><a href="#">运河地图</a></h2>
-                <h4 class="pubtit1"><a href="#" class="more"></a><span>运河地图</span></h4>
+                <h2 class="pubtit top_border_7a9000"><strong class="f1485a3">城&nbsp;&nbsp;市</strong><a href="__APP__/Home/City/city_protect.html">非遗保护</a><a>|</a><a
+                        href="__APP__/Home/City/city_figure.html">运河人物</a><a>|</a><a href="__APP__/Home/City/city_canal.html">运河地图</a></h2>
+                <h4 class="pubtit1"><a href="__APP__/Home/City/city_canal.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>运河地图</span></h4>
                 <dl class="about_dl">
                     <dt><a href="#"><img src="__PUBLIC__/<{$city[0]['imgpath']}>"></a></dt>
                     <dd>
                         <h3><a href="#"> <{$city[0]['title']}></a></h3>
 
                         <p>
-                            <{$city[0]['content']}>......</p></dd>
+                            <{$city[0]['abstract']}></p></dd>
                 </dl>
             </div>
             <div class="height20"></div>
             <div class="left_con" style="height:452px;">
                 <h2 class="pubtit top_border_bba422 "><strong class="f1485a3">旅&nbsp;&nbsp;游</strong><a
-                        href="#">景点</a><a>|</a><a href="#">吃住</a><a>|</a><a href="#">攻略</a></h2>
+                        href="__APP__/Home/Travel/travel_spot.html">景点</a><a>|</a><a href="__APP__/Home/Travel/eat_live.html">吃住</a><a>|</a><a href="__APP__/Home/Travel/travel_story.html">攻略</a></h2>
 
                 <div class="lv_pic_box fl">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Travel/travel_spot.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>景点</span>
                     </h4>
                     <ul class="lv_pic_con1">
@@ -152,7 +172,7 @@
                     </ul>
                 </div>
                 <div class="lv_pic_box fr">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Travel/eat_live.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>吃住</span>
                     </h4>
                     <!--吃住-->
@@ -167,7 +187,7 @@
                 </div>
                 <hr>
                 <div class="gl_box">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Travel/travel_story.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>攻略</span>
                     </h4>
 
@@ -188,35 +208,43 @@
                 <h4 class="pubtit2"><span>风采</span></h4>
 
                 <div class="zyz_pic_box1">
-                    <a href="#"><img src="__PUBLIC__/Home/Images/home/zyz_pic1.jpg"></a>
+                    <a href="#"><img src="__PUBLIC__/Home/Images/volunteer/ac1.jpg"></a>
                 </div>
                 <h4 class="pubtit2"><span>活动</span></h4>
                 <ul class="zyz_pic_box2">
-                    <li><a href=""><img src="__PUBLIC__/Home/Images/home/zyz_pic2.jpg"></a></li>
-                    <li><a href=""><img src="__PUBLIC__/Home/Images/home/zyz_pic3.jpg"></a></li>
+                    <li><a href=""><img src="__PUBLIC__/Home/Images/home/ac1.jpg"></a></li>
+                    <li><a href=""><img src="__PUBLIC__/Home/Images/home/ac2.jpg"></a></li>
                 </ul>
-                <div class="zyz_txt fl">
-                    <h4 class="pubtit2"><span>良策</span></h4>
+                <div class="height20"></div>
+                <ul class="zyz_pic_box2">
+                    <li><a href=""><img src="__PUBLIC__/Home/Images/home/ac3.jpg"></a></li>
+                    <li><a href=""><img src="__PUBLIC__/Home/Images/home/ac4.jpg"></a></li>
+                </ul>
+                <!--良策 监测-->
+                <!--<div class="zyz_txt fl">-->
+                    <!--<h4 class="pubtit2"><span>良策</span></h4>-->
 
-                    <p>
-                        河南安阳滑县段的卫河作为中国大运河的重要组成部分被列入了保护和申报世界文化遗产的范围。卫河岸边的道口古镇，至今已有近千年的历史。清朝乾......</p>
-                </div>
-                <div class="zyz_txt fr">
-                    <h4 class="pubtit2"><span>监测</span></h4>
+                    <!--<p>-->
+                        <!--河南安阳滑县段的卫河作为中国大运河的重要组成部分被列入了保护和申报世界文化遗产的范围。卫河岸边的道口古镇，至今已有近千年的历史。清朝乾......</p>-->
+                <!--</div>-->
+                <!--<div class="zyz_txt fr">-->
+                    <!--<h4 class="pubtit2"><span>监测</span></h4>-->
 
-                    <p>
-                        河南安阳滑县段的卫河作为中国大运河的重要组成部分被列入了保护和申报世界文化遗产的范围。卫河岸边的道口古镇，至今已有近千年的历史。清朝乾......</p>
-                </div>
+                    <!--<p>-->
+                        <!--河南安阳滑县段的卫河作为中国大运河的重要组成部分被列入了保护和申报世界文化遗产的范围。卫河岸边的道口古镇，至今已有近千年的历史。清朝乾......</p>-->
+
+                <!--</div>-->
             </div>
+
         </div>
         <div class="height20"></div>
         <div class="left_box">
             <div class="left_con" style="height:460px;">
-                <h2 class="pubtit top_border_870078"><strong class="f1485a3">数字美术馆</strong><a href="#">传奇</a><a>|</a><a
-                        href="#">市场</a><a>|</a><a href="#">评论</a><a>|</a><a href="#">艺术群</a></h2>
+                <h2 class="pubtit top_border_870078"><strong class="f1485a3">数字美术馆</strong><a href="__APP__/Home/Dgmuseum/classic_legend.html">传奇</a><a>|</a><a
+                        href="__APP__/Home/Dgmuseum/classic_market.html">市场</a><a>|</a><a href="__APP__/Home/Dgmuseum/classic_comment.html">评论</a><a>|</a><a href="__APP__/Home/Dgmuseum/classic_group.html">艺术群</a></h2>
 
                 <div class="art_box fl">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Dgmuseum/classic_legend.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>传奇</span>
                     </h4>
                     <dl>
@@ -224,13 +252,12 @@
                         <dd>
                             <h3><a href="#"><{$classic_legend[0]['title']}></a></h3>
 
-                            <p>
-                                <{$classic_legend[0]['content']}>......</p>
+                            <p><{$classic_legend[0]['abstract']}></p>
                         </dd>
                     </dl>
                 </div>
                 <div class="art_box fr">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Dgmuseum/classic_group.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>艺术群</span>
                     </h4>
                     <dl>
@@ -239,13 +266,13 @@
                             <h3><a href="#"><{$classic_group[0]['name']}></a></h3>
 
                             <p>
-                                <{$classic_group[0]['content']}>......</p>
+                                <{$classic_group[0]['abstract']}></p>
                         </dd>
                     </dl>
                 </div>
                 <hr>
                 <div class="art_box fl">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Dgmuseum/classic_market.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>市场</span>
                     </h4>
                     <dl>
@@ -253,12 +280,11 @@
                         <dd>
                             <h3><a href="#"><{$classic_market[0]['title']}></a></h3>
 
-                            <p>
-                                <{$classic_market[0]['content']}>......</p></dd>
+                            <p><{$classic_market[0]['abstract']}></p></dd>
                     </dl>
                 </div>
                 <div class="art_box fr">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Dgmuseum/classic_comment.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>评论</span>
                     </h4>
                     <dl>
@@ -267,7 +293,7 @@
                             <h3><a href="#"><{$classic_comment[0]['title']}></a></h3>
 
                             <p>
-                                <{$classic_comment[0]['content']}>......</p></dd>
+                                <{$classic_comment[0]['abstract']}></p></dd>
                     </dl>
                 </div>
 
@@ -275,24 +301,24 @@
             <div class="height20"></div>
             <div class="left_con" style="height:260px;">
                 <h2 class="pubtit top_border_d96800 "><strong class="f1485a3">品&nbsp;&nbsp;牌</strong><a
-                        href="#">中华老字号</a><a>|</a><a href="#">特色广告</a><a>|</a><a href="#">运河品牌</a></h2>
+                        href="__APP__/Home/Brand/brand_tradition.html">中华老字号</a><a>|</a><a href="__APP__/Home/Brand/brand_product.html">特色广告</a><a>|</a><a href="__APP__/Home/Brand/brand_brand.html">运河品牌</a></h2>
 
                 <div class="pro_box1">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Brand/brand_tradition.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>中华老字号</span>
                     </h4>
                     <ul class="news_ul2">
-                        <li><a href="#"><{$brand_tradition[0]['title']}></a></li>
-                        <li><a href="#"><{$brand_tradition[1]['title']}></a></li>
-                        <li><a href="#"><{$brand_tradition[2]['title']}></a></li>
-                        <li><a href="#"><{$brand_tradition[3]['title']}></a></li>
-                        <li><a href="#"><{$brand_tradition[4]['title']}></a></li>
+                        <li><a href="#">· <{$brand_tradition[0]['title']}></a></li>
+                        <li><a href="#">· <{$brand_tradition[1]['title']}></a></li>
+                        <li><a href="#">· <{$brand_tradition[2]['title']}></a></li>
+                        <li><a href="#">· <{$brand_tradition[3]['title']}></a></li>
+                        <li><a href="#">· <{$brand_tradition[4]['title']}></a></li>
 
                     </ul>
                 </div>
 
                 <div class="pro_box3">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Brand/brand_product.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>品牌广告</span>
                     </h4>
                     <dl>
@@ -305,11 +331,11 @@
                     </dl>
                 </div>
                 <div class="pro_box2">
-                    <h4 class="pubtit1"><a href="#" class="more"
+                    <h4 class="pubtit1"><a href="__APP__/Home/Brand/brand_brand.html" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>产品广告</span>
                     </h4>
 
-                    <p><{$brand_product[0]['content']}>······</p>
+                    <p><{$brand_product[0]['content']}></p>
                 </div>
 
 
@@ -323,17 +349,17 @@
                     <h4 class="pubtit2"><a href="#" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>专家视点</span>
                     </h4>
-                    <a href="#"><img src="__PUBLIC__/Home/Images/home/bbs_pic1.jpg"></a>
+                    <a href="#"><img src="__PUBLIC__/Home/Images/home/专家视点.jpg"></a>
                 </div>
                 <div class="bbs_box1">
-                    <h4 class="pubtit2"><a href="#" class="more"></a><span>原创空间</span></h4>
-                    <a href="#"><img src="__PUBLIC__/Home/Images/home/bbs_pic2.jpg"></a>
+                    <h4 class="pubtit2"><a href="#" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>原创空间</span></h4>
+                    <a href="#" ><img src="__PUBLIC__/Home/Images/home/原创空间.jpg"></a>
                 </div>
                 <div class="bbs_box1">
                     <h4 class="pubtit2"><a href="#" class="more"
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>百家杂谈</span>
                     </h4>
-                    <a href="#"><img src="__PUBLIC__/Home/Images/home/bbs_pic3.jpg"></a>
+                    <a href="#"><img src="__PUBLIC__/Home/Images/home/百家杂谈2.jpg"></a>
                 </div>
 
             </div>

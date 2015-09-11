@@ -1,0 +1,47 @@
+.pubtit {width:100%;height:40px;line-height:40px;font-weight:normal;}
+.pubtit strong {padding:0 30px 0 10px;font-size:25px;font-weight:normal;}
+.more {display:block;float:right;width:92px;height:15px;margin:10px 0 0 0;padding:0;}
+.pubtit a {color:#469bb7;font-size:14px;padding:0 5px;font-weight:normal;}
+.f1485a3 {color:#1485a3;}
+
+
+.lv_pic_box {width:385px;padding:0 5px;}
+.pic_con1 {margin:0;padding:5px 0 0 0;}
+.pic_con1 li {width:381px;height:283px;text-align:center;margin:0 2px;}
+.pic_con1 li img {width:381px;height:283px;}
+.pic_con1 li p {line-height:50px;}
+.lv_pic_con2 {margin:0;padding:5px 0 0 0;}
+.lv_pic_con2 li {float:left;width:188px;height:146px;text-align:center;margin:0 2px;}
+.lv_pic_con2 li img {width:188px;height:116px;}
+.lv_pic_con2 li p {line-height:30px;}
+
+.lvyou_left_box {float:left;}
+.lvyou_left_box_con {width:796px;overflow:hidden;}
+.lvyou_left_box_con1 {width:796px;border-top:2px solid #C5161D}
+
+
+.left_box_con1 p {color:#555;line-height:2;font-size:36px;text-align:center;}
+.left_box_con1 p2 {color:#555;line-height:2;font-size:14px;}
+.left_box_con1 p1 {color:#555;line-height:2;font-size:12px;text-align:center;}
+.left_box_con1 p3 {color:#555;line-height:2;font-size:12px;}
+
+.lvyou_dl {width:330px;height:200px;padding:0px 0;margin:0px 0;overflow:hidden;border-top:2px solid #C5161D;}
+.lvyou_dl2 {width:330px;height:500px;padding:0px 0;margin:0px 0;overflow:hidden;border-top:2px solid #C5161D}
+.lvyou_dl dt {height:25px;line-height:25px;color:#555;padding:0 15px 0 10px;font-size:14px;}
+.lvyou_dl2 dt {height:25px;line-height:25px;color:#555;padding:0 15px 0 10px;font-size:14px;}
+.lvyou_dl dd {line-height:25px;color:#555;}
+.dl {width:796px;padding:10px 5px;border-top:1px solid #C5161D;border-bottom:1px solid #C5161D}
+.dl d {height:25px;line-height:25px;color:#555;padding:0 100px 0 100px;font-size:14px;}
+.dl d a {color:#555;padding:0 5px;}
+
+.lvyou_gonglv_ul {padding:0;margin:0;width:596px;float:left;}
+.lvyou_gonglv_ul li {float:left;width:288px;height:139px;margin:5px;}
+.lvyou_gonglv_ul li img {width:286px;height:137px;}
+
+.lvyou_luxian_p {float:right;width:186px;line-height:2.5;}
+.lvyou_luxian_p span {color:#555;}
+.lvyou_luxian_p strong {font-size:18px;color:#333;font-weight:normal;}
+
+.lvyou_right_box {float:right;width:330px;}
+.box1 {float:left;}
+.lvyou_right_box_con {width:329px;border:1px ;}
