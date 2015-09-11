@@ -8,10 +8,10 @@ return array(
     'DB_HOST'=>'localhost',
     'DB_NAME'=>'capcc_db',
     'DB_USER'=>'root',
-    'DB_PWD'=>'root',
+    'DB_PWD'=>'',
     'DB_PORT'=>'',
     'DB_PREFIX'=>'',
-    'SHOW_PAGE_TRACE'=>TRUE,
+//    'SHOW_PAGE_TRACE'=>TRUE,
     //'LAYOUT_ON'=>true,
     'MODULE_ALLOW_LIST'    =>    array('Home','Admin'),
    // 'DEFAULT_MODULE'       =>    'Home',  // 默认模块
@@ -33,7 +33,7 @@ return array(
     'alipay_config'=>array(
         'partner' =>'20********50',   //这里是你在成功申请支付宝接口后获取到的PID；
         'key'=>'9t***********ie',//这里是你在成功申请支付宝接口后获取到的Key
-        'sign_type'=>strtoupper('MD5'),
+        'sign_type'=>strtoupper('MD5'),``
         'input_charset'=> strtolower('utf-8'),
         'cacert'=> getcwd().'\\cacert.pem',
         'transport'=> 'http',

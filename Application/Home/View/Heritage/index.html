@@ -16,9 +16,9 @@
                                                                 style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
                             class="f1485a3">世界遗产组织</strong></h2>
                     <dl class="r_news_dl3">
-                        <dt><a href="#"><img src="__PUBLIC__/<{$heritage_organization[0].imgpath}>"></a></dt>
+                        <dt><img src="__PUBLIC__/<{$heritage_organization[0].imgpath}>"></dt>
                         <dd>
-                            <h3><a href="#"><{$heritage_organization[0].title}></a></h3>
+                            <h3><a href="__APP__/Home/Heritage/third_organization/id/<{$heritage_organization[0].id}>"><{$heritage_organization[0].title}></a></h3>
 
                             <p><{$heritage_organization[0].content}></p></dd>
                     </dl>
@@ -30,7 +30,7 @@
                     <dl class="r_news_dl3">
                         <dt><a href="#"><img src="__PUBLIC__/<{$heritage_treaty[0].imgpath}>"></a></dt>
                         <dd>
-                            <h3><a href="#"><{$heritage_treaty[0].title}></a></h3>
+                            <h3><a href="__APP__/Home/Heritage/third_treaty/id/<{$heritage_treaty[0].id}>"><{$heritage_treaty[0].title}></a></h3>
 
                             <p><{$heritage_treaty[0].content}></p></dd>
                     </dl>
@@ -43,14 +43,14 @@
                                                                 style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
                             class="f1485a3">中国世遗项目</strong></h2>
                     <ul class="lv_pic_con1">
-                        <li><a href=""><img src="__PUBLIC__/<{$heritage_project[0].imgpath}>"></a>
+                        <li><a href="__APP__/Home/Heritage/third_project/id/<{$heritage_project[0].id}>"><img src="__PUBLIC__/<{$heritage_project[0].imgpath}>"></a>
 
                             <p><{$heritage_project[0].address}></p></li>
-                        <li><a href=""><img src="__PUBLIC__/<{$heritage_project[1].imgpath}>"></a>
+                        <li><a href="__APP__/Home/Heritage/third_project/id/<{$heritage_project[1].id}>"><img src="__PUBLIC__/<{$heritage_project[1].imgpath}>"></a>
 
                             <p><{$heritage_project[1].address}></p>
                         </li>
-                        <li><a href=""><img src="__PUBLIC__/<{$heritage_project[2].imgpath}>"></a>
+                        <li><a href="__APP__/Home/Heritage/third_project/id/<{$heritage_project[2].id}>"><img src="__PUBLIC__/<{$heritage_project[2].imgpath}>"></a>
 
                             <p><{$heritage_project[2].address}></p>
                         </li>
@@ -58,15 +58,15 @@
                     <div class="clearfloat"></div>
                     <dl class="lvyou_dl">
                         <dt><{$heritage_project[0].address}></dt>
-                        <dd><{$heritage_project[0].content}></dd>
+                        <dd><{$heritage_project[0].content}><a href="__APP__/Home/Heritage/third_project/id/<{$heritage_project[1].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
                     </dl>
                     <dl class="lvyou_dl">
                         <dt><{$heritage_project[1].address}></dt>
-                        <dd><{$heritage_project[1].content}></dd>
+                        <dd><{$heritage_project[1].content}><a href="__APP__/Home/Heritage/third_project/id/<{$heritage_project[1].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
                     </dl>
                     <dl class="lvyou_dl">
                         <dt><{$heritage_project[2].address}></dt>
-                        <dd><{$heritage_project[2].content}></dd>
+                        <dd><{$heritage_project[2].content}><a href="__APP__/Home/Heritage/third_project/id/<{$heritage_project[1].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
                     </dl>
 
                 </div>
@@ -77,11 +77,10 @@
 
                     <div class="lvyou_3p_box">
                         <ul>
-                            <li><a href="#"><img border="0" src="__PUBLIC__/<{$heritage_apply[0]['imgpath']}>"></a></li>
-                            <li><a href="#"><img border="0" src="__PUBLIC__/<{$heritage_apply[1]['imgpath']}>"></a></li>
+                            <li><a href="__APP__/Home/Heritage/third_apply/id/<{$heritage_apply[0].id}>"><img border="0" src="__PUBLIC__/<{$heritage_apply[0]['imgpath']}>"></a></li>
+                            <li><a href="__APP__/Home/Heritage/third_apply/id/<{$heritage_apply[1].id}>"><img border="0" src="__PUBLIC__/<{$heritage_apply[1]['imgpath']}>"></a></li>
                         </ul>
-                        <div class="lvyou_3p_box_r"><a href="#"><img border="0"
-                                                                     src="__PUBLIC__/<{$heritage_apply[2]['imgpath']}>"></a>
+                        <div class="lvyou_3p_box_r"><a href="__APP__/Home/Heritage/third_apply/id/<{$heritage_apply[2].id}>"><img border="0" src="__PUBLIC__/<{$heritage_apply[2]['imgpath']}>"></a>
                         </div>
                     </div>
                     <div class="clearfloat"></div>
@@ -94,16 +93,16 @@
                                                             style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
                         class="f1485a3">研究机构</strong></h2>
                 <ul class="sy_pic_ul">
-                    <li><a href="#"><img border="0" src="__PUBLIC__/<{$heritage_institution[0]['imgpath']}>"></a></li>
-                    <li><a href="#"><img border="0" src="__PUBLIC__/<{$heritage_institution[1]['imgpath']}>"></a></li>
-                    <li><a href="#"><img border="0" src="__PUBLIC__/<{$heritage_institution[2]['imgpath']}>"></a></li>
-                    <li><a href="#"><img border="0" src="__PUBLIC__/<{$heritage_institution[3]['imgpath']}>"></a></li>
+                    <li><a href="__APP__/Home/Heritage/third_institution/id/<{$heritage_institution[0].id}>"><img border="0" src="__PUBLIC__/<{$heritage_institution[0]['imgpath']}>"></a></li>
+                    <li><a href="__APP__/Home/Heritage/third_institution/id/<{$heritage_institution[1].id}>"><img border="0" src="__PUBLIC__/<{$heritage_institution[1]['imgpath']}>"></a></li>
+                    <li><a href="__APP__/Home/Heritage/third_institution/id/<{$heritage_institution[2].id}>"><img border="0" src="__PUBLIC__/<{$heritage_institution[2]['imgpath']}>"></a></li>
+                    <li><a href="__APP__/Home/Heritage/third_institution/id/<{$heritage_institution[3].id}>"><img border="0" src="__PUBLIC__/<{$heritage_institution[3]['imgpath']}>"></a></li>
                 </ul>
                 <div class="height10"></div>
-                <li><{$heritage_institution[0]['title']}></li>
-                <li><{$heritage_institution[1]['title']}></li>
-                <li><{$heritage_institution[2]['title']}></li>
-                <li><{$heritage_institution[3]['title']}></li>
+                <li><a href="__APP__/Home/Heritage/third_institution/id/<{$heritage_institution[0].id}>"><{$heritage_institution[0]['title']}></a></li>
+                <li><a href="__APP__/Home/Heritage/third_institution/id/<{$heritage_institution[0].id}>"><{$heritage_institution[1]['title']}></a></li>
+                <li><a href="__APP__/Home/Heritage/third_institution/id/<{$heritage_institution[0].id}>"><{$heritage_institution[2]['title']}></a></li>
+                <li><a href="__APP__/Home/Heritage/third_institution/id/<{$heritage_institution[0].id}>"><{$heritage_institution[3]['title']}></a></li>
 
                 <div class="height10"></div>
             </div>
@@ -127,11 +126,11 @@
                             <!--</for>-->
                             <ul class="sy_pic_ul1">
                                 <li><a href="#"><img src="__PUBLIC__/Home/Images/home/2.JPG"></a></li>
-                                <li><a href="#"><img src="__PUBLIC__/<{$heritage_apply[1]['imgpath']}>"></a></li>
-                                <li><a href="#"><img src="__PUBLIC__/Home/Images/home/2.JPG"></a></li>
-                                <li><a href="#"><img src="__PUBLIC__/<{$heritage_apply[1]['imgpath']}>"></a></li>
-                                <li><a href="#"><img src="__PUBLIC__/Home/Images/home/2.JPG"></a></li>
-                                <li><a href="#"><img src="__PUBLIC__/<{$heritage_apply[1]['imgpath']}>"></a></li>
+                                <li><a href="__APP__/Home/Heritage/third_apply/id/<{$heritage_apply[1].id}>"><img src="__PUBLIC__/<{$heritage_apply[1]['imgpath']}>"></a></li>
+                                <li><a href="http://capcc.com.cn"><img src="__PUBLIC__/Home/Images/home/2.JPG"></a></li>
+                                <li><a href="__APP__/Home/Heritage/third_apply/id/<{$heritage_apply[1].id}>"><img src="__PUBLIC__/<{$heritage_apply[1]['imgpath']}>"></a></li>
+                                <li><a href="http://capcc.com.cn"><img src="__PUBLIC__/Home/Images/home/2.JPG"></a></li>
+                                <li><a href="__APP__/Home/Heritage/third_apply/id/<{$heritage_apply[1].id}>"><img src="__PUBLIC__/<{$heritage_apply[1]['imgpath']}>"></a></li>
                             </ul>
                         </div>
                         <div id="page_roll_img_2" style="visibility:hidden; width:800px;">

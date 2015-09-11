@@ -16,14 +16,12 @@ class DgmuseumController extends CommonController {
     {
         $this->display('Public:head');
 
-        // ����
         $res1= M('classic_legend');
         $data['id']=array('ELT',1);
         $data1=$res1->where($data)->select();
         $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,170));
         $this->assign('classic_legend',$data1);
 
-        // �г�
         $res2= M('classic_market');
         $data['id']=array('ELT',1);
         $data2=$res2->where($data)->select();
@@ -32,7 +30,6 @@ class DgmuseumController extends CommonController {
         $data2[3]['content']=R('SubString/subString',array($data2[3]['content'],0,160));
         $this->assign('classic_market',$data2);
 
-        // ����Ⱥ
         $res3= M('classic_group');
         $data['id']=array('ELT',1);
         $data3=$res3->where($data)->select();
@@ -41,7 +38,6 @@ class DgmuseumController extends CommonController {
         $data3[2]['content']=R('SubString/subString',array($data3[2]['content'],0,138));
         $this->assign('classic_group',$data3);
 
-        // ����
         $res4= M('classic_comment');
         $data['id']=array('ELT',1);
         $data4=$res4->where($data)->select();
@@ -121,6 +117,82 @@ class DgmuseumController extends CommonController {
         }
         $this->assign('list',$list);
         $this->assign('page',$show);
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_legend()
+    {
+        $this->display('Public:head');
+
+        $res1= M('classic_legend');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_market()
+    {
+        $this->display('Public:head');
+
+        $res1= M('classic_market');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_group()
+    {
+        $this->display('Public:head');
+
+        $res1= M('classic_group');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_comment()
+    {
+        $this->display('Public:head');
+
+        $res1= M('classic_comment');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
 
         $this->display();
 

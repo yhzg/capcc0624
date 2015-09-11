@@ -26,8 +26,8 @@ class TravelController extends CommonController{
         $res2= M('travel_eat');
         $data['id']=array('ELT',1);
         $data2=$res2->where($data)->select();
-        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,150));
-        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,150));
+        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,100));
+        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,100));
         $this->assign('travel_eat',$data2);
 
 
@@ -129,5 +129,76 @@ class TravelController extends CommonController{
 
         $this->display('Public:foot');
 
+    }
+    public function third_spot()
+    {
+        $this->display('Public:head');
+        $res1= M('travel_spot');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_eat()
+    {
+        $this->display('Public:head');
+        $res1= M('travel_eat');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_canal()
+    {
+        $this->display('Public:head');
+        $res1= M('travel_live');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_story()
+    {
+        $this->display('Public:head');
+        $res1= M('travel_story');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
     }
 }
