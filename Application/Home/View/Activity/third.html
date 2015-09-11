@@ -1,9 +1,7 @@
 <!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
-
-	<load href="__PUBLIC__/Home/Css/css3.css"/>
-
+	<load href="__PUBLIC__/Home/Css/third.css"/>
 </head>
 <body>
 	<div class="wrap_box">
@@ -11,31 +9,30 @@
  			<div class="left_box">
  				<div class="left_box_con">
  					<div class="left_box_con1 fl">
- 						<h2 class="pubtit" style="margin:0px 0;"><strong class="f1485a3">城市</strong></h2>
- 						<ul class="pic_con1">
-							<volist name='list' id='list'>
-								<li><if condition="$i eq count($list)"></if><a href="__APP__/Home/City/third_canal/id/<{$list.id}>"><img src="__PUBLIC__/<{$list.imgpath}>" ></a><p><{$list['city']}></p></li>
-							</volist>
- 						</ul>
+ 						<h2 class="pubtit" style="margin:0px 0;"><strong class="f1485a3">活&nbsp;&nbsp;动</strong></h2>
+						<p><{$activity_activity.title}></p>
+						<br />
+                        <p1> <{$activity_activity.inserttime}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 来源：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 作者：<{$activity_activity.author}></p1><br />
+                      <p2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<{$activity_activity.content}></p2>
+					  <ul class="pic_con1">
+ 							<li><a href=""><img src="__PUBLIC__/<{$activity_activity.imgpath}>"></a>
+ 							<p3><{$activity_activity.title}></p3></li>
+                            <!--<li><a href=""><img src="__PUBLIC__/<{$activity_activity.imgpath}>" ></a><p3><{$activity_activity.title}></p3>-->
+                            <!--</li>-->
+					  </ul>
  						<div class="clearfloat"></div>
- 						
- 						
  					</div>
- 			
  				</div>
  				<div class="height20"></div>
-                <div class="box">
+                <div class="box1">
 					<dl class="dl" align="center";>
-						<d><{$page}></d>
+						<!--<d><{$page}></d>-->
 					</dl>
-				</div>
-
-
-			</div>
+ 				</div>
+ 			</div>
  			
  			
  			<div class="lvyou_right_box">
-            
  				 <dl class="lvyou_dl">
                  <h2 class="pubtit" style="margin:8px 0;"><strong class="f1485a3">相关连接/广告栏</strong></h2>
  							<dt>·标题性或主题性文字标题性或主题性文字标题性<br />
@@ -45,8 +42,7 @@
  							  ·标题性或主题性文字标题性或主题性文字标题性<br />
 						    ·标题性或主题性文字标题性或主题性文字标题性</dt>
  				 </dl>
-				<br />
- 				<div class="height20"></div>
+ 				<div class="height10"></div>
                
 			  <dl class="lvyou_dl2">
                   <h2 class="pubtit" style="margin:8px 0;"><strong class="f1485a3">相关连接/广告栏</strong></h2>

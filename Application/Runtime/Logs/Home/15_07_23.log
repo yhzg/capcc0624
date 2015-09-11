@@ -1,9 +1,0 @@
-[ 2015-07-23T15:20:05+08:00 ] ::1 /capcc0723/index.php/HOME/Login/register
-ERR: 无法加载控制器:Login
-
-[ 2015-07-23T15:38:15+08:00 ] ::1 /capcc0723/index.php/home/register
-ERR: 无法加载控制器:Register
-
-[ 2015-07-23T15:38:53+08:00 ] ::1 /capcc0723/index.php/home/register
-ERR: 无法加载控制器:Register
-

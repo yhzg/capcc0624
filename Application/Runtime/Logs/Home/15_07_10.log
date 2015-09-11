@@ -1,9 +1,0 @@
-[ 2015-07-10T12:33:01+08:00 ] ::1 /capcc0624/
-ERR: SQLSTATE[HY000] [1045] Accès refusé pour l'utilisateur: 'sq_capcccomcn'@'@localhost' (mot de passe: OUI)
-
-[ 2015-07-10T13:07:29+08:00 ] ::1 /capcc0624/
-ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'capcc.news_main' n'existe pas
-
-[ 2015-07-10T13:26:52+08:00 ] ::1 /capcc0624/
-ERR: SQLSTATE[42S02]: Base table or view not found: 1146 La table 'capcc.news_mian' n'existe pas
-

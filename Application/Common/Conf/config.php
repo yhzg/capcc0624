@@ -1,6 +1,7 @@
 <?php
 return array(
 	 //'配置项'=>'配置值'
+    'URL_MODEL' => 3,
     'TMPL_L_DELIM'=>'<{',
     'TMPL_R_DELIM'=>'}>',
     'DB_TYPE'=>'mysql',
@@ -10,7 +11,7 @@ return array(
     'DB_PWD'=>'',
     'DB_PORT'=>'',
     'DB_PREFIX'=>'',
-    'SHOW_PAGE_TRACE'=>TRUE,
+//    'SHOW_PAGE_TRACE'=>TRUE,
     //'LAYOUT_ON'=>true,
     'MODULE_ALLOW_LIST'    =>    array('Home','Admin'),
    // 'DEFAULT_MODULE'       =>    'Home',  // 默认模块
@@ -32,7 +33,7 @@ return array(
     'alipay_config'=>array(
         'partner' =>'20********50',   //这里是你在成功申请支付宝接口后获取到的PID；
         'key'=>'9t***********ie',//这里是你在成功申请支付宝接口后获取到的Key
-        'sign_type'=>strtoupper('MD5'),
+        'sign_type'=>strtoupper('MD5'),``
         'input_charset'=> strtolower('utf-8'),
         'cacert'=> getcwd().'\\cacert.pem',
         'transport'=> 'http',

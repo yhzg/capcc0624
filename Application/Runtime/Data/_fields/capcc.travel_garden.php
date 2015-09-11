@@ -1,1 +1,0 @@
-a:9:{i:0;s:6:"NewsID";i:1;s:4:"Name";i:2;s:5:"Title";i:3;s:7:"Content";i:4;s:5:"Level";i:5;s:12:"BrowseNumber";i:6;s:8:"Pictures";s:3:"_pk";s:6:"NewsID";s:5:"_type";a:7:{s:6:"NewsID";s:7:"int(11)";s:4:"Name";s:12:"varchar(255)";s:5:"Title";s:12:"varchar(255)";s:7:"Content";s:4:"text";s:5:"Level";s:7:"int(11)";s:12:"BrowseNumber";s:7:"int(11)";s:8:"Pictures";s:12:"varchar(255)";}}
