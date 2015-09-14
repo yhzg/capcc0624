@@ -32,7 +32,11 @@ class CommonController extends Controller {
         $username=I('session.username');
         //session存在，显示登录的用户名
         //否则，显示登录等按钮
-        if(empty($username))
+        $m=M('User');
+        $user_exists=$m->where(array('username'=>$username))->find();
+        //dump($user_exists);
+        //exit;
+        if(!$user_exists)
         {
             $navbar['url1']=U("Login/login");
             $navbar['bar1']='登录';

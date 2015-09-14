@@ -19,7 +19,7 @@ class HeritageController extends CommonController{
         $res1= M('heritage_organization');
         $data['id']=array('ELT',1);
         $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,186));
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,100));
         $this->assign('heritage_organization',$data1);
 
         // 组织公约
@@ -33,9 +33,9 @@ class HeritageController extends CommonController{
         $res2= M('heritage_project');
         $data['id']=array('ELT',1);
         $data3=$res2->where($data)->select();
-        $data3[0]['content']=R('SubString/subString',array($data3[0]['content'],0,120));
+      /*  $data3[0]['content']=R('SubString/subString',array($data3[0]['content'],0,120));
         $data3[1]['content']=R('SubString/subString',array($data3[1]['content'],0,120));
-        $data3[2]['content']=R('SubString/subString',array($data3[2]['content'],0,120));
+        $data3[2]['content']=R('SubString/subString',array($data3[2]['content'],0,120));*/
         $this->assign('heritage_project',$data3);
 
         // 申遗历程
@@ -230,7 +230,8 @@ class HeritageController extends CommonController{
         $aid=$_GET['id'];
 //        dump($aid);
         $list = $res1->where(array('ID'=>$aid))->find();
-//        dump($list);
+        dump($list);
+        exit;
         if($list) {
             $this->assign('vo',$list);
         }else{

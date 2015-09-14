@@ -19,6 +19,16 @@ class VolunteerController extends CommonController{
     public function index(){
         $this->display('Public:head');
 
+        // 风采
+        $res1= M('volunteer_grace');
+        $data['id']=array('ELT',3);
+        $data1=$res1->where($data)->select();
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,570));
+        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,570));
+        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,570));
+        $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],0,570));
+       // dump($data1);
+        $this->assign('volunteer_grace',$data1);
         $this->display();
 
         $this->display('Public:foot');
@@ -105,6 +115,24 @@ class VolunteerController extends CommonController{
 
     }
 
+    public function _before_do_new_post()
+    {
+        //登录后方可发帖
+        $username=I('session.username');
+        if($username!='')
+        {
+            $m=M('User');
+            $info=$m->where(array('username'=>$username))->find();
+            if($info['tel']==NULL)
+            {
+                $this->error('志愿者家园发帖需要通过手机验证',U('Login/bindPhone'));
+            }
+        }else
+        {
+            $this->error('抱歉，需登录后方可发帖!');
+        }
+
+    }
     //发表新帖处理
     public function do_new_post()
     {
@@ -241,9 +269,33 @@ class VolunteerController extends CommonController{
         $this->display('Public:foot');
     }
 
-    public function upload()
+    public function grace()
     {
-        //echo $_FILES;
-        echo 1;
+        $this->display('Public:head');
+
+        // 风采
+        $res1= M('volunteer_grace');
+        $data['id']=array('ELT',3);
+        $data1=$res1->where($data)->select();
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,570));
+        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,570));
+        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,570));
+        $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],0,570));
+        $this->assign('volunteer_grace',$data1);
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function act()
+    {
+        $this->display('Public:head');
+
+        // 活动
+
+        $this->display();
+
+        $this->display('Public:foot');
     }
 }
