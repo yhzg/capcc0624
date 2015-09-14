@@ -4,7 +4,7 @@
 function getKey()
 {
     //alert(111);
-    var tel=$('#tel').val();
+    var tel=$('.phone').val();
     //alert(tel);
     var code='';
     for(i=0;i<6;i++)

@@ -4,7 +4,6 @@
 $(document).ready(function(){
     //public_url 在引入的页面定义
     check_ok_url=public_url+'/Home/Images/login/check_ok.ico';
-    //check_ok_url=CAPCC_DOMAIN+__ROOT__+'/Public/Home/Images/login/check_ok.ico';
     checkName();
     checkPwd();
     checkEmail();
@@ -45,7 +44,7 @@ function checkName(){
             var changeUrl = "check_reg_name";
             $.post(changeUrl,{ name:username },function(str)
                 {
-                  if (str == 0)
+                  if (str> 0)
                     {
                         $("#checkname").html("<span style='color:red'>抱歉，您输入的用户名已被注册！</span>");
                         return false;
