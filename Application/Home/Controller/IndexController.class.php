@@ -17,6 +17,11 @@ class IndexController extends CommonController {
 
             $this->assign('home_pic',$news);
 
+            $res1= M('news_picture');
+            $data['id']=array('ELT',3);
+            $data1=$res1->where($data)->select();
+            $this->assign('news_pic',$data1);
+
             // 新闻
             $res1= M('news_active');
             $data['id']=array('ELT',3);

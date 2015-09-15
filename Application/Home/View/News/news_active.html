@@ -1,9 +1,7 @@
 <!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
-
 	<load href="__PUBLIC__/Home/Css/css2.css"/>
-
 </head>
 
 <body>
@@ -40,37 +38,35 @@
 		</div>
 			<div class="lvyou_right_box">
 				<dl class="lvyou_dl">
-					<h2 class="pubtit" style="margin:8px 0;"><strong class="f1485a3">相关连接/广告栏</strong></h2>
-					<dt>·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性
-					</dt>
+					<h2 style="margin:8px 0;"><strong class="f1485a3"></strong></h2><br/>
+					<img id="bg_img" style="width: 327px;height:172px;">
+					<script>
+						var picARRAY=[
+							'__Public__/Home/Images/home/ad/1.jpg',
+							'http://bbs.blueidea.com/images/smilies/default/biggrin.gif',
+							'http://bbs.blueidea.com/images/smilies/default/cool.gif'
+						]
+						var t=new Date().getTime().toString()
+						var t2=parseInt(t.substr(t.length-1,t.length))%picARRAY.length
+						document.getElementById("imgs").src=picARRAY[t2]
+					</script>
 				</dl>
 				<br />
 				<div class="height20"></div>
 
 				<dl class="lvyou_dl2">
-					<h2 class="pubtit" style="margin:8px 0;"><strong class="f1485a3">相关连接/广告栏</strong></h2>
-					<dt>·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性<br/>
-						·标题性或主题性文字标题性或主题性文字标题性
-					</dt>
+					<h2 style="margin:8px 0;"><strong class="f1485a3"></strong></h2>
+					<img id="imgs" style="width: 327px;height:172px;">
+					<script>
+						var picARRAY=[
+							'http://bbs.blueidea.com/images/smilies/default/smile.gif',
+							'http://bbs.blueidea.com/images/smilies/default/biggrin.gif',
+							'http://bbs.blueidea.com/images/smilies/default/cool.gif'
+						]
+						var t=new Date().getTime().toString()
+						var t2=parseInt(t.substr(t.length-1,t.length))%picARRAY.length
+						document.getElementById("imgs").src=picARRAY[t2]
+					</script>
 				</dl>
 				<div class="height20"></div>
 			</div>

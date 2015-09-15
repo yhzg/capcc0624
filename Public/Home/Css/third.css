@@ -15,9 +15,9 @@
 .lv_pic_con2 li img {width:188px;height:116px;}
 .lv_pic_con2 li p {line-height:30px;}
 
-/*.lvyou_left_box {float:left;}*/
-/*.lvyou_left_box_con {width:796px;overflow:hidden;}*/
-/*.lvyou_left_box_con1 {width:796px;border-top:2px solid #C5161D}*/
+.lvyou_left_box {float:left;}
+.lvyou_left_box_con {width:796px;overflow:hidden;}
+.lvyou_left_box_con1 {width:796px;border-top:2px solid #C5161D}
 
 
 .left_box_con1 p {color:#555;line-height:2;font-size:36px;text-align:center;}
