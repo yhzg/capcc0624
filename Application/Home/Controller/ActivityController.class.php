@@ -62,7 +62,7 @@ class ActivityController extends CommonController {
         $list = $res1->where(array('ID'=>$aid))->find();
 //        dump($list);
         if($list) {
-            $this->assign('vo',$list);
+            $this->assign('activity_activity',$list);
         }else{
             $this->error('数据错误');
         }

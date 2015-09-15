@@ -6,7 +6,7 @@ return array(
     'TMPL_R_DELIM'=>'}>',
     'DB_TYPE'=>'mysql',
     'DB_HOST'=>'localhost',
-    'DB_NAME'=>'capcc_db_0911',
+    'DB_NAME'=>'capcc_db',
     'DB_USER'=>'root',
     'DB_PWD'=>'root',
     'DB_PORT'=>'',

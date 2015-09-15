@@ -24,6 +24,9 @@
 				<h2 class="pubtit"><a href="__APP__/Home/Activity/third/aid/<{$activity_activity.aid}>" class="more"
 									  style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">近期活动</strong></h2>
 				<ul>
+					<!--<volist name="activity_activity" id="vo"  offset="0" length="3">-->
+					<!--<li><a href="__APP__/Home/Activity/third/aid/<{$vo.aid}>"><img src="__PUBLIC__/<{$vo.imgpath}>"><p><{$vo.title}></p></a></li>-->
+					<!--</volist>-->
 					<li><a href="__APP__/Home/Activity/third/id/<{$activity_activity[0].id}>"><img src="__PUBLIC__/<{$activity_activity[0].imgpath}>"><p><{$activity_activity[0].title}></p></a></li>
 					<li><a href="__APP__/Home/Activity/third/id/<{$activity_activity[1].id}>"><img src="__PUBLIC__/<{$activity_activity[1].imgpath}>"><p><{$activity_activity[1].title}></p></a></li>
 					<li><a href="__APP__/Home/Activity/third/id/<{$activity_activity[2].id}>"><img src="__PUBLIC__/<{$activity_activity[2].imgpath}>"><p><{$activity_activity[2].title}></p></a></li>

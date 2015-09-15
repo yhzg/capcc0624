@@ -10,14 +10,13 @@
  				<div class="left_box_con">
  					<div class="left_box_con1 fl">
  						<h2 class="pubtit" style="margin:0px 0;"><strong class="f1485a3">活&nbsp;&nbsp;动</strong></h2>
-						<p><{$vo.title}></p>
+						<p><{$activity_activity.title}></p>
 						<br />
-                        <p1> <{$vo.inserttime}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <{$vo.author}></p1><br />
-                      <p2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<{$vo.content}></p2>
-
+                        <p1> <{$activity_activity.inserttime}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 来源：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 作者：<{$activity_activity.author}></p1><br />
+                      <p2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<{$activity_activity.content}></p2>
 					  <ul class="pic_con1">
- 							<li><a href=""><img src="__PUBLIC__/<{$vo.imgpath}>" width="381" height="283"></a>
- 							<p3><{$vo.title}></p3></li>
+ 							<li><a href=""><img src="__PUBLIC__/<{$activity_activity.imgpath}>" width="381" height="283"></a>
+ 							<p3><{$activity_activity.title}></p3></li>
                             <!--<li><a href=""><img src="__PUBLIC__/<{$activity_activity.imgpath}>" ></a><p3><{$activity_activity.title}></p3>-->
                             <!--</li>-->
 					  </ul>
@@ -28,11 +27,7 @@
  				<div class="height20"></div>
                 <div class="box1">
 					<dl class="dl" align="center";>
-						<!--<d>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">上一篇</a>-->
-							<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
-							<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
-							<!--&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
-							<!--<a href="">下一篇</a></d>-->
+						<!--<d><{$page}></d>-->
 					</dl>
  				</div>
  			</div>
