@@ -9,30 +9,31 @@
 <div class="wrap_box">
 <div class="wrap">
     <div class="left_box">
-        <div class="banner"><a href="?"><img border="0" src="__PUBLIC__/<{$news_pic[0]['imgpath']}>" width="802" height="451"></a></div>
+
+        <div class="banner"><a href="__APP__/Home/News/third_active/id/<{$news_pic[0].id}>"><img border="0" src="__PUBLIC__/<{$news_pic[0]['imgpath']}>" width="802" height="451"></a></div>
     </div>
     <div class="right_box">
         <div class="right_con" style="height:450px;">
             <h2 class="pubtit "><a href="__APP__/Home/News/news_picture.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
             <dl class="r_news_dl1">
                 <dt>
-                <h3><a href="#"><{$list1[0]['title']}></a></h3></dt>
+                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[0].id}>"><{$list1[0]['title']}></a></h3></dt>
                 <dd><p>
                     <{$list1[0]['abstract']}></p></dd>
             </dl>
             <dl class="r_news_dl1">
                 <dt>
-                <h3><a href="#"><{$list1[1]['title']}></a></h3></dt>
+                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[1].id}>"><{$list1[1]['title']}></a></h3></dt>
                 <dd><p>
                     <{$list1[1]['abstract']}></p></dd>
             </dl>
             <dl class="r_news_dl1">
                 <dt>
-                <h3><a href="#"><{$list1[2]['title']}></a></h3></dt>
-                <dd><p>
-                    <{$list1[2]['abstract']}></p></dd>
+                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[2].id}>"><{$list1[2]['title']}></a></h3></dt>
+                <dd><p><{$list1[2]['abstract']}></p></dd>
             </dl>
         </div>
+
     </div>
 
     <div class="height20"></div>
@@ -45,36 +46,26 @@
             <div class="clearfloat"></div>
             <dl class="chengshi_dl">
                 <dt>
-                <h3><a href="#"><{$list1[0]['title']}></a></h3> </dt>
-                <dd><{$list1[0]['abstract']}></dd>
+                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[0].id}>"><{$list1[0]['title']}></a></h3> </dt>
+                <dd><{$list1[0]['abstract']}><a href="__APP__/Home/News/third_active/id/<{$list1[0].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
             </dl>
             <dl class="chengshi_dl">
                 <dt>
-                <h3><a href="#"><{$list1[1]['title']}></a></h3> </dt>
-                <dd><{$list1[1]['abstract']}></dd>
+                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[1].id}>"><{$list1[1]['title']}></a></h3> </dt>
+                <dd><{$list1[1]['abstract']}><a href="__APP__/Home/News/third_active/id/<{$list1[1].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
             </dl>
             <dl class="chengshi_dl">
                 <dt>
-                <h3><a href="#"><{$list1[2]['title']}></a></h3> </dt>
-                <dd><{$list1[2]['abstract']}></dd>
+                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[2].id}>"><{$list1[2]['title']}></a></h3> </dt>
+                <dd><{$list1[2]['abstract']}><a href="__APP__/Home/News/third_active/id/<{$list1[2].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
             </dl>
         </div>
         <div class="pp_rightsidecon pp_border">
             <h2 class="pubtit"><strong class="f1485a3">链接</strong></h2>
             <ul class="news_ul1">
-                <li><a href="#">1.日前国家文物局正式公布山东省曲阜鲁国故城、大运河</a></li>
-                <li><a href="#">2.南旺枢纽为第二批国家考古遗址公园；临淄齐国故城</a></li>
-                <li><a href="#">3.南旺枢纽为第二批国家考古遗址公园；临淄齐国故城、</a></li>
-                <li><a href="#">4.城子崖为第二批国家考古遗址公园立项名单</a></li>
-                <li><a href="#">5.日前国家文物局正式公布山东省曲阜鲁国故城、大运河</a></li>
-                <li><a href="#">6.南旺枢纽为第二批国家考古遗址公园；临淄齐国故城</a></li>
-                <li><a href="#">7.城子崖为第二批国家考古遗址公园立项名单</a></li>
-                <li><a href="#">8.日前国家文物局正式公布山东省曲阜鲁国故城、大运河</a></li>
-                <li><a href="#">5.日前国家文物局正式公布山东省曲阜鲁国故城、大运河</a></li>
-                <li><a href="#">6.南旺枢纽为第二批国家考古遗址公园；临淄齐国故城</a></li>
-                <li><a href="#">7.城子崖为第二批国家考古遗址公园立项名单</a></li>
-                <li><a href="#">8.日前国家文物局正式公布山东省曲阜鲁国故城、大运河</a></li>
-                <li><a href="#">9.日前国家文物局正式公布山东省曲阜鲁国故城、大运河</a></li>
+                <volist name="list1" id="list" offset="0" length="10">
+                    <li><a href="__APP__/Home/News/third_active/id/<{$list.id}>">· <{$list.title}></a></li>
+                </volist>
             </ul>
         </div>
 

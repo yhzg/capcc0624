@@ -203,4 +203,121 @@ class HeritageController extends CommonController{
 
         $this->display('Public:foot');
     }
+    public function third_apply()
+    {
+        $this->display('Public:head');
+        $res1= M('heritage_apply');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_institution()
+    {
+        $this->display('Public:head');
+        $res1= M('heritage_institution');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_media()
+    {
+        $this->display('Public:head');
+        $res1= M('heritage_media');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_organization()
+    {
+        $this->display('Public:head');
+        $res1= M('heritage_organization');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+    public function third_project()
+    {
+        $this->display('Public:head');
+        $res1= M('heritage_project');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+    public function third_treaty()
+    {
+        $this->display('Public:head');
+        $res1= M('heritage_treaty');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
 }

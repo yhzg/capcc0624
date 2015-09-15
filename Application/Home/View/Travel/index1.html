@@ -15,31 +15,31 @@
                     <h2 class="pubtit" style="margin:8px 0;"><a href="__APP__/Home/Travel/travel_spot.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">景&nbsp;&nbsp;点</strong>
                     </h2>
                     <ul class="lv_pic_con1">
-                        <li><a href=""><img src="__PUBLIC__/<{$travel_spot[0]['imgpath']}>"
+                        <li><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[0].id}>"><img src="__PUBLIC__/<{$travel_spot[0]['imgpath']}>"
                                             style="border:1px solid #808080;"></a>
 
-                            <p>南山竹海</p></li>
-                        <li><a href=""><img src="__PUBLIC__/<{$travel_spot[1]['imgpath']}>"
+                            <p><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[0].id}>"><{$travel_spot[0]['title']}></a></p></li>
+                        <li><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[1].id}>"><img src="__PUBLIC__/<{$travel_spot[1]['imgpath']}>"
                                             style="border:1px solid #808080;"></a>
 
-                            <p>太公山</p></li>
-                        <li><a href=""><img src="__PUBLIC__/<{$travel_spot[2]['imgpath']}>"
+                            <p><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[1].id}>"> <{$travel_spot[1]['title']}></a></p></li>
+                        <li><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[2].id}>"><img src="__PUBLIC__/<{$travel_spot[2]['imgpath']}>"
                                             style="border:1px solid #808080;"></a>
 
-                            <p>天目湖</p></li>
+                            <p><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[2].id}>"> <{$travel_spot[2]['title']}></a></p></li>
                     </ul>
                     <div class="clearfloat"></div>
                     <dl class="lvyou_dl">
                         <dt><{$travel_spot[0]['title']}></dt>
-                        <dd><{$travel_spot[0]['content']}>……</dd>
+                        <dd><{$travel_spot[0]['content']}> <a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[0].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
                     </dl>
                     <dl class="lvyou_dl">
                         <dt><{$travel_spot[1]['title']}></dt>
-                        <dd><{$travel_spot[1]['content']}>……</dd>
+                        <dd><{$travel_spot[1]['content']}><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[1].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
                     </dl>
                     <dl class="lvyou_dl">
                         <dt><{$travel_spot[2]['title']}></dt>
-                        <dd><{$travel_spot[2]['content']}>……</dd>
+                        <dd><{$travel_spot[2]['content']}><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[2].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
                     </dl>
 
                 </div>
@@ -49,17 +49,20 @@
 
                     <div class="lvyou_3p_box">
                         <ul>
-                            <li><a href="#"><img border="0" src="__PUBLIC__/<{$travel_eat[0]['imgpath']}>"></a></li>
-                            <li><a href="#"><img border="0" src="__PUBLIC__/<{$travel_eat[1]['imgpath']}>"></a></li>
+                            <li><a href="__APP__/Home/Travel/third_eat/id/<{$travel_eat[0].id}>"><img border="0" src="__PUBLIC__/<{$travel_eat[0]['imgpath']}>"></a></li>
+                            <li><a href="__APP__/Home/Travel/third_eat/id/<{$travel_eat[1].id}>"><img border="0" src="__PUBLIC__/<{$travel_eat[1]['imgpath']}>"></a></li>
                         </ul>
-                        <div class="lvyou_3p_box_r"><a href="#"><img border="0"
+                        <div class="lvyou_3p_box_r"><a href="__APP__/Home/Travel/third_canal/id/<{$travel_live[0].id}>"><img border="0"
                                                                      src="__PUBLIC__/<{$travel_live[0]['imgpath']}>"></a>
                         </div>
                     </div>
                     <div class="clearfloat"></div>
-                    <p><{$travel_eat[0]['content']}>......</p>
-
-                    <p><{$travel_eat[1]['content']}>......</p>
+                        <dl class="lvyou_dl">
+                            <p><{$travel_eat[0]['content']}><a href="__APP__/Home/Travel/third_eat/id/<{$travel_eat[0].id}>" style="color: #0066cc">...详细&gt;&gt;</a></p>
+                        </dl>
+                         <dl class="lvyou_dl">
+                            <p><{$travel_eat[1]['content']}><a href="__APP__/Home/Travel/third_eat/id/<{$travel_eat[1].id}>" style="color: #0066cc">...详细&gt;&gt;</a></p>
+                         </dl>
                 </div>
             </div>
             <div class="height20"></div>
@@ -67,10 +70,10 @@
                 <h2 class="pubtit" style="margin:5px 0;"><a href="__APP__/Home/Travel/travel_story.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">攻&nbsp;&nbsp;略</strong>
                 </h2>
                 <ul class="lvyou_gonglv_ul">
-                    <li><a href="#"><img src="__PUBLIC__/<{$travel_story[0]['imgpath']}>"></a></li>
-                    <li><a href="#"><img src="__PUBLIC__/Home/Images/travel/lvyou_pic2.jpg"></a></li>
-                    <li><a href="#"><img src="__PUBLIC__/Home/Images/travel/lvyou_pic2.jpg"></a></li>
-                    <li><a href="#"><img src="__PUBLIC__/Home/Images/travel/lvyou_pic2.jpg"></a></li>
+                    <li><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[0].id}>"><img src="__PUBLIC__/<{$travel_story[0]['imgpath']}>"></a></li>
+                    <li><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[0].id}>"><img src="__PUBLIC__/Home/Images/travel/lvyou_pic2.jpg"></a></li>
+                    <li><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[0].id}>"><img src="__PUBLIC__/Home/Images/travel/lvyou_pic2.jpg"></a></li>
+                    <li><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[0].id}>"><img src="__PUBLIC__/Home/Images/travel/lvyou_pic2.jpg"></a></li>
                 </ul>
                 <p class="lvyou_luxian_p">
                     <strong><{$travel_story[0]['title']}></strong><br>

@@ -106,4 +106,64 @@ class BrandController extends CommonController {
 
         $this->display('Public:foot');
     }
+
+    public function third_product()
+    {
+        $this->display('Public:head');
+        $res1= M('brand_product');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_tradition()
+    {
+        $this->display('Public:head');
+        $res1= M('brand_tradition');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_brand()
+    {
+        $this->display('Public:head');
+        $res1= M('brand_brand');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
 }
