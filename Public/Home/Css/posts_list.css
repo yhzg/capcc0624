@@ -1,0 +1,45 @@
+* {margin:0; padding:0;}
+body {margin:0px;font-family:"Microsoft Yahei","΢���ź�",Verdana;font-size:13px;color:#333; }
+ul {list-style:none;}
+TD { COLOR: #404040; font-family:Verdana; FONT-SIZE: 12px;}
+hr {border-bottom:1px dotted #a6a5a5;background:none;border-top:none;border-left:none;border-right:none;clear:both;padding:5px 0;margin:0 auto;width:99%;}
+A:link {color: #333;text-decoration: none;}
+A:visited {color: #333;text-decoration: none;}
+A:hover {color: #c60000;text-decoration: none;}
+img {border:none;}
+.clearfloat {clear:both;height:0px;font-size:1px;line-height:0px;}
+
+
+.nav{width:63%;background-color:#91bb9e;margin-top:0; line-height:40px; font-size: 18px;}
+
+.new_post{width: 63%;height:40px;text-align: right;margin:0 auto;line-height: 30px;}
+.button{
+    margin-top: 5px;
+    height: 30px;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    font-size: large;
+    text-align: center;
+}
+
+.button:hover{
+    color: #004974;
+    text-decoration: none;
+}
+
+.advice {width:63%;margin: 0 auto;overflow:hidden;background:#fff;}
+
+
+.tag {width:100%;height:40px;line-height:40px;font-weight:normal;}
+.tag strong {padding:0 30px 0 10px;font-size:25px;font-weight:normal;color:blue}
+
+.info{width:100%;height:20px;background-color: black;margin:10px auto}
+.info td{color:white;text-align: center;}
+
+.list{padding:0;margin-top: -10px}
+.list tr{background-color:#F0F7F5;height:40px;text-align: center;}
+
+.pager{margin-top: 30px;text-align: center}
+
+
