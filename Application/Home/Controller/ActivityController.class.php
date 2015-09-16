@@ -21,10 +21,9 @@ class ActivityController extends CommonController {
         $data1 = $res1->where($data)->select();
         foreach ($data1 as $k=>$v)
         {
-            $data1[$k]['title']=R('SubString/subString',array($data1[$k]['title'],0,44));
+//            $data1[$k]['title']=R('SubString/subString',array($data1[$k]['title'],0,44));
             $data1[$k]['content']=R('SubString/subString',array($data1[$k]['content'],0,570));
         }
-//        dump($data1);
         $this->assign('activity_activity',$data1);
 
         $this->display();
@@ -63,7 +62,7 @@ class ActivityController extends CommonController {
         $list = $res1->where(array('ID'=>$aid))->find();
 //        dump($list);
         if($list) {
-            $this->assign('activity_activity',$list);
+            $this->assign('vo',$list);
         }else{
             $this->error('数据错误');
         }

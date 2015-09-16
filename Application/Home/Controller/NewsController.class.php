@@ -26,9 +26,6 @@ class NewsController extends CommonController{
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,205));
         $this->assign('list1',$data1);
 
-        $res2=M('news_picture');
-        $data21=$res2->order('id desc')->limit(2)->select();
-        $this->assign('list21',$data21);
         $this->display();
 
         $this->display('Public:foot');

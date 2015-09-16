@@ -17,30 +17,35 @@ class IndexController extends CommonController {
 
             $this->assign('home_pic',$news);
 
+            $res1= M('news_picture');
+            $data['id']=array('ELT',3);
+            $data1=$res1->where($data)->select();
+            $this->assign('news_pic',$data1);
+
             // 新闻
             $res1= M('news_active');
             $data['id']=array('ELT',3);
             $data1=$res1->where($data)->select();
-            $this->assign('list2',$data1);
+            $this->assign('news_active',$data1);
 
             // 中国世界遗项目
             $res2= M('heritage_project');
             $data2=$res2->where('id = 16')->limit('1')->select();
-            $this->assign('list3',$data2);
+            $this->assign('heritage_project',$data2);
 
             // 申遗历程
             $res3= M('heritage_special');
             $news3=$res3->order('id desc')->limit('1')->select();
-            $this->assign('list4',$news3);
+            $this->assign('heritage_special',$news3);
 
             $res4= M('heritage_apply');
             $data2=$res4->order('id desc')->limit('1')->select();
-            $this->assign('list4',$data2);
+            $this->assign('heritage_apply',$data2);
 
             // 世界遗产组织
             $res5= M('heritage_organization');
             $data3=$res5->order('id desc')->limit('1')->select();
-            $this->assign('list5',$data3);
+            $this->assign('heritage_organization',$data3);
 
             // 活动
             $res66= M('activity_activity');
@@ -128,4 +133,5 @@ class IndexController extends CommonController {
 
             $this->display('Public:foot');
     }
+
 }

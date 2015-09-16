@@ -3,16 +3,65 @@ namespace Home\Controller;
 use Think\Controller;
 
 
-class LoginController extends Controller {
+class LoginController extends CommonController {
 
-
-    public function login()
-    {
-        //获取前一个页面的URL
-        $get_url=$_SERVER['HTTP_REFERER'];
-        cookie('refer',$get_url);
-        $this->display();
-    }
+    //检查登录 OK
+    //@breif $uid_array 获取登陆者的所有信息
+   /* public function check_login() {
+        if(!$_POST['username']) $this->error('帐号错误!');
+        if(!$_POST['password']) $this->error('密码错误!');
+        //if(empty($_POST['verify'])) $this->error('验证码必须!');
+       // import("@.ORG.UcService");//导入UcService.class.php类
+        $ucServer = new UcServer;
+        $uid_array = $ucServer->uc_login($_POST['username'], $_POST['password']);
+        //dump($uid_array);
+        //exit;
+        $login_url=$ucServer->uc_synlogin($uid_array);
+        echo $login_url;//输出同步登录代码,否则无法同步登录
+        if(!is_string($uid_array))
+        {
+            //生成认证条件
+            $map = array();
+            // 支持使用绑定帐号登录
+            $map['username'] = $_POST['username'];
+            //$map["status"] = array('gt',0);
+           /* if($_SESSION['verify'] != md5($_POST['verify']))
+            {
+                $this->error('验证码错误!');
+            }
+            $m=M('User');
+            //自己项目的用户表
+            $memberInfo=$m->where($map)->find();
+            //dump($memberInfo);
+            //exit;
+            //$memberInfo=$this->M('User')->where($map)->find();
+            if(false === $memberInfo) {
+                $this->error('帐号不存在或已禁用!');
+            }/*elseif($memberInfo['status']==0){
+                $this->error('帐号已禁用!');
+            }else {
+                $password = md5($_POST['password']);
+                if($memberInfo['password'] != $password) {
+                    $this->error('密码错误!');
+                }
+                session('username', $memberInfo['username']);
+                //session('email', $memberInfo['email'] );
+               /* session('loginUserName', $memberInfo['loginUserName']);
+                session('lastLoginTime', $memberInfo['lastLoginTime']);
+                session('loginnum', $memberInfo['loginnum']);
+                session('lastloginip', $memberInfo['lastloginip']);*/
+                //保存登录信息(相当于更新信息)
+               /* $data = array();
+                $data['id'] = $memberInfo['userID'];
+                $data['lastlogintime'] = time();
+                $data['loginnum'] = array('exp','loginnum+1');
+                $data['lastloginip'] = get_client_ip();
+                //$data['verify'] = $authInfo['verify'];
+                $this->Member->save($data);
+                $this->success('登录成功!',U('Index/index'));
+            }
+        }
+    }*/
 
     public function check_login()
      {
@@ -37,13 +86,7 @@ class LoginController extends Controller {
                  if($res['activated']==1)
                  {
                      session('username', $res['username']);
-                     $url=cookie('refer');
-                     //登录后跳转至登录前的页面
-                     $jump_url=(isset($url))?$url:U('Index/index');
-                     $this->success('登录成功', $jump_url);
-
-
-
+                     $this->success('登录成功', U('Index/index'));
                  }else//邮箱未激活，再发一次邮件
                  {
                      $title="中国运河网注册激活邮件";
@@ -83,10 +126,15 @@ class LoginController extends Controller {
         //dump($name);
        // $name='ymm';
         $m=M('User');
-        $count=$m->where(array("username"=>$name))->count();
+        $res=$m->where(array("username"=>$name))->find();
         //dump($res);
         //exit;
-       echo $count;
+        if($res!= 0){
+          echo 0;
+
+        }else{
+            echo 1;
+        }
 
     }
     //注册时判断邮箱是否存在ajax
@@ -119,6 +167,49 @@ class LoginController extends Controller {
     }
 
 
+    //检查注册
+    //注册成功同时发送邮件至邮箱
+/*    public function check_register() {
+
+
+        $username=I('post.username');
+        $password=I('post.password');
+        $email=I('post.email');
+
+        //使用D方法自动验证，数据库字段名大小写必须与注册页面input内name名一致
+        $user=D('User');
+        if(!$user->create())
+        {
+            $this->error($user->getError());
+
+        }elseif(!check_verify(I('post.vcode')))
+        {
+            $this->error('验证码错误！');
+        }
+        else{
+            $ucServer = new UcServer;//实例化UcService类
+            $uid = $ucServer->register($username, $password, $email);//注册到UCenter
+
+            //发送注册成功邮件
+            $title="中国运河网注册激活邮件";
+            $url=base64_encode("username/$username");
+
+            $content="欢迎注册中国运河网，点击以下链接进行激活会员！<a href='http://localhost/capcc0624/Login/activate/url/{$url}'> http://localhost/capcc0624/Login/activate/url/{$url} </a>";
+
+            $mail_status=send_mail($_POST['email'],$title,$content);
+            if($mail_status && $uid>0)
+            {
+                //发送成功后再把信息写入数据库
+                $user->create();
+                $user->add();
+                $this->success('注册成功',U('Login/mail_login',array('username'=>base64_encode($username))));
+            }else
+            {
+                $this->error('注册失败。。。');
+            }
+
+        }
+    }*/
 
    public function check_register() {
         $username=I('post.username');
@@ -133,11 +224,18 @@ class LoginController extends Controller {
             $this->error('验证码错误！');
         }
         else{
-            //数据记入数据库
-            $user->create();
-            $res=$user->add();
-            if($res)
+            //发送注册成功邮件
+            $title="中国运河网注册激活邮件";
+            $url=base64_encode("username/$username");
+
+            $content="欢迎注册中国运河网，点击以下链接进行激活会员！<br /><a href='".CAPCC_DOMAIN.__ROOT__."/Login/activate/url/{$url}'>".CAPCC_DOMAIN.__ROOT__."/Login/activate/url/{$url} </a>";
+
+            $mail_status=send_mail($_POST['email'],$title,$content);
+            if($mail_status)
             {
+                //发送成功后再把信息写入数据库
+                $user->create();
+                $user->add();
                 $this->success('注册成功',U('Login/mail_login',array('username'=>base64_encode($username),'tag'=>'reg')));
             }else
             {
@@ -155,7 +253,7 @@ class LoginController extends Controller {
         $user=$m->where(array('username'=>$username))->find();//根据username获取用户注册的所有信息
         if($user>0)
         {
-            // 获取邮箱，并分析是哪种邮箱
+           // 获取邮箱，并分析是哪种邮箱
             $mail=$user['email'];
             $arr=explode('@',$mail);
             $mail_domain='mail.'.$arr[1];
@@ -168,20 +266,7 @@ class LoginController extends Controller {
         {
             $this->error('请先注册');
         }
-        //发送注册成功邮件
-        $title="中国运河网注册激活邮件";
-        $url=base64_encode("username/$username");
-        $content="欢迎注册中国运河网，点击以下链接进行激活会员！<br /><a href='".CAPCC_DOMAIN.__ROOT__."/Login/activate/url/{$url}'>".CAPCC_DOMAIN.__ROOT__."/Login/activate/url/{$url} </a>";
-
-        $mail_status=send_mail($_POST['email'],$title,$content);
-
-        if($mail_status)
-        {
-
-        }else{
-
-        }
-
+        //
     }
 
     //激活
@@ -242,14 +327,6 @@ class LoginController extends Controller {
         $this->display();
     }
 
-    public function check_tel()
-    {
-        $tel=I('post.tel');
-        $res=M('User')->where(array('tel'=>$tel))->find();
-        //真，已注册，返回0；假，未注册，返回1；
-        echo ($res)?0:1;
-    }
-
     //手机验证
     public function send_sms()
     {
@@ -258,7 +335,7 @@ class LoginController extends Controller {
         session('sms_code',$sms_code);
         //验证码，5分钟有效
         $datas=array($sms_code,'5');
-         //$to='18921278156';
+        // $to='18921278156';
         //$datas=array(123456);
         $tempId='1';
         //echo strlen($sms_code);
@@ -267,43 +344,43 @@ class LoginController extends Controller {
         {
             //手机号位数不对
             $res= -1;
-
         }else
         {
             //返回1或0
             $res=R('Sms/sendTemplateSMS',array($to,$datas,$tempId));
         }
-
         //dump($res);
+        //exit;
 
         echo $res;
-
-
-
+     /*  if($res==1)
+        {
+            echo 1;
+        }else
+       {
+            echo 0;
+        }*/
+        //$this->display();
     }
 
     public function sms_check()
     {
         $smsCode=I('post.smsCode');
-        $username=I('session.username');
-        $tel=I('post.tel');
+       // $tel=I('post.tel');
         if($smsCode==session('sms_code'))
         {
             //把手机号存入数据库
-              $m=M('User');
+            $this->success('验证成功！', U('Index/index'));
+            /*   $m=M('User');
                $res= $m->where(array('username'=>$username))->save(array('tel'=>$tel));
                if($res)
                {
-                   $url=cookie('refer');
-                   //登录后跳转至登录前的页面
-                   $jump_url=(isset($url))?$url:U('Index/index');
-                   $this->success('验证成功', $jump_url);
-
+                   $this->success('验证成功！',U('Index/index'));
                }else
                {
                    //存入数据库出错
                    $this->error('系统出错！请联系管理员！');
-               }
+               }*/
         }else
         {
             $this->error('验证码错误！');

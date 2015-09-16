@@ -1,5 +1,5 @@
-* {margin:0; padding:0;} 
-body { background:url(../images/bg.jpg) 0 0 repeat-x #F7F7F7;margin:0px;font-family:"Microsoft Yahei","Œ¢»Ì—≈∫⁄",Verdana;font-size:13px;color:#333; }
+* {margin:0; padding:0;}
+body { background:url(../images/bg.jpg) 0 0 repeat-x #F7F7F7;margin:0px;font-family:"Microsoft Yahei","Œ¢ÔøΩÔøΩÔøΩ≈∫ÔøΩ",Verdana;font-size:13px;color:#333; }
 ul {list-style:none;}
 TD { COLOR: #404040; font-family:Verdana; FONT-SIZE: 12px;}
 hr {border-bottom:1px dotted #a6a5a5;background:none;border-top:none;border-left:none;border-right:none;clear:both;padding:5px 0;margin:0 auto;width:99%;}
@@ -33,7 +33,7 @@ img {border:none;}
 .nav ul li {float:left;height:44px;margin:0;font-size:16px;font-weight:bold;}
 .nav ul li a {display:block;width:130px;height:44px;line-height:44px;text-align:center;color:#333;}
 .nav ul .ge {width:1px;height:44px;background:#bebebe;}
-.nav ul li a:hover,.nav ul li .navcur {color:#c60000;}
+
 #nav .current a, #nav li:hover > a {
     background:#f8f8f8 url(../images/bg.png) repeat-x 0 -20px;
     color:#000;
@@ -42,6 +42,7 @@ img {border:none;}
     box-shadow:0 2px 2px rgba(0,0,0, .7); /*some css3*/
     -moz-box-shadow:0 2px 2px rgba(0,0,0, .7);
     -webkit-box-shadow:0 2px 2px rgba(0,0,0, .7);
+
     text-shadow:0 2px 2px rgba(200,200,200, 0.7);
 }
 
@@ -52,12 +53,9 @@ img {border:none;}
     color:#000;
 }
 #nav ul li a:hover {
-    background:#bebebe url(../images/bg.png) repeat-x 0 -100px;
+    background:#bebebe  repeat-x 0 -100px;
     color:#fff;
-
     border-radius:10px; /*some css3*/
-    -moz-border-radius:10px;
-    -webkit-border-radius:10px;
     text-shadow:0 2px 2px rgba(0,0,0, 0.7);
 }
 
@@ -85,7 +83,7 @@ img {border:none;}
     padding:0;
     width:160px;
     position:absolute;
-    background:#f8f8f8 url(../images/bg.png) repeat-x 0 0;
+    background:#f8f8f8 repeat-x 0 0;
     border:1px solid #bebebe;
 
     border-radius:10px; /*some css3*/
@@ -100,7 +98,7 @@ img {border:none;}
     -o-transition:opacity .25s linear, visibility .1s linear .1s;
     transition:opacity .25s linear, visibility .1s linear .1s;
 }
-/*–ﬁ∏ƒœ¬¿≠≤Àµ•◊÷ÃÂ*/
+
 #nav ul li {
     float:left;height:36px;margin:0;font-size:15px;font-weight:bold;
 }
@@ -244,7 +242,7 @@ img {border:none;}
 .copyright {width:100%;height:95px;background:#b30d19;}
 .copyright p {padding:3px 0 0 0;text-align:center;color:#fff;font-size:14px;line-height:2;}
 
-/*Ω•“˛*/
+/*È¶ñÈ°µÊªöÂä®Êù°*/
 .example{width:802px;float:left;}
 .example ol{position:relative;width: 80px;height: 20px;top:-30px;left:60px;}
 .example ol li{float:left;width: 10px;height: 10px;margin: 5px;background: #fff;}

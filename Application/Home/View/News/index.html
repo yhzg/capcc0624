@@ -15,18 +15,13 @@
     <div class="right_box">
         <div class="right_con" style="height:450px;">
             <h2 class="pubtit "><a href="__APP__/Home/News/news_picture.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
-            <volist name="list21" id="vo">
-                <dl class="r_news_dl1">
-                    <dt>
-                    <h3><a href="__APP__/Home/News/third_active/id/<{$vo.id}>"><{$vo.title}></a></h3></dt>
-                    <dd>
-                        <p>
-                            <{$vo.abstract}>
-                        </p>
-                    </dd>
-                </dl>
-            </volist>
-            <!--<dl class="r_news_dl1">
+            <dl class="r_news_dl1">
+                <dt>
+                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[0].id}>"><{$list1[0]['title']}></a></h3></dt>
+                <dd><p>
+                    <{$list1[0]['abstract']}></p></dd>
+            </dl>
+            <dl class="r_news_dl1">
                 <dt>
                 <h3><a href="__APP__/Home/News/third_active/id/<{$list1[1].id}>"><{$list1[1]['title']}></a></h3></dt>
                 <dd><p>
@@ -36,7 +31,7 @@
                 <dt>
                 <h3><a href="__APP__/Home/News/third_active/id/<{$list1[2].id}>"><{$list1[2]['title']}></a></h3></dt>
                 <dd><p><{$list1[2]['abstract']}></p></dd>
-            </dl>-->
+            </dl>
         </div>
 
     </div>
@@ -78,9 +73,9 @@
     <div class="height20"></div>
     <div class="chengshi_left_box_con">
         <ul class="chengshi_gonglv_ul">
-            <li><a href="#"><img src="__PUBLIC__/Home/Images/news/gg-1.jpg"></a></li>
-            <li><a href="#"><img src="__PUBLIC__/Home/Images/news/gg-2.jpg"></a></li>
-            <li><a href="#"><img src="__PUBLIC__/Home/Images/news/gg-3.jpg"></a></li>
+            <li><a href="#"><img src="__PUBLIC__/Home/Images/home/guang/1.jpg"></a></li>
+            <li><a href="#"><img src="__PUBLIC__/Home/Images/home/guang/2.jpg"></a></li>
+            <li><a href="#"><img src="__PUBLIC__/Home/Images/home/guang/3.jpg"></a></li>
         </ul>
     </div>
     <div class="height20"></div>

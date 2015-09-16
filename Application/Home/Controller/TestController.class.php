@@ -49,17 +49,9 @@ class TestController extends CommonController {
 
     function index()
     {
-        $a=join(',',array(1,2,3));
-        dump($a);
-        $m=M('test');
-        $data['id']=$a;
-        $res=$m->add($data);
-
-        dump($res);
-
-
+        $arr=array(1,2,3,4,5);
+        $new_arr=array_chunk($arr,2);
+        dump($new_arr);
 
     }
-
-
 }

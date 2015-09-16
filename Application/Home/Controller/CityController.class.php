@@ -20,8 +20,6 @@ class CityController extends CommonController{
         $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,150));
         $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,150));
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,150));
-//        dump($data1);
-//        exit;
         $this->assign('city_figure',$data1);
 
         $res2= M('city_protect');
