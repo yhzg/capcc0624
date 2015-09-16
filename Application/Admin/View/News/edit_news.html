@@ -44,8 +44,9 @@
                     <fieldset>
                         <!--相关信息传递过来给各个输入框，点击后内容不消失，需自行修改-->
                         <legend style="font-size: 20px;">编辑新闻</legend>
-                        Title(标题): <input type="text" name="title" value='<{$list.title}>'  /><br />
-                        Content(内容）: <br /><textarea cols="50" rows="10" name="content" ><{$list.content}></textarea><br />
+                        Title(标题): <input type="text" name="title" value='<{$list.title}>'  />&nbsp;标记为头条新闻<input type="checkbox" name="headline" /><br />
+                        Abstract(内容）: <br /><textarea cols="50" rows="10" name="abstract" ><{$list.abstract}></textarea><br />
+                        Content(内容）: <br /><textarea cols="100" rows="10" name="content" ><{$list.content}></textarea><br />
                         <h3>----以下四项可以为空，但原作者和作者至少填写一项----</h3>
                         oriAuthor(原作者): <input type="text" name="oriAuthor" value='<{$list.oriauthor}>'  /><br />
                         Author(作者): <input type="text" name="author" value='<{$list.author}>'  /><br />

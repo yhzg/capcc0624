@@ -147,6 +147,10 @@ class HeritageController extends CommonController{
         {
             $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+            if($list[$k]['imgpath']=='')
+            {
+                $list[$k]['imgpath']='Home/Images/login/ologo.png';
+            }
         }
         $this->assign('list',$list);
         $this->assign('page',$show);

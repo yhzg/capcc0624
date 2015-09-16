@@ -14,7 +14,11 @@
     <div class="wrap">
         <div class="left_box ">
             <!--首页新闻图片-->
-            <a href="__APP__/Home/News/third_picture/id/<{$news_pic[0].id}>"><img src="__PUBLIC__/<{$news_pic[0]['imgpath']}>" width="802" height="451"/></a>
+
+           <!-- <a href="__APP__/Home/News/third_picture/id/<{$news_pic[0].id}>"><img src="__PUBLIC__/<{$news_pic[0]['imgpath']}>" width="802" height="451"/></a>-->
+
+            <a href=""><img src="__PUBLIC__/<{$headline.imgpath}>" width="802" height="451"/></a>
+
         </div>
         <div class="right_box">
             <div class="right_con" style="height:450px;">
@@ -104,13 +108,16 @@
                 </ul>
             </div>
         </div>
-    </div>
+        </div>
     <!--广告位-->
-    <div class="ad_box1" >
+
+
+
+    <div class="brand_box1" >
         <ul>
-            <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/ad2.jpg" alt="1"/></a></li>
+           <!-- <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/ad2.jpg" alt="1"/></a></li>-->
             <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/抗战.jpg" alt="2"/></a></li>
-            <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/ad3.jpg" alt="3"/></a></li>
+           <!-- <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/ad3.jpg" alt="3"/></a></li>-->
             <li><a href="http://news.cntv.cn/special/kzsl70zn/index.shtml"><img src="__PUBLIC__/Home/Images/home/抗战2.jpg" alt="4"/></a></li>
         </ul>
         <ol style="margin-left: 1040px;margin-top: 10px;">
@@ -123,7 +130,7 @@
     <script type="text/javascript">
         $(function(){
             <!--调用Luara示例-->
-            $(".ad_box1").luara({width:"1200",height:"100",interval:4000,selected:"seleted"});
+            $(".brand_box1").luara({width:"1200",height:"100",interval:4000,selected:"seleted"});
         });
     </script>
 
@@ -193,7 +200,7 @@
                 <h4 class="pubtit2"><span>风采</span></h4>
 
                 <div class="zyz_pic_box1">
-                    <a href="#"><img src="__PUBLIC__/Home/Images/volunteer/ac1.jpg"></a>
+                    <a href="#"><img src="__PUBLIC__/Home/Images/volunteer/index_grace.jpg"></a>
                 </div>
                 <h4 class="pubtit2"><span>活动</span></h4>
                 <ul class="zyz_pic_box2">
@@ -342,7 +349,7 @@
     </div>
     <div class="height20"></div>
 </div>
-<div class="flink_box pr" style="background:#f7f7f7;">
+    <div class="flink_box pr" style="background:#f7f7f7;">
     <h1 class="pa">网络连接</h1>
     <dl>
         <dt>[政 府 网]</dt>

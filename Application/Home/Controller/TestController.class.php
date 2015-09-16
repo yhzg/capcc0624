@@ -49,9 +49,19 @@ class TestController extends CommonController {
 
     function index()
     {
+<<<<<<< Updated upstream
         $arr=array(1,2,3,4,5);
         $new_arr=array_chunk($arr,2);
         dump($new_arr);
+=======
+        $to="18068255110";
+        $datas=array('123456','5');
+        $tempId='1';
+        $res=R('Sms/sendTemplateSMS',array($to,$datas,$tempId));
+
+       echo($res);
+
+>>>>>>> Stashed changes
 
     }
 }

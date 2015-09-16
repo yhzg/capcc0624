@@ -47,8 +47,21 @@ class SearchController extends CommonController
             $data['Author']=array("like",$key_arr,'AND');
             //多个字段间是‘或’的关系
             $data['_logic']='OR';
-            //得到$res 结果为三维数组
-            $res[$i] = $m->where($data)->Field('Title , Content')->select();
+            //得到$res 结果为三维数组｛第一层：不同表；第二层：每张表结果序列；第三层：title和content｝
+            $res[$i] = $m->where($data)->Field('ID , Title , Content')->select();
+            //给每条记录添加tb_name字段，方便后面操作
+
+            //拼接跳转路径
+            $url_arr=explode('_',$table_list[$i]);
+            $controller=$url_arr[0];
+            $method=$url_arr[1];
+
+            foreach($res[$i] as $k=>$v)
+            {
+                $id=$v['id'];
+                $res[$i][$k]['search_url'] = CAPCC_ROOT.'/'.ucfirst($controller).'/'.'third_'.$method.'/id/'.$id;
+            }
+
 
         }
         //dump($res);
@@ -84,11 +97,13 @@ class SearchController extends CommonController
         $page_now=(I('get.p'))?I('get.p'):0;
 
         $new_res_arr=array_chunk($res_arr2,5);
+        //dump($new_res_arr);
+        //exit;
         $page=array_keys($new_res_arr);
         $this->assign('num_arr',$page);
         $this->assign('content',$new_res_arr[$page_now]);
-
-
+        //dump($new_res_arr[$page_now]);
+        //exit;
         $this->display();
 
         $this->display('Public:foot');

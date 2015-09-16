@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
 	<load href="__PUBLIC__/Home/Css/third.css"/>
+
+
 </head>
 <body>
 	<div class="wrap_box">
@@ -15,7 +17,7 @@
                         <p1> <{$vo.inserttime}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 作者：<{$vo.author}></p1><br />
                       <p2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<{$vo.content}></p2>
 					  <ul class="pic_con1">
- 							<li><a href=""><img src="__PUBLIC__/<{$vo.imgpath}>"></a>
+ 							<li><a href=""><img id='img' src="<{$vo.imgpath}>"></a>
  							<p3><{$vo.title}></p3></li>
                             <!--<li><a href=""><img src="__PUBLIC__/<{$activity_activity.imgpath}>" ></a><p3><{$activity_activity.title}></p3>-->
                             <!--</li>-->

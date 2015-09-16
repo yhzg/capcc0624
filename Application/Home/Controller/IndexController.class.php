@@ -5,17 +5,40 @@ class IndexController extends CommonController {
 
         public function index(){
 
+         //记录ip
+           /* $ip=get_client_ip();
+            $m=M('ip');
+            $Ip = new \Org\Net\IpLocation('UTFWry.dat');
+            $area = $Ip->getlocation($ip);
+            $date=date('Y-m-d',time());
+            $data=array(
+                'ip'=>$ip,
+                'area'=>$area['area'],
+                'time'=>date('Y-m-d H:i:s',time()),
+                'date'=>$date
+           );
+            $is_access=$m->where(array('ip'=>$ip,'date'=>$date))->find();
+            if(!$is_access)
+            {
+             $m->add($data);
+            }*/
+
+
+
             //直接调用页面  无需存在对应的方法
             $this->display('Public:head');
             // 首页图
 
             //在headline=1的字段中获取最新的一条
-            $m= M('news_active');
-            $news=$m->where(array('headline'=>'1'))->order('id desc')->limit('1')->select();
-            $m= M('news_active');
-            $news=$m->where('id = 28')->limit('1')->select();
+            $m= M('news_picture');
+            $headline=$m->where(array('Headline'=>'1'))->order('id desc')->find();
 
-            $this->assign('home_pic',$news);
+            //dump($news);
+            //exit;
+           /* $m= M('news_active');
+            $news=$m->where('id = 28')->limit('1')->select();*/
+
+            $this->assign('headline',$headline);
 
             $res1= M('news_picture');
             $data['id']=array('ELT',3);

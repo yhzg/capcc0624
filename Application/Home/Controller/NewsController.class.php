@@ -40,11 +40,18 @@ class NewsController extends CommonController{
         $Page  = new \Think\Page($count,4);
         $show  = $Page->show();
         $list = $Data->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+
         foreach ($list as $k=>$v)
         {
             $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+            if($list[$k]['imgpath']=='')
+            {
+                $list[$k]['imgpath']='Home/Images/login/ologo.png';
+            }
         }
+        //dump($list);
+        //exit;
         $this->assign('list',$list);
         $this->assign('page',$show);
         $this->display();
@@ -97,7 +104,13 @@ class NewsController extends CommonController{
         $aid=$_GET['id'];
 //        dump($aid);
         $list = $res1->where(array('ID'=>$aid))->find();
-//        dump($list);
+        if($list['imgpath']!='')
+        {
+            $list['imgpath']=CAPCC_ROOT.'/Public/'.$list['imgpath'];
+        }
+        //$list['imgpath']=''
+       //dump($list);
+        //EXIT;
         if($list) {
             $this->assign('vo',$list);
         }else{
