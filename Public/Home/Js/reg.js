@@ -145,7 +145,7 @@ function checkName(){
             {
                 var vcode=$(this).val();
                 var changeUrl='check_vcode';
-                $.post(changeUrl,{ 'vcode':vcode }, function(str){
+                $.post(changeUrl,{ vcode:vcode }, function(str){
                         if(str == '0'){
                             $("#checkvcode").html("<span style='color:red'>验证码输入有误！</span>");
                             return false;
