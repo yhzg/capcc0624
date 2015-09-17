@@ -11,7 +11,7 @@ use Think\Controller;
 
 class subStringController extends Controller{
 
-        function subString($str, $start, $length) {
+       /* function subString($str, $start, $length) {
             $i = 0;
             while($i < $start) {
                 $ord = ord($str{$i});
@@ -73,6 +73,26 @@ class subStringController extends Controller{
                 $result .= '...';
             }
             return $result;
+        }*/
+
+    function subString($content,$length)
+    {
+
+        //对象，开始位置，长度，编码
+        $content_1=iconv_substr($content,0,$length,'UTF-8');
+        //dump($content_1);
+        //查找最后一个句号
+        $dot_po=strrpos($content_1,'。');
+        //dump($dot_po);
+        if($dot_po!=0)
+        {
+            $content_2=iconv_substr($content_1,0,$dot_po).'。';
+        }else
+        {
+            $content_2='';
         }
+
+        return $content_2;
+    }
 
 }

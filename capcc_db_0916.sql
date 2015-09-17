@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: 2015-09-16 07:34:57
+-- Generation Time: 2015-09-16 10:05:54
 -- 服务器版本： 5.6.17
 -- PHP Version: 5.5.12
 
@@ -348,6 +348,25 @@ INSERT INTO `activity_activity` (`ID`, `Author`, `Title`, `Content`, `ImgPath`, 
 (3, '', '曲福田致辞', '', 'Home/Images/activity/曲福田致辞.jpg', 0, '0000-00-00 00:00:00', '2015-08-19 05:10:25', NULL),
 (4, '', '论坛现场', '', 'Home/Images/activity/论坛现场2.jpg', 0, '0000-00-00 00:00:00', '2015-08-19 05:18:09', NULL),
 (5, '', '中国大运河世界遗产保护座谈会', '虽有喜悦，但没有庆典；既是终点，但更是起点。这是中国大运河申报世界遗产成功之后的特殊景象。2014年8月8日，一批曾为大运河申报世界遗产作出突出贡献的领导、专家、学者聚首故宫博物院，参加由中国文物学会举办的“中国大运河世界遗产保护座谈会”。在会上，不见他们喜形于色，更多是踊跃建言，以表达自己对大运河历史价值的沉思、未来愿景的展望，更重要的是表达对大运河这一巨大的“活态”遗产可持续发展提出切实可行的构想。这是申遗成功之后首次高规格、小规模、有成效的盛会。中国文联主席孙家正到会并发表了重要讲话，故宫博物院院长单霁翔作了专题报告。座谈会由中国文物学会大运河专业委员会会长张庭皓主持。与会的领导、专家、学者20余人发言畅谈对中国大运河保护的思想理念，并就会议主题讨论的“中国大运河世界遗产保护倡议书”发表了各自的看法。“双八”座谈会，是一次承前启后、继往开来的会议，它预示着中国大运河保护将开启了新的篇章。本刊特对此次会议做深度报道，以飨读者。', '', 0, '0000-00-00 00:00:00', '2015-08-20 05:10:28', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `admin`
+--
+
+CREATE TABLE IF NOT EXISTS `admin` (
+  `id` int(11) unsigned NOT NULL,
+  `adminname` varchar(32) NOT NULL,
+  `password` varchar(64) NOT NULL
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- 转存表中的数据 `admin`
+--
+
+INSERT INTO `admin` (`id`, `adminname`, `password`) VALUES
+(2, 'admin001', 'e10adc3949ba59abbe56e057f20f883e');
 
 -- --------------------------------------------------------
 
@@ -1761,10 +1780,10 @@ INSERT INTO `travel_story` (`ID`, `Title`, `Author`, `Content`, `ImgPath`, `Brow
 
 CREATE TABLE IF NOT EXISTS `user` (
   `userID` int(11) NOT NULL,
-  `name` varchar(255) DEFAULT NULL,
+  `username` varchar(32) NOT NULL,
   `tel` varchar(255) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL,
-  `password` varchar(255) DEFAULT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `Level` int(11) DEFAULT NULL,
   `InfoID` int(11) DEFAULT NULL,
   `activated` tinyint(4) unsigned NOT NULL DEFAULT '0',
@@ -1943,6 +1962,12 @@ ALTER TABLE `academic_xuezhe`
 --
 ALTER TABLE `activity_activity`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `brand_advertisement_spread`
@@ -2231,6 +2256,11 @@ ALTER TABLE `academic_xuezhe`
 --
 ALTER TABLE `activity_activity`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `brand_advertisement_spread`
 --
