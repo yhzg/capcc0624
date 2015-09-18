@@ -112,28 +112,28 @@ class IndexController extends CommonController {
             //数字美术馆--传奇
             $res10= M('classic_legend');
             $data7=$res10->where('id = 11')->limit('1')->select();
-            $data7[0]['content']=R('SubString/subString',array($data7[0]['content'],0,110));
+            $data7[0]['content']=R('SubString/subString',array($data7[0]['content'],110));
             $this->assign('classic_legend',$data7);
 
             //艺术群
             $res11= M('classic_group');
             $data['id']=array('ELT',3);
             $data8=$res11->where($data)->limit('1')->select();
-            $data8[0]['content']=R('SubString/subString',array($data8[0]['content'],0,110));
+            $data8[0]['content']=R('SubString/subString',array($data8[0]['content'],110));
             $this->assign('classic_group',$data8);
 
             //市场
             $res12= M('classic_market');
             $data['id']=array('ELT',3);
             $data9=$res12->where($data)->limit('1')->select();
-            $data9[0]['content']=R('SubString/subString',array($data9[0]['content'],0,80));
+            $data9[0]['content']=R('SubString/subString',array($data9[0]['content'],80));
             $this->assign('classic_market',$data9);
 
             // 评论
             $res13= M('classic_comment');
             $data['id']=array('ELT',3);
             $data10=$res13->where($data)->limit('1')->select();
-            $data10[0]['content']=R('SubString/subString',array($data10[0]['content'],0,80));
+            $data10[0]['content']=R('SubString/subString',array($data10[0]['content'],80));
             $this->assign('classic_comment',$data10);
 
             // 品牌--中华老字号
@@ -146,14 +146,14 @@ class IndexController extends CommonController {
             $res15= M('brand_product');
             $data['id']=array('ELT',7);
             $data12=$res15->where($data)->limit('1')->select();
-            $data12[0]['content']=R('SubString/subString',array($data12[0]['content'],0,80));
+            $data12[0]['content']=R('SubString/subString',array($data12[0]['content'],80));
             $this->assign('brand_product',$data12);
 
             // 品牌广告
             $res16= M('brand_brand');
             $data['id']=array('ELT',7);
             $data13=$res16->where($data)->limit('2')->select();
-            $data13[0]['content']=R('SubString/subString',array($data13[0]['content'],0,80));
+            $data13[0]['content']=R('SubString/subString',array($data13[0]['content'],80));
             $this->assign('brand_brand',$data13);
 
             $this->display('Index:index1');

@@ -11,7 +11,7 @@ use Think\Controller;
 
 class subStringController extends Controller{
 
-       /* function subString($str, $start, $length) {
+       function subString_bit($str, $start, $length) {
             $i = 0;
             while($i < $start) {
                 $ord = ord($str{$i});
@@ -73,7 +73,7 @@ class subStringController extends Controller{
                 $result .= '...';
             }
             return $result;
-        }*/
+        }
 
     function subString($content,$length)
     {

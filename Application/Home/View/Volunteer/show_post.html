@@ -9,6 +9,7 @@
     <title>中国运河网</title>
     <load href="__PUBLIC__/Home/Css/show_post.css"/>
 
+
 </head>
 <body>
     <div class="nav">
@@ -30,13 +31,11 @@
                 <{$posts[0].content}>
             </p>
             <div class="picture_frame">
-                <div class="picture">
-                    <foreach name="posts[0].img_path" item="vo">
-
-                        <img src="<{$vo}>">
-
-                    </foreach>
-                </div>
+                <foreach name="posts[0].img_path" item="vo">
+                    <div class="picture">
+                        <a href="<{$vo}>" target="_blank"><img title="点击查看原图"  src="<{$vo}>"></a>
+                    </div>
+                </foreach>
             </div>
         </div>
 
@@ -49,11 +48,11 @@
                 <div class="message">
                     <{$vo.content}>
                 </div>
-                <div class="picture">
-                    <volist name="vo.img_path" id="voo">
-                        <img src="<{$voo}>">
-                    </volist>
-                </div>
+                <volist name="vo.img_path" id="voo">
+                    <div class="picture">
+                        <a href="<{$voo}>" target="_blank"><img title="点击查看原图" src="<{$voo}>"></a>
+                    </div>
+                </volist>
                 <div class="empty"></div>
             </volist>
         </div>
