@@ -6,22 +6,22 @@ class IndexController extends CommonController {
         public function index(){
 
          //记录ip
-            $ip=get_client_ip();
-            $m=M('ip');
-            $Ip = new \Org\Net\IpLocation('UTFWry.dat');
-            $area = $Ip->getlocation($ip);
-            $date=date('Y-m-d',time());
-            $data=array(
-                'ip'=>$ip,
-                'area'=>$area['area'],
-                'time'=>date('Y-m-d H:i:s',time()),
-                'date'=>$date
-           );
-            $is_access=$m->where(array('ip'=>$ip,'date'=>$date))->find();
-            if(!$is_access)
-            {
-             $m->add($data);
-            }
+//            $ip=get_client_ip();
+//            $m=M('ip');
+//            $Ip = new \Org\Net\IpLocation('UTFWry.dat');
+//            $area = $Ip->getlocation($ip);
+//            $date=date('Y-m-d',time());
+//            $data=array(
+//                'ip'=>$ip,
+//                'area'=>$area['area'],
+//                'time'=>date('Y-m-d H:i:s',time()),
+//                'date'=>$date
+//           );
+//            $is_access=$m->where(array('ip'=>$ip,'date'=>$date))->find();
+//            if(!$is_access)
+//            {
+//             $m->add($data);
+//            }
 
 
 

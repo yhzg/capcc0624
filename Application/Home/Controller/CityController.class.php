@@ -38,8 +38,8 @@ class CityController extends CommonController{
         $this->display();
 
         $this->display('Public:foot');
-
     }
+
 
     public function city_figure()
     {

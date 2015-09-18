@@ -1580,7 +1580,8 @@ function send_mail($to,$title,$content) {
     if($mail->Send())
     {
         return true;
-    }else
+    }
+    else
     {
         echo $mail->ErrorInfo;
     }
@@ -1605,4 +1606,11 @@ function getpage(&$m,$where,$pagesize){
     $m->limit($p->firstRow,$p->listRows);
 
     return $p;
+}
+
+function subtext($text, $length)
+{
+    if(mb_strlen($text, 'utf8') > $length)
+        return mb_substr($text, 0, $length, 'utf8').'';
+    return $text;
 }

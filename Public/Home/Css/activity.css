@@ -5,7 +5,7 @@
 .cs_pic_con1 li img {width:790px;height:445px;}
 .cs_pic_con1 li p {line-height:30px;}
 
-/*活动*/
+/*锟筋动*/
 
 .chengshi_left_box {float:left;width: 790px;}
 .chengshi_left_box_con {width:790px;overflow:hidden;padding:0px;}
@@ -34,7 +34,7 @@
 .chengshi_3p_box_r {float:right;width:180px;}
 .chengshi_3p_box_r img {width:182px;height:243px;}
 
-.fczs_box {width:790px;height:360px;border:1px solid #b3b3b3;overflow:hidden;padding:5px 0 0 0;}
+.fczs_box {width:790px;height:300px;border:1px solid #b3b3b3;overflow:hidden;padding:5px 0 0 0;}
 .fczs_box ul {margin:0;padding:0;}
 .fczs_box ul li {float:left;}
 .fczs_box ul li a {display:block;width:246px;height:250px;margin:10px 8px;}
@@ -46,9 +46,9 @@
 
 .zyzjy_box {width:790px;border:1px solid #b3b3b3;overflow:hidden;padding:0px;}
 .zyzjy_box_con {width:790px;}
-.zyzjy_box_con_con {width:790px;height:176px;overflow:hidden;padding:0px;line-height:2;}
+.zyzjy_box_con_con {width:790px;height:106px;overflow:hidden;padding:0px;line-height:2;}
 
-/*活动*/
+/*锟筋动*/
 
 
 .footer {width:1200px;height:40px;margin:0 auto;padding:10px 0 0 0;text-align:center;line-height:2;color:#555;background:#f7f7f7;}
