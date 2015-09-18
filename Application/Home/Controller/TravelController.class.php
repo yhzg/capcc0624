@@ -14,14 +14,27 @@ class TravelController extends CommonController{
     public function index()
     {
         $this->display('Public:head');
+        
+        $this->display('Travel:city_map');
+
+        $this->display('Public:foot');
+
+    }
+
+    public function index1()
+    {
+        $this->display('Public:head');
 
         $res1= M('travel_spot');
-        $data['id']=array('ELT',3);
-        $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,150));
-        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,150));
-        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,150));
-        $this->assign('travel_spot',$data1);
+        $aid=$_GET['city'];
+        $list = $res1->where(array('City'=>$aid))->select();
+        if($list) {
+            $this->assign('travel_spot',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
 
         $res2= M('travel_eat');
         $data['id']=array('ELT',1);
@@ -41,8 +54,8 @@ class TravelController extends CommonController{
         $data['id']=array('ELT',1);
         $data3=$res3->where($data)->select();
         $this->assign('travel_story',$data3);
-        
-        $this->display('Travel:index1');
+
+        $this->display('');
 
         $this->display('Public:foot');
 
@@ -53,13 +66,13 @@ class TravelController extends CommonController{
         $this->display('Public:head');
 
         $res1= M('travel_spot');
-        $count = $res1->where()->count();
+        $data = $_GET['city'];
+        $count = $res1->where(array('City'=>$data))->count();
         $Page  = new \Think\Page($count,4);
         $show  = $Page->show();
-        $list = $res1->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $list = $res1->where(array('City'=>$data))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
-            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
         }
         $this->assign('list',$list);

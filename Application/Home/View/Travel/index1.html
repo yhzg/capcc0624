@@ -12,39 +12,35 @@
         <div class="lvyou_left_box">
             <div class="lvyou_left_box_con">
                 <div class="lvyou_left_box_con1 fl">
-                    <h2 class="pubtit" style="margin:8px 0;"><a href="__APP__/Home/Travel/travel_spot.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">景&nbsp;&nbsp;点</strong>
+                    <!--景点-->
+                    <h2 class="pubtit" style="margin:8px 0;"><a
+                            href="__APP__/Home/Travel/travel_spot/city/<{$travel_spot[0].city}>" class="more"
+                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
+                            class="f1485a3"><{$travel_spot[0].city}>：景&nbsp;&nbsp;点</strong>
                     </h2>
                     <ul class="lv_pic_con1">
-                        <li><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[0].id}>"><img src="__PUBLIC__/<{$travel_spot[0]['imgpath']}>"
-                                            style="border:1px solid #808080;"></a>
+                        <volist name="travel_spot" id="vo" offset="0" length="3">
+                            <li><a href="__APP__/Home/Travel/third_spot/id/<{$vo.id}>"><img
+                                    src="__PUBLIC__/<{$vo['imgpath']}>"
+                                    style="border:1px solid #808080;"></a>
 
-                            <p><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[0].id}>"><{$travel_spot[0]['title']}></a></p></li>
-                        <li><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[1].id}>"><img src="__PUBLIC__/<{$travel_spot[1]['imgpath']}>"
-                                            style="border:1px solid #808080;"></a>
-
-                            <p><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[1].id}>"> <{$travel_spot[1]['title']}></a></p></li>
-                        <li><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[2].id}>"><img src="__PUBLIC__/<{$travel_spot[2]['imgpath']}>"
-                                            style="border:1px solid #808080;"></a>
-
-                            <p><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[2].id}>"> <{$travel_spot[2]['title']}></a></p></li>
+                                <p><a href="__APP__/Home/Travel/third_spot/id/<{$vo.id}>"><{$vo['title']}></a></p></li>
+                        </volist>
                     </ul>
                     <div class="clearfloat"></div>
-                    <dl class="lvyou_dl">
-                        <dt><{$travel_spot[0]['title']}></dt>
-                        <dd><{$travel_spot[0]['content']}> <a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[0].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
-                    </dl>
-                    <dl class="lvyou_dl">
-                        <dt><{$travel_spot[1]['title']}></dt>
-                        <dd><{$travel_spot[1]['content']}><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[1].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
-                    </dl>
-                    <dl class="lvyou_dl">
-                        <dt><{$travel_spot[2]['title']}></dt>
-                        <dd><{$travel_spot[2]['content']}><a href="__APP__/Home/Travel/third_spot/id/<{$travel_spot[2].id}>" style="color: #0066cc">...详细&gt;&gt;</a></dd>
-                    </dl>
-
+                    <volist name="travel_spot" id="vo" offset="0" length="3">
+                        <dl class="lvyou_dl">
+                            <dt><{$vo['title']}></dt>
+                            <dd><{$vo['content']|subtext=50}><a
+                                    href="__APP__/Home/Travel/third_spot/id/<{$vo.id}>"
+                                    style="color: #0066cc">...详细&gt;&gt;</a></dd>
+                        </dl>
+                    </volist>
                 </div>
+
+                <!--吃&住-->
                 <div class="lvyou_left_box_con1 fr">
-                    <h2 class="pubtit" style="margin:8px 0;"><a href="__APP__/Home/Travel/eat_live.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">吃&nbsp;&nbsp;住</strong>
+                    <h2 class="pubtit" style="margin:8px 0;"><a href="__APP__/Home/Travel/eat_live.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3"><{$travel_spot[0].city}>：吃&nbsp;&nbsp;住</strong>
                     </h2>
 
                     <div class="lvyou_3p_box">
@@ -66,8 +62,10 @@
                 </div>
             </div>
             <div class="height20"></div>
+
+            <!--攻略-->
             <div class="lvyou_left_box_con">
-                <h2 class="pubtit" style="margin:5px 0;"><a href="__APP__/Home/Travel/travel_story.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">攻&nbsp;&nbsp;略</strong>
+                <h2 class="pubtit" style="margin:5px 0;"><a href="__APP__/Home/Travel/travel_story.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3"><{$travel_spot[0].city}>：攻&nbsp;&nbsp;略</strong>
                 </h2>
                 <ul class="lvyou_gonglv_ul">
                     <li><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[0].id}>"><img src="__PUBLIC__/<{$travel_story[0]['imgpath']}>"></a></li>
