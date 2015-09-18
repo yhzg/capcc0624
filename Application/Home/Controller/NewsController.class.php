@@ -14,8 +14,8 @@ class NewsController extends CommonController{
     {
         $this->display('Public:head');
 
-        $m= M('news_active');
-        $news=$m->where('id = 28')->limit('1')->select();
+        $m= M('news_picture');
+        $news=$m->where('')->limit('1')->select();
         $this->assign('news_pic',$news);
 
         $res1= M('news_active');
@@ -46,6 +46,7 @@ class NewsController extends CommonController{
             //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
             $list[$k]['title']=mb_substr($list[$k]['title'],0,28,'UTF-8');
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
             if($list[$k]['imgpath']=='')
             {
                 $list[$k]['imgpath']='Home/Images/login/ologo.png';
