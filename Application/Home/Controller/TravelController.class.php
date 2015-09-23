@@ -32,6 +32,8 @@ class TravelController extends CommonController{
         $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],50));
         $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],50));
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],50));
+       // dump($data1);
+        //exit;
         $this->assign('travel_spot',$data1);
 
         $aid=$_GET['city'];

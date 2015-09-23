@@ -83,10 +83,12 @@ class subStringController extends Controller{
         //dump($content_1);
         //查找最后一个句号
         $dot_po=strrpos($content_1,'。');
+        $exc_po=strrpos($content_1,'！');
+        $end_po=($dot_po>$exc_po)?$dot_po:$exc_po;
         //dump($dot_po);
-        if($dot_po!=0)
+        if($end_po!=0)
         {
-            $content_2=iconv_substr($content_1,0,$dot_po).'。';
+            $content_2=iconv_substr($content_1,0,$end_po).'。';
         }else
         {
             $content_2='';

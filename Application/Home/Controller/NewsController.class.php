@@ -46,7 +46,7 @@ class NewsController extends CommonController{
             //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
             $list[$k]['title']=mb_substr($list[$k]['title'],0,28,'UTF-8');
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
-            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
             if($list[$k]['imgpath']=='')
             {
                 $list[$k]['imgpath']='Home/Images/login/ologo.png';

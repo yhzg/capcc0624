@@ -19,7 +19,7 @@ img {border:none;}
 .content{background-color: #E5EEF8}
 
 .picture_frame{width:100%;margin-top: 10px}
-.picture{width:23%;height:180px;display:inline-block;overflow:hidden;margin-left: 5px;border:1px solid gray;}
+.picture{width:23%;display:inline-block;overflow:hidden;margin-left: 5px;border:1px solid gray;}
 .picture img{width:100%;display: block; }
 
 

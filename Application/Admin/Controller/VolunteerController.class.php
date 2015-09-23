@@ -84,6 +84,7 @@ class VolunteerController extends Controller {
         //dump($show);
         // exit;
 
+        $this->assign('tag',$tag);
         $this->assign('list',$res);
         $this->assign('page',$show);
 
@@ -109,19 +110,19 @@ class VolunteerController extends Controller {
     public function delete_reply()
     {
         $tag=I('get.tag');
+
         $id=I('get.id');
+
         $db_name='Volunteer_'.$tag;
         $m=M($db_name);
-        $where['ID']=$id;
-
         $posts=$m->where(array('ID'=>$id))->find();
-        //dump($posts);
-        //exit;
         $tid=$posts['tid'];
-        $res=$m->where($where)->delete();
+        $res=$m->where(array('ID'=>$id))->delete();
+        //dump($res);
+        //exit;
         if($res>0)
         {
-            $this->success('删除成功!',U(CONTROLLER_NAME."/show_reply?tid=$tid"));
+            $this->success('删除成功!',U(CONTROLLER_NAME."/show_reply/tag/$tag/tid/$tid"));
         }else
         {
             $this->error('删除失败！');

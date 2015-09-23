@@ -280,15 +280,21 @@ class LoginController extends Controller {
         //验证码，5分钟有效
         $datas=array($sms_code,'5');
         $tempId='1';
+        $tel_exists= M('User')->where(array('tel'=>$to))->find();
         if(strlen($to)!=11)
         {
             //手机号位数不对
             $res= -1;
 
+        }elseif($tel_exists)
+        {
+            //号码已绑定过
+            $res=-2;
         }else
         {
             //返回1或0
             $res=R('Sms/sendTemplateSMS',array($to,$datas,$tempId));
+            //$res=1;
         }
 
         echo $res;

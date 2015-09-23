@@ -229,14 +229,18 @@ class VolunteerController extends CommonController{
         //echo "<hr>";
         foreach($posts as $k=>$v)
         {
-            $posts[$k]['img_path']=explode(',',$v['img_path']);
-            foreach($posts[$k]['img_path'] as $kk => $vv)
+            if($posts[$k]['img_path']!='')
             {
-                if($vv!='')
+                $posts[$k]['img_path']=explode(',',$v['img_path']);
+                foreach($posts[$k]['img_path'] as $kk => $vv)
                 {
-                    $posts[$k]['img_path'][$kk]=CAPCC_ROOT.$vv;
+                    if($vv!='')
+                    {
+                        $posts[$k]['img_path'][$kk]=CAPCC_ROOT.$vv;
+                    }
                 }
             }
+
         }
         //dump( $posts);
         //exit;
