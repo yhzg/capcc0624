@@ -117,12 +117,16 @@ class VolunteerController extends Controller {
         $m=M($db_name);
         $posts=$m->where(array('ID'=>$id))->find();
         $tid=$posts['tid'];
+        $main_posts=$m->where(array('tid'=>$tid,'isT'=>1))->find();
+
         $res=$m->where(array('ID'=>$id))->delete();
         //dump($res);
         //exit;
         if($res>0)
         {
-            $this->success('删除成功!',U(CONTROLLER_NAME."/show_reply/tag/$tag/tid/$tid"));
+            $data['replyNum']=$main_posts['replynum']-1;
+            $m->where(array('tid'=>$tid,'isT'=>1))->save($data);
+            $this->success('删除成功!',U('Admin/'.CONTROLLER_NAME."/show_reply/tag/$tag/tid/$tid"));
         }else
         {
             $this->error('删除失败！');

@@ -13,10 +13,10 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('Travel/spot')}>">景点</a></li>
-                <li ><a href="<{:U('Travel/eat')}>">吃</a></li>
-                <li ><a href="<{:U('Travel/live')}>">住</a></li>
-                <li ><a href="<{:U('Travel/story')}>">攻略</a></li>
+                <li ><a href="__APP__/Admin/Travel/spot/city/<{$city}>">景点</a></li>
+                <li ><a href="__APP__/Admin/Travel/eat/city/<{$city}>">吃</a></li>
+                <li ><a href="__APP__/Admin/Travel/live/city/<{$city}>">住</a></li>
+                <li ><a href="__APP__/Admin/Travel/story/city/<{$city}>">攻略</a></li>
             </ul>
         </div>
         <div id="right">
@@ -25,7 +25,16 @@
                 <form action="__APP__/Admin/Travel/add_travel/tag/<{$tag}>" method="post" enctype="multipart/form-data">
                     <fieldset>
                         <legend style="font-size: 20px;color:red">添加<{$tag}></legend>
-                        Title(标题): <input type="text" name="title" /><br />
+                        City(城市):
+                            <select name="city">
+                                <volist name="city_list" id="vo">
+                                    <option value="<{$vo}>">
+                                        <{$vo}>
+                                    </option>
+                                </volist>
+                            </select>
+                        <br>
+                        Title(景点名): <input type="text" name="title" /><br />
                         Content(内容）: <br /><textarea cols="50" rows="10" name="content" ></textarea><br />
                         Author(作者): <input type="text" name="author" /><br />
                         Picture(上传图片): <input type="file" name="Picture" /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />

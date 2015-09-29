@@ -101,7 +101,7 @@ class VolunteerController extends CommonController{
             $info=$m->where(array('username'=>$username))->find();
             if($info['tel']==NULL)
             {
-                $this->error('志愿者家园发帖需要通过手机验证',U('Login/bindPhone'));
+                $this->error('志愿者家园发帖需要通过手机验证',U('Login/bindphone'));
             }
         }else
         {
