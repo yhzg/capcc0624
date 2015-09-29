@@ -76,6 +76,7 @@ img {border:none;}
 #nav li:hover > ul {
     opacity:1;
     visibility:visible;
+    z-index:999;
 }
 #nav ul {
     opacity:0;

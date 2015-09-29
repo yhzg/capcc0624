@@ -20,12 +20,24 @@ class VolunteerController extends CommonController{
         $res1= M('volunteer_grace');
         $data['id']=array('ELT',3);
         $data1=$res1->where($data)->select();
+
         $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],200));
         $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],200));
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],200));
         $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],200));
         // dump($data1);
         $this->assign('volunteer_grace',$data1);
+
+
+        $res2= M('volunteer_act');
+        $data['id']=array('ELT',3);
+        $data1=$res2->where($data)->select();
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],200));
+        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],200));
+        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],200));
+        $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],200));
+        $this->assign('volunteer_act',$data1);
+
         $this->display();
         $this->display('Public:foot');
     }
@@ -126,6 +138,7 @@ class VolunteerController extends CommonController{
         }
     }*/
     //发表新帖处理
+
     public function do_new_post()
     {
         if(empty(I('post.title')) || empty(I('post.content')) )
@@ -210,6 +223,7 @@ class VolunteerController extends CommonController{
             $this->error('帖子发表失败！');
         }
     }
+
     //具体帖子页面
     public function show_post()
     {
@@ -247,10 +261,11 @@ class VolunteerController extends CommonController{
         $this->assign('c_tag',$c_tag);
         $this->assign('tag',$tag);
         $this->assign('posts',$posts);
+
         $this->display();
         $this->display('Public:foot');
     }
-    public function grace()
+    public function volunteer_grace()
     {
         $this->display('Public:head');
         // 风采
@@ -265,10 +280,42 @@ class VolunteerController extends CommonController{
         $this->display();
         $this->display('Public:foot');
     }
-    public function act()
+
+    public function volunteer_act()
     {
         $this->display('Public:head');
         // 活动
+        $res1= M('volunteer_act');
+        $count = $res1->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res1->where()->order()->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+        $this->display();
+        $this->display('Public:foot');
+    }
+
+    public function third_act()
+    {
+        $this->display('Public:head');
+        $res1= M('volunteer_act');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
         $this->display();
         $this->display('Public:foot');
     }
