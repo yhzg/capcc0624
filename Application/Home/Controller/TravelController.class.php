@@ -37,23 +37,32 @@ class TravelController extends CommonController{
 
 
         $res2= M('travel_eat');
-        $data['id']=array('ELT',1);
-        $data2=$res2->where($data)->select();
-        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,100));
-        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,100));
-        $this->assign('travel_eat',$data2);
+        $aid=$_GET['city'];
+        $list = $res2->where(array('City'=>$aid))->select();
+        if($list) {
+            $this->assign('travel_eat',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res2->getLastSql();
 
 
-        $res4= M('travel_live');
-        $data['id']=array('ELT',1);
-        $data4=$res4->where($data)->select();
-        $this->assign('travel_live',$data4);
+        $res3= M('travel_live');
+        $list = $res3->where(array('City'=>$aid))->select();
+        if($list) {
+            $this->assign('travel_live',$list);
+        }else{
+            $this->error('数据错误');
+        }
 
 
-        $res3= M('travel_story');
-        $data['id']=array('ELT',1);
-        $data3=$res3->where($data)->select();
-        $this->assign('travel_story',$data3);
+        $res4= M('travel_story');
+        $list = $res4->where(array('City'=>$aid))->select();
+        if($list) {
+            $this->assign('travel_story',$list);
+        }else{
+            $this->error('数据错误');
+        }
 
         $this->display('');
 
@@ -101,18 +110,6 @@ class TravelController extends CommonController{
         $this->assign('list',$list);
         $this->assign('page',$show);
 
-
-//        $res4= M('travel_live');
-//        $count =$res4->where()->count();
-//        $Page  = new \Think\Page($count,4);
-//        $show  = $Page->show();
-//        $list1 = $res4->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
-//        $list1[0]['content']=R('SubString/subString',array($list1[0]['content'],0,570));
-//        $list1[1]['content']=R('SubString/subString',array($list1[1]['content'],0,570));
-//        $list1[2]['content']=R('SubString/subString',array($list1[2]['content'],0,570));
-//        $list1[3]['content']=R('SubString/subString',array($list1[3]['content'],0,570));
-//        $this->assign('list1',$list1);
-//        $this->assign('page',$show);
 
 
         $this->display();
