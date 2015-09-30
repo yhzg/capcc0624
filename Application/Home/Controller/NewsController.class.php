@@ -21,9 +21,9 @@ class NewsController extends CommonController{
         $res1= M('news_active');
         $data['id']=array('ELT',3);
         $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,205));
-        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,205));
-        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,205));
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],70));
+        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],70));
+        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],70));
         $this->assign('list1',$data1);
 
         $this->display();
@@ -43,7 +43,10 @@ class NewsController extends CommonController{
 
         foreach ($list as $k=>$v)
         {
-            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
+            $list[$k]['title']=mb_substr($list[$k]['title'],0,28,'UTF-8');
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
             if($list[$k]['imgpath']=='')
             {
                 $list[$k]['imgpath']='Home/Images/login/ologo.png';
@@ -69,7 +72,7 @@ class NewsController extends CommonController{
         $list1 = $m->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list1 as $k=>$v)
         {
-            $list1[$k]['content']=R('SubString/subString',array($list1[$k]['content'],0,570));
+            $list1[$k]['content']=R('SubString/subString',array($list1[$k]['content'],200));
         }
         $this->assign('list1',$list1);
         $this->assign('page',$show);

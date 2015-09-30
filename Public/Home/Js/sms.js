@@ -2,9 +2,40 @@
  * Created by DT on 2015/8/20.
  */
 
-$(document).ready(function ()
+$(document).ready(function () {
+    check_ok_url=public_url+'/Home/Images/login/check_ok.ico';
+    checkVcode();
+    checkSms();
+});
+
+
+function checkVcode()
+{
+    $('#vcode').blur( function()
     {
-        $('#getKey').click(function()
+        var vcode=$(this).val();
+        var changeUrl='check_vcode';
+        $.post(changeUrl,{ vcode:vcode }, function(str) {
+            if (str == '0') {
+                $("#checkvcode").html("<span style='color:red'>验证码输入有误！</span>");
+                $("#hidden").val("0");
+                return false;
+            } else {
+                $("#checkvcode").html("<img src='" + check_ok_url + "' />");
+                $("#hidden").val("1");
+            }
+        })
+    })
+}
+
+
+
+
+function checkSms()
+{
+    $('#getKey').click(function()
+    {
+        if( $("#hidden").val()=='1' )
         {
             //alert(111);
             var tel=$('.phone').val();
@@ -22,14 +53,20 @@ $(document).ready(function ()
             $.post(to_url,{code:code,tel:tel},function(res)
             {
                 //alert(res);
-                if(res== -1)
+                if(res== -2)
+                {
+                    alert('此号码已绑定过！');
+                    return false;
+                }else if(res== -1)
                 {
                     alert('手机号码长度不符！');
                     return false;
-                }else if(res== 1)
+                }else if(res== 0)
                 {
-
-                    //alert('验证码发送成功！');
+                    alert('验证码发送失败！');
+                    return false;
+                }else
+                {
                     var step=59;
                     $('#getKey').val('60秒后重新发送');
                     var _res = setInterval(function()
@@ -41,20 +78,19 @@ $(document).ready(function ()
                         if(step <= 0){
                             $("#getKey").removeAttr("disabled"); //移除disabled属性
                             $('#getKey').val('获取验证码');
+                            $('#getKey').css({'color':'#1A89A8','cursor':'pointer'});
                             clearInterval(_res);//清除setInterval
                         }
                     },1000);
-                    return false;
-                }else if(res== 0)
-                {
-                    alert('验证码发送失败！');
-                    return false;
                 }
-
             });
-
-        })
-
-
+        }else
+        {
+            alert('图形验证码输入错误！');
+            return false;
+        }
 
     })
+
+    }
+

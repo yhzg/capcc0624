@@ -125,7 +125,7 @@ function checkName(){
                 {
                     $.post('check_reg_email',{email:email},function(data)
                     {
-                        if(data==0)
+                        if(data>0)
                         {
                             $('#checkemail').html("该邮箱已被注册!");
                             $('#checkemail').css('color','red');

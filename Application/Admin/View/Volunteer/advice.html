@@ -19,13 +19,13 @@
             }
         }
 
-        function edit(id)
+        function reply(tid)
         {
-            var del_id=id;
+            //var id=id;
             //document.write(del_id);
-            if (confirm('跳转至编辑窗口？'))
+            if (confirm('进入回帖列表？'))
             {
-                document.location.href="<{:U('Volunteer/edit_volunteer')}>?tag=advice&id="+del_id;
+                document.location.href="<{:U('Volunteer/show_reply')}>?tag=advice&tid="+tid;
             }
         }
     </script>
@@ -43,25 +43,25 @@
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;当前位置:志愿者 良策 列表</div>
+            <div id="current">&nbsp;&nbsp;当前位置:志愿者 良策 主贴列表</div>
             <div id="form">
                     <table width="100%" style="text-align: center" >
                         <tr id="tr1" >
-                            <td width="5%" align="center">编号</td>
+                            <td width="5%" align="center">主帖号</td>
                             <td width="15%" align="center">标题</td>
-                            <td width="15%" align="center">作者</td>
+                            <td width="15%" align="center">发帖人</td>
                             <td width="31%" align="center">内容</td>
-                            <td width="5%" align="center">点击量</td>
+                            <td width="5%" align="center">回帖数</td>
                             <td width="10%" align="center">操作</td>
                         </tr>
                         <volist name="list" id="vo">
                             <tr>
-                                <td align="center" id="id"><{$vo.id}></td>
+                                <td align="center" id="id"><{$vo.tid}></td>
                                 <td align="center"><{$vo.title}></td>
-                                <td align="center"><{$vo.author}></td>
+                                <td align="center"><{$vo.username}></td>
                                 <td ><span style="text-align: left"><{$vo.content}></span></td>
-                                <td align="center"><{$vo.browsenumber}></td>
-                                <td align="center"><span><input type="submit" value="删除" onclick="del(<{$vo.id}>)"></span>&nbsp;<span><input type="submit" value="编辑" onclick="edit(<{$vo.id}>)"></span></td>
+                                <td align="center"><{$vo.replynum}></td>
+                                <td align="center"><span><input type="submit" value="删除" onclick="del(<{$vo.id}>)"></span>&nbsp;<span><input type="submit" value="查看回帖" onclick="reply(<{$vo.tid}>)"></span></td>
                             </tr>
                         </volist>
                     </table>
@@ -69,7 +69,7 @@
                     <{$page}>
                     <br />
                     <br />
-                    <a href="<{:U('Volunteer/add','tag=advice')}>"><h2>添加一条 良策 记录</h2></a>
+
                 </div>
             </div>
         </div>

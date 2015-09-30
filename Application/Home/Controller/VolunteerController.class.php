@@ -20,8 +20,14 @@ class VolunteerController extends CommonController{
         $res1= M('volunteer_grace');
         $data['id']=array('ELT',3);
         $data1=$res1->where($data)->select();
+
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],200));
+        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],200));
+        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],200));
+        $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],200));
         // dump($data1);
         $this->assign('volunteer_grace',$data1);
+
 
         $res2= M('volunteer_act');
         $data['id']=array('ELT',3);
@@ -31,6 +37,7 @@ class VolunteerController extends CommonController{
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],200));
         $data1[3]['content']=R('SubString/subString',array($data1[3]['content'],200));
         $this->assign('volunteer_act',$data1);
+
         $this->display();
         $this->display('Public:foot');
     }
@@ -131,7 +138,8 @@ class VolunteerController extends CommonController{
         }
     }*/
     //发表新帖处理
-    /*public function do_new_post()
+
+    public function do_new_post()
     {
         if(empty(I('post.title')) || empty(I('post.content')) )
         {
@@ -214,7 +222,8 @@ class VolunteerController extends CommonController{
         {
             $this->error('帖子发表失败！');
         }
-    }*/
+    }
+
     //具体帖子页面
     public function show_post()
     {
@@ -252,6 +261,7 @@ class VolunteerController extends CommonController{
         $this->assign('c_tag',$c_tag);
         $this->assign('tag',$tag);
         $this->assign('posts',$posts);
+
         $this->display();
         $this->display('Public:foot');
     }
@@ -270,6 +280,7 @@ class VolunteerController extends CommonController{
         $this->display();
         $this->display('Public:foot');
     }
+
     public function volunteer_act()
     {
         $this->display('Public:head');
@@ -306,8 +317,6 @@ class VolunteerController extends CommonController{
         $res1->getLastSql();
 
         $this->display();
-
         $this->display('Public:foot');
     }
-
 }

@@ -31,6 +31,7 @@ class CommonController extends Controller {
     {
         $username=I('session.username');
 
+
         //session存在，显示登录的用户名
         //否则，显示登录等按钮
         if(empty($username))
@@ -41,10 +42,19 @@ class CommonController extends Controller {
             $navbar['bar2']='立即加入';
         }else
         {
-            $navbar['url1']='#';
-            $navbar['bar1']='欢迎您：'.$username;
-            $navbar['url2']=U('Login/logout');
-            $navbar['bar2']='退出登录';
+            $res=M('User')->where(array('username'=>$username))->find();
+            if($res)
+            {
+                $navbar['url1']='#';
+                $navbar['bar1']='欢迎您：'.$username;
+                $navbar['url2']=U('Login/logout');
+                $navbar['bar2']='退出登录';
+            }else
+            {
+                session('[destroy]');
+                $this->error('非法登录，正在退出。。。',U('Login/login'));
+            }
+
         }
 
         $this->assign('navbar',$navbar);

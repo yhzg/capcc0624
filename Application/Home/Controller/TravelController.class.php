@@ -26,6 +26,16 @@ class TravelController extends CommonController{
         $this->display('Public:head');
 
         $res1= M('travel_spot');
+
+        $data['id']=array('ELT',3);
+        $data1=$res1->where($data)->select();
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],50));
+        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],50));
+        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],50));
+       // dump($data1);
+        //exit;
+        $this->assign('travel_spot',$data1);
+
         $aid=$_GET['city'];
         $list = $res1->where(array('City'=>$aid))->select();
         if($list) {
@@ -37,6 +47,13 @@ class TravelController extends CommonController{
 
 
         $res2= M('travel_eat');
+
+        $data['id']=array('ELT',1);
+        $data2=$res2->where($data)->select();
+        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],30));
+        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],30));
+        $this->assign('travel_eat',$data2);
+
         $aid=$_GET['city'];
         $list = $res2->where(array('City'=>$aid))->select();
         if($list) {
@@ -45,7 +62,6 @@ class TravelController extends CommonController{
             $this->error('数据错误');
         }
         $res2->getLastSql();
-
 
         $res3= M('travel_live');
         $list = $res3->where(array('City'=>$aid))->select();
@@ -82,7 +98,12 @@ class TravelController extends CommonController{
         $list = $res1->where(array('City'=>$data))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
-            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
+
+           // $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+
         }
         $this->assign('list',$list);
         $this->assign('page',$show);
@@ -104,8 +125,8 @@ class TravelController extends CommonController{
         $list =$res2->where()->order()->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
-            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
-            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
         }
         $this->assign('list',$list);
         $this->assign('page',$show);
@@ -129,8 +150,8 @@ class TravelController extends CommonController{
         $list = $res3->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
-            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
-            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
         }
         $this->assign('list',$list);
         $this->assign('page',$show);
