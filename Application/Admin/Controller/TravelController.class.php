@@ -185,10 +185,34 @@ class TravelController extends Controller {
 
     public function delete_travel()
     {
-        R('Common/delete_info');
+        $tag=I('get.tag');
+        $city=I('get.city');
+        $db_name='Travel_'.$tag;
+        $m=M($db_name);
+        $where['ID']=I('get.id');
+        $res=$m->where($where)->delete();
+
+        if($res>0)
+        {
+            $this->success('删除成功!',U("Admin/Travel/$tag/city/$city"));
+        }else
+        {
+            $this->error('删除失败！');
+        }
     }
     public function edit_travel()
     {
-        R('Common/edit_info');
+        $tag=I('get.tag');
+        $db_name='Travel_'.$tag;
+        $m=M($db_name);
+        $where['ID']=I('get.id');
+        $res=$m->where($where)->find();
+        //dump($res);
+         //exit;
+        $this->assign('list',$res);
+        $this->assign('tag',$tag);
+        $city_list=$this->get_city_list();
+        $this->assign('city_list',$city_list);
+        $this->display();
     }
 }

@@ -46,6 +46,16 @@
                     <fieldset>
                         <!--相关信息传递过来给各个输入框，点击后内容不消失，需自行修改-->
                         <legend style="font-size: 20px;color:red">编辑<{$tag}></legend>
+                        City(城市):
+                        <select name="city">
+                            <option value="<{$list.city}>" selected="selected"><{$list.city}></option>
+                            <volist name="city_list" id="vo">
+                                <option value="<{$vo}>">
+                                    <{$vo}>
+                                </option>
+                            </volist>
+                        </select>
+                        <br>
                         Title(标题): <input type="text" name="title" value='<{$list.title}>'  /><br />
                         Content(内容）: <br /><textarea cols="50" rows="10" name="content" ><{$list.content}></textarea><br />
                         Author(作者): <input type="text" name="author" value='<{$list.author}>'  /><br />

@@ -1,8 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="content-Type" content="text/html" charset="utf-8">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
     <title></title>
+    <style rel="stylesheet" type="text/css">
+        #city{
+            width:1100px;
+            height:400px;
+            margin: 20px auto;
+            padding: 20px;
+           /* border:solid;*/
+        }
+
+        #city_info{
+            display:inline-block;
+            width:110px;
+            height: 50px;
+            background-color: #528CE0;
+            color:greenyellow;
+            line-height: 50px;
+            font-size: large;
+            text-align: center;
+            border:1px solid black;
+            margin: 10px 20px;
+        }
+    </style>
 </head>
 <body>
 <div id="mainDiv">
@@ -10,18 +32,19 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('Admin/Ad/show_ad_list/tag/mainpage')}>">首页腰部广告</a></li>
-                <li ><a href="<{:U('Ad/show_ad_list/tag/news')}>">新闻页面广告</a></li>
-                <li ><a href="<{:U('Ad/show_ad_list/tag/heritage')}>">世遗页面广告</a></li>
-                <li ><a href="<{:U('Ad/show_ad_list/tag/city')}>">城市页面广告</a></li>
-                <li ><a href="<{:U('Ad/show_ad_list/tag/travel')}>">旅游页面广告</a></li>
-                <li ><a href="<{:U('Ad/show_ad_list/tag/brand')}>">品牌页面广告</a></li>
-                <li ><a href="<{:U('Ad/show_ad_list/tag/dgmuseum')}>">数字美术馆页面广告</a></li>
-                <li ><a href="<{:U('Ad/show_ad_list/tag/active')}>">活动页面广告</a></li>
+                <volist name="list" id="vo">
+                    <li ><a href="__APP__/Admin/Ad/ad_position/positon/<{$vo}>"><{$vo}></a></li>
+                </volist>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:品牌编辑首页 &nbsp;&nbsp; <sapn style="color:red">点击<-左侧按钮开始操作！</sapn> </div>
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:广告编辑首页 &nbsp;&nbsp; <sapn style="color:red">点击左侧←广告位置开始操作！</sapn> </div>
+            <div>
+                添加一条广告
+                名称：<input type="text" name="name"><br>
+                位置：<input type="text" name="name"><br>
+
+            </div>
         </div>
     </div>
 </div>

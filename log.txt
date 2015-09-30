@@ -230,3 +230,19 @@ request body = <TemplateSMS>
                   </TemplateSMS>
 request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a48b5514f1702fd014f29ec31de197a/SMS/TemplateSMS?sig=CF8750CDF74DBF51E691AE7D3B1310CC
 response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>000000</statusCode><TemplateSMS><dateCreated>20150923102133</dateCreated><smsMessageSid>201509231021332135860</smsMessageSid></TemplateSMS></Response>
+request body = <TemplateSMS>
+                    <to>13000000000</to> 
+                    <appId>8a48b5514f49079e014f491b9911003e</appId>
+                    <templateId>1</templateId>
+                    <datas><data>494960</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a48b5514f1702fd014f29ec31de197a/SMS/TemplateSMS?sig=48BC563124F01D2493A2746A91E84F9A
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>113302</statusCode><statusMsg>您正在使用云通讯测试模板,请更换！</statusMsg></Response>
+request body = <TemplateSMS>
+                    <to>13000000000</to> 
+                    <appId>8a48b5514f49079e014f491b9911003e</appId>
+                    <templateId>1</templateId>
+                    <datas><data>219139</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a48b5514f1702fd014f29ec31de197a/SMS/TemplateSMS?sig=2FF3A69465DF932D57B1518C89F89D91
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?><Response><statusCode>113302</statusCode><statusMsg>您正在使用云通讯测试模板,请更换！</statusMsg></Response>

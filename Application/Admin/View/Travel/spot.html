@@ -15,7 +15,7 @@
             //document.write(del_id);
             if (confirm('确认删除?'))
             {
-                document.location.href="<{:U('Travel/delete_travel')}>?tag=spot&id="+del_id;
+                document.location.href="<{:U('Travel/delete_travel')}>?tag=spot&city=<{$city}>&id="+del_id;
             }
         }
 
@@ -43,7 +43,7 @@
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;当前位置:旅游 景点 列表</div>
+            <div id="current">&nbsp;&nbsp;当前位置:【<{$city}>】 景点 列表</div>
             <div id="form">
                     <table width="100%" style="text-align: center" >
                         <tr id="tr1" >
