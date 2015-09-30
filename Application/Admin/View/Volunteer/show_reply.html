@@ -1,0 +1,68 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>运河网后台管理系统 </title>
+    <js href="__PUBLIC__/Admin/jquery.js" />
+    <load href="__PUBLIC__/Admin/index.css" />
+    <load href="__PUBLIC__/Admin/manage.css" />
+    <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
+    <script language="JavaScript">
+        function del(id)
+        {
+
+            if (confirm('确认删除?'))
+            {
+                document.location.href="<{:U('Volunteer/delete_reply')}>?tag=<{$tag}>&id="+id;
+            }
+        }
+
+    </script>
+</head>
+<body onbeforeunload="return CheckUnsave();">
+<div id="mainDiv">
+    <div id="centerDiv">
+        <div id="left">
+            <div id="lhead">管理菜单</div>
+            <ul id="nav_manage">
+                <li ><a href="<{:U('Volunteer/grace')}>">风采</a></li>
+                <li ><a href="<{:U('Volunteer/act')}>">活动</a></li>
+                <li ><a href="<{:U('Volunteer/advice')}>">良策</a></li>
+                <li ><a href="<{:U('Volunteer/mon')}>">监测</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:<a href="__APP__/Admin/Volunteer">志愿者</a>>><a href="__APP__/Admin/Volunteer/<{$tag}>"><{$tag}></a>>><a href="#"><{$list[0].title}></a></div>
+            <div id="form">
+                <table width="100%" style="text-align: center" >
+                    <tr id="tr1" >
+                        <td width="5%" align="center">楼层号</td>
+                        <td width="10%" align="center">发帖人</td>
+                        <td width="75%" align="center">内容</td>
+                        <td width="10%" align="center">操作</td>
+                    </tr>
+                    <volist name="list" id="vo">
+                        <tr>
+                            <td align="center" id="id"><{$vo.fid}></td>
+
+                            <td align="center"><{$vo.username}></td>
+                            <td ><span style="text-align: left"><{$vo.content}></span></td>
+
+                            <td align="center"><span><input type="submit" value="删除" onclick="del(<{$vo.id}>)"></span></td>
+                        </tr>
+                    </volist>
+                </table>
+                <div style="font-size: 15px;margin-top: 20px">
+                    <{$page}>
+                    <br />
+                    <br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottomDiv"></div>
+</div>
+
+</body>
+</html>
