@@ -15,7 +15,7 @@
             //document.write(del_id);
             if (confirm('确认删除?'))
             {
-                document.location.href="<{:U('Travel/delete_travel')}>?tag=spot&id="+del_id;
+                document.location.href="<{:U('Travel/delete_travel')}>?tag=spot&city=<{$city}>&id="+del_id;
             }
         }
 
@@ -36,14 +36,14 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('Travel/spot')}>">景点</a></li>
-                <li ><a href="<{:U('Travel/eat')}>">吃</a></li>
-                <li ><a href="<{:U('Travel/live')}>">住</a></li>
-                <li ><a href="<{:U('Travel/story')}>">攻略</a></li>
+                <li ><a href="__APP__/Admin/Travel/spot/city/<{$city}>">景点</a></li>
+                <li ><a href="__APP__/Admin/Travel/eat/city/<{$city}>">吃</a></li>
+                <li ><a href="__APP__/Admin/Travel/live/city/<{$city}>">住</a></li>
+                <li ><a href="__APP__/Admin/Travel/story/city/<{$city}>">攻略</a></li>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;当前位置:旅游 景点 列表</div>
+            <div id="current">&nbsp;&nbsp;当前位置:【<{$city}>】 景点 列表</div>
             <div id="form">
                     <table width="100%" style="text-align: center" >
                         <tr id="tr1" >
@@ -69,7 +69,7 @@
                     <{$page}>
                     <br />
                     <br />
-                    <a href="<{:U('Travel/add','tag=spot')}>"><h2>添加一条 景点 记录</h2></a>
+                    <a href="__APP__/Admin/Travel/add/tag/spot"><h2>添加一条 景点 记录</h2></a>
                 </div>
             </div>
         </div>

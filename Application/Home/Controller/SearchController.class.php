@@ -47,8 +47,34 @@ class SearchController extends CommonController
             $data['Author']=array("like",$key_arr,'AND');
             //多个字段间是‘或’的关系
             $data['_logic']='OR';
-            //得到$res 结果为三维数组
-            $res[$i] = $m->where($data)->Field('Title , Content')->select();
+            //得到$res 结果为三维数组｛第一层：不同表；第二层：每张表结果序列；第三层：title和content｝
+            $res[$i] = $m->where($data)->Field('ID , Title , Content')->select();
+            //给每条记录添加tb_name字段，方便后面操作
+
+            //拼接跳转路径  志愿者家园的特殊处理
+            $url_arr=explode('_',$table_list[$i]);
+            $controller=$url_arr[0];
+            $method=$url_arr[1];
+
+            foreach($res[$i] as $k=>$v)
+            {
+                //id 就是数据库中的ID字段
+                $id=$v['id'];
+                if($method=='advice' ||$method=='mon')
+                {
+                    $db_name='Volunteer_'.$method;
+                    $posts=M($db_name)->where(array('ID'=>$id))->find();
+                    $tid=$posts['tid'];
+                    $search_url=CAPCC_ROOT.'/'.ucfirst($controller).'/show_post/tag/'.$method.'/tid/'.$tid;
+                }else{
+                    $search_url=CAPCC_ROOT.'/'.ucfirst($controller).'/'.'third_'.$method.'/id/'.$id;
+                }
+
+                $res[$i][$k]['search_url'] = $search_url;
+            }
+
+
+
 
         }
         //dump($res);
@@ -69,7 +95,7 @@ class SearchController extends CommonController
                     $po =  strpos ( $kkk['content'] , $vo );
                     $start_po=($po-200)>=0?($po-200):0;
                     $kkk['title']=str_replace($vo,"<strong style='color:red'>$vo</strong>",$kkk['title']);
-                    $kkk['content']=str_replace($vo,"<strong style='color:red'>$vo</strong>",R('SubString/subString',array($kkk['content'],$start_po,400)));
+                    $kkk['content']=str_replace($vo,"<strong style='color:red'>$vo</strong>",R('SubString/subString_bit',array($kkk['content'],$start_po,400)));
                 }
                 $res_arr2[]=$kkk;
             }
@@ -83,12 +109,17 @@ class SearchController extends CommonController
 
         $page_now=(I('get.p'))?I('get.p'):0;
 
+        //一维变二维，每5个一组
         $new_res_arr=array_chunk($res_arr2,5);
+        //dump($new_res_arr);
+        //exit;
         $page=array_keys($new_res_arr);
         $this->assign('num_arr',$page);
+        //dump($new_res_arr[$page_now]);
+        //exit;
         $this->assign('content',$new_res_arr[$page_now]);
-
-
+        //dump($new_res_arr[$page_now]);
+        //exit;
         $this->display();
 
         $this->display('Public:foot');

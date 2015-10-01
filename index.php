@@ -20,7 +20,8 @@ define('APP_DEBUG',true);
 
 // 定义应用目录
 define('APP_PATH','./Application/');
-define('CAPCC_DOMAIN', 'http://localhost');//物理根目录
+
+define('CAPCC_ROOT', 'http://localhost/capcc0624');//网站根目录
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

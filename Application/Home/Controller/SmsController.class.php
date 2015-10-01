@@ -29,9 +29,13 @@ class SmsController extends Controller {
             //主帐号Token
             $accountToken= '1fb094b6f956426480f88e8d24f26950';
             //应用Id
-            $appId='aaf98f894f4900a3014f499a536a0099';
+            //测试用
+            //$appId='aaf98f894f4900a3014f499a536a0099';
+            //正式运行用，‘志愿者验证’
+            $appId='8a48b5514f49079e014f491b9911003e';
             //请求地址，格式如下，不需要写https://
-            $serverIP='sandboxapp.cloopen.com';
+            //$serverIP='sandboxapp.cloopen.com';
+            $serverIP='app.cloopen.com';
             //请求端口
             $serverPort='8883';
             //REST版本号
@@ -43,7 +47,7 @@ class SmsController extends Controller {
             $rest->setAppId($appId);
 
             // 发送模板短信
-            echo "Sending TemplateSMS to $to <br/>";
+            //echo "Sending TemplateSMS to $to <br/>";
             $result = $rest->sendTemplateSMS($to,$datas,$tempId);
             if($result == NULL ) {
                 echo "result error!";
@@ -51,17 +55,17 @@ class SmsController extends Controller {
                 exit;
             }
             if($result->statusCode!=0) {
-                echo "error code :" . $result->statusCode . "<br>";
-                echo "error msg :" . $result->statusMsg . "<br>";
-                //TODO 添加错误处理逻辑
+               // echo "error code :" . $result->statusCode . "<br>";
+               // echo "error msg :" . $result->statusMsg . "<br>";
+
                 return 0;
             }else{
-                echo "Sendind TemplateSMS success!<br/>";
+                //echo "Sendind TemplateSMS success!<br/>";
                 // 获取返回信息
-                $smsmessage = $result->TemplateSMS;
-                echo "dateCreated:".$smsmessage->dateCreated."<br/>";
-                echo "smsMessageSid:".$smsmessage->smsMessageSid."<br/>";
-                //TODO 添加成功处理逻辑
+                //$smsmessage = $result->TemplateSMS;
+                //echo "dateCreated:".$smsmessage->dateCreated."<br/>";
+                //echo "smsMessageSid:".$smsmessage->smsMessageSid."<br/>";
+
                 return 1;
             }
         }

@@ -138,6 +138,7 @@ class CommonController extends Controller {
         // exit;
         $this->assign('list',$res);
         $this->assign('tag',$tag);
+
         $this->display();
 
     }

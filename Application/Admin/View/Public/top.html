@@ -19,8 +19,8 @@
                    echo '<span><a href="__APP__/Admin/Index/logout">退出登录</a></span>';
               }else
                 {
-                    header('location:http://localhost/capcc0624/Admin/Index/login');
 
+                    header('location:'.CAPCC_ROOT.'/Admin/Index/login');
                 }
             ?>
             <!--<span style="color:red">欢迎您，管理员<{$adminname}></span>&nbsp;&nbsp;&nbsp;
@@ -32,6 +32,7 @@
                 <li id="nav4"><a href="<{:U('Classic/index')}>">数字美术馆</a></li>
                 <li id="nav5"><a href="<{:U('Activity/index')}>">活动</a></li>
                 <li id="nav6"><a href="<{:U('Volunteer/index')}>">志愿者家园</a></li>
+                <li id="nav7"><a href="<{:U('Ad/index')}>">广告</a></li>
             </ul>
         </div>
     </div>

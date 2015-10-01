@@ -1580,7 +1580,8 @@ function send_mail($to,$title,$content) {
     if($mail->Send())
     {
         return true;
-    }else
+    }
+    else
     {
         echo $mail->ErrorInfo;
     }
@@ -1606,3 +1607,4 @@ function getpage(&$m,$where,$pagesize){
 
     return $p;
 }
+
