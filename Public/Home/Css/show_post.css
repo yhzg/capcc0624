@@ -1,0 +1,94 @@
+* {margin:0; padding:0;}
+body {margin:0px;font-family:"Microsoft Yahei","΢���ź�",Verdana;font-size:13px;color:#333; }
+ul {list-style:none;}
+TD { COLOR: #404040; font-family:Verdana; FONT-SIZE: 12px;}
+hr {border-bottom:1px dotted #a6a5a5;background:none;border-top:none;border-left:none;border-right:none;clear:both;padding:5px 0;margin:0 auto;width:99%;}
+A:link {color: #333;text-decoration: none;}
+A:visited {color: #333;text-decoration: none;}
+A:hover {color: #c60000;text-decoration: none;}
+img {border:none;}
+
+
+
+.nav{width:63%;background-color:#91bb9e;margin-top:0; line-height:40px;font-size: 18px;  }
+
+.advice {width:63%;margin: 0 auto;overflow:hidden;background:#fff;}
+.info{width:90%;height:20px;margin:0 auto;text-align: right;}
+.title{width:100%;height:50px;font-size:25px;text-align: center}
+.starter{width:90%;margin:20px auto;font-size: large;text-indent:2em;}
+.content{background-color: #E5EEF8}
+
+.picture_frame{width:100%;margin-top: 10px}
+.picture{width:23%;display:inline-block;overflow:hidden;margin-left: 5px;border:1px solid gray;}
+.picture img{width:100%;display: block; }
+
+
+
+.reply{width:90%;margin:0 auto;border:1px solid #C4D6EC;background-color:#F8FCFF}
+.p{width:100%;font-size:20px;}
+.posttime{float:right}
+.message{width:90%;font-size:16px;margin:0 auto;}
+.empty{height: 20px;border-bottom:1px dotted  gray}
+
+
+.new{width: 90%; margin:0 auto;background-color:#F8FCFF }
+#new_post{margin-top: 20px;font-size: large}
+
+.textarea{width: 90%;height:80px}
+
+
+.file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+}
+
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.submit {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    float: right;
+}
+.submit input  {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.submit:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+

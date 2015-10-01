@@ -6,24 +6,19 @@
 
 
 .lv_pic_box {width:385px;padding:0 5px;}
-.lv_pic_con1 {margin:0;padding:5px 0 0 0;}
-.lv_pic_con1 li {float:left;width:381px;height:283px;text-align:center;margin:0 2px;}
-.lv_pic_con1 li img {width:381px;height:283px;}
-.lv_pic_con1 li p {line-height:50px;}
+.pic_con1 {margin:0;padding:5px 0 0 0;}
+.pic_con1 li {width:381px;height:283px;text-align:center;margin:0 2px;}
+.pic_con1 li img {width:381px;height:283px;}
+.pic_con1 li p {line-height:50px;}
 .lv_pic_con2 {margin:0;padding:5px 0 0 0;}
 .lv_pic_con2 li {float:left;width:188px;height:146px;text-align:center;margin:0 2px;}
 .lv_pic_con2 li img {width:188px;height:116px;}
 .lv_pic_con2 li p {line-height:30px;}
 
-.lvyou_left_box {float:left;}
-.lvyou_left_box_con {width:796px;overflow:hidden;}
-.lvyou_left_box_con1 {width:796px;border-top:2px solid #C5161D}
 
-
-.lvyou_left_box_con1 p {color:#555;line-height:2;font-size:36px;text-align:center;}
-.lvyou_left_box_con1 p2 {color:#555;line-height:2;font-size:14px;}
-.lvyou_left_box_con1 p1 {color:#555;line-height:2;font-size:12px;text-align:center;}
-.lvyou_left_box_con1 p3 {color:#555;line-height:2;font-size:12px;}
+.left_box_con1 p {color:#555;line-height:2;font-size:36px;text-align:center;}
+.left_box_con1 p1{color:#555;line-height:2;font-size:12px;}
+.left_box_con1 li{color:#555;line-height:2;font-size:14px;}
 
 .lvyou_dl {width:330px;height:200px;padding:0px 0;margin:0px 0;overflow:hidden;border-top:2px solid #C5161D;}
 .lvyou_dl2 {width:330px;height:500px;padding:0px 0;margin:0px 0;overflow:hidden;border-top:2px solid #C5161D}

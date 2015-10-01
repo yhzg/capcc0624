@@ -33,10 +33,10 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('Travel/spot')}>">景点</a></li>
-                <li ><a href="<{:U('Travel/eat')}>">吃</a></li>
-                <li ><a href="<{:U('Travel/live')}>">住</a></li>
-                <li ><a href="<{:U('Travel/story')}>">攻略</a></li>
+                <li ><a href="__APP__/Admin/Travel/spot/city/<{$city}>">景点</a></li>
+                <li ><a href="__APP__/Admin/Travel/eat/city/<{$city}>">吃</a></li>
+                <li ><a href="__APP__/Admin/Travel/live/city/<{$city}>">住</a></li>
+                <li ><a href="__APP__/Admin/Travel/story/city/<{$city}>">攻略</a></li>
             </ul>
         </div>
         <div id="right">
@@ -46,6 +46,16 @@
                     <fieldset>
                         <!--相关信息传递过来给各个输入框，点击后内容不消失，需自行修改-->
                         <legend style="font-size: 20px;color:red">编辑<{$tag}></legend>
+                        City(城市):
+                        <select name="city">
+                            <option value="<{$list.city}>" selected="selected"><{$list.city}></option>
+                            <volist name="city_list" id="vo">
+                                <option value="<{$vo}>">
+                                    <{$vo}>
+                                </option>
+                            </volist>
+                        </select>
+                        <br>
                         Title(标题): <input type="text" name="title" value='<{$list.title}>'  /><br />
                         Content(内容）: <br /><textarea cols="50" rows="10" name="content" ><{$list.content}></textarea><br />
                         Author(作者): <input type="text" name="author" value='<{$list.author}>'  /><br />

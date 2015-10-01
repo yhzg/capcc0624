@@ -1,7 +1,6 @@
-/*пбне*/
 
 .left_box {width:802px;float:left;}
-.right_box {width:378px;float:right;}
+.right_box {width:378px;float:right;border:1px solid #ccc;}
 .banner {width:802px;height:451px;margin:0;}
 .right_con {width:376px;overflow:hidden;border:1px solid #ccc;}
 .left_con {width:800px;overflow:hidden;border:1px solid #ccc;border-top:none;}

@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>中国运河网</title>
+	<load href="__PUBLIC__/Home/Css/css3.css"/>
+	<script language="javascript" type="text/javascript" src="__PUBLIC__/Home/Js/flot/excanvas.min.js"></script><![endif]-->
+	<script language="javascript" type="text/javascript" src="__PUBLIC__/Home/Js/flot/jquery.js"></script>
+	<script language="javascript" type="text/javascript" src="__PUBLIC__/Home/Js/flot/jquery.flot.js"></script>
+
+</head>
+<body>
+	<div class="wrap_box">
+	<div class="wrap">
+		<div class="left_box">
+			<div class="left_box_con">
+				<div class="left_box_con1 fl" >
+					<h2 class="pubtit" style="margin:0px 0;"><strong class="f1485a3">运河城市地图</strong></h2><br />
+					<p><h3><strong>点击图中代表城市的圆点可以查看美食和旅游线路噢~!</strong></h3></p><br />
+				</div>
+			</div>
+			<div id="content" >
+
+				<div id="canalMap" style="background:url(__PUBLIC__/Home/Images/map/运河城市.png); overflow:hidden; background-size: contain; width:600px; height:800px;"></div>
+				<p>
+
+				</p>
+
+				<script type="text/javascript">
+
+					//缩放比例
+					var offsetX = 0;
+					var offsetY = 0;
+
+					//城市坐标数据
+					var cityData = [
+						{
+							label: "北京",
+							data: [[35.15, 87.15]],
+							color: 'red'
+						},
+						{
+							label: "天津",
+							data: [[44.4, 80.88]],
+							color: 'red'
+						},
+						{
+							label: "沧州",
+							data: [[41.3, 74.1]],
+							color: 'red'
+						},
+						{
+							label: "衡水",
+							data: [[29.1, 69]],
+							color: 'red'
+						},
+						{
+							label: "德州",
+							data: [[36.9, 66.8]],
+							color: 'red'
+						},
+						{
+							label: "安阳",
+							data: [[20.9, 54.6]],
+							color: 'green'
+						},
+						{
+							label: "鹤壁",
+							data: [[18.1, 52.7]],
+							color: 'green'
+						},
+						{
+							label: "洛阳",
+							data: [[7.6, 43.4]],
+							color: 'green'
+						},
+						{
+							label: "郑州",
+							data: [[16.1, 44.6]],
+							color: 'green'
+						},
+						{
+							label: "商丘",
+							data: [[34.15, 40]],
+							color: 'green'
+						},
+						{
+							label: "聊城",
+							data: [[32.78, 58.2]],
+							color: 'red'
+						},
+						{
+							label: "泰安",
+							data: [[44.7, 56.5]],
+							color: 'red'
+						},
+						{
+							label: "济宁",
+							data: [[37.6, 51.8]],
+							color: 'red'
+						},
+						{
+							label: "徐州",
+							data: [[39.55, 44.9]],
+							color: 'red'
+						},
+						{
+							label: "枣庄",
+							data: [[46.5, 45]],
+							color: 'red'
+						},
+						{
+							label: "淮北",
+							data: [[43.3, 37.4]],
+							color: 'green'
+						},
+						{
+							label: "宿州",
+							data: [[44.8, 35.0]],
+							color: 'green'
+						},
+						{
+							label: "宿迁",
+							data: [[44.8, 41.3]],
+							color: 'red'
+						},
+						{
+							label: "淮安",
+							data: [[62.8, 36.2]],
+							color: 'red'
+						},
+						{
+							label: "扬州",
+							data: [[67.6, 26.9]],
+							color: 'red'
+						},
+						{
+							label: "常州",
+							data: [[73.8, 22.3]],
+							color: 'red'
+						},
+						{
+							label: "无锡",
+							data: [[74.4, 19.1]],
+							color: 'red'
+						},
+						{
+							label: "苏州",
+							data: [[80.0, 18.7]],
+							color: 'red'
+						},
+						{
+							label: "嘉兴",
+							data: [[82.75, 13.75]],
+							color: 'red'
+						},
+						{
+							label: "湖州",
+							data: [[73, 13.1]],
+							color: 'red'
+						},
+						{
+							label: "杭州",
+							data: [[75.9, 8.3]],
+							color: 'red'
+						},
+						{
+							label: "绍兴",
+							data: [[80.3, 5.4]],
+							color: 'blue'
+						},
+						{
+							label: "宁波",
+							data: [[90.45, 4.55]],
+							color: 'blue'
+						}
+
+					];
+
+					var options = {
+						legend: {show: false},
+						series: {shadowSize: 0},
+						points: { show: true, radius: 5, lineWidth: 2, fill: false },
+						lines: { show: false},
+						xaxis: { show: false, min: 0, max: 100, tickSize: 10 },
+						yaxis: { show: false, min: 0, max: 100, tickSize: 10 },
+						grid: { hoverable: true, clickable: true}
+					};
+
+
+					$("<div id='tooltip'></div>").css({
+						position: "absolute",
+						display: "none",
+						border: "1px solid #fdd",
+						padding: "2px",
+						"background-color": "#fee",
+						opacity: 0.80
+					}).appendTo("body");
+
+					$("#canalMap").bind("plothover", function(event, pos, item){
+						if ($("#enablePosition:checked").length > 0) {
+							var str = "(" + pos.x.toFixed(2) + ", " + pos.y.toFixed(2) + ")";
+							$("#hoverdata").text(str);
+						}
+						if (item) {
+							var x = item.datapoint[0].toFixed(2),
+									y = item.datapoint[1].toFixed(2);
+
+							$("#tooltip").html(item.series.label)
+									.css({top: item.pageY+5, left: item.pageX+5})
+									.fadeIn(200);
+
+						} else {
+							$("#tooltip").hide()
+						}
+
+					});
+
+					$("#canalMap").bind("plotclick", function(event, pos, item){
+						if(item){
+							msg = "item: series=" + (item.seriesIndex + 1) + ", x=" + item.datapoint[0].toFixed(2) + ", y=" + item.datapoint[1].toFixed(2);
+							//跳转到该城市页面
+//				window.location.href = "__APP__/Home/City/third_canal/city/" + item.series.label;
+							window.location.href = "__APP__/Home/Travel/index1/city/" + item.series.label;
+
+						}
+					});
+
+					$.plot($('#canalMap'), cityData, options);
+				</script>
+
+
+			</div>
+		</div>
+
+
+		<div class="lvyou_right_box">
+			<dl class="lvyou_dl">
+				<h2 style="margin:8px 0;"><strong class="f1485a3"></strong></h2><br/>
+				<p><img src="__PUBLIC__/Home/Images/home/guang/3.jpg" style="width: 327px;height:172px;"></p>
+			</dl>
+			<br />
+			<div class="height20"></div>
+
+			<dl class="lvyou_dl2">
+				<h2 style="margin:8px 0;"><strong class="f1485a3"></strong></h2><br/>
+				<img src="__PUBLIC__/Home/Images/home/guang/f.jpg" style="width: 327px;height:412px;">
+			</dl>
+			<div class="height20"></div>
+		</div>
+		<div class="height20"></div>
+
+
+
+	</div>
+	<div class="height20"></div>
+</div>
+</body>
+</html>

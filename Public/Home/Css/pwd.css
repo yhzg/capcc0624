@@ -32,8 +32,8 @@ span.ts{font-size:42px; border-left:2px solid #ccc; color:#000; padding-left:15p
 .checkedN{border: 1px solid #1ece6d;}
 
 
-.formLine{color: #d9d9d9;height: 40px;display: inline-block;border-left: 1px solid #dadada;position: absolute;right: 100px;top: 5px;}
-#getKey{width: 80px;border: none;outline: none;height: 50px;line-height: 50px;font-size: 16px;position: absolute;right: 10px;top: 0px;}
+.formLine{color: #d9d9d9;height: 40px;display: inline-block;border-left: 1px solid #dadada;position: absolute;right: 150px;top: 5px;}
+#getKey{width:120px;border: none;outline: none;height: 50px;font-size: 16px;position: absolute;right: 10px;top: 0px;color:#1A89A8;background:white;cursor: pointer}
 .i_icon{display: inline-block;width: 100%;height: 100%;overflow: hidden;}
 
 .otherError{display: none;margin-left: 0px;margin-bottom: 20px;color: red;float: left;}

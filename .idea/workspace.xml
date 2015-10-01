@@ -2,16 +2,484 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="647cdd05-33ff-468d-a48e-debd6cad779a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="C:\wamp\www\capcc\ThinkPHP\Library\Think\docs\Callback_function_notes.txt" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPMailer/docs/Callback_function_notes.txt" />
-      <change type="MOVED" beforePath="C:\wamp\www\capcc\ThinkPHP\Library\Think\docs\DomainKeys_notes.txt" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPMailer/docs/DomainKeys_notes.txt" />
-      <change type="MOVED" beforePath="C:\wamp\www\capcc\ThinkPHP\Library\Think\docs\Note_for_SMTP_debugging.txt" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPMailer/docs/Note_for_SMTP_debugging.txt" />
-      <change type="MOVED" beforePath="C:\wamp\www\capcc\ThinkPHP\Library\Think\docs\extending.html" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPMailer/docs/extending.html" />
-      <change type="MOVED" beforePath="C:\wamp\www\capcc\ThinkPHP\Library\Think\docs\faq.html" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPMailer/docs/faq.html" />
-      <change type="MOVED" beforePath="C:\wamp\www\capcc\ThinkPHP\Library\Think\docs\generatedocs.sh" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPMailer/docs/generatedocs.sh" />
-      <change type="MOVED" beforePath="C:\wamp\www\capcc\ThinkPHP\Library\Think\docs\pop3_article.txt" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPMailer/docs/pop3_article.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Home/15_08_03.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Home/15_08_03.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebde8a93e98.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebde8a94697.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebdeb07cad7.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebdeb07d0e9.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebe92ac80d7.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebed09c6314.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebed09c699e.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebee5f96b47.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebee5f971d2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebf1ea84417.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebf1ea849ae.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebf6e1b92f8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-06/55ebf6e1b99b2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece84179574.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece84179e6f.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece8b3839d6.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece8b385f4f.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece8d8572eb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece8d857932.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece91ed6e48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece91ed741f.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece97adc449.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece97adca4b.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ece9997151e.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55eceaab561a1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ecec5ce8ae3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ecec5ce90e3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ecec8b0062b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ecec8b00c43.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ececae567fd.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ececae56d31.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55eced4fbb91c.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ecee1709aa1.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ecefd8e0d89.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ed059b708f5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ed059b70fff.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ed240743c72.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-07/55ed2592ac1ae.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-10/55f11dc7e3420.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-10/55f121cd57515.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-10/55f121cd57b61.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-10/55f121cd58396.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-11/55f23ac7e3132.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/News/images/2015-09-15/55f78602b4f36.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/News/images/2015-09-15/55f787f937d1e.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/News/images/2015-09-15/55f788da6bb7c.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-18/55fb6a0e64917.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-18/55fb6eeabff16.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-18/55fb6eeac0710.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-18/55fb7e1f5f593.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-18/55fb7e1f5fdc5.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-18/55fb7e1f60957.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-18/55fb7e1f616b6.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-18/55fbbd18078d4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/56020d0617ed2.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/56020d38271c8.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/56020d47169a1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/5602107f4c03f.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/5602108a2747c.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/560219020d14d.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/56023acec43b4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/56023ade08773.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/56023aeb4740c.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/56023ca156565.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Volunteer/2015-09-23/56023eb0c49cf.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Travel/images/2015-09-29/560a1e57bec19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Travel/images/2015-09-29/560a2015af2c3.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Travel/images/2015-09-29/560a204476e48.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Travel/images/2015-09-29/560a21dd8da2b.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Travel/images/2015-09-29/560a22173a847.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Travel/images/2015-09-29/560a223a45e4f.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Travel/images/2015-09-29/560a2252bd0f8.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Uploads/Travel/images/2015-09-30/560b3a883c81b.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ThinkPHP/Library/Org/Net/UTFWry.dat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/Controller/Adcontroller.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/capcc_db_0916.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/capcc_db_0918.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Travel/city_map.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/Js/flot/excanvas.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/Js/img_exists.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/Js/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/Js/flot/jquery.flot.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/Js/flot/jquery.flot.symbol.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/Js/flot/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/Css/new_post.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Volunteer/new_post.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/Css/posts_list.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Volunteer/posts_list.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Pwd/reget_pwd_by_email.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Public/Home/Css/show_post.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Volunteer/show_post.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Volunteer/show_reply.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Volunteer/third_act.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/News/third_active.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/third_apply.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Brand/third_brand.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/City/third_canal.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/third_comment.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Travel/third_eat.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/City/third_figure.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/third_group.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/third_institution.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/third_legend.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/third_market.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/third_media.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/third_organization.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/News/third_picture.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Brand/third_product.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/third_project.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/City/third_protect.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Travel/third_spot.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Travel/third_story.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Brand/third_tradition.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/third_treaty.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Admin/View/Travel/travel_city.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Application/Home/View/Volunteer/volunteer_act.html" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Home\View\Login\bindPhone.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Home\View\Login\mail_login1.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Home\View\Pwd\forget_pwd1.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Home\View\Pwd\reget_pwd.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Home\View\Volunteer\volunteer_advice.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Home\View\Volunteer\volunteer_mon.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.city_canal.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.city_world.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.inscription_history.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.main_page.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.news_active.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.news_main.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.travel_ancient_town.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.travel_bowuguan.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.travel_college.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.travel_garden.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.travel_lake.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.travel_park.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.travel_site.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\_fields\capcc.user.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Data\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_06_24.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_07_07.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_07_08.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_07_09.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_07_13.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_07_16.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_08_06.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_08_07.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_08_10.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_08_11.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_08_12.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\15_08_13.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Admin\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_06_24.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_06_25.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_06_26.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_06_28.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_06_29.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_06_30.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_01.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_02.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_03.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_06.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_07.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_08.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_10.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_16.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_23.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_24.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_28.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Common\15_07_29.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_06_24.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_06_25.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_06_26.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_06_28.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_06_29.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_06_30.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_01.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_02.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_03.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_06.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_07.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_08.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_10.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_23.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_24.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_27.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_28.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_29.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_30.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_07_31.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_08_03.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_08_07.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_08_10.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_08_14.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_08_17.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_08_18.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_08_19.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\15_08_20.log" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\Home\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Logs\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\Temp\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Application\Runtime\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\about.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\act_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\act_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\act_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\act_pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\ad.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\ad1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\ad2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\ad3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\art_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\art_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\art_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\art_pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\art_pic5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\art_pic6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\bbs_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\bbs_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\bbs_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\flink.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\headcenter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\join_but.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lv1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lv2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lv3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lv4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lv5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lv6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lvyou_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lvyou_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lvyou_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lvyou_pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lvyou_pic5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\lvyou_pic6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\map.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\more.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\p1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\p2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\pinpai_a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\pinpai_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\pinpai_c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\pp_a.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\pp_b.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\pp_c.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\pp_d.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\pp_r_ad.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\r.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\searchbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\sjmsg_p1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\sjmsg_p2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\sjmsg_p3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\sjmsg_p4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\sjmsg_p5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\sjmsg_p6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\sjmsg_p7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\syp0.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\syp1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\syp4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\syp5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\syp6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\syp7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\z.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\zstp1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\zyz_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\zyz_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\zyz_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\_vti_cnf\zyzjy_r_p1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\lvyou_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\r.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\syp7.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\dgmuseum\z.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\ad1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\bbs_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\bbs_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\bbs_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\lv1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\lv2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\lv3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\zyz_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\zyz_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\home\zyz_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\about.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\act_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\act_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\act_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\act_pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\ad.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\ad1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\ad2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\art_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\art_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\art_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\art_pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\art_pic5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\art_pic6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\bbs_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\bbs_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\bbs_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\flink.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\headcenter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\join_but.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\lv1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\lv2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\lv3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\lv4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\lv5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\lv6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\lvyou_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\lvyou_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\lvyou_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\map.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\more.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\p1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\p2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\searchbg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\zstp1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\zyz_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\zyz_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\zyz_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\_vti_cnf\zyzjy_r_p1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\ad1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\ad2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\headcenter.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\logo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\lv1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\lv2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\lv3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\lvyou_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\lvyou_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\lvyou_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\lvyou_pic4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\lvyou_pic5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\lvyou_pic6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\travel\zyz_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\ad2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\bbs_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\bbs_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\bbs_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\lvyou_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\lvyou_pic2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\lvyou_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\zstp1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\zyz_pic1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\zyz_pic3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\Public\Home\Images\volunteer\zyzjy_r_p1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\api\uc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\api\uc.php_example" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\capcc_db.sql" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\config.inc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\client.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\app.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\domain.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\feed.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\friend.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\index.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\mail.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\pm.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\tag.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\control\user.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\data\cache\apps.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\data\cache\badwords.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\data\cache\index.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\data\cache\settings.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\data\index.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\index.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\lib\db.class.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\lib\index.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\lib\sendmail.inc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\lib\uccode.class.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\lib\xml.class.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\app.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\base.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\cache.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\domain.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\friend.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\index.htm" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\mail.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\misc.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\note.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\pm.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\tag.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\uc_client\model\user.php" afterPath="" />
+      <change type="DELETED" beforePath="C:\wamp\www\capcc_conflict\capcc0624\中国运河网数据库表定义.doc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Images/login/logo.png" afterPath="$PROJECT_DIR$/Public/Home/Images/login/logo.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/ActivityController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/ActivityController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/BrandController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/BrandController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/CityController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/CityController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/CommonController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/CommonController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/CommonController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/DgmuseumController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/DgmuseumController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/HeritageController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/HeritageController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/IndexController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/IndexController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/LoginController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/LoginController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/NewsController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/NewsController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/NewsController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/NewsController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/PwdController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/PwdController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/SearchController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/SearchController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/SmsController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/SmsController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/SubStringController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/SubStringController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/TestController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/TestController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/TravelController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/TravelController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/TravelController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/TravelController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/VolunteerController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/VolunteerController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/Controller/VolunteerController.class.php" afterPath="$PROJECT_DIR$/Application/Home/Controller/VolunteerController.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Css/activity.css" afterPath="$PROJECT_DIR$/Public/Home/Css/activity.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Activity/activity_activity.html" afterPath="$PROJECT_DIR$/Application/Home/View/Activity/activity_activity.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/News/add.html" afterPath="$PROJECT_DIR$/Application/Admin/View/News/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Travel/add.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Travel/add.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Volunteer/advice.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Volunteer/advice.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Brand/brand_brand.html" afterPath="$PROJECT_DIR$/Application/Home/View/Brand/brand_brand.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Brand/brand_product.html" afterPath="$PROJECT_DIR$/Application/Home/View/Brand/brand_product.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Brand/brand_tradition.html" afterPath="$PROJECT_DIR$/Application/Home/View/Brand/brand_tradition.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Pwd/change_pwd.html" afterPath="$PROJECT_DIR$/Application/Home/View/Pwd/change_pwd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/City/city_canal.html" afterPath="$PROJECT_DIR$/Application/Home/View/City/city_canal.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/City/city_figure.html" afterPath="$PROJECT_DIR$/Application/Home/View/City/city_figure.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/City/city_protect.html" afterPath="$PROJECT_DIR$/Application/Home/View/City/city_protect.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/classic_comment.html" afterPath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/classic_comment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/classic_group.html" afterPath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/classic_group.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/classic_legend.html" afterPath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/classic_legend.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/classic_market.html" afterPath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/classic_market.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Common/Conf/config.php" afterPath="$PROJECT_DIR$/Application/Common/Conf/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Css/css.css" afterPath="$PROJECT_DIR$/Public/Home/Css/css.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Css/css3.css" afterPath="$PROJECT_DIR$/Public/Home/Css/css3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Travel/eat.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Travel/eat.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Travel/eat_live.html" afterPath="$PROJECT_DIR$/Application/Home/View/Travel/eat_live.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/News/edit_news.html" afterPath="$PROJECT_DIR$/Application/Admin/View/News/edit_news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Travel/edit_travel.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Travel/edit_travel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Volunteer/edit_volunteer.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Volunteer/edit_volunteer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Public/foot.html" afterPath="$PROJECT_DIR$/Application/Home/View/Public/foot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Pwd/forget_pwd.html" afterPath="$PROJECT_DIR$/Application/Home/View/Pwd/forget_pwd.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ThinkPHP/Common/functions.php" afterPath="$PROJECT_DIR$/ThinkPHP/Common/functions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Public/head.html" afterPath="$PROJECT_DIR$/Application/Home/View/Public/head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_apply.html" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_apply.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_institution.html" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_institution.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_media.html" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_media.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_organization.html" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_organization.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_project.html" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_project.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_treaty.html" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/heritage_treaty.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Admin/index.css" afterPath="$PROJECT_DIR$/Public/Admin/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Travel/index.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Travel/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Activity/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Activity/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Brand/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Brand/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/City/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/City/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Dgmuseum/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Heritage/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Heritage/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/News/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/News/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Volunteer/index.html" afterPath="$PROJECT_DIR$/Application/Home/View/Volunteer/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Index/index1.html" afterPath="$PROJECT_DIR$/Application/Home/View/Index/index1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Travel/index1.html" afterPath="$PROJECT_DIR$/Application/Home/View/Travel/index1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Travel/live.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Travel/live.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log.txt" afterPath="$PROJECT_DIR$/log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Index/login.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Index/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Login/mail_login.html" afterPath="$PROJECT_DIR$/Application/Home/View/Login/mail_login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Volunteer/mon.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Volunteer/mon.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Css/news.css" afterPath="$PROJECT_DIR$/Public/Home/Css/news.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/News/news_active.html" afterPath="$PROJECT_DIR$/Application/Home/View/News/news_active.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/News/news_picture.html" afterPath="$PROJECT_DIR$/Application/Home/View/News/news_picture.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/News/picture.html" afterPath="$PROJECT_DIR$/Application/Admin/View/News/picture.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Css/pwd.css" afterPath="$PROJECT_DIR$/Public/Home/Css/pwd.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Js/pwd.js" afterPath="$PROJECT_DIR$/Public/Home/Js/pwd.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Js/reg.js" afterPath="$PROJECT_DIR$/Public/Home/Js/reg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Login/register.html" afterPath="$PROJECT_DIR$/Application/Home/View/Login/register.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Search/search.html" afterPath="$PROJECT_DIR$/Application/Home/View/Search/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Js/sms.js" afterPath="$PROJECT_DIR$/Public/Home/Js/sms.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Travel/spot.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Travel/spot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Travel/story.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Travel/story.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Public/Home/Css/third.css" afterPath="$PROJECT_DIR$/Public/Home/Css/third.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Activity/third.html" afterPath="$PROJECT_DIR$/Application/Home/View/Activity/third.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Public/top.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Public/top.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Travel/travel_spot.html" afterPath="$PROJECT_DIR$/Application/Home/View/Travel/travel_spot.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Home/View/Travel/travel_story.html" afterPath="$PROJECT_DIR$/Application/Home/View/Travel/travel_story.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path=".idea/dataSources.local.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +502,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4978166">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.41484717">
+              <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -45,6 +513,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.php" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
@@ -83,8 +558,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -99,7 +574,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="capcc" />
+              <option name="myItemId" value="capcc0624" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -109,21 +584,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="capcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="capcc0624" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="capcc" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -137,7 +598,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="capcc" />
+              <option name="myItemId" value="capcc0624" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -146,50 +607,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="capcc0624" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="capcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="View" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="capcc0624" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="capcc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -224,6 +641,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
       <method />
     </configuration>
   </component>
@@ -241,23 +664,23 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19087404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -270,7 +693,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPMailer/docs/faq.html">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -278,10 +701,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ThinkPHP/Library/Vendor/PHPMailer/docs/faq.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4978166">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.41484717">
+          <caret line="23" column="58" selection-start-line="23" selection-start-column="58" selection-end-line="23" selection-end-column="58" />
           <folding />
         </state>
       </provider>

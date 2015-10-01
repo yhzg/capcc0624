@@ -4,24 +4,35 @@
 	<title>激活邮件已发送-中国运河网</title>
 	<meta http-equiv="content-Type" content="text/html" charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/Css/mail_login.css">
-<!--   <script type="text/javascript">
-        var countdown=60;
-        function settime(val)
-        {
-            if (countdown == 0)
-            {
-                val.removeAttribute("disabled");
-                val.value="请点击重新发送激活邮件";
-                countdown = 60;
-            } else
-            {
-                val.setAttribute("disabled", true);
-                val.value=countdown + "秒后可再次重新发送";
-                countdown--;
-            }
-            setTimeout(function(){settime(val)},1000);
-        }
-</script>-->
+    <js href="__PUBLIC__/jq/jquery-1.10.2.min.js" />
+    <script type="text/javascript" >
+          function send_mail()
+          {
+
+              var username="<{$user.username}>";
+              var email="<{$user.email}>";
+              var to_url="__ROOT__/Login/resend_mail";
+              //alert(username);
+              //alert(email);
+              //return;
+              $.post(to_url,{username:username,email:email});
+              var step=59;
+              $('#resend_mail').html('60秒后重新发送');
+              var _res = setInterval(function()
+              {
+                 // $("#resend_mail").attr({"disabled":true});//设置disabled属性
+                  $('#resend_mail').html(step+'秒后重新发送');
+                  $('#resend_mail').css({'color':'red','cursor':'text'});
+                  step-=1;
+                  if(step <= 0){
+                      $("#resend_mail").removeAttr("disabled"); //移除disabled属性
+                      $('#resend_mail').html('<a href="#" onclick="send_mail(); return false;">点此再次发送激活邮件</a>');
+                      clearInterval(_res);//清除setInterval
+                  }
+              },1000);
+
+          }
+    </script>
 </head>
 <body>
 	<div class="head_body">
@@ -35,8 +46,16 @@
 	<div class="content">
     	<div class="content_body">
     		<p class="duihao"><{$user.username}>您好，<{$user.info}></p>
-            <p class="wanc">成为中国运河网会员只差一步之遥，请移步您的邮箱！<{$user.email}></p>
-            <p class="wanc"><a href="Http://<{$mail_domain}>" target="_blank">【进入邮箱】</a>收取邮件，点击验证链接完成注册<strong style="color:red"><24小时以内有效></strong></p>
+
+            <p class="wanc">成为中国运河网会员只差一步之遥，请移步您的邮箱<a href="Http://<{$mail_domain}>" target="_blank"><{$user.email}></a>激活账号</p>
+            <div style="height:50px">
+
+            </div>
+
+
+            <p class="tishi" >没有收到邮件？<span  id="resend_mail"><a href="#" onclick="send_mail(); return false;">点此再次发送激活邮件</a></span></p>
+
+
            <!-- <p class="wanc">如果您的邮箱没有收到激活邮件，<input type="button" id="btn" value="请点击重新发送激活邮件" onclick="settime(this)" /></p>-->
             <p class="tishi">温馨提示：有极少的邮箱会将激活邮件移至“垃圾邮件箱”中，请您仔细查询。</p>
         </div>

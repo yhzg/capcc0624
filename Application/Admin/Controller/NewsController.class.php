@@ -52,6 +52,7 @@ class NewsController extends Controller {
             $m = M($db_name);
             $data = array(
                 'Title' => I('post.title'),
+                'Abstract'=>I('abstract'),
                 'Content' => I('post.content'),
                 'OriAuthor' => I('post.oriAuthor'),
                 'Author' => I('post.author'),
