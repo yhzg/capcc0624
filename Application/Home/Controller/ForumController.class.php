@@ -11,7 +11,7 @@ namespace Home\Controller;
 
 use Think\Controller;
 
-class ForumController extends Controller {
+class ForumController extends CommonController {
     public function index()
     {
         $this->display('Public:head');

@@ -10,83 +10,226 @@ namespace Home\Controller;
 use Think\Controller;
 
 
-class TravelController extends Controller{
+class TravelController extends CommonController{
     public function index()
     {
         $this->display('Public:head');
-
-        $res1=M('travel_ancient_town');
-        $data11=$res1->where('level = 2')->limit('1')->select();
-        $data11[0]['content']=R('SubString/subString',array($data11[0]['content'],0,120));
-        // dump($data11[0]['content']);
-        $this->assign('list11',$data11);
-
-        $data12=$res1->limit('1')->select();
-        $this->assign('list12',$data12);
-
-        $data13=$res1->limit('7')->select();
-        $this->assign('list13',$data13);
-
-        $data14=$res1->where('level = 1')->limit('1')->select();
-        $data14[0]['content']=R('SubString/subString',array($data14[0]['content'],0,180));
-        $this->assign('list14',$data14);
-
-        $data15=$res1->where('level = 0')->limit('7')->select();
-        $this->assign('list15',$data15);
-
-        $res2=M('travel_lake');
-        $data21=$res2->where('level = 1')->limit('1')->select();
-        $data21[0]['content']=R('SubString/subString',array($data21[0]['content'],0,180));
-        $this->assign('list21',$data21);
-
-        $res2=M('travel_lake');
-        $data22=$res2->where('level = 0')->limit('7')->select();
-        $this->assign('list22',$data22);
-
-        $res3=M('travel_garden');
-        $data31=$res3->where('level = 1')->limit('1')->select();
-        $data31[0]['content']=R('SubString/subString',array($data31[0]['content'],0,180));
-        $this->assign('list31',$data31);
-
-        $data32=$res3->where('level = 0')->limit('7')->select();
-        $this->assign('list32',$data32);
-
-        $res4=M('travel_college');
-        $data41=$res4->where('level = 1')->limit('1')->select();
-        $data41[0]['content']=R('SubString/subString',array($data41[0]['content'],0,180));
-        $this->assign('list41',$data41);
-
-        $data42=$res4->where('level = 0')->limit('7')->select();
-        $this->assign('list42',$data42);
-
-        $res5=M('travel_bowuguan');
-        $data51=$res5->where('level = 1')->limit('1')->select();
-        $data51[0]['content']=R('SubString/subString',array($data51[0]['content'],0,180));
-        $this->assign('list51',$data51);
         
-        $data52=$res5->where('level = 0')->limit('7')->select();
-        $this->assign('list52',$data52);
+        $this->display('Travel:city_map');
 
-        $res6=M('travel_site');
-        $data61=$res6->where('level = 1')->limit('1')->select();
-        $data61[0]['content']=R('SubString/subString',array($data61[0]['content'],0,180));
-        $this->assign('list61',$data61);
+        $this->display('Public:foot');
 
-        $data62=$res6->where('level = 0')->limit('7')->select();
-        $this->assign('list62',$data62);
+    }
 
-        $res7=M('travel_park');
-        $data71=$res7->where('level = 1')->limit('1')->select();
-        $data71[0]['content']=R('SubString/subString',array($data71[0]['content'],0,180));
-        $this->assign('list71',$data71);
+    public function index1()
+    {
+        $this->display('Public:head');
 
-        $data72=$res7->where('level = 0')->limit('7')->select();
-        $this->assign('list72',$data72);
-        
+        $res1= M('travel_spot');
+
+        $data['id']=array('ELT',3);
+        $data1=$res1->where($data)->select();
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],50));
+        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],50));
+        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],50));
+       // dump($data1);
+        //exit;
+        $this->assign('travel_spot',$data1);
+
+        $aid=$_GET['city'];
+        $list = $res1->where(array('City'=>$aid))->select();
+        if($list) {
+            $this->assign('travel_spot',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+
+        $res2= M('travel_eat');
+
+        $data['id']=array('ELT',1);
+        $data2=$res2->where($data)->select();
+        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],30));
+        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],30));
+        $this->assign('travel_eat',$data2);
+
+        $aid=$_GET['city'];
+        $list = $res2->where(array('City'=>$aid))->select();
+        if($list) {
+            $this->assign('travel_eat',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res2->getLastSql();
+
+        $res3= M('travel_live');
+        $list = $res3->where(array('City'=>$aid))->select();
+        if($list) {
+            $this->assign('travel_live',$list);
+        }else{
+            $this->error('数据错误');
+        }
+
+
+        $res4= M('travel_story');
+        $list = $res4->where(array('City'=>$aid))->select();
+        if($list) {
+            $this->assign('travel_story',$list);
+        }else{
+            $this->error('数据错误');
+        }
+
+        $this->display('');
+
+        $this->display('Public:foot');
+
+    }
+
+    public function travel_spot()
+    {
+        $this->display('Public:head');
+
+        $res1= M('travel_spot');
+        $data = $_GET['city'];
+        $count = $res1->where(array('City'=>$data))->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res1->where(array('City'=>$data))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
+
+           // $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+
         $this->display();
 
         $this->display('Public:foot');
 
     }
 
+    public function eat_live()
+    {
+        $this->display('Public:head');
+
+        $res2= M('travel_eat');
+        $count = $res2->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list =$res2->where()->order()->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+
+
+
+        $this->display();
+
+        $this->display('Public:foot');
+
+    }
+
+    public function travel_story()
+    {
+        $this->display('Public:head');
+
+        $res3= M('travel_story');
+        $count =$res3->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $res3->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $k=>$v)
+        {
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
+        }
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+
+        $this->display();
+
+        $this->display('Public:foot');
+
+    }
+    public function third_spot()
+    {
+        $this->display('Public:head');
+        $res1= M('travel_spot');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_eat()
+    {
+        $this->display('Public:head');
+        $res1= M('travel_eat');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_canal()
+    {
+        $this->display('Public:head');
+        $res1= M('travel_live');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_story()
+    {
+        $this->display('Public:head');
+        $res1= M('travel_story');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
 }

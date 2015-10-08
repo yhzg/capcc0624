@@ -1,84 +1,162 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-
-    <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
-    <load href="__PUBLIC__/Home/Css/1home_page.css"  />
-    <load href="__PUBLIC__/Home/Js/head_bottom.js" />
-    <load href="__PUBLIC__/Home/Js/resize_picture.js" />
-   </head>
-<center><body>
-
-<div id="head" style="background-color: #FFF; clear: both;">
-    <div id="head_up">
-        <table width="86%" border="0" cellspacing="0" cellpadding="0" >
-            <tr>
-                <td width="8%" rowspan="2"></td>
-                <td width="20%" rowspan="2" align="left"><img src="__PUBLIC__/Home/Images/login_06.png" alt="" width="400" height="200" onload="AutoResizeImage(400,200,this)" /></td>
-                <td width="30%"  valign="center" style="padding-top:25px;"><img src="__PUBLIC__/Home/Images/合力共建.jpg" alt="" width="400" height="200" onload="AutoResizeImage(400,200,this)" /></td>
-                <td width="14%" align="right" class="helpcenter">帮助中心</td>
-                <td width="9%" align="center" class="helpcenter">联系客服</td>
-                <!-- <td width="6%" align="right"><form id="form1" name="form1" method="post" action="">
-                  <input type="image" name="imageField" id="imageField" src="images/logining-button.png" />
-                </form></td>
-                <td width="8%" align="center"><form id="form2" name="form2" method="post" action="">
-                  <input type="image" name="imageField2" id="imageField2" src="images/register-button.png" />
-                </form></td> 待开发-->
-            </tr>
-        </table>
+<!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Language" content="zh-cn"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=1200"/>
+    <meta name="keywords" content="中国运河网,运河,京杭大运河,大运河,运河之光,运河网,"/>
+    <meta name="description" content="中国运河网致力于中国大运河世界遗产保护、大运河城市文化传播；集聚社会正能量，倡导和推进运河城市区域经济一体化，实现地缘优势互补、谋求城市之间协同发展、客观评价运河城市经济与文化成就；融汇国内外运河文化与产业经济研究资源，开展运河城市规划、文化旅游、创意产业项目服务，全程代理企业品牌精准营销！"/>
+    <title>中国运河网</title>
+    <load href="__PUBLIC__/Home/Css/css.css"/>
+    <load href="__PUBLIC__/jq/jquery-1.10.2.min.js"/>
+    <load href="__PUBLIC__/Home/Js/img_exists.js"/>
+    <script>
+        $(function()
+        {
+            $('input[type=submit]').click(function()
+            {
+                if($.trim($('input[name=keyword]').val())=='')
+                {
+                    alert('输入为空！');
+                    return false;
+                }
+            })
+        })
+    </script>
+</head>
+<center>
+    <body>
+    <div class="header_box">
+        <div class="headnav">
+            <div class="topfav">
+                <div style="float:left"><a href="__APP__/Home/Index/index">返回首页</a></div>
+                <a href="<{$navbar['url1']}>"><{$navbar['bar1']}></a>|<a href="<{$navbar['url2']}>"><{$navbar['bar2']}></a>|<a href="http://capcc.com.cn/yhzgshop/">商城</a>|<a href="#">客服</a></div>
+        </div>
+        <div class="header">
+            <table width="1200" height="174" class="table-center">
+                <tr>
+                    <td width="20%">
+                        <a href="__APP__/Home/Index/index"><img src="__PUBLIC__/Home/Images/home/logo.jpg" alt="" width="501" height="174"/>
+                    </a></td>
+                    <td width="">
+                        <div style="width:402px;height:99px; background: url('__PUBLIC__/Home/Images/home/headcenter.jpg')">
+                            <table>
+                                <td>
+                                    <tr>
+                                        <a href="http://www.zgwwxh.com/" target="_blank">
+                                            <button type="button" style="width:370px;height:30px;border:none;background:none;outline-color: #e4e4e4;"></button>
+                                        </a>
+                                    </tr>
+                                    <tr>
+                                        <a href="http://news.idoican.com.cn/zgwenhuab/html/2014-12/18/node_25292.htm" target="_blank">
+                                            <button type="button" style="width:370px;height:30px;border:none;background:none;outline-color: #e4e4e4;"></button>
+                                        </a>
+                                    </tr>
+                                    <tr>
+                                        <a href="http://www.ccmg.cn/chengyuan/baoshe/201410/t20141015_1009167.htm" target="_blank">
+                                            <button type="button" style="width:370px;height:30px;border:none;background:none;outline-color: #e4e4e4;"></button>
+                                        </a>
+                                    </tr>
+                                </td>
+                            </table>
+                        </div>
+                    </td>
+                    <td width="10%">
+                        <!--search-->
+                        <div style="width:228px;height:27px; background: url('__PUBLIC__/Home/Images/home/searchbg.jpg')">
+                            <form action="__APP__/Search/search" method="post">
+                            <table>
+                                <tr>
+                                    <td><input type="text" name="keyword" placeholder='多个关键字请以空格分开'
+                                               style="width:193px;height:25px;border:none;background:none;outline-color: #e4e4e4;">
+                                    </td>
+                                    <td><input type="submit" value=""
+                                               style="margin-left:5px;width:26px;height:25px;text-indent:-999em;border:none;background:none;outline-color: #e4e4e4">
+                                    </td>
+                                </tr>
+                            </table>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="clearfloat"></div>
+        <div class="nav">
+            <ul id="nav">
+                <li><a href="__APP__/Home/News">新闻</a>
+                    <ul>
+                        <li><a href="__APP__/Home/News/news_picture.html">图说新闻</a></li>
+                        <li><a href="__APP__/Home/News/news_active.html">动态新闻</a></li>
+                    </ul>
+                </li>
+                <li class="ge"></li>
+                <li><a href="__APP__/Home/Heritage">世遗</a>
+                    <ul>
+                        <li><a href="__APP__/Home/Heritage/heritage_organization.html">世界遗产组织</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_treaty.html">组织公约</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_project.html">中国世遗项目</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_apply.html">申遗历程</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_institution.html">研究机构</a></li>
+                        <li><a href="__APP__/Home/Heritage/heritage_media.html">主要媒体</a></li>
+                    </ul>
+                </li>
+                <li class="ge"></li>
+                <li><a href="__APP__/Home/City">城市</a>
+                    <ul>
+                        <li><a href="__APP__/Home/City/city_protect.html">非物质文化遗产保护</a></li>
+                        <li><a href="__APP__/Home/City/city_figure.html">运河人物</a></li>
+                        <li><a href="__APP__/Home/City/city_canal.html">城市</a></li>
+                    </ul>
+                </li>
+                <li class="ge"></li>
+                <li><a href="__APP__/Home/Travel">旅游</a>
+                </li>
+                <li class="ge"></li>
+                <li><a href="__APP__/Home/Brand">品牌</a>
+                    <ul>
+                        <li><a href="__APP__/Home/Brand/brand_tradition.html">中华老字号</a></li>
+                        <li><a href="__APP__/Home/Brand/brand_product.html">产品广告</a></li>
+                        <li><a href="__APP__/Home/Brand/brand_brand.html">品牌广告</a></li>
+                    </ul>
+                </li>
+                <li class="ge"></li>
+                <li><a href="__APP__/Home/Dgmuseum">数字美术馆</a>
+                    <ul>
+                        <li><a href="__APP__/Home/Dgmuseum/classic_legend.html">传奇</a></li>
+                        <li><a href="__APP__/Home/Dgmuseum/classic_market.html">市场</a></li>
+                        <li><a href="__APP__/Home/Dgmuseum/classic_comment.html">评论</a></li>
+                        <li><a href="__APP__/Home/Dgmuseum/classic_group.html">艺术群</a></li>
+                    </ul>
+                </li>
+                <li class="ge"></li>
+                <li><a href="__APP__/Home/Activity">活动</a>
+                    <ul>
+                        <li><a href="__APP__/Home/Activity/activity_activity.html">近期活动</a></li>
+                    </ul>
+                </li>
+                <li class="ge"></li>
+                <li><a href="__APP__/Home/Volunteer">志愿者家园</a>
+                    <ul>
+                        <!--<li><a href="__APP__/Home/Volunteer/volunteer_grace.html">风采展示</a></li>-->
+                        <li><a href="__APP__/Home/Volunteer/volunteer_act.html">活动</a></li>
+                        <li><a href="__APP__/Home/Volunteer/posts_list/tag/advice">良策</a></li>
+                        <li><a href="__APP__/Home/Volunteer/posts_list/tag/mon">监测</a></li>
+                    </ul>
+                </li>
+                <li class="ge"></li>
+                <li><a href="http://capcc.com.cn/Yhzgbbs/">论坛</a>
+                    <ul>
+                        <li><a href="http://capcc.com.cn/Yhzgbbs/forum.php?mod=forumdisplay&fid=2">专家视点</a></li>
+                        <li><a href="http://capcc.com.cn/Yhzgbbs/forum.php?mod=forumdisplay&fid=38">原创空间</a></li>
+                        <li><a href="http://capcc.com.cn/Yhzgbbs/forum.php?mod=forumdisplay&fid=39">百家杂谈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="height20"></div>
     </div>
-    <div id="head_center1">
-        <table width="86%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-                <td><table width="100%" border="0" align="center"cellpadding="0" cellspacing="0">
-                    <tr valign="bottom">
-                        <td align="center">|</td>
-                        <td align="center" class="blue" onmouseover="showsub(1);"><a style="color:inherit;" href="__APP__/Home/Index">主页</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(2);"><a style="color:inherit;" href="__APP__/Home/News">新闻</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(3);"><a style="color:inherit;" href="__APP__/Home/City">城市</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(4);"><a style="color:inherit;" href="__APP__/Home/Inscription">申遗</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(5);"><a style="color:inherit;" href="__APP__/Home/Travel">旅游</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(6);"><a style="color:inherit;" href="__APP__/Home/Brand">品牌</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(7);"><a style="color:inherit;" href="__APP__/Home/Dgmuseum">数字美术馆</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(8);"> <a style="color:inherit;" href="__APP__/Home/Activity">活动</a></td>
-                        <td align="center">|</td>
-                        <td align="center" onmouseover="showsub(9);"><a style="color:inherit;" href="__APP__/Home/Forum"">论坛</a></td>
-                        <td align="center">|</td>
-                    </tr>
-                </table></td>
-            </tr>
-        </table>
-    </div>
-    <div id="head_center2">
-        <table width="86%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-                <td><table width="100%" border="0" align="center"cellpadding="0" cellspacing="0">
-                    <tr valign="bottom">
-                        <td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="1"><img src="__PUBLIC__/Home/Images/bracket.jpg" width="30" height="27" /></td>
-                        <td width="10%" align="center" id="2"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="3"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="4"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="5"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="6"></td><td align="center">&nbsp;</td>
-                        <td width="20%" align="center" id="7"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="8"></td><td align="center">&nbsp;</td>
-                        <td width="10%" align="center" id="9"></td><td align="center">&nbsp;</td>
-                    </tr>
-                </table></td>
-            </tr>
-        </table>
-    </div>
-    <div id="head_bottom">
-    </div>
-</div>
-</body></center>
+    </body>
+</center>
 </html>

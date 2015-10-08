@@ -1,0 +1,27 @@
+/*־Ը�߼�԰*/
+
+.zyzjy_left_box {float:left;width:800px;}
+.zyzjy_banner {width:798px;height:444px;border:1px solid #b3b3b3;overflow:hidden;}
+
+.fczs_box {width:798px;height:603px;border:1px solid #b3b3b3;overflow:hidden;padding:5px 0 0 0;}
+.fczs_box ul {margin:0;padding:0;}
+.fczs_box ul li {float:left;}
+.fczs_box ul li a {display:block;width:246px;height:250px;margin:10px 9px;}
+.fczs_box ul li a img {width:244px;height:183px;border:1px solid #b3b3b3;}
+.fczs_box ul li a p {width:244px;height:48px;line-height:48px;border:1px solid #ddd;text-align:center;color:#666;margin:7px 0;}
+
+.zyzjy_right_box {float:right;width:385px;}
+.zyzjy_right_box_con {width:383px;border:1px solid #b3b3b3;overflow:hidden;}
+
+.zyzjy_box {width:1178px;border:1px solid #b3b3b3;overflow:hidden;padding:10px;}
+.zyzjy_box_con {width:576px;}
+.zyzjy_box_con_con {width:554px;height:176px;border:1px solid #b3b3b3;overflow:hidden;padding:10px;line-height:2;background:#f2f2f2;}
+
+.fankui_box {width:1178px;border:1px solid #b3b3b3;overflow:hidden;padding:10px;}
+.fankui_box_con_con {width:1158px;height:176px;border:1px solid #b3b3b3;overflow:hidden;padding:10px;line-height:2;background:#f2f2f2;}
+
+
+.footer {width:1200px;height:118px;margin:0 auto;padding:10px 0 0 0;text-align:center;line-height:2;color:#555;background:#f7f7f7;}
+.footer p a {color:#555;padding:0 5px;}
+.copyright {width:100%;height:95px;background:#b30d19;}
+.copyright p {padding:3px 0 0 0;text-align:center;color:#fff;font-size:14px;line-height:2;}

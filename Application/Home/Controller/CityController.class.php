@@ -9,47 +9,148 @@
 namespace Home\Controller;
 use Think\Controller;
 
-class CityController extends Controller{
+class CityController extends CommonController{
     public function index()
     {
         $this->display('Public:head');
 
-        $res1=M('city_canal');
-        $data11=$res1->where('level = 2')->limit('1')->select();
-        $data11[0]['content']=R('SubString/subString',array($data11[0]['content'],0,200));
-       // dump($data11[0]['content']);
-        $this->assign('list11',$data11);
+        $res1= M('city_figure');
+        $data['id']=array('ELT',1);
+        $data1=$res1->where($data)->select();
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],0,150));
+        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],0,150));
+        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],0,150));
+        $this->assign('city_figure',$data1);
 
-        $data12=$res1->where('level = 1')->limit('1')->select();
-        $data12[0]['content']=R('SubString/subString',array($data12[0]['content'],0,150));
-        $this->assign('list12',$data12);
+        $res2= M('city_protect');
+        $data['id']=array('ELT',1);
+        $data2=$res2->where($data)->select();
+        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],0,200));
+        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],0,200));
+        $this->assign('city_protect',$data2);
 
-        $res2=M('city_world');
-        $data21=$res2->where('level = 0')->limit('1')->select();
-        $this->assign('list21',$data21);
 
-        $data22=$res2->where('level = 0')->limit('7')->select();
-        $this->assign('list22',$data22);
+        $res3= M('city_canal');
+        $data['id']=array('ELT',1);
+        $data3=$res3->where($data)->select();
+        $this->assign('city_canal',$data3);
 
-        $data23[0]['content']=R('SubString/subString',array($data23[0]['content'],0,150));
-        $data23=$res2->where('level = 1')->limit('1')->select();
-        $this->assign('list23',$data23);
+        $this->display();
 
-        $data24=$res2->where('class = 1')->limit('7')->select();
-        $this->assign('list24',$data24);
+        $this->display('Public:foot');
+    }
 
-        $data25=$res2->where('class = 2')->limit('7')->select();
-        $this->assign('list25',$data25);
 
-        $res3=M('main_page');
-        $data31=$res3->field('City')->select();
-       // dump($data31);
-        $this->assign('list31',$data31);
+    public function city_figure()
+    {
+        $this->display('Public:head');
+
+        $res1= M('city_figure');
+        $count = $res1->where()->count();
+        $Page  = new \Think\Page($count,16);
+        $show  = $Page->show();
+        $list = $res1->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
 
         $this->display();
 
         $this->display('Public:foot');
 
+    }
+
+    public function city_protect()
+    {
+        $this->display('Public:head');
+
+        $res2= M('city_protect');
+        $count = $res2->where()->count();
+        $Page  = new \Think\Page($count,16);
+        $show  = $Page->show();
+        $list = $res2->where()->order('')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+
+        $this->display();
+
+        $this->display('Public:foot');
+
+    }
+
+    public function city_canal()
+    {
+        $this->display('Public:head');
+
+        $res3= M('city_canal');
+        $count = $res3->where()->count();
+        $Page  = new \Think\Page($count,16);
+        $show  = $Page->show();
+        $list = $res3->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $this->assign('list',$list);
+        $this->assign('page',$show);
+
+        $this->display();
+
+        $this->display('Public:foot');
+
+    }
+
+    public function third_figure()
+    {
+        $this->display('Public:head');
+        $res1= M('city_figure');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_protect()
+    {
+        $this->display('Public:head');
+
+        $res1= M('city_protect');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+
+    public function third_canal()
+    {
+        $this->display('Public:head');
+
+        $res1= M('city_canal');
+        $aid=$_GET['id'];
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
     }
 
 }
