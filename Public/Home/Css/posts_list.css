@@ -34,7 +34,7 @@ img {border:none;}
 .tag {width:100%;height:40px;line-height:40px;font-weight:normal;}
 .tag strong {padding:0 30px 0 10px;font-size:25px;font-weight:normal;color:blue}
 
-.info{width:100%;height:20px;background-color: black;margin:10px auto}
+.info{width:100%;height:20px;background-color: #848886;margin:10px auto}
 .info td{color:white;text-align: center;}
 
 .list{padding:0;margin-top: -10px}

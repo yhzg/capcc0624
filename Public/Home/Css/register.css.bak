@@ -1,0 +1,52 @@
+@charset "utf-8";
+.up_left {
+	font-family: "黑体";
+	font-size: 28px;
+	color: #FFF;
+}
+.up_right {
+	font-family: "宋体";
+	font-size: 16px;
+	color: #FFF;
+}
+
+.invisibility {
+	font-family: "宋体";
+	font-size: 14px;
+	text-decoration: underline;
+	line-height: 18px;
+	color: #4CACE2;
+}
+
+.body_left{
+	margin-top: 7%;
+	margin-left: 45%; 
+}
+
+.body_right{
+	margin-top: 3%;
+   
+//	width: 431px; 
+//  background-image: url(image/register_bg.png);
+}
+
+.submit{
+	width: 310px; 
+	height: 40px; 
+	background-color: #E74291; 
+	font-size: 23px; 
+	font-family: '黑体'; 
+	color: #FFF; 
+	border: 0;
+}
+
+#agreement{
+	margin-top: 2%;
+	float: left; color: #4CACE2;
+}
+
+.side{
+	margin-top: 7%;	
+}
+
+

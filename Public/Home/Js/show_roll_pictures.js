@@ -1,4 +1,4 @@
-﻿ var a=0;
+ var a=0;
  var n1=["__PUBLIC__/Home/Images/images_show/1.jpg","__PUBLIC__/Home/Images/images_show/2.jpg","__PUBLIC__/Home/Images/images_show/3.jpg","__PUBLIC__/Home/Images/images_show/4.jpg","__PUBLIC__/Home/Images/images_show/5.jpg","__PUBLIC__/Home/Images/images_show/6.jpg","__PUBLIC__/Home/Images/images_show/7.jpg","__PUBLIC__/Home/Images/images_show/8.jpg","__PUBLIC__/Home/Images/images_show/9.jpg","__PUBLIC__/Home/Images/images_show/10.jpg"];//需要显示的图片列表数组
  var arry_length=n1.length-1;
  function left_roll()
