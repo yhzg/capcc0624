@@ -1,0 +1,47 @@
+.cs_pic_box {width:385px;padding:0 5px;}
+.cs_pic_con1 {margin:0;padding:5px 0 0 0;}
+.cs_pic_con1 li {float:left;width:122px;height:146px;text-align:center;margin:0 2px;}
+.cs_pic_con1 li img {width:122px;height:116px;}
+.cs_pic_con1 li p {line-height:30px;}
+.cs_pic_con2 {margin:0;padding:5px 0 0 0;}
+.cs_pic_con2 li {float:left;width:188px;height:146px;text-align:center;margin:0 2px;}
+.cs_pic_con2 li img {width:188px;height:116px;}
+.cs_pic_con2 li p {line-height:30px;}
+
+
+/*城市*/
+
+.chengshi_left_box {float:left;}
+.chengshi_left_box_con {width:784px;border:1px solid #b3b3b3;overflow:hidden;padding:5px;}
+.chengshi_left_box_con1 {width:380px;padding:0 5px;}
+.chengshi_left_box_con1 p {color:#555;line-height:2;font-size:14px;}
+
+.chengshi_dl {width:380px;padding:5px 0;margin:5px 0;overflow:hidden;border-bottom:1px dotted #ccc;}
+.chengshi_dl dt {height:25px;line-height:25px;color:#555;}
+.chengshi_dl dd {line-height:25px;color:#555;}
+
+.chengshi_gonglv_ul {padding:0;margin:0;width:796px;float:left;}
+.chengshi_gonglv_ul li {float:left;width:250px;height:186px;margin:5px;}
+.chengshi_gonglv_ul li img {width:250px;height:186px;}
+
+.chengshi_luxian_p {float:right;width:186px;line-height:2.5;}
+.chengshi_luxian_p span {color:#555;}
+.chengshi_luxian_p strong {font-size:18px;color:#333;font-weight:normal;}
+
+.chengshi_right_box {float:right;width:331px;}
+.chengshi_right_box_con {width:329px;overflow:hidden;}
+
+.chengshi_3p_box {width:370px;padding:5px;margin:0 auto;}
+.chengshi_3p_box ul {float:left;width:182px;}
+.chengshi_3p_box ul li {width:182px;height:117px;margin:0 0 11px 0}
+.chengshi_3p_box ul li img {width:180px;height:115px;}
+.chengshi_3p_box_r {float:right;width:180px;}
+.chengshi_3p_box_r img {width:182px;height:243px;}
+
+/*城市*/
+
+
+.footer {width:1200px;height:40px;margin:0 auto;padding:10px 0 0 0;text-align:center;line-height:2;color:#555;background:#f7f7f7;}
+.footer p a {color:#555;padding:0 5px;}
+.copyright {width:100%;height:95px;background:#b30d19;}
+.copyright p {padding:3px 0 0 0;text-align:center;color:#fff;font-size:14px;line-height:2;}

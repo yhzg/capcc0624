@@ -9,105 +9,119 @@
 namespace Home\Controller;
 use Think\Controller;
 
-class NewsController extends Controller{
+class NewsController extends CommonController{
     public function index()
     {
         $this->display('Public:head');
 
-        $res1= M('News_active');
-        $data11=$res1->order('time')->limit('1')->select();
-        $data11[0]['content']=R('SubString/substring',array($data11[0]['content'],0,120));
-        $this->assign('list11',$data11);
+        $m= M('news_picture');
+        $news=$m->where('')->limit('1')->select();
+        $this->assign('news_pic',$news);
 
-        $data12=$res1->where('level=10')->select();
-
-        $data12[0]['content']=R('SubString/substring',array($data12[0]['content'],0,120));
-        $this->assign('list12',$data12);
-        //dump($data12);
-
-        $data13=$res1->where('title like "%大运河世界遗产保护与可持续发展研讨会%"')->order('time')->select();
-        //dump(count($data13));
-        for($i=0;$i<count($data13);$i++)
-        {
-            $pos=array();
-            $pos[$i]=strrpos($data13[$i]['author'],"（");//获取（最后出现的位置
-            if($pos[$i])
-            {
-                $data13[$i]['author']=substr($data13[$i]['author'],0,$pos[$i]);//删除后面
-            }
-
-        }
-
-        $this->assign('list13',$data13);
-
-        $data14=$res1->where("level = 4")->order('NewsId desc')->limit('18')->select();
-        $this->assign('list14',$data14);
-
-
-        $res2=M('News_angle');
-        $data21=$res2->order('time desc')->limit('1')->select();
-        $data21[0]['content']=R('SubString/substring',array( $data21[0]['content'],0,120));
-        $this->assign('list21',$data21);
-
-        $data22=$res2->order('time desc')->limit('5')->select();
-        $this->assign('list22',$data22);
-
-        $res3=M('News_investigation');
-        $data31=$res3->order('time desc')->limit('1')->select();
-        $data31[0]['foreword']=R('SubString/substring',array( $data31[0]['foreword'],0,120));
-        //dump($data31);
-        $this->assign('list31',$data31);
-
-        $data32=$res3->order('time desc')->limit('7')->select();
-        $this->assign('list32',$data32);
+        $res1= M('news_active');
+        $data['id']=array('ELT',3);
+        $data1=$res1->where($data)->select();
+        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],70));
+        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],70));
+        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],70));
+        $this->assign('list1',$data1);
 
         $this->display();
 
         $this->display('Public:foot');
     }
 
-    public function activities()
+    public function news_active()
     {
         $this->display('Public:head');
 
-        $res1=M('News_active');
-        $newsid=I('newsid');
-        $where1['NewsID']=$newsid;
-        $data11=$res1->where($where1)->select();
-        //dump($data11);
-        $this->assign('list11',$data11);
+        $Data = M('news_active');
+        $count = $Data->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list = $Data->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
 
-        $data111['date']=date('Y-m-d H:i:s',strtotime($data11[0]['time']));
-        $this->assign('list111',$data111);
-
-        $data112=explode("\n",$data11[0]['content']);
-        $this->assign('list112',$data112);
-
-        //$new_browsenumber=$data11[0]['BrowseNumber']+1;\
-        //dump($data11);
-        $data['BrowseNumber']= $data11[0]['browsenumber'] +1;
-        //dump($data);
-        $res1->where($where1)->save($data);
-
-
-        $where2['NewsID']=array('gt',$newsid);
-        $data12=$res1->where($where2)->order('NewsID')->limit('1')->select();
-        //dump($data12);
-        $this->assign('list12',$data12);
-
-        $where3['NewsID']=array('lt',$newsid);
-        $data13=$res1->where($where3)->order('NewsID desc')->limit('1')->select();
-        $this->assign('list13',$data13);
-
-
+        foreach ($list as $k=>$v)
+        {
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
+            $list[$k]['title']=mb_substr($list[$k]['title'],0,28,'UTF-8');
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
+            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,76));
+            if($list[$k]['imgpath']=='')
+            {
+                $list[$k]['imgpath']='Home/Images/login/ologo.png';
+            }
+        }
+        //dump($list);
+        //exit;
+        $this->assign('list',$list);
+        $this->assign('page',$show);
         $this->display();
 
         $this->display('Public:foot');
     }
 
-    public function investigation()
+    public function news_picture()
     {
+        $this->display('Public:head');
 
+        $m= M('news_picture');
+        $count = $m->where()->count();
+        $Page  = new \Think\Page($count,4);
+        $show  = $Page->show();
+        $list1 = $m->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list1 as $k=>$v)
+        {
+            $list1[$k]['content']=R('SubString/subString',array($list1[$k]['content'],200));
+        }
+        $this->assign('list1',$list1);
+        $this->assign('page',$show);
+        $this->display();
+
+        $this->display('Public:foot');
     }
+    public function third_picture()
+    {
+        $this->display('Public:head');
+        $res1= M('news_picture');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+//        dump($list);
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
 
+        $this->display();
+
+        $this->display('Public:foot');
+    }
+    public function third_active()
+    {
+        $this->display('Public:head');
+        $res1= M('news_active');
+        $aid=$_GET['id'];
+//        dump($aid);
+        $list = $res1->where(array('ID'=>$aid))->find();
+        if($list['imgpath']!='')
+        {
+            $list['imgpath']=CAPCC_ROOT.'/Public/'.$list['imgpath'];
+        }
+        //$list['imgpath']=''
+       //dump($list);
+        //EXIT;
+        if($list) {
+            $this->assign('vo',$list);
+        }else{
+            $this->error('数据错误');
+        }
+        $res1->getLastSql();
+
+        $this->display();
+
+        $this->display('Public:foot');
+    }
 }

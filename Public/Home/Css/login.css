@@ -1,0 +1,53 @@
+@charset "utf-8";
+.up_left {
+	font-family: "黑体";
+	color: #FFF;
+	margin-left:2%
+}
+.up_right {
+	font-family: "宋体";
+	color: #FFF;
+}
+
+.body_left{
+	margin-left:25%; 
+	margin-top: 20%; 
+}
+
+.body_right{
+//	background-image: url(image/login_bg.png); 
+ margin-left: 20%; 
+	margin-top: 5%; 
+}
+
+.remember_code{
+	font-family: '宋体'; font-size: 16px; line-height: 30px;
+}
+
+#body_right_center{
+  float: left
+	margin-top: 10%; 
+	margin-left: 12%;
+}
+
+.textbox {
+	font-family: "宋体";
+	width: 54%;
+	color: #999;
+}
+
+
+.submit{
+	background-color: #E74291;  
+	font-family: '黑体'; 
+	color: #FFF; 
+	border: 0;
+	height: 33px;
+	width: 301px;
+}
+
+.side{	
+	margin-left:2%
+}
+
+

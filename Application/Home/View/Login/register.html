@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员注册-中国运河网</title>
+<style type="text/css">
+body {
+    background-image: url(__PUBLIC__/Home/Images/login/register_bg.jpg);
+}
+</style>
+    <script type="text/javascript">
+        function refreshcode()
+        {
+            $('#imgcode').attr("src","../Common/verify_code/"+Math.random());
+        }
+
+        //转换为tp的常量；reg.js
+        var public_url="__PUBLIC__";
+    </script>
+    <load href="__PUBLIC__/Home/Css/register.css"  />
+    <js href="__PUBLIC__/jq/jquery-1.10.2.min.js" />
+    <js href="__PUBLIC__/Home/Js/reg.js" />
+</head>
+
+<body>
+<div id="body_left" style="margin-left: 26%; margin-top: 11%; float: left;"><img src="__PUBLIC__/Home/Images/login/logo.png" width="220" height="65" /></div>
+<div id="body_right" style="float: left; margin-left: 16%; margin-top: 7.7%; width: 431px; background-image: url(image/register_bg.png); height: 555px;">
+  <table width="390" border="0" align="right" cellpadding="0" cellspacing="0" style="margin-top: 4%;">
+    <tr>
+      <td width="49%" align="left" class="up_left">&nbsp;用户注册</td>
+      <td width="51%" align="left" valign="bottom" class="up_right">&nbsp;</td>
+    </tr>
+  </table>
+  <div id="body_right_center" style="float: left; margin-top: 8%; margin-left: 15%; font-size: 14px;width:600px">
+    <form id="form1" name="form1" method="post" action="check_register">
+      <label for="username" style=""><span class="title1">账号</span><br /></label>
+      <input name="username" type="text" class="textbox" id="username" style="" placeholder='3~20个字母/数字'/><span id="checkname"></span>
+      <br />
+      <br />
+      <label for="code"><span class="title1">密码</span><br /></label>
+      <input name="password" type="password" class="textbox" id="pw1" placeholder='长度为6个字符以上'/><span id="checkpwd1"></span>
+      <br />
+      <br />
+      <label for="confirm password"><span class="title1">确认密码</span><br /></label>
+      <input name="repassword" type="password" class="textbox" id="pw2" /><span id="checkpwd2"></span>
+      <br />
+      <br />
+      <label for="code"><span class="title1">邮箱</span><br /></label>
+      <input name="email" type="text" class="textbox" id="email" style=""/><span id="checkemail"></span>
+      <br />
+      <br />
+      <table width="430" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="140"><label for="security code"><span class="title1">验证码</span><br />
+          </label>
+          <input type="text" name="vcode" id="vcode" style="width: 120px; height: 33px; font-family: '宋体'; font-size: 18px; line-height: 13px;" /></td>
+          <td width="90" valign="bottom"><img id="imgcode" src="__APP__/Common/verify_code" onclick="this.src=this.src+'/'+Math.random()" alt="" name="" width="95" height="38" style="background-color: #FFFFFF" /></td>
+          <td width="70" valign="bottom" class="invisibility"><a  href="javascript:refreshcode()">看不清<br />换一张</a></td>
+          <td width="130" valign="bottom" ><span id="checkvcode"></span></td>
+        </tr>
+      </table>
+      <br />
+<br />
+<div id="agreement" style="margin-left: 5px; margin-top:35px; float: left; color: white"><a href="user_agreement" target="_blank">《中国运河网用户协议》</a></div>
+
+<div id="loginbotton" style="margin-top: 10px; font-size: 14px; color: #4CACE2;">
+  <input type="submit" name="login" id="login" style="width: 150px; height: 40px; background-color: #E74291; font-size:18px; font-family: '黑体'; color: #FFF; border: 0;" value="同意协议并注册" />
+
+</div>
+  <br />
+  
+    </form>
+                       <div style="background:yellow;width:200px;text-align: center">已经有运河网账号？<a href="login">直接登录</a></div>
+	              </fieldset>
+	            </form>
+	        <!--/div-->
+  </div>
+  
+</div>
+</body>
+</html>

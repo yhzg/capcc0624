@@ -1,0 +1,42 @@
+@charset "utf-8";
+a{
+	text-decoration: none;
+}
+.up_left {
+	font-family: "黑体";
+	font-size: 28px;
+	color: #FFF;
+}
+.up_right {
+	font-family: "宋体";
+	font-size: 16px;
+	color: #FFF;
+}
+.title1 {
+	font-family: "黑体";
+	font-size: 22px;
+	line-height: 25px;
+}
+.textbox {
+	font-family: "宋体";
+	font-size: 18px;
+	height: 33px;
+	width: 301px;
+	color: #999;
+	border-radius:7px
+}
+.invisibility {
+	font-family: "宋体";
+	font-size: 14px;
+	text-decoration: underline;
+	line-height: 18px;
+	color: #4CACE2;
+}
+
+#checkname, #checkpwd1, #checkpwd2, #checkemail{
+	display:inline-block;
+	width:250px;
+
+
+}
+

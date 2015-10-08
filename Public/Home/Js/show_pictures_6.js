@@ -1,4 +1,4 @@
-﻿ function setimg(a)
+ function setimg(a)
  {
 	document.getElementById( "big_img" ).src =document.getElementById("small_real_img_"+a).src;
 	document.getElementById( "big_img_a" ).href=document.getElementById("small_a_img_"+a).href;

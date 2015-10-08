@@ -1,0 +1,71 @@
+ /* page link start*/
+.pages ul {
+	margin: 10px auto;
+	display: table;
+	font-family: 'microsoft yahei';
+}
+.pages ul li {
+	display: inline-block;
+	margin:0 5px;
+}
+.pages ul li a {
+	display: inline-block;
+	color: #666;
+	height:25px;
+	font-size: 12px;
+	text-align:center;
+	line-height:25px;
+	padding:0 8px;
+	border:1px solid #D1D1D1;
+	border-radius: 4px;
+}
+.pages ul li a:hover {
+	text-decoration: none;
+	color:#D01A40;
+	border:1px solid #D01A40;
+}
+.pages ul li.active a {
+	font-weight:bold;
+	color:#D01A40;
+	border:1px solid #D01A40;
+}
+.pages ul li span {
+	display: inline-block;
+	color: #D1D1D1;
+	height:25px;
+	font-size: 12px;
+	text-align:center;
+	line-height:25px;
+	padding:0 8px;
+	border:1px solid #D1D1D1;
+	border-radius: 4px;
+}
+.pages ul li.pagination-info{
+	border:none;
+}
+.pages ul li.pagination-info span{
+	padding: 8px 0;
+	color: #666;
+	border: none;
+	margin: 0 5px;
+}
+.pages ul li.pagination-info input{
+	width: 25px;
+	height: 23px;
+	line-height: 23px;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid #D1D1D1;
+}
+.pages ul li.pagination-info button{
+	border: 1px solid #D1D1D1;
+	background-color: #fff;
+	font-size: 12px;
+	padding: 5px 17px;
+	color: #666;
+	border-radius: 4px;
+}
+.pages ul li.pagination-info button:hover{
+	border: 1px solid #D01A40;
+	color: #D01A40;
+}

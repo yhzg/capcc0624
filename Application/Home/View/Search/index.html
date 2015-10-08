@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-Type" content="text/html" charset="utf-8">
+    <title>搜索结果</title>
+
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<div>
+   <{$res_title}>
+</div>
+<table >
+    <tr><td>NO.</td><td>title</td></tr>
+    <volist name="res_arr2" id="vo">
+        <tr >
+            <td><{$i}></td>
+            <td><div style="margin-top: 40px"><a href=""><{$vo.title}></a></div><div>...<{$vo.content}>...</div></td>
+        </tr>
+    </volist>
+</table>
+<{$page}>
+</body>
+</html>
