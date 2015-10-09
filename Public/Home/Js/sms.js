@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function () {
-    check_ok_url=public_url+'/Home/Images/login/check_ok.ico';
+    check_ok_url=public_url+'/Home/Images/login/check_ok.png';
     checkVcode();
     checkSms();
 });
@@ -17,7 +17,7 @@ function checkVcode()
         var changeUrl='check_vcode';
         $.post(changeUrl,{ vcode:vcode }, function(str) {
             if (str == '0') {
-                $("#checkvcode").html("<span style='color:red'>验证码输入有误！</span>");
+                $("#checkvcode").html("<span style='color:red;'>图形验证码输入有误！</span>");
                 $("#hidden").val("0");
                 return false;
             } else {

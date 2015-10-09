@@ -29,16 +29,17 @@
             <input id='tel' type="text" class="phone" maxlength="11" name="tel" placeholder="请输入您的手机号">
         </div>
         <span class="error error1"></span>
-        <div style="display: inline">
-            <div class="normalInput" >
-                <input id='vcode' type="text" name="imgCode" placeholder="请输入图形验证码">
-                <input type="hidden" value="" id="hidden">
-            </div>
-            <div id="checkvcode">
-            </div>
+
+        <div class="normalInput">
+            <input type="text" id='vcode' class="kapkey"  placeholder="请输入图形验证码" name="imgCode">
+            <span id="checkvcode" ></span>
+            <input type="hidden" value="" id="hidden">
+            <span class="formLine"></span>
+            <span id="imgCode"><img  src="__APP__/Common/verify_code" onclick="this.src=this.src+'/'+Math.random()" alt="" name="" width="80" height="40" style="background-color: #FFF" /></span>
+            <span id="vcodeinfo">看不清楚<br>点图刷新</span>
         </div>
-        <span><img id="imgCode" src="__APP__/Common/verify_code" onclick="this.src=this.src+'/'+Math.random()" alt="" name="" width="100" height="50" style="background-color: #FFF" /></span>
-        <span>看不清楚？点击图片刷新</span>
+
+
         <div class="normalInput">
             <input type="text" class="kapkey" maxlength="6" placeholder="请输入短信验证码" name="smsCode">
             <span class="formLine"></span>
