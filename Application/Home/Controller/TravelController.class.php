@@ -27,17 +27,12 @@ class TravelController extends CommonController{
 
         $res1= M('travel_spot');
 
-        $data['id']=array('ELT',3);
-        $data1=$res1->where($data)->select();
-        $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],50));
-        $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],50));
-        $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],50));
-       // dump($data1);
-        //exit;
-        $this->assign('travel_spot',$data1);
-
         $aid=$_GET['city'];
         $list = $res1->where(array('City'=>$aid))->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],100));
+        }
         if($list) {
             $this->assign('travel_spot',$list);
         }else{
@@ -47,15 +42,12 @@ class TravelController extends CommonController{
 
 
         $res2= M('travel_eat');
-
-        $data['id']=array('ELT',1);
-        $data2=$res2->where($data)->select();
-        $data2[0]['content']=R('SubString/subString',array($data2[0]['content'],30));
-        $data2[1]['content']=R('SubString/subString',array($data2[1]['content'],30));
-        $this->assign('travel_eat',$data2);
-
         $aid=$_GET['city'];
         $list = $res2->where(array('City'=>$aid))->select();
+        foreach ($list as $k=>$v)
+        {
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],100));
+        }
         if($list) {
             $this->assign('travel_eat',$list);
         }else{
