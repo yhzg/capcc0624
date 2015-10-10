@@ -1,4 +1,7 @@
 @charset "utf-8";
+a{
+	text-decoration: none;
+}
 .up_left {
 	font-family: "黑体";
 	font-size: 28px;
@@ -9,7 +12,19 @@
 	font-size: 16px;
 	color: #FFF;
 }
-
+.title1 {
+	font-family: "黑体";
+	font-size: 22px;
+	line-height: 25px;
+}
+.textbox {
+	font-family: "宋体";
+	font-size: 18px;
+	height: 33px;
+	width: 301px;
+	color: #999;
+	border-radius:7px
+}
 .invisibility {
 	font-family: "宋体";
 	font-size: 14px;
@@ -18,35 +33,10 @@
 	color: #4CACE2;
 }
 
-.body_left{
-	margin-top: 7%;
-	margin-left: 45%; 
-}
+#checkname, #checkpwd1, #checkpwd2, #checkemail{
+	display:inline-block;
+	width:250px;
 
-.body_right{
-	margin-top: 3%;
-   
-//	width: 431px; 
-//  background-image: url(image/register_bg.png);
-}
 
-.submit{
-	width: 310px; 
-	height: 40px; 
-	background-color: #E74291; 
-	font-size: 23px; 
-	font-family: '黑体'; 
-	color: #FFF; 
-	border: 0;
 }
-
-#agreement{
-	margin-top: 2%;
-	float: left; color: #4CACE2;
-}
-
-.side{
-	margin-top: 7%;	
-}
-
 

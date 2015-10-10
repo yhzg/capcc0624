@@ -1,4 +1,4 @@
-﻿var page1="<table width=\"86%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">" +
+var page1="<table width=\"86%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">" +
     "<tr valign=\"top\">" +//新闻
     "<td width=\"8%\" align=\"center\"></td>" +
     "<td width=\"8%\" align=\"center\"><a style=\"color:inherit;\" href=\"News/angle\">新闻视线</a></td>" +

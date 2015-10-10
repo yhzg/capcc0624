@@ -1,4 +1,4 @@
-﻿$(function(){
+$(function(){
 
 	//页面切换初始化
 	$(".number2").click(function(){
