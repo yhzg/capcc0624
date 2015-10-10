@@ -3,6 +3,15 @@ namespace Admin\Controller;
 use Think\Controller;
 class IndexController extends Controller {
 
+    public function _before_index()
+    {
+       $username=I('session.username');
+        if(!isset($username) || $username=='')
+        {
+            $this->redirect(U('Index/login'));
+        }
+    }
+
     public function index(){
 
 
