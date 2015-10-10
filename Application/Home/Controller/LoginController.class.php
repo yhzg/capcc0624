@@ -4,8 +4,6 @@ use Think\Controller;
 
 
 class LoginController extends Controller {
-
-
     public function login()
     {
         //获取前一个页面的URL
@@ -279,7 +277,7 @@ class LoginController extends Controller {
         session('sms_code',$sms_code);
         //验证码，5分钟有效
         $datas=array($sms_code,'5');
-        $tempId='1';
+        $tempId='37898';
         $tel_exists= M('User')->where(array('tel'=>$to))->find();
         if(strlen($to)!=11)
         {

@@ -1,4 +1,4 @@
-﻿ var b=0;
+ var b=0;
  var n4=["images_show/activity_1.jpg","images_show/activity_2.jpg","images_show/activity_3.jpg","images_show/activity_4.jpg","images_show/activity_5.jpg","images_show/activity_6.jpg","images_show/activity_7.jpg","images_show/activity_8.jpg","images_show/activity_9.jpg"];
  var array_length=n4.length;
  function up_roll_img()

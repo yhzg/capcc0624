@@ -3,7 +3,7 @@
  */
 $(document).ready(function(){
     //public_url 在引入的页面定义
-    check_ok_url=public_url+'/Home/Images/login/check_ok.ico';
+    check_ok_url=public_url+'/Home/Images/login/check_ok.png';
     checkName();
     checkPwd();
     checkEmail();
@@ -12,13 +12,13 @@ $(document).ready(function(){
 
 //验证用户名是否存在
 function checkName(){
-    $('#focusedInput').focus(function()
+    $('#username').focus(function()
     {
         $('#checkname').html("");
-        $('#checkname').css('color','yellow');
+
     });
 
-    $("#focusedInput").blur(function(){
+    $("#username").blur(function(){
         var username = $(this).val();
         var unReg=/^\w+$/;
         var res=unReg.test(username);
@@ -75,7 +75,7 @@ function checkName(){
 
         $('#pw1').blur(function()
         {
-            var pw1=$('#pw1').val();
+            var pw1=$(this).val();
             if(pw1.length<6)
             {
                 $('#checkpwd1').html("密码长度必须大于6个字符！");

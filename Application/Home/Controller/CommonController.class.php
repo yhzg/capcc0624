@@ -17,12 +17,14 @@ class CommonController extends Controller {
     //生成验证码
     function verify_code()
     {
+
         $config=array(
             'length'	=> 4,
            // 'fontSize' =>50,
             'useNoise' => false,
             'reset'     =>  false,
         );
+        ob_clean();
         $Verify = new \Think\Verify($config);
         $Verify->entry();
     }
