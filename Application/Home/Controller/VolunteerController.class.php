@@ -13,6 +13,7 @@ class VolunteerController extends CommonController{
     public $tag_arr=array(
         '良策' => 'advice',
         '监测' => 'mon',
+        '反馈' => 'feedback',
     );
     public function index(){
         $this->display('Public:head');
@@ -292,8 +293,8 @@ class VolunteerController extends CommonController{
         $list = $res1->where()->order()->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
-            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
-            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
+            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],44));
+            $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
         }
         $this->assign('list',$list);
         $this->assign('page',$show);
