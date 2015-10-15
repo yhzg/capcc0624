@@ -10,7 +10,7 @@
 .lv_pic_con2 li p {line-height:30px;}
 
 
-/*ÂÃÓÎ*/
+/*ï¿½ï¿½ï¿½ï¿½*/
 .lvyou_left_box {float:left;width: 796px;}
 .lvyou_left_box_con {width:784px;border:1px solid #b3b3b3;overflow:hidden;padding:5px;}
 .lvyou_left_box_con1 {width:380px;padding:0 5px;}
@@ -29,7 +29,7 @@
 .lvyou_luxian_p strong {font-size:18px;color:#333;font-weight:normal;}
 
 .lvyou_right_box {float:right;width:331px;}
-.lvyou_right_box_con {width:329px;border:1px solid #b3b3b3;overflow:hidden;}
+.lvyou_right_box_con {width:329px;overflow:hidden;}
 
 .lvyou_3p_box {width:370px;padding:5px;margin:0 auto;}
 .lvyou_3p_box ul {float:left;width:182px;}
@@ -38,7 +38,7 @@
 .lvyou_3p_box_r {float:right;width:184px;}
 .lvyou_3p_box_r img {width:182px;height:243px;border:1px solid #808080}
 
-/*ÂÃÓÎ*/
+/*ï¿½ï¿½ï¿½ï¿½*/
 .footer {width:1200px;height:118px;margin:0 auto;padding:10px 0 0 0;text-align:center;line-height:2;color:#555;background:#f7f7f7;}
 .footer p a {color:#555;padding:0 5px;}
 .copyright {width:100%;height:95px;background:#b30d19;}

@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+	<meta http-equiv="Content-Language" content="zh-cn">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=1200">
+	<META name="keywords" content="中国运河网">
+	<meta name="description" content="中国运河网">
+	<title>志愿者家园-良策</title>
+	<load href="__PUBLIC__/Home/Css/posts_list.css"/>
+	<js href="__PUBLIC__/Home/Js/jquery-1.11.3.min.js"></js>
+	<script>
+		$(document).ready(function()
+		{
+
+			if(<{$checked}>==1)
+			{
+				$('#info').html('');
+			}
+			//默认是绿色  偶数排时改成红色
+			$('.list tr:odd').css('background-color','#E1EFEB');
+
+		})
+	</script>
+
+</head>
+
+<body>
+    <div class="nav">
+        <a href="__APP__/Volunteer">志愿者家园</a>&nbsp;&nbsp;>>&nbsp;&nbsp;<a href="#">反馈</a>
+    </div>
+
+ <!--   <div class="new_post">
+        <div id='info'><span  style="color:red;float:left">【只有绑定手机的用户方可发帖】&nbsp;<a href="__APP__/Login/bindphone" style="font-family: 微软雅黑"><strong>立即去绑定?</strong></a></span></div><a href="__APP__/Volunteer/new_post/tag/<{$tag}>"><button class="button">发表新帖</button></a>
+    </div>-->
+
+	<div class="advice">
+		<div class="info">
+			<table width="100%">
+				<tr>
+					<td width="10%">回帖数</td>
+					<td width="60%">主题</td>
+					<td width="15%">发帖人</td>
+					<td width="15%">最后回复</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="list">
+			 <table width="100%" >
+				 <volist name="posts" id="vo">
+					 <tr >
+						 <td width="10%"><{$vo.replynum}></td>
+						 <td width="60%" style="text-align: left"><a href="__APP__/Volunteer/show_post/tag/<{$tag}>/tid/<{$vo.tid}>"><{$vo.title}></a></td>
+						 <td width="15%"><{$vo.username}><br><{$vo.posttime}></td>
+						 <td width="15%"><{$vo.last_poster}><br><{$vo.last_post_time}></td>
+					 </tr>
+				 </volist>
+			 </table>
+	 	</div>
+
+	 	<div class="pager">
+			<{$pager}>
+	  	</div>
+
+        <div style="margin-top: 40px">
+
+        </div>
+   	</div>
+
+</body>
+</html>
