@@ -4,6 +4,8 @@ use Think\Controller;
 
 
 class LoginController extends Controller {
+
+
     public function login()
     {
         //获取前一个页面的URL

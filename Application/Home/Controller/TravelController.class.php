@@ -72,7 +72,7 @@ class TravelController extends CommonController{
             $this->error('数据错误');
         }
 
-        $this->display('');
+        $this->display();
 
         $this->display('Public:foot');
 
@@ -195,12 +195,14 @@ class TravelController extends CommonController{
         $res1= M('travel_live');
         $aid=$_GET['id'];
         $list = $res1->where(array('ID'=>$aid))->find();
+
         if($list) {
             $this->assign('vo',$list);
         }else{
             $this->error('数据错误');
         }
         $res1->getLastSql();
+
 
         $this->display();
 
@@ -213,6 +215,8 @@ class TravelController extends CommonController{
         $res1= M('travel_story');
         $aid=$_GET['id'];
         $list = $res1->where(array('ID'=>$aid))->find();
+        //dump($list);
+        //exit;
         if($list) {
             $this->assign('vo',$list);
         }else{
