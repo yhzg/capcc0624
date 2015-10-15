@@ -16,15 +16,14 @@
             if($adminname)
             {
                 echo '<span style="color:red">欢迎您，管理员'.$adminname.'</span>&nbsp;&nbsp;&nbsp;';
-                   echo '<span><a href="__APP__/Admin/Index/logout">退出登录</a></span>';
+                   echo '<span ><a href="__APP__/Admin/Index/logout" style="color:greenyellow">退出登录</a></span>';
               }else
                 {
 
                     header('location:'.CAPCC_ROOT.'/Admin/Index/login');
                 }
             ?>
-            <!--<span style="color:red">欢迎您，管理员<{$adminname}></span>&nbsp;&nbsp;&nbsp;
-            <span style="color:navajowhite"><a href="<{:U('Index/logout')}>">退出登录</a></span>-->
+
             <ul id="nav">
                 <li id="nav1"><a href="<{:U('News/index')}>">新闻</a></li>
                 <li id="nav2"><a href="<{:U('Travel/index')}>">旅游</a></li>

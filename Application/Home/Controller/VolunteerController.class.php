@@ -321,4 +321,31 @@ class VolunteerController extends CommonController{
         $this->display();
         $this->display('Public:foot');
     }
+
+    public function volunteer_feedback()
+    {
+        $this->display('Public:head');
+        // 风采
+        $m= M('Volunteer_feedback');
+        $count=$m->where(array('isT'=>1))->count();
+        //分页
+        $Page=new \Think\Page($count,10);
+        $Page->setConfig('theme','当前第%NOW_PAGE%页&nbsp; 共%TOTAL_PAGE%页   &nbsp; %FIRST%   %UP_PAGE%    %LINK_PAGE%     %DOWN_PAGE% &nbsp;     %END%  <b>%HEADER%</b> ');
+        $pager=$Page->show();
+        $posts=$m->where(array('isT'=>1))->order('last_post_time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach($posts as $k =>$v)
+        {
+            $posts[$k]['content']=iconv_substr($v['content'],0,300,'utf-8');
+        }
+        //dump($posts);
+        //dump($pager);
+        // exit;
+        $this->assign('tag','feedback');
+        $this->assign('c_tag','反馈');
+        $this->assign('posts',$posts);
+        $this->assign('pager',$pager);
+
+        $this->display();
+        $this->display('Public:foot');
+    }
 }
