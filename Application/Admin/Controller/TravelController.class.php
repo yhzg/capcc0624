@@ -89,8 +89,8 @@ class TravelController extends Controller {
         $page->setConfig('theme','<b>%HEADER%</b> 当前第%NOW_PAGE%页 共%TOTAL_PAGE%页   &nbsp; %FIRST%   %UP_PAGE%    %LINK_PAGE%     %DOWN_PAGE% &nbsp;     %END%');
         $show= $page->show();
         $res = $m->where(array('City'=>$city))->order('ID desc')->limit($page->firstRow.','.$page->listRows)->select();
-        //dump($show);
-        // exit;
+        //dump($res);
+         //exit;
         for($i=0;$i<count($res);$i++)
         {
             $res[$i]['content']=iconv_substr($res[$i]['content'],0,30,'utf-8');

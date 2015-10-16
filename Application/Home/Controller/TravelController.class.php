@@ -90,12 +90,7 @@ class TravelController extends CommonController{
         $list = $res1->where(array('City'=>$data))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
-
-            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
-
-           // $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],0,570));
-
         }
         $this->assign('list',$list);
         $this->assign('page',$show);
@@ -117,7 +112,6 @@ class TravelController extends CommonController{
         $list =$res2->where()->order()->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
-            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
         }
         $this->assign('list',$list);
@@ -142,7 +136,6 @@ class TravelController extends CommonController{
         $list = $res3->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
-            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
         }
         $this->assign('list',$list);
@@ -160,6 +153,7 @@ class TravelController extends CommonController{
         $aid=$_GET['id'];
         $list = $res1->where(array('ID'=>$aid))->find();
         if($list) {
+            $list['content']=explode("\r",$list['content']);
             $this->assign('vo',$list);
         }else{
             $this->error('数据错误');
@@ -178,6 +172,7 @@ class TravelController extends CommonController{
         $aid=$_GET['id'];
         $list = $res1->where(array('ID'=>$aid))->find();
         if($list) {
+            $list['content']=explode("\r",$list['content']);
             $this->assign('vo',$list);
         }else{
             $this->error('数据错误');
@@ -195,8 +190,8 @@ class TravelController extends CommonController{
         $res1= M('travel_live');
         $aid=$_GET['id'];
         $list = $res1->where(array('ID'=>$aid))->find();
-
         if($list) {
+            $list['content']=explode("\r",$list['content']);
             $this->assign('vo',$list);
         }else{
             $this->error('数据错误');
@@ -218,6 +213,7 @@ class TravelController extends CommonController{
         //dump($list);
         //exit;
         if($list) {
+            $list['content']=explode("\r",$list['content']);
             $this->assign('vo',$list);
         }else{
             $this->error('数据错误');

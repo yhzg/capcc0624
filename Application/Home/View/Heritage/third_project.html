@@ -13,7 +13,13 @@
 						 	<p><{$vo.address}></p>
 						<br />
                         <p1> <{$vo.inserttime}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <{$vo.author}></p1><br />
-						<li style="text-indent: 2em"><{$vo.content}></li>
+						<div>
+							<foreach name="vo.content" item="voo">
+								<li style="text-indent: 2em">
+									<{$voo}>
+								</li>
+							</foreach>
+						</div>
 					  <ul class="pic_con1">
  							<li><a href=""><img src="__PUBLIC__/<{$vo.imgpath}>"></a>
  							<p3><{$vo.address}></p3></li>

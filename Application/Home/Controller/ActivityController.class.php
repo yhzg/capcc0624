@@ -62,6 +62,7 @@ class ActivityController extends CommonController {
         $list = $res1->where(array('ID'=>$aid))->find();
 //        dump($list);
         if($list) {
+            $list['content']=explode("\r",$list['content']);
             $this->assign('vo',$list);
         }else{
             $this->error('数据错误');
