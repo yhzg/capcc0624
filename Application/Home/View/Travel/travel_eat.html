@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBliC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+
+	<load href="__PUBLIC__/Home/Css/css2.css"/>
+
+</head>
+
+<body>
+<div class="wrap_box">
+	<div class="wrap_box">
+		<div class="wrap">
+			<div class="chengshi_left_box">
+				<div class="chengshi_left_box_con2">
+					<h2 class="pubtit" style="margin:8px 0;"><strong class="f1485a3"><a href="__APP__/Home/Travel/index1/city/<{$list[0].city}>"><strong><{$list[0].city}></strong></a>：美&nbsp;食</strong></h2>
+				</div>
+
+				<div class="chengshi_left_box_con1 fl">
+					<volist name='list' id='vo'>
+						<ul class="cs_pic_con1">
+							<li><a href="__APP__/Home/Travel/third_eat/id/<{$vo.id}>"><img src="__PUBLIC__/<{$vo.imgpath}>"></a></li>
+						</ul>
+						<dl class="chengshi_dl">
+							<dt><a href="__APP__/Home/Travel/third_eat/id/<{$vo.id}>"><strong><{$vo.title}></strong></a></dt>
+							<dd><{$vo.content}> <a href="__APP__/Home/Travel/third_eat/id/<{$vo.id}>"  style="color: #0066cc">...详细&gt;&gt; </a></dd>
+						</dl>
+						<div class="height20"></div>
+					</volist>
+				</div>
+
+
+				<div class="chengshi_left_box_con1 fl">
+					<div class="height20"></div>
+					<div class="box">
+						<dl class="dl" align="center";>
+							<d><{$page}></d>
+						</dl>
+					</div>
+				</div>
+
+			</div>
+			<div class="lvyou_right_box">
+				<dl class="lvyou_dl">
+					<h2 style="margin:8px 0;"><strong class="f1485a3"></strong></h2><br/>
+					<p><img src="__PUBLIC__/Home/Images/home/guang/6.jpg" style="width: 327px;height:172px;"></p>
+				</dl>
+				<br />
+				<div class="height20"></div>
+
+				<dl class="lvyou_dl2">
+					<h2 style="margin:8px 0;"><strong class="f1485a3"></strong></h2><br/>
+					<img src="__PUBLIC__/Home/Images/home/guang/b.jpg" style="width: 327px;height:412px;">
+				</dl>
+				<div class="height20"></div>
+			</div>
+
+			<div class="height20"></div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
