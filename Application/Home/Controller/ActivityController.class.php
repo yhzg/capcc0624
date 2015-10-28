@@ -41,7 +41,7 @@ class ActivityController extends CommonController {
         $list = $res1->order('ID desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
-            //$list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
+//            $list[$k]['title']=R('SubString/subString',array($list[$k]['title'],0,44));
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
         }
         $this->assign('list',$list);
