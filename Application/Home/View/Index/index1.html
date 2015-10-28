@@ -7,6 +7,37 @@
     <js href="__PUBLIC__/Home/Js/jquery-1.8.3.min.js" />
     <js href="__PUBLIC__/Home/Js/jquery.luara.0.0.1.min.js"/>
     <load href="__PUBLIC__/Home/Css/luara.css"/>
+    <script >
+        $(document).ready(function()
+        {
+            setInterval(imgchange,3000);
+            var path=new Array();
+            var url=new Array();
+            var index=0;
+            var data= <{$imgs}>;
+            $.each(data, function(i,value)
+            {
+                //json to array
+                url[i]= value.id;
+                path[i]= value.imgpath;
+
+            });
+
+            function imgchange()
+            {
+                if(index==path.length-1)
+                {
+                    index=0;
+                }else
+                {
+                    index++;
+                }
+                $("#index_img").attr("src","__PUBLIC__/"+path[index]);
+                $("#jumpurl").attr("href","__APP__/News/third_picture/id/"+url[index]);
+            }
+        })
+
+    </script>
 </head>
 <body>
 
@@ -17,13 +48,13 @@
 
            <!-- <a href="__APP__/Home/News/third_picture/id/<{$news_pic[0].id}>"><img src="__PUBLIC__/<{$news_pic[0]['imgpath']}>" width="802" height="451"/></a>-->
 
-            <a href=""><img src="__PUBLIC__/<{$headline.imgpath}>" width="802" height="451"/></a>
+            <a id='jumpurl' href="__APP__/News/third_picture/id/<{$headline[0].id}>"><img id='index_img'src="__PUBLIC__/<{$headline[0].imgpath}>" width="802" height="451"/></a>
+
 
         </div>
         <div class="right_box">
             <div class="right_con" style="height:450px;">
-                <h2 class="pubtit top_border_ff9900"><a href="__APP__/Home/News/news_active.html" class="more"
-                                                        style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
+                <h2 class="pubtit top_border_ff9900"><a href="__APP__/Home/News/news_active.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
                         class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
                 <dl class="r_news_dl1">
                     <dt>
@@ -141,10 +172,10 @@
                         href="__APP__/Home/City/city_figure.html">运河人物</a><a>|</a><a href="__APP__/Home/City/city_canal.html">运河地图</a></h2>
                 <h4 class="pubtit1"><a href="__APP__/Home/City/city_canal.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>运河地图</span></h4>
                 <dl class="about_dl">
-                    <dt><a href="__APP__/Home/City/third_canal/id/<{$city[0].id}>"><img src="__PUBLIC__/<{$city[0]['imgpath']}>"></a></dt>
+                    <dt><a href="__APP__/Home/City/third_canal/id/<{$city.id}>"><img src="__PUBLIC__/<{$city['imgpath']}>"></a></dt>
                     <dd>
-                        <h3><a href="__APP__/Home/City/third_canal/id/<{$city[0].id}>"> <{$city[0]['title']}></a></h3>
-                        <p><{$city[0]['abstract']}></p></dd>
+                        <h3><a href="__APP__/Home/City/third_canal/id/<{$city.id}>"> <{$city['title']}></a></h3>
+                        <p><{$city['content']}></p></dd>
                 </dl>
             </div>
             <div class="height20"></div>
@@ -167,9 +198,9 @@
                 </div>
                 <div class="lv_pic_box fr">
                     <h4 class="pubtit1"><a href="__APP__/Home/Travel" class="more"
-                                           style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>吃住</span>
+                                           style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>吃</span>
                     </h4>
-                    <!--吃住-->
+                    <!--吃-->
                     <ul class="lv_pic_con2">
                         <li><a href="__APP__/Home/Travel/third_eat/id/<{$travel_eat[0].id}>"><img src="__PUBLIC__/<{$travel_eat[0]['imgpath']}>"></a>
                             <p><a href="__APP__/Home/Travel/third_eat/id/<{$travel_eat[0].id}>"><{$travel_eat[0]['title']}></a></p></li>
@@ -185,9 +216,9 @@
 
                     <div class="gl_map"><img src="__PUBLIC__/<{$travel_story[0]['imgpath']}>"></div>
                     <dl class="gl_dl">
-                        <dt><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[0].id}>"><img src="__PUBLIC__/<{$travel_story[0]['imgpath']}>"></a></dt>
-                        <dd><p><strong><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[0].id}>"><{$travel_story[0]['title']}></a></strong><br>
-                            <{$travel_story[0]['content']}></p></dd>
+                        <dt><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[1].id}>"><img src="__PUBLIC__/<{$travel_story[1]['imgpath']}>"></a></dt>
+                        <dd><p><strong><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[1].id}>"><{$travel_story[1]['title']}></a></strong><br>
+                            <{$travel_story[1]['content']}></p></dd>
                     </dl>
                 </div>
 
@@ -238,10 +269,10 @@
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>传奇</span>
                     </h4>
                     <dl>
-                        <dt><a href="__APP__/Home/Dgmuseum/third_legend/id/<{$classic_legend[0].id}>"><img src="__PUBLIC__/<{$classic_legend[0]['imgpath']}>"></a></dt>
+                        <dt><a href="__APP__/Home/Dgmuseum/third_legend/id/<{$classic_legend.id}>"><img src="__PUBLIC__/<{$classic_legend['imgpath']}>"></a></dt>
                         <dd>
-                            <h3><a href="__APP__/Home/Dgmuseum/third_legend/id/<{$classic_legend[0].id}>"><{$classic_legend[0]['title']}></a></h3>
-                            <p><{$classic_legend[0]['abstract']}></p>
+                            <h3><a href="__APP__/Home/Dgmuseum/third_legend/id/<{$classic_legend.id}>"><{$classic_legend['title']}></a></h3>
+                            <p><{$classic_legend['content']}></p>
                         </dd>
                     </dl>
                 </div>
@@ -250,10 +281,10 @@
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>艺术群</span>
                     </h4>
                     <dl>
-                        <dt><a href="__APP__/Home/Dgmuseum/third_group/id/<{$classic_group[0].id}>"><img src="__PUBLIC__/<{$classic_group[0]['imgpath']}>"></a></dt>
+                        <dt><a href="__APP__/Home/Dgmuseum/third_group/id/<{$classic_group.id}>"><img src="__PUBLIC__/<{$classic_group['imgpath']}>"></a></dt>
                         <dd>
-                            <h3><a href="__APP__/Home/Dgmuseum/third_group/id/<{$classic_group[0].id}>"><{$classic_group[0]['name']}></a></h3>
-                            <p><{$classic_group[0]['abstract']}></p>
+                            <h3><a href="__APP__/Home/Dgmuseum/third_group/id/<{$classic_group.id}>"><{$classic_group['name']}></a></h3>
+                            <p><{$classic_group['content']}></p>
                         </dd>
                     </dl>
                 </div>
@@ -263,10 +294,10 @@
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>市场</span>
                     </h4>
                     <dl>
-                        <dt><a href="__APP__/Home/Dgmuseum/third_market/id/<{$classic_market[0].id}>"><img src="__PUBLIC__/<{$classic_market[0]['imgpath']}>"></a></dt>
+                        <dt><a href="__APP__/Home/Dgmuseum/third_market/id/<{$classic_market.id}>"><img src="__PUBLIC__/<{$classic_market['imgpath']}>"></a></dt>
                         <dd>
-                            <h3><a href="__APP__/Home/Dgmuseum/third_market/id/<{$classic_market[0].id}>"><{$classic_market[0]['title']}></a></h3>
-                            <p><{$classic_market[0]['abstract']}></p></dd>
+                            <h3><a href="__APP__/Home/Dgmuseum/third_market/id/<{$classic_market.id}>"><{$classic_market['title']}></a></h3>
+                            <p><{$classic_market['content']}></p></dd>
                     </dl>
                 </div>
                 <div class="art_box fr">
@@ -274,10 +305,10 @@
                                            style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>评论</span>
                     </h4>
                     <dl>
-                        <dt><a href="__APP__/Home/Dgmuseum/third_comment/id/<{$classic_comment[0].id}>"><img src="__PUBLIC__/<{$classic_comment[0]['imgpath']}>"></a></dt>
+                        <dt><a href="__APP__/Home/Dgmuseum/third_comment/id/<{$classic_comment.id}>"><img src="__PUBLIC__/<{$classic_comment['imgpath']}>"></a></dt>
                         <dd>
-                            <h3><a href="__APP__/Home/Dgmuseum/third_comment/id/<{$classic_comment[0].id}>"><{$classic_comment[0]['title']}></a></h3>
-                            <p><{$classic_comment[0]['content']}></p></dd>
+                            <h3><a href="__APP__/Home/Dgmuseum/third_comment/id/<{$classic_comment.id}>"><{$classic_comment['title']}></a></h3>
+                            <p><{$classic_comment['content']}></p></dd>
                     </dl>
                 </div>
 

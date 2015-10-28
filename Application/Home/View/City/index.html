@@ -14,43 +14,37 @@
 				<div class="chengshi_left_box_con1 fl">
 					<h2 class="pubtit" style="margin:8px 0;"><a href="__APP__/Home/City/city_figure.html" class="more"
 																style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">运河人物</strong></h2>
-					<ul class="cs_pic_con1">
-						<li><a href="__APP__/Home/City/third_figure/id/<{$city_figure[0].id}>"><img src="__PUBLIC__/<{$city_figure[0].imgpath}>" ></a><p><{$city_figure[0].name}></p></li>
-						<li><a href="__APP__/Home/City/third_figure/id/<{$city_figure[1].id}>"><img src="__PUBLIC__/<{$city_figure[1].imgpath}>" ></a><p><{$city_figure[1].name}></p></li>
-						<li><a href="__APP__/Home/City/third_figure/id/<{$city_figure[2].id}>"><img src="__PUBLIC__/<{$city_figure[2].imgpath}>" ></a><p><{$city_figure[2].name}></p></li>
-					</ul>
-					<div class="clearfloat"></div>
-					<dl class="chengshi_dl">
-						<dt><a href="__APP__/Home/City/third_figure/id/<{$city_figure[0].id}>"><{$city_figure[0].name}></a></dt>
-						<dd><{$city_figure[0].abstract}><a href="__APP__/Home/City/third_figure/id/<{$city_figure[0].id}>" style="color: #0066cc">
-							...详细&gt;&gt;</a></dd>
-					</dl>
-					<dl class="chengshi_dl">
-						<dt><a href="__APP__/Home/City/third_figure/id/<{$city_figure[1].id}>"><{$city_figure[1].name}></a></dt>
-						<dd><{$city_figure[1].abstract}><a href="__APP__/Home/City/third_figure/id/<{$city_figure[1].id}>" style="color: #0066cc">
-							...详细&gt;&gt;</a></dd>
-					</dl>
-					<dl class="chengshi_dl">
-						<dt><a href="__APP__/Home/City/third_figure/id/<{$city_figure[2].id}>"><{$city_figure[2].name}></a></dt>
-						<dd><{$city_figure[2].abstract}><a href="__APP__/Home/City/third_figure/id/<{$city_figure[2].id}>" style="color: #0066cc">
-							...详细&gt;&gt;</a></dd>
-					</dl>
 
+					<ul class="cs_pic_con1">
+						<foreach name="city_figure" item="vo">
+							<li><a href="__APP__/Home/City/third_figure/id/<{$vo.id}>"><img src="__PUBLIC__/<{$vo.imgpath}>" ></a><p><{$vo.name}></p></li>
+						</foreach>
+					</ul>
+
+					<div class="clearfloat"></div>
+						<foreach name="city_figure" item="vo">
+						<dl class="chengshi_dl">
+							<dt><a href="__APP__/Home/City/third_figure/id/<{$vo.id}>"><strong><{$vo.name}></strong></a></dt>
+							<dd><{$vo.content}><a href="__APP__/Home/City/third_figure/id/<{$vo.id}>" style="color: #0066cc">
+								...详细&gt;&gt;</a></dd>
+						</dl>
+						</foreach>
 				</div>
 				<div class="chengshi_left_box_con1 fr">
 					<h2 class="pubtit" style="margin:8px 0;"><a href="__APP__/Home/City/city_protect.html" class="more"
 																style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">非遗保护</strong></h2>
 					<div class="chengshi_3p_box">
 						<ul>
-							<li><a href="__APP__/Home/City/third_protect/id/<{$city_protect[0].id}>"><img src="__PUBLIC__/<{$city_protect[0].imgpath}>"></a></li>
-							<li><a href="__APP__/Home/City/third_protect/id/<{$city_protect[1].id}>"><img src="__PUBLIC__/<{$city_protect[1].imgpath}>"></a></li>
+							<li><a href="__APP__/Home/City/third_protect/id/<{$city_protect[0].id}>"><img src="__PUBLIC__/<{$city_protect[0].imgpath}>" ></a></li>
+							<li><a href="__APP__/Home/City/third_protect/id/<{$city_protect[1].id}>"><img src="__PUBLIC__/<{$city_protect[1].imgpath}>" ></a></li>
 						</ul>
-						<div class="chengshi_3p_box_r"><a href="__APP__/Home/City/third_protect/id/<{$city_protect[3].id}>"><img src="__PUBLIC__/<{$city_protect[3].imgpath}>"></a></div>
+						<div class="chengshi_3p_box_r"><a href="__APP__/Home/City/third_protect/id/<{$city_protect[2].id}>"><img src="__PUBLIC__/<{$city_protect[2].imgpath}>"></a></div>
 					</div>
 					<div class="clearfloat"></div>
-					<p><{$city_protect[0].abstract}><a href="__APP__/Home/City/third_protect/id/<{$city_protect[0].id}>" style="color: #0066cc">
+					<p><{$city_protect[0].content}><a href="__APP__/Home/City/third_protect/id/<{$city_protect[0].id}>" style="color: #0066cc">
 						...详细&gt;&gt;</a></p>
-					<p><{$city_protect[1].abstract}><a href="__APP__/Home/City/third_protect/id/<{$city_protect[1].id}>" style="color: #0066cc">
+					<hr></hr>
+					<p><{$city_protect[1].content}><a href="__APP__/Home/City/third_protect/id/<{$city_protect[1].id}>" style="color: #0066cc">
 						...详细&gt;&gt;</a></p>
 				</div>
 			</div>
@@ -59,12 +53,15 @@
 				<h2 class="pubtit" style="margin:5px 0;"><a href="__APP__/Home/City/city_canal.html" class="more"
 															style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">城市</strong></h2>
 				<ul class="chengshi_gonglv_ul">
-					<li><a href="__APP__/Home/City/third_canal/id/<{$city_canal[0].id}>"><img src="__PUBLIC__/<{$city_canal[0].imgpath}>"></a></li>
+					<foreach name="city_canal" item="vo">
+						<li><a href="__APP__/Home/City/third_canal/id/<{$vo.id}>"><img src="__PUBLIC__/<{$vo.imgpath}>"></a></li>
+					</foreach>
+					<!--<li><a href="__APP__/Home/City/third_canal/id/<{$city_canal[0].id}>"><img src="__PUBLIC__/<{$city_canal[0].imgpath}>"></a></li>
 					<li><a href="__APP__/Home/City/third_canal/id/<{$city_canal[1].id}>"><img src="__PUBLIC__/<{$city_canal[1].imgpath}>"></a></li>
 					<li><a href="__APP__/Home/City/third_canal/id/<{$city_canal[2].id}>"><img src="__PUBLIC__/<{$city_canal[2].imgpath}>"></a></li>
 					<li><a href="__APP__/Home/City/third_canal/id/<{$city_canal[3].id}>"><img src="__PUBLIC__/<{$city_canal[3].imgpath}>"></a></li>
 					<li><a href="__APP__/Home/City/third_canal/id/<{$city_canal[4].id}>"><img src="__PUBLIC__/<{$city_canal[4].imgpath}>"></a></li>
-					<li><a href="__APP__/Home/City/third_canal/id/<{$city_canal[5].id}>"><img src="__PUBLIC__/<{$city_canal[5].imgpath}>"></a></li>
+					<li><a href="__APP__/Home/City/third_canal/id/<{$city_canal[5].id}>"><img src="__PUBLIC__/<{$city_canal[5].imgpath}>"></a></li>-->
 				</ul>
 			</div>
 		</div>

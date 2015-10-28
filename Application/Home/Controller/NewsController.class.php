@@ -15,7 +15,7 @@ class NewsController extends CommonController{
         $this->display('Public:head');
 
         $m= M('news_picture');
-        $news=$m->where('')->limit('1')->select();
+        $news=$m->order('ID desc')->limit('1')->select();
         $this->assign('news_pic',$news);
 
         $res1= M('news_active');
@@ -73,7 +73,9 @@ class NewsController extends CommonController{
         foreach ($list1 as $k=>$v)
         {
             $list1[$k]['content']=R('SubString/subString',array($list1[$k]['content'],200));
+           // $list1[$k]['imgpath']=explode(',',$list1[$k]['imgpath']);
         }
+
         $this->assign('list1',$list1);
         $this->assign('page',$show);
         $this->display();
@@ -90,6 +92,12 @@ class NewsController extends CommonController{
 //        dump($list);
         if($list) {
             $list['content']=explode("\r",$list['content']);
+            //dump($list['content']);
+            foreach($list['content'] as $k=>$v)
+            {
+                $list['content'][$k]=htmlspecialchars_decode($v);
+            }
+           // $list['content']=htmlspecialchars_decode($list['content']);
             $this->assign('vo',$list);
         }else{
             $this->error('数据错误');

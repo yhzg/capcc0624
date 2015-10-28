@@ -28,7 +28,7 @@ class TravelController extends CommonController{
         $res1= M('travel_spot');
 
         $aid=$_GET['city'];
-        $list = $res1->where(array('City'=>$aid))->select();
+        $list = $res1->where(array('City'=>$aid))->order('ID desc')->select();
         foreach ($list as $k=>$v)
         {
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],100));
@@ -38,12 +38,12 @@ class TravelController extends CommonController{
         }else{
             $this->error('数据错误');
         }
-        $res1->getLastSql();
+        //$res1->getLastSql();
 
 
         $res2= M('travel_eat');
         $aid=$_GET['city'];
-        $list = $res2->where(array('City'=>$aid))->select();
+        $list = $res2->where(array('City'=>$aid))->order('ID desc')->select();
         foreach ($list as $k=>$v)
         {
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],100));
@@ -65,7 +65,7 @@ class TravelController extends CommonController{
 
 
         $res4= M('travel_story');
-        $list = $res4->where(array('City'=>$aid))->select();
+        $list = $res4->where(array('City'=>$aid))->order('ID desc')->select();
         if($list) {
             $this->assign('travel_story',$list);
         }else{

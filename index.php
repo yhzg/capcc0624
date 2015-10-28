@@ -22,6 +22,7 @@ define('APP_DEBUG',false);
 define('APP_PATH','./Application/');
 
 define('CAPCC_ROOT', 'http://localhost/capcc0624');//网站根目录
+define('ROOT','/capcc0624');//文件根目录
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

@@ -2,6 +2,20 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends CommonController {
+        public function show_now($tableName,$num)
+        {
+          $date=date(d,time());
+          $count=M($tableName)->count();
+          $start_id=(($date-1)*$num+1)%($count-$num+1);
+          if($start_id==0)
+          {
+            $start_id=1;
+          }
+          return $start_id;
+
+        }
+
+
 
         public function index(){
 
@@ -30,15 +44,19 @@ class IndexController extends CommonController {
             // 首页图
 
             //在headline=1的字段中获取最新的一条
-            $m= M('news_picture');
-            $headline=$m->where(array('Headline'=>'1'))->order('id desc')->find();
+          $m= M('news_picture');
+          $headline=$m->where(array('Headline'=>'1'))->order('id desc')->limit('3')->select();
 
-            //dump($news);
-            //exit;
-           /* $m= M('news_active');
-            $news=$m->where('id = 28')->limit('1')->select();*/
-
-            $this->assign('headline',$headline);
+          foreach($headline as $k=>$v)
+          {
+            $img_arr[$k]['id']=$v['id'];
+            $img_arr[$k]['imgpath']=$v['imgpath'];
+          }
+          //dump($imgpath_arr);
+          $img_json=json_encode($img_arr);
+          //dump($img_json);
+          $this->assign('imgs',$img_json);
+          $this->assign('headline',$headline);
 
           /*  $res1= M('news_picture');
             $data['id']=array('ELT',3);
@@ -47,11 +65,10 @@ class IndexController extends CommonController {
 
             // 新闻
             $res1= M('news_active');
-            $data['id']=array('ELT',3);
-            $data1=$res1->where($data)->select();
+            $data1=$res1->order('ID')->limit(3)->select();
             foreach($data1 as $k=>$v)
             {
-              $data1[$k]['content']=R('SubString/subString',array($data1[$k]['content'],80));
+              $data1[$k]['content']=R('SubString/subString',array($data1[$k]['content'],150));
             }
             $this->assign('news_active',$data1);
 
@@ -66,95 +83,98 @@ class IndexController extends CommonController {
             $this->assign('heritage_special',$news3);
 
             $res4= M('heritage_apply');
-            $data2=$res4->order('id desc')->limit('1')->select();
-            $this->assign('heritage_apply',$data2);
+            $data4=$res4->order('id desc')->limit('1')->select();
+            $this->assign('heritage_apply',$data4);
 
             // 世界遗产组织
             $res5= M('heritage_organization');
-            $data3=$res5->order('id desc')->limit('1')->select();
-            $this->assign('heritage_organization',$data3);
+            $data5=$res5->order('id desc')->limit('1')->select();
+            $this->assign('heritage_organization',$data5);
 
             // 活动
             $res66= M('activity_activity');
             $data['id']=array('ELT',1);
-            $data55=$res66->where($data)->select();
-            $data55[0]['content']=R('SubString/subString',array($data55[0]['content'],200));
-            $this->assign('activity',$data55);
+            $data66=$res66->where($data)->select();
+            $data66[0]['content']=R('SubString/subString',array($data66[0]['content'],200));
+            $this->assign('activity',$data66);
 
             // 城市
             $res6= M('city_canal');
-            $data4=$res6->where('id = 10')->limit('1')->select();
-            $data4[0]['content']=R('SubString/subString',array($data4[0]['content'],110));
-            $this->assign('city',$data4);
+            $start_id6=$this->show_now('city_canal',1);
+            $data6=$res6->where("ID >=$start_id6")->find();
+            $data6['content']=R('SubString/subString',array($data6['content'],110));
+            $this->assign('city',$data6);
 
             // 景点
             $res7= M('travel_spot');
-            $data['id']=array('ELT',3);
-            $data5=$res7->where($data)->select();
-            $this->assign('travel_spot',$data5);
+            $start_id7=$this->show_now('travel_spot',3);
+            $data7=$res7->where("ID >=$start_id7")->limit(3)->select();
+            $this->assign('travel_spot',$data7);
 
             // 吃
             $res8= M('travel_eat');
-            $data['id']=array('ELT',1);
-            $data5=$res8->where($data)->select();
-            $this->assign('travel_eat',$data5);
+            $start_id8=$this->show_now('travel_eat',2);
+            $data8=$res8->where("ID >=$start_id8")->limit(2)->select();
+            $this->assign('travel_eat',$data8);
 
-            // 住
+
 
             // 攻略
             $res9= M('travel_story');
-            $data['id']=array('ELT',1);
-            $data6=$res9->where($data)->select();
-            $this->assign('travel_story',$data6);
+            $start_id9=$this->show_now('travel_story',2);
+            $data9=$res9->where("ID >=$start_id9")->limit(2)->select();
+            $data9['content']=R('SubString/subString',array($data9['content'],80));
+            $this->assign('travel_story',$data9);
 
             // 志愿者家园
 
             //数字美术馆--传奇
             $res10= M('classic_legend');
-            $data7=$res10->where('id = 11')->limit('1')->select();
-            $data7[0]['content']=R('SubString/subString',array($data7[0]['content'],110));
-            $this->assign('classic_legend',$data7);
+            $start_id10=$this->show_now('classic_legend',1);
+            $data10=$res10->where("ID >=$start_id10")->find();
+            $data10['content']=R('SubString/subString',array($data10['content'],80));
+            $this->assign('classic_legend',$data10);
 
             //艺术群
             $res11= M('classic_group');
-            $data['id']=array('ELT',3);
-            $data8=$res11->where($data)->limit('1')->select();
-            $data8[0]['content']=R('SubString/subString',array($data8[0]['content'],110));
-            $this->assign('classic_group',$data8);
+            $start_id11=$this->show_now('classic_group',1);
+            $data11=$res11->where("ID >=$start_id11")->find();
+            $data11['content']=R('SubString/subString',array($data11['content'],80));
+            $this->assign('classic_group',$data11);
 
             //市场
             $res12= M('classic_market');
-            $data['id']=array('ELT',3);
-            $data9=$res12->where($data)->limit('1')->select();
-            $data9[0]['content']=R('SubString/subString',array($data9[0]['content'],80));
-            $this->assign('classic_market',$data9);
+            $start_id12=$this->show_now('classic_market',1);
+            $data12=$res12->where("ID >=$start_id12")->find();
+            $data12['content']=R('SubString/subString',array($data12['content'],80));
+            $this->assign('classic_market',$data12);
 
             // 评论
             $res13= M('classic_comment');
-            $data['id']=array('ELT',3);
-            $data10=$res13->where($data)->limit('1')->select();
-            $data10[0]['content']=R('SubString/subString',array($data10[0]['content'],80));
-            $this->assign('classic_comment',$data10);
+            $start_id13=$this->show_now('classic_comment',1);
+            $data13=$res13->where("ID >=$start_id13")->find();
+            $data13['content']=R('SubString/subString',array($data13['content'],80));
+            $this->assign('classic_comment',$data13);
 
             // 品牌--中华老字号
             $res14= M('brand_tradition');
             $data['id']=array('ELT',7);
-            $data11=$res14->where($data)->select();
-            $this->assign('brand_tradition',$data11);
+            $data14=$res14->where($data)->select();
+            $this->assign('brand_tradition',$data14);
 
             // 产品广告
             $res15= M('brand_product');
             $data['id']=array('ELT',7);
-            $data12=$res15->where($data)->limit('1')->select();
-            $data12[0]['content']=R('SubString/subString',array($data12[0]['content'],80));
-            $this->assign('brand_product',$data12);
+            $data15=$res15->where($data)->limit('1')->select();
+            $data15[0]['content']=R('SubString/subString',array($data15[0]['content'],80));
+            $this->assign('brand_product',$data15);
 
             // 品牌广告
             $res16= M('brand_brand');
             $data['id']=array('ELT',7);
-            $data13=$res16->where($data)->limit('2')->select();
-            $data13[0]['content']=R('SubString/subString',array($data13[0]['content'],80));
-            $this->assign('brand_brand',$data13);
+            $data16=$res16->where($data)->limit('2')->select();
+            $data16[0]['content']=R('SubString/subString',array($data16[0]['content'],80));
+            $this->assign('brand_brand',$data16);
 
             $this->display('Index:index1');
 
