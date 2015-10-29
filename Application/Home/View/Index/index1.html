@@ -54,24 +54,32 @@
         </div>
         <div class="right_box">
             <div class="right_con" style="height:450px;">
-                <h2 class="pubtit top_border_ff9900"><a href="__APP__/Home/News/news_active.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong
-                        class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
-                <dl class="r_news_dl1">
-                    <dt>
-                    <h3><a href="__APP__/Home/News/third_active/id/<{$news_active[0].id}>"><{$news_active[0]['title']}></a></h3></dt>
-                    <dd><p><{$news_active[0]['abstract']}></p></dd>
-                </dl>
+                <h2 class="pubtit top_border_ff9900"><a href="__APP__/Home/News/news_active.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
+                <foreach name="news_active" item="vo">
+                    <div class="r_news_dl1" style="height:115px;overflow: hidden;margin-top: -5px">
+                        <!--<dl class="r_news_dl1">-->
+                            <dt>
+                            <h3><a href="__APP__/Home/News/third_active/id/<{$vo.id}>"><{$vo.title}></a></h3></dt>
+                            <dd><p style="text-indent: 2em"><{$vo.abstract}></p></dd>
+                       <!-- </dl>-->
+                    </div>
+                </foreach>
+
+               <!-- <div class="r_news_dl1" style="height:120px;overflow: hidden;margin-top: -10px">
                 <dl class="r_news_dl1">
                     <dt>
                     <h3><a href="__APP__/Home/News/third_active/id/<{$news_active[1].id}>"><{$news_active[1]['title']}></a></h3></dt>
                     <dd><p>
-                        <{$news_active[1]['abstract']}></p></dd>
+                        <{$news_active[1]['content']}></p></dd>
                 </dl>
+                </div>
+                <div class="r_news_dl1" style="height:120px;overflow: hidden;margin-top: -10px">
                 <dl class="r_news_dl1">
                     <dt>
                     <h3><a href="__APP__/Home/News/third_active/id/<{$news_active[2].id}>"><{$news_active[2]['title']}></a></h3></dt>
-                    <dd><p><{$news_active[2]['abstract']}></p></dd>
+                    <dd><p><{$news_active[2]['content']}></p></dd>
                 </dl>
+                </div>-->
             </div>
         </div>
         <div class="height20"></div>
@@ -243,19 +251,6 @@
                     <li><a href=""><img src="__PUBLIC__/Home/Images/home/ac3.jpg"></a></li>
                     <li><a href=""><img src="__PUBLIC__/Home/Images/home/ac4.jpg"></a></li>
                 </ul>
-                <!--良策 监测-->
-                <!--<div class="zyz_txt fl">-->
-                    <!--<h4 class="pubtit2"><span>良策</span></h4>-->
-
-                    <!--<p>-->
-                        <!--河南安阳滑县段的卫河作为中国大运河的重要组成部分被列入了保护和申报世界文化遗产的范围。卫河岸边的道口古镇，至今已有近千年的历史。清朝乾......</p>-->
-                <!--</div>-->
-                <!--<div class="zyz_txt fr">-->
-                    <!--<h4 class="pubtit2"><span>监测</span></h4>-->
-
-                    <!--<p>-->
-                        <!--河南安阳滑县段的卫河作为中国大运河的重要组成部分被列入了保护和申报世界文化遗产的范围。卫河岸边的道口古镇，至今已有近千年的历史。清朝乾......</p>-->
-                <!--</div>-->
             </div>
         </div>
         <div class="height20"></div>

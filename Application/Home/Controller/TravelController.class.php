@@ -65,8 +65,9 @@ class TravelController extends CommonController{
 
 
         $res4= M('travel_story');
-        $list = $res4->where(array('City'=>$aid))->order('ID desc')->select();
+        $list = $res4->where(array('City'=>$aid))->order('ID desc')->find();
         if($list) {
+            $list['content']=R('SubString/subString',array($list['content'],80));
             $this->assign('travel_story',$list);
         }else{
             $this->error('数据错误');

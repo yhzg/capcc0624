@@ -65,11 +65,7 @@ class IndexController extends CommonController {
 
             // 新闻
             $res1= M('news_active');
-            $data1=$res1->order('ID')->limit(3)->select();
-            foreach($data1 as $k=>$v)
-            {
-              $data1[$k]['content']=R('SubString/subString',array($data1[$k]['content'],150));
-            }
+            $data1=$res1->order('ID desc')->limit(3)->select();
             $this->assign('news_active',$data1);
 
             // 中国世界遗项目
@@ -93,8 +89,7 @@ class IndexController extends CommonController {
 
             // 活动
             $res66= M('activity_activity');
-            $data['id']=array('ELT',1);
-            $data66=$res66->where($data)->select();
+            $data66=$res66->order('ID desc')->limit('3')->select();
             $data66[0]['content']=R('SubString/subString',array($data66[0]['content'],200));
             $this->assign('activity',$data66);
 
@@ -123,7 +118,11 @@ class IndexController extends CommonController {
             $res9= M('travel_story');
             $start_id9=$this->show_now('travel_story',2);
             $data9=$res9->where("ID >=$start_id9")->limit(2)->select();
-            $data9['content']=R('SubString/subString',array($data9['content'],80));
+            foreach($data9 as $k=>$v)
+            {
+              $data9[$k]['content']=R('SubString/subString',array($data9[$k]['content'],80));
+            }
+
             $this->assign('travel_story',$data9);
 
             // 志愿者家园

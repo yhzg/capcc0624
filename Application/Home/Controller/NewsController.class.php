@@ -19,8 +19,7 @@ class NewsController extends CommonController{
         $this->assign('news_pic',$news);
 
         $res1= M('news_active');
-        $data['id']=array('ELT',3);
-        $data1=$res1->where($data)->select();
+        $data1=$res1->order('ID desc')->limit('3')->select();
         $data1[0]['content']=R('SubString/subString',array($data1[0]['content'],70));
         $data1[1]['content']=R('SubString/subString',array($data1[1]['content'],70));
         $data1[2]['content']=R('SubString/subString',array($data1[2]['content'],70));
