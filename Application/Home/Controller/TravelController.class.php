@@ -26,7 +26,6 @@ class TravelController extends CommonController{
         $this->display('Public:head');
 
         $res1= M('travel_spot');
-
         $aid=$_GET['city'];
         $list = $res1->where(array('City'=>$aid))->order('ID desc')->select();
         foreach ($list as $k=>$v)
@@ -53,21 +52,12 @@ class TravelController extends CommonController{
         }else{
             $this->error('数据错误');
         }
-        $res2->getLastSql();
 
-        $res3= M('travel_live');
-        $list = $res3->where(array('City'=>$aid))->select();
+
+        $res3= M('travel_story');
+        $list = $res3->where(array('City'=>$aid))->order('ID desc')->limit('4')->select();
         if($list) {
-            $this->assign('travel_live',$list);
-        }else{
-            $this->error('数据错误');
-        }
-
-
-        $res4= M('travel_story');
-        $list = $res4->where(array('City'=>$aid))->order('ID desc')->find();
-        if($list) {
-            $list['content']=R('SubString/subString',array($list['content'],80));
+            $list[0]['content']=R('SubString/subString',array($list[0]['content'],80));
             $this->assign('travel_story',$list);
         }else{
             $this->error('数据错误');
@@ -84,11 +74,11 @@ class TravelController extends CommonController{
         $this->display('Public:head');
 
         $res1= M('travel_spot');
-        $data = $_GET['city'];
-        $count = $res1->where(array('City'=>$data))->count();
+        $city = $_GET['city'];
+        $count = $res1->where(array('City'=>$city))->count();
         $Page  = new \Think\Page($count,4);
         $show  = $Page->show();
-        $list = $res1->where(array('City'=>$data))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $list = $res1->where(array('City'=>$city))->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
@@ -102,15 +92,16 @@ class TravelController extends CommonController{
 
     }
 
-    public function eat_live()
+    public function travel_eat()
     {
         $this->display('Public:head');
 
+        $city=I('get.city');
         $res2= M('travel_eat');
-        $count = $res2->where()->count();
+        $count = $res2->where(array('City'=>$city))->count();
         $Page  = new \Think\Page($count,4);
         $show  = $Page->show();
-        $list =$res2->where()->order()->limit($Page->firstRow.','.$Page->listRows)->select();
+        $list =$res2->where(array('City'=>$city))->order("ID desc")->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));
@@ -130,11 +121,12 @@ class TravelController extends CommonController{
     {
         $this->display('Public:head');
 
+        $city=I('get.city');
         $res3= M('travel_story');
-        $count =$res3->where()->count();
+        $count = $res3->where(array('City'=>$city))->count();
         $Page  = new \Think\Page($count,4);
         $show  = $Page->show();
-        $list = $res3->where()->order('id desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        $list =$res3->where(array('City'=>$city))->order("ID desc")->limit($Page->firstRow.','.$Page->listRows)->select();
         foreach ($list as $k=>$v)
         {
             $list[$k]['content']=R('SubString/subString',array($list[$k]['content'],200));

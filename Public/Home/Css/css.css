@@ -257,6 +257,23 @@ img {border:none;}
 
 li{list-style: none;}
 
+/*右侧悬浮icon*/
+.wechat_float {
+    padding-top:100px;
+    position:fixed;
+    right:20px;
+    top:20%;
+}
+
+.wechat_close {
+    padding-top:100px;
+    position:fixed;
+    right:24px;
+    top:19%;
+}
+
+
+
 
 
 
