@@ -11,7 +11,7 @@ namespace Admin\Controller;
 
 use Think\Controller;
 
-class WeixinController extends Controller {
+class WechatController extends Controller {
 
     public function img_path($content)
     {
@@ -30,7 +30,7 @@ class WeixinController extends Controller {
         return $paths_str;
     }
     //显示微信列表
-    public function weixin()
+    public function wechat()
     {
         R('Common/show_list',array(ACTION_NAME));
     }
@@ -43,10 +43,10 @@ class WeixinController extends Controller {
         R('Common/add');
     }
     //添加新闻的方法
-    public function  add_weixin()
+    public function  add_wechat()
     {
         $tag=I('get.tag');
-        $db_name='News_'.$tag;
+        $db_name='Wechat_'.$tag;
         $content=I('post.content');
         $paths_str=$this->img_path($content);
         $m = M($db_name);
@@ -77,7 +77,7 @@ class WeixinController extends Controller {
             } else
             {
 
-                $this->success('编辑成功！', U("Weixin/$tag"));
+                $this->success('编辑成功！', U("Wechat/$tag"));
             }
         } else
         {
@@ -86,18 +86,18 @@ class WeixinController extends Controller {
                 $this->error('添加失败！');
             } else {
 
-                $this->success('添加成功！', U("Weixin/$tag"));
+                $this->success('添加成功！', U("Wechat/$tag"));
             }
         }
     }
 
 
 
-    public function delete_weixin()
+    public function delete_wechat()
     {
         R('Common/delete_info');
     }
-    public function edit_weixin()
+    public function edit_wechat()
     {
         R('Common/edit_info');
     }

@@ -6,26 +6,7 @@
     <js href="__PUBLIC__/Admin/jquery.js" />
     <load href="__PUBLIC__/Admin/index.css" />
     <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
-    <script language="JavaScript">
-        //在离开页面时判断是否有未保存的输入值
-        var hasSaved = false;//是否有输入的内容未保存标志，初始值为false
-
-        function CheckUnsave(){
-            if(hasSaved==false)
-            {
-                alert("内容尚未保存，确定离开？")
-                return false;
-
-            }
-            //return true; //不能加这个语句
-        }
-
-        //保存了则改变状态
-        function ChangeState()
-        {
-            hasSaved = true;
-        }
-    </script>
+    <js href="__PUBLIC__/Admin/savedInfo.js" />
 </head>
 <body onbeforeunload="return CheckUnsave();">
 <div id="mainDiv">

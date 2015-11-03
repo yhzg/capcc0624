@@ -15,7 +15,7 @@
             //document.write(del_id);
             if (confirm('确认删除?'))
             {
-                document.location.href="<{:U('Weixin/delete_weixin')}>?tag=weixin&id="+id;
+                document.location.href="<{:U('Wechat/delete_wechat')}>?tag=wechat&id="+id;
             }
         }
 
@@ -25,7 +25,7 @@
             //document.write(del_id);
             if (confirm('跳转至编辑窗口？'))
             {
-                document.location.href="<{:U('Weixin/edit_weixin')}>?tag=weixin&id="+id;
+                document.location.href="<{:U('Wechat/edit_wechat')}>?tag=wechat&id="+id;
             }
         }
     </script>
@@ -66,7 +66,7 @@
                     <{$page}>
                     <br />
                     <br />
-                    <a href="<{:U('Weixin/add','tag=weixin')}>"><h2>添加一条微信</h2></a>
+                    <a href="<{:U('Wechat/add','tag=wechat')}>"><h2>添加一条微信</h2></a>
                 </div>
             </div>
         </div>

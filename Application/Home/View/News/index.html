@@ -10,28 +10,18 @@
 <div class="wrap">
     <div class="left_box">
 
-        <div class="banner"><a href="__APP__/Home/News/third_active/id/<{$news_pic[0].id}>"><img border="0" src="__PUBLIC__/<{$news_pic[0]['imgpath']}>" width="802" height="451"></a></div>
+        <div class="banner"><a href="__APP__/Home/News/third_wechat/id/<{$news_wechat[0].id}>"><img border="0" src="__PUBLIC__/<{$news_wechat[0]['imgpath']}>" width="802" height="451"></a></div>
     </div>
     <div class="right_box">
         <div class="right_con" style="height:450px;">
-            <h2 class="pubtit "><a href="__APP__/Home/News/news_picture.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
-            <dl class="r_news_dl1">
-                <dt>
-                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[0].id}>"><{$list1[0]['title']}></a></h3></dt>
-                <dd><p>
-                    <{$list1[0]['abstract']}></p></dd>
-            </dl>
-            <dl class="r_news_dl1">
-                <dt>
-                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[1].id}>"><{$list1[1]['title']}></a></h3></dt>
-                <dd><p>
-                    <{$list1[1]['abstract']}></p></dd>
-            </dl>
-            <dl class="r_news_dl1">
-                <dt>
-                <h3><a href="__APP__/Home/News/third_active/id/<{$list1[2].id}>"><{$list1[2]['title']}></a></h3></dt>
-                <dd><p><{$list1[2]['abstract']}></p></dd>
-            </dl>
+            <h2 class="pubtit "><strong class="f1485a3">微说新闻</strong></h2>
+            <foreach name="news_wechat" item="vo">
+                <div class="r_news_dl1" style="height:120px;overflow: hidden;margin-top: -5px">
+                    <dt>
+                    <h3><a href="__APP__/Home/News/third_active/id/<{$vo.id}>"><{$vo.title}></a></h3></dt>
+                    <dd><p style="text-indent: 2em"><{$vo.abstract}></p></dd>
+                </div>
+            </foreach>
         </div>
 
     </div>

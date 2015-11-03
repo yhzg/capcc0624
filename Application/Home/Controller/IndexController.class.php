@@ -44,7 +44,7 @@ class IndexController extends CommonController {
             // 首页图
 
             //在headline=1的字段中获取最新的一条
-          $m= M('news_picture');
+          $m= M('news_active');
           $headline=$m->where(array('Headline'=>'1'))->order('id desc')->limit('3')->select();
 
           foreach($headline as $k=>$v)

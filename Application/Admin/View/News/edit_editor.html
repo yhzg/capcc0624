@@ -1,0 +1,49 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>运河网后台管理系统 </title>
+    <js href="__PUBLIC__/Admin/jquery.js" />
+    <load href="__PUBLIC__/Admin/index.css" />
+    <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
+    <js href="__PUBLIC__/Admin/savedInfo.js" />
+    <script charset="utf-8" src="__PUBLIC__/editor/kindeditor.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/editor/lang/zh_CN.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/editorplugins/code/prettify.js"></script>
+    <script>
+        KindEditor.ready(function(K) {
+            window.editor = K.create('#myEditor');
+        });
+    </script>
+</head>
+<body onbeforeunload="return CheckUnsave();">
+<div id="mainDiv">
+    <div id="centerDiv">
+        <div id="left">
+            <div id="lhead">管理菜单</div>
+            <ul id="nav_manage">
+                <li ><a href="<{:U('News/wechat')}>">微说新闻</a></li>
+                <li ><a href="<{:U('News/active')}>">动态新闻</a></li>
+            </ul>
+        </div>
+        <div id="right">
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:微说编辑</div>
+            <div id="form">
+                <form action="__APP__/Admin/News/add_wechat/tag/<{$tag}>" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend style="font-size: 20px;color:red">添加<{$tag}></legend>
+                        Title(标题): <input type="text" name="title" value='<{$list.title}>'/><br />
+                        Abstract(简介）: <br /><textarea cols="150" rows="3" name="abstract" ><{$list.abstract}></textarea><br />
+                        Content(内容）: <br /><textarea id="myEditor" name="content" cols="150" rows="22"><{$list.content}></textarea><br />
+                        <input type="hidden" name="nid" value='<{$list.id}>' />
+                        <input type="submit" value="保存修改" onClick="ChangeState();" />
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="bottomDiv"></div>
+</div>
+
+</body>
+</html>

@@ -9,28 +9,13 @@
     <script charset="utf-8" src="__PUBLIC__/editor/kindeditor.js"></script>
     <script charset="utf-8" src="__PUBLIC__/editor/lang/zh_CN.js"></script>
     <script charset="utf-8" src="__PUBLIC__/editorplugins/code/prettify.js"></script>
+
     <script>
         KindEditor.ready(function(K) {
-            var editor1 = K.create('textarea[name="content1"]', {
-                cssPath : '../plugins/code/prettify.css',
-                uploadJson : '../php/upload_json.php',
-                fileManagerJson : '../php/file_manager_json.php',
-                allowFileManager : true,
-                afterCreate : function() {
-                    var self = this;
-                    K.ctrl(document, 13, function() {
-                        self.sync();
-                        K('form[name=example]')[0].submit();
-                    });
-                    K.ctrl(self.edit.doc, 13, function() {
-                        self.sync();
-                        K('form[name=example]')[0].submit();
-                    });
-                }
-            });
-            prettyPrint();
+            window.editor = K.create('#myEditor');
         });
     </script>
+
 </head>
 <body>
 <div id="mainDiv">
@@ -38,13 +23,13 @@
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('Weixin/weixin')}>">微信</a></li>
+                <li ><a href="<{:U('Wechat/wechat')}>">微信</a></li>
             </ul>
         </div>
         <div id="right">
             <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:添加微信</div>
             <div id="form">
-                <form action="__APP__/Admin/Weixin/add_news/tag/<{$tag}>" method="post" enctype="multipart/form-data">
+                <form action="__APP__/Admin/Wechat/add_wechat/tag/<{$tag}>" method="post" enctype="multipart/form-data">
                     <fieldset>
                         <legend style="font-size: 20px;color:red">添加<{$tag}></legend>
                         Title(标题): <input type="text" name="title" /><br />
@@ -55,7 +40,6 @@
                         Editor(编辑): <input type="text" name="editor"  /><br />
                         Source(来源): <input type="text" name="source"  /><br />
                         PubTime(发布时间): <input type="text" name="pubTime"  /><br />
-                        Picture(上传图片): <input type="file" name="Picture" /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />
                         <input type="submit" >
                     </fieldset>
                 </form>

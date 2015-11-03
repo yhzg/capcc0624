@@ -7,27 +7,35 @@
     <load href="__PUBLIC__/Admin/index.css" />
     <load href="__PUBLIC__/Home/Css/1.1home_font.css" />
     <js href="__PUBLIC__/Admin/savedInfo.js" />
+    <script charset="utf-8" src="__PUBLIC__/editor/kindeditor.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/editor/lang/zh_CN.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/editorplugins/code/prettify.js"></script>
+    <script>
+        KindEditor.ready(function(K) {
+            window.editor = K.create('#myEditor');
+        });
+    </script>
 </head>
-<body onbeforeunload="return CheckUnsave();">
+<body onbeforeunload=" return CheckUnsave();">
 <div id="mainDiv">
     <div id="centerDiv">
         <div id="left">
             <div id="lhead">管理菜单</div>
             <ul id="nav_manage">
-                <li ><a href="<{:U('Activity/activity')}>">活动</a></li>
+                <li ><a href="<{:U('News/wechat')}>">微说新闻</a></li>
+                <li ><a href="<{:U('News/active')}>">动态新闻</a></li>
             </ul>
         </div>
         <div id="right">
-            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:添加活动 活动</div>
+            <div id="current">&nbsp;&nbsp;&nbsp;&nbsp;当前位置:添加微说新闻</div>
             <div id="form">
-                <form action="__APP__/Admin/Activity/add_activity/tag/<{$tag}>" method="post" enctype="multipart/form-data">
+                <form action="__APP__/Admin/News/add_wechat/tag/<{$tag}>" method="post" enctype="multipart/form-data">
                     <fieldset>
                         <legend style="font-size: 20px;color:red">添加<{$tag}></legend>
                         Title(标题): <input type="text" name="title" /><br />
-                        Content(内容）: <br /><textarea cols="50" rows="10" name="content" ></textarea><br />
-                        Author(作者): <input type="text" name="author" /><br />
-                        Picture(上传图片): <input type="file" name="Picture" /><span style="color:red;">图片最大4M，格式：jpg,gif,png,jpeg</span><br />
-                        <input type="submit" onClick="ChangeState();">
+                        Abstract(简介）: <br /><textarea cols="150" rows="3" name="abstract" ></textarea><br />
+                        Content(内容）: <br /><textarea id="myEditor" name="content" cols="150" rows="22"></textarea><br />
+                        <input type="submit" value="提交" onclick="ChangeState();">
                     </fieldset>
                 </form>
             </div>

@@ -136,6 +136,7 @@ class CommonController extends Controller {
         $res=$m->where($where)->find();
         //dump($news);
         // exit;
+        $res['content']=htmlspecialchars_decode($res['content']);
         $this->assign('list',$res);
         $this->assign('tag',$tag);
 
