@@ -15,7 +15,6 @@ class NewsController extends CommonController{
         $this->display('Public:head');
 
         $m= M('news_wechat');
-        //$news=$m->order('ID desc')->limit('1')->select();
         $news_wechat=$m->order('ID desc')->limit(3)->select();
         $this->assign('news_wechat',$news_wechat);
 

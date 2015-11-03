@@ -10,15 +10,15 @@
 <div class="wrap">
     <div class="left_box">
 
-        <div class="banner"><a href="__APP__/Home/News/third_wechat/id/<{$news_wechat[0].id}>"><img border="0" src="__PUBLIC__/<{$news_wechat[0]['imgpath']}>" width="802" height="451"></a></div>
+        <div class="banner"><a href="__APP__/Home/News/third_active/id/<{$list1[0].id}>"><img border="0" src="__PUBLIC__/<{$list1[0]['imgpath']}>" width="802" height="451"></a></div>
     </div>
     <div class="right_box">
         <div class="right_con" style="height:450px;">
-            <h2 class="pubtit "><strong class="f1485a3">微说新闻</strong></h2>
+            <h2 class="pubtit "><strong class="f1485a3">微说运河</strong></h2>
             <foreach name="news_wechat" item="vo">
                 <div class="r_news_dl1" style="height:120px;overflow: hidden;margin-top: -5px">
                     <dt>
-                    <h3><a href="__APP__/Home/News/third_active/id/<{$vo.id}>"><{$vo.title}></a></h3></dt>
+                    <h3><a href="__APP__/Home/News/third_wechat/id/<{$vo.id}>"><{$vo.title}></a></h3></dt>
                     <dd><p style="text-indent: 2em"><{$vo.abstract}></p></dd>
                 </div>
             </foreach>

@@ -33,7 +33,7 @@
                     index++;
                 }
                 $("#index_img").attr("src","__PUBLIC__/"+path[index]);
-                $("#jumpurl").attr("href","__APP__/News/third_picture/id/"+url[index]);
+                $("#jumpurl").attr("href","__APP__/News/third_active/id/"+url[index]);
             }
         })
 
@@ -48,7 +48,7 @@
 
            <!-- <a href="__APP__/Home/News/third_picture/id/<{$news_pic[0].id}>"><img src="__PUBLIC__/<{$news_pic[0]['imgpath']}>" width="802" height="451"/></a>-->
 
-            <a id='jumpurl' href="__APP__/News/third_picture/id/<{$headline[0].id}>"><img id='index_img'src="__PUBLIC__/<{$headline[0].imgpath}>" width="802" height="451"/></a>
+            <a id='jumpurl' href="__APP__/News/third_active/id/<{$news_active[0].id}>"><img id='index_img'src="__PUBLIC__/<{$news_active[0].imgpath}>" width="802" height="451"/></a>
 
 
         </div>

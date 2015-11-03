@@ -41,31 +41,21 @@ class IndexController extends CommonController {
 
             //直接调用页面  无需存在对应的方法
             $this->display('Public:head');
-            // 首页图
 
-            //在headline=1的字段中获取最新的一条
-          $m= M('news_active');
-          $headline=$m->where(array('Headline'=>'1'))->order('id desc')->limit('3')->select();
-
-          foreach($headline as $k=>$v)
-          {
-            $img_arr[$k]['id']=$v['id'];
-            $img_arr[$k]['imgpath']=$v['imgpath'];
-          }
-          //dump($imgpath_arr);
-          $img_json=json_encode($img_arr);
-          //dump($img_json);
-          $this->assign('imgs',$img_json);
-          $this->assign('headline',$headline);
-
-          /*  $res1= M('news_picture');
-            $data['id']=array('ELT',3);
-            $data1=$res1->where($data)->select();
-            $this->assign('news_pic',$data1);*/
 
             // 新闻
             $res1= M('news_active');
             $data1=$res1->order('ID desc')->limit(3)->select();
+            foreach($data1 as $k=>$v)
+            {
+                $img_arr[$k]['id']=$v['id'];
+                $img_arr[$k]['imgpath']=$v['imgpath'];
+            }
+            //dump($imgpath_arr);
+            $img_json=json_encode($img_arr);
+            //dump($img_json);
+            $this->assign('imgs',$img_json);
+
             $this->assign('news_active',$data1);
 
             // 中国世界遗项目
