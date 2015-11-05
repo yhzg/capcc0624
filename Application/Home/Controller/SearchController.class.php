@@ -36,7 +36,7 @@ class SearchController extends CommonController
         //dump($key_arr);
         //exit;
         //搜索表集合
-        $table_list=array("news_active","news_picture","city_canal","city_protect","heritage_organization","heritage_expo","travel_spot","travel_eat","travel_live","travel_story","brand_tradition","brand_product","brand_brand","classic_legend","classic_market","classic_comment","classic_group","activity_activity","volunteer_grace","volunteer_act","volunteer_advice","volunteer_mon");
+        $table_list=array("news_active","news_wechat","city_canal","city_protect","heritage_organization","heritage_expo","travel_spot","travel_eat","travel_live","travel_story","brand_tradition","brand_product","brand_brand","classic_legend","classic_market","classic_comment","classic_group","activity_activity","volunteer_grace","volunteer_act","volunteer_advice","volunteer_mon");
         //$res_search=array();
         for($i=0;$i<count($table_list);$i++)
         {

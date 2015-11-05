@@ -33,7 +33,7 @@
                     index++;
                 }
                 $("#index_img").attr("src","__PUBLIC__/"+path[index]);
-                $("#jumpurl").attr("href","__APP__/News/third_active/id/"+url[index]);
+                $("#jumpurl").attr("href","__APP__/News/third_wechat/id/"+url[index]);
             }
         })
 
@@ -44,22 +44,17 @@
 <div class="wrap_box">
     <div class="wrap">
         <div class="left_box ">
-            <!--首页新闻图片-->
-
-           <!-- <a href="__APP__/Home/News/third_picture/id/<{$news_pic[0].id}>"><img src="__PUBLIC__/<{$news_pic[0]['imgpath']}>" width="802" height="451"/></a>-->
-
-            <a id='jumpurl' href="__APP__/News/third_active/id/<{$news_active[0].id}>"><img id='index_img'src="__PUBLIC__/<{$news_active[0].imgpath}>" width="802" height="451"/></a>
-
-
+            <!--首页微说图片-->
+            <a id='jumpurl' href="__APP__/News/third_wechat/id/<{$news_wechat[0].id}>"><img id='index_img'src="__PUBLIC__/<{$news_wechat[0].imgpath.0}>" width="802" height="451"/></a>
         </div>
         <div class="right_box">
             <div class="right_con" style="height:450px;">
-                <h2 class="pubtit top_border_ff9900"><a href="__APP__/Home/News/news_active.html" class="more" style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><strong class="f1485a3">新&nbsp;&nbsp;闻</strong></h2>
-                <foreach name="news_active" item="vo">
+                <h2 class="pubtit top_border_ff9900"><strong class="f1485a3">微说运河</strong></h2>
+                <foreach name="news_wechat" item="vo">
                     <div class="r_news_dl1" style="height:120px;overflow: hidden;margin-top: -5px">
                         <!--<dl class="r_news_dl1">-->
                             <dt>
-                            <h3><a href="__APP__/Home/News/third_active/id/<{$vo.id}>"><{$vo.title}></a></h3></dt>
+                            <h3><a href="__APP__/Home/News/third_wechat/id/<{$vo.id}>"><{$vo.title}></a></h3></dt>
                             <dd><p style="text-indent: 2em"><{$vo.abstract}></p></dd>
                        <!-- </dl>-->
                     </div>
@@ -206,7 +201,7 @@
                 </div>
                 <div class="lv_pic_box fr">
                     <h4 class="pubtit1"><a href="__APP__/Home/Travel" class="more"
-                                           style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>吃</span>
+                                           style="background: url('__PUBLIC__/Home/Images/home/more.jpg') 0 50% no-repeat;margin:10px 0 0 0;padding:0;"></a><span>美食</span>
                     </h4>
                     <!--吃-->
                     <ul class="lv_pic_con2">
@@ -224,12 +219,11 @@
 
                     <div class="gl_map"><img src="__PUBLIC__/<{$travel_story[0]['imgpath']}>"></div>
                     <dl class="gl_dl">
-                        <dt><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[1].id}>"><img src="__PUBLIC__/<{$travel_story[1]['imgpath']}>"></a></dt>
+                        <dt><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[1].id}>"><img src="__PUBLIC__/<{$travel_story[1]['imgpath']}>" width="200px" height="140px"></a></dt>
                         <dd><p><strong><a href="__APP__/Home/Travel/third_story/id/<{$travel_story[1].id}>"><{$travel_story[1]['title']}></a></strong><br>
                             <{$travel_story[1]['content']}></p></dd>
                     </dl>
                 </div>
-
             </div>
         </div>
         <div class="right_box">

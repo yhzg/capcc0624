@@ -48,7 +48,6 @@
                             <td width="5%" align="center">编号</td>
                             <td width="15%" align="center">标题</td>
                             <td width="15%" align="center">简介</td>
-                            <td width="31%" align="center">内容</td>
                             <td width="10%" align="center">操作</td>
                         </tr>
                         <volist name="list" id="vo">
@@ -56,7 +55,6 @@
                                 <td align="center" id="newsid"><{$vo.id}></td>
                                 <td align="center"><{$vo.title}></td>
                                 <td ><span style="text-align: left"><{$vo.abstract}></span></td>
-                                <td ><span style="text-align: left"><{$vo.content}></span></td>
                                 <td align="center"><span><input type="submit" value="删除" onclick="del(<{$vo.id}>)"></span>&nbsp;<span><input type="submit" value="编辑" onclick="edit(<{$vo.id}>)"></span></td>
                             </tr>
                         </volist>

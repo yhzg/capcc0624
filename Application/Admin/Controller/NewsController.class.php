@@ -33,7 +33,21 @@ class NewsController extends Controller {
     //显示图说新闻列表
     public function wechat()
     {
-        R('Common/show_list',array(ACTION_NAME));
+        $db_name=CONTROLLER_NAME.'_'.ACTION_NAME;
+
+        //分页显示，每页10条
+        $m=M($db_name);
+        $count= $m->count('id');
+        $page= new \Think\Page($count,10);
+        $page->setConfig('theme','<b>%HEADER%</b> 当前第%NOW_PAGE%页 共%TOTAL_PAGE%页   &nbsp; %FIRST%   %UP_PAGE%    %LINK_PAGE%     %DOWN_PAGE% &nbsp;     %END%');
+        $show= $page->show();
+        $res = $m->order('id desc')->limit($page->firstRow.','.$page->listRows)->select();
+
+
+        $this->assign('list',$res);
+        $this->assign('page',$show);
+
+        $this->display();
     }
     //显示市场列表
     public function active()

@@ -44,19 +44,20 @@ class IndexController extends CommonController {
 
 
             // 新闻
-            $res1= M('news_active');
+            $res1= M('news_wechat');
             $data1=$res1->order('ID desc')->limit(3)->select();
             foreach($data1 as $k=>$v)
             {
                 $img_arr[$k]['id']=$v['id'];
-                $img_arr[$k]['imgpath']=$v['imgpath'];
+                $data1[$k]['imgpath']=explode(',',$v['imgpath']);
+                $img_arr[$k]['imgpath']=$data1[$k]['imgpath'][0];
             }
-            //dump($imgpath_arr);
+
             $img_json=json_encode($img_arr);
-            //dump($img_json);
+
             $this->assign('imgs',$img_json);
 
-            $this->assign('news_active',$data1);
+            $this->assign('news_wechat',$data1);
 
             // 中国世界遗项目
             $res2= M('heritage_project');
