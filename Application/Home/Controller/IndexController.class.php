@@ -2,16 +2,46 @@
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends CommonController {
-        public function show_now($tableName,$num)
+
+        //show_now 为需要随日期变化二内容变化的区域
+        //$n:每日需要显示的条目数
+        public function show_now($tableName,$n,$content_len=80)
         {
-          $date=date(d,time());
-          $count=M($tableName)->count();
-          $start_id=(($date-1)*$num+1)%($count-$num+1);
-          if($start_id==0)
-          {
-            $start_id=1;
-          }
-          return $start_id;
+            $d=date(d,time());
+            $id_arr=M($tableName)->field('ID')->select();
+            foreach($id_arr as $k=>$v)
+            {
+                $id_arr_new[]=$v['id'];
+            }
+
+            $count=count($id_arr_new);
+            //$arr_num 确定要合并多少个数组
+            $arr_num=floor(31*$n/$count);
+            if($arr_num==0)
+            {
+                $arr_big=$id_arr_new;
+            }else{
+                for($i=0;$i<$arr_num;$i++)
+                {
+                    $arr_big=array_merge($id_arr_new,$id_arr_new);
+                }
+            }
+
+            $start_id=($d-1)*$n%$count;
+            $m=M($tableName);
+            for($j=0;$j<$n;$j++)
+            {
+                $res[$j]=$m->where(array('ID'=>$arr_big[$start_id]))->find();
+                $start_id++;
+            }
+            foreach($res as $k=>$v)
+            {
+                $res[$k]['content']=R('SubString/subString',array($v['content'],$content_len));
+            }
+
+            //结果集为二维数组
+            return $res;
+
 
         }
 
@@ -85,66 +115,38 @@ class IndexController extends CommonController {
             $this->assign('activity',$data66);
 
             // 城市
-            $res6= M('city_canal');
-            $start_id6=$this->show_now('city_canal',1);
-            $data6=$res6->where("ID >=$start_id6")->find();
-            $data6['content']=R('SubString/subString',array($data6['content'],110));
-            $this->assign('city',$data6);
+            $info_city=$this->show_now('city_canal',1,110);
+            $this->assign('city',$info_city);
 
             // 景点
-            $res7= M('travel_spot');
-            $start_id7=$this->show_now('travel_spot',3);
-            $data7=$res7->where("ID >=$start_id7")->limit(3)->select();
-            $this->assign('travel_spot',$data7);
+            $info_spot=$this->show_now('travel_spot',3);
+            $this->assign('travel_spot',$info_spot);
 
             // 吃
-            $res8= M('travel_eat');
-            $start_id8=$this->show_now('travel_eat',2);
-            $data8=$res8->where("ID >=$start_id8")->limit(2)->select();
-            $this->assign('travel_eat',$data8);
-
-
+            $info_eat=$this->show_now('travel_eat',2);
+            $this->assign('travel_eat',$info_eat);
 
             // 攻略
-            $res9= M('travel_story');
-            $start_id9=$this->show_now('travel_story',2);
-            $data9=$res9->where("ID >=$start_id9")->limit(2)->select();
-            foreach($data9 as $k=>$v)
-            {
-              $data9[$k]['content']=R('SubString/subString',array($data9[$k]['content'],80));
-            }
-
-            $this->assign('travel_story',$data9);
+            $info_story=$this->show_now('travel_story',2,110);
+            $this->assign('travel_story',$info_story);
 
             // 志愿者家园
 
             //数字美术馆--传奇
-            $res10= M('classic_legend');
-            $start_id10=$this->show_now('classic_legend',1);
-            $data10=$res10->where("ID >=$start_id10")->find();
-            $data10['content']=R('SubString/subString',array($data10['content'],80));
-            $this->assign('classic_legend',$data10);
+            $info_legend=$this->show_now('classic_legend',1,110);
+            $this->assign('classic_legend',$info_legend);
 
             //艺术群
-            $res11= M('classic_group');
-            $start_id11=$this->show_now('classic_group',1);
-            $data11=$res11->where("ID >=$start_id11")->find();
-            $data11['content']=R('SubString/subString',array($data11['content'],80));
-            $this->assign('classic_group',$data11);
+            $info_group=$this->show_now('classic_group',1,110);
+            $this->assign('classic_group',$info_group);
 
             //市场
-            $res12= M('classic_market');
-            $start_id12=$this->show_now('classic_market',1);
-            $data12=$res12->where("ID >=$start_id12")->find();
-            $data12['content']=R('SubString/subString',array($data12['content'],80));
-            $this->assign('classic_market',$data12);
+            $info_market=$this->show_now('classic_market',1,80);
+            $this->assign('classic_market',$info_market);
 
             // 评论
-            $res13= M('classic_comment');
-            $start_id13=$this->show_now('classic_comment',1);
-            $data13=$res13->where("ID >=$start_id13")->find();
-            $data13['content']=R('SubString/subString',array($data13['content'],80));
-            $this->assign('classic_comment',$data13);
+            $info_comment=$this->show_now('classic_comment',1,80);
+            $this->assign('classic_comment',$info_comment);
 
             // 品牌--中华老字号
             $res14= M('brand_tradition');
