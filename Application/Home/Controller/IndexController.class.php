@@ -3,50 +3,6 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends CommonController {
 
-        //show_now 为需要随日期变化二内容变化的区域
-        //$n:每日需要显示的条目数
-        public function show_now($tableName,$n,$content_len=80)
-        {
-            $d=date(d,time());
-            $id_arr=M($tableName)->field('ID')->select();
-            foreach($id_arr as $k=>$v)
-            {
-                $id_arr_new[]=$v['id'];
-            }
-
-            $count=count($id_arr_new);
-            //$arr_num 确定要合并多少个数组
-            $arr_num=floor(31*$n/$count);
-            if($arr_num==0)
-            {
-                $arr_big=$id_arr_new;
-            }else{
-                for($i=0;$i<$arr_num;$i++)
-                {
-                    $arr_big=array_merge($id_arr_new,$id_arr_new);
-                }
-            }
-
-            $start_id=($d-1)*$n%$count;
-            $m=M($tableName);
-            for($j=0;$j<$n;$j++)
-            {
-                $res[$j]=$m->where(array('ID'=>$arr_big[$start_id]))->find();
-                $start_id++;
-            }
-            foreach($res as $k=>$v)
-            {
-                $res[$k]['content']=R('SubString/subString',array($v['content'],$content_len));
-            }
-
-            //结果集为二维数组
-            return $res;
-
-
-        }
-
-
-
         public function index(){
 
          //记录ip

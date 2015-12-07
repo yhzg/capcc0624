@@ -2,7 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
 <head>
 	<load href="__PUBLIC__/Home/Css/third.css"/>
+	<script language="JavaScript" src="__PUBLIC__/jq/jquery-2.0.3.min.js"></script>
+	<load  href="__PUBLIC__/Home/Css/bootstrap/bootstrap.min.css" />
+	<script language="javascript">
+		$(function()
+		{
+			$("#content img").css({"max-width":"800px",'height':"auto"});
+		})
+	</script>
 </head>
+
 <body>
 	<div class="wrap_box">
  		<div class="wrap">
@@ -13,19 +22,13 @@
 						 	<p><{$vo.title}></p>
 						<br />
                         <p1> <{$vo.inserttime}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <{$vo.author}></p1><br />
-						<div>
+						<div id="content">
 							<foreach name="vo.content" item="voo">
 								<li style="text-indent: 2em">
 									<{$voo}>
 								</li>
 							</foreach>
 						</div>
-					 <!-- <ul class="pic_con1">
- 							<li><a href=""><img src="__PUBLIC__/<{$vo.imgpath}>"></a>
- 							<p3><{$vo.title}></p3></li>
-                            &lt;!&ndash;<li><a href=""><img src="__PUBLIC__/<{$activity_activity.imgpath}>" ></a><p3><{$activity_activity.title}></p3>&ndash;&gt;
-                            &lt;!&ndash;</li>&ndash;&gt;
-					  </ul>-->
  						<div class="clearfloat"></div>
  					</div>
  				</div>
